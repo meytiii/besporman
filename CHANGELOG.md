@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.2] - 2026-10-18
+
+### Changed
+- **Enlarged Testimonial Mascot Dimensions:** Increased `.marquee-mascot-box` height from `92px` to `190px` on desktop (and `70px` to `140px` on mobile), making the thumbs-up mascot prominently visible, crisp, and expressive next to the section title.
+- **Removed Mascot Hover Animation:** Eliminated the hover scale and rotation effect from `.marquee-mascot-img` to maintain a grounded, clean, non-distracting visual presentation.
+- **Enhanced Drop Shadow:** Applied `3px 3px 0 var(--color-border-bold)` tactile comic ink shadow to match the visual depth of the mascot and review bubbles.
+
+---
+
 ## [2.4.1] - 2026-10-18
 
 ### Fixed

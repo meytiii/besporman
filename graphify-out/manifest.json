@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792271754.666791,
-    "seen": 1792271776.8025887,
-    "ast_hash": "0edb253b50865c660c5b49ae4507c326",
+    "mtime": 1792271811.9378328,
+    "seen": 1792271823.9742303,
+    "ast_hash": "67ad98a3e03388282e3e09b1742eabf7",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {

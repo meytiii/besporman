@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792271517.2694502,
-    "seen": 1792271549.8196228,
-    "ast_hash": "8bb2c23115199972a506c98c0c17d18f",
+    "mtime": 1792271745.2804928,
+    "seen": 1792271776.8025327,
+    "ast_hash": "7b9e4defb6f66b246911ccfac8f67a2a",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792271537.6176264,
-    "seen": 1792271549.8196712,
-    "ast_hash": "f692ecee87b9d648461d42426eaaa003",
+    "mtime": 1792271754.666791,
+    "seen": 1792271776.8025887,
+    "ast_hash": "0edb253b50865c660c5b49ae4507c326",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
