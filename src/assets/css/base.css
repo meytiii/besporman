@@ -222,20 +222,25 @@ section[id],
    ========================================================================== */
 
 @media (pointer: fine) and (hover: hover) {
+  html.has-custom-cursor,
+  html.has-custom-cursor *,
+  html.has-custom-cursor *::before,
+  html.has-custom-cursor *::after,
   body.has-custom-cursor,
-  body.has-custom-cursor a,
-  body.has-custom-cursor button,
-  body.has-custom-cursor [role="button"],
-  body.has-custom-cursor .btn,
-  body.has-custom-cursor select,
-  body.has-custom-cursor summary {
+  body.has-custom-cursor *,
+  body.has-custom-cursor *::before,
+  body.has-custom-cursor *::after {
     cursor: none !important;
   }
 
+  html.has-custom-cursor input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+  html.has-custom-cursor textarea,
+  html.has-custom-cursor [contenteditable="true"],
   body.has-custom-cursor input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
   body.has-custom-cursor textarea,
   body.has-custom-cursor [contenteditable="true"] {
     cursor: text !important;
   }
 }
+
 

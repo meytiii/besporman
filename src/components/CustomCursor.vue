@@ -165,7 +165,11 @@ const updateSupport = () => {
   mediaQueryList = window.matchMedia('(pointer: fine) and (hover: hover)')
   isSupported.value = mediaQueryList.matches
 
-  if (!isSupported.value) {
+  if (isSupported.value) {
+    document.documentElement.classList.add('has-custom-cursor')
+    document.body.classList.add('has-custom-cursor')
+  } else {
+    document.documentElement.classList.remove('has-custom-cursor')
     document.body.classList.remove('has-custom-cursor')
   }
 }
@@ -201,6 +205,7 @@ onUnmounted(() => {
     cancelAnimationFrame(rafId)
   }
 
+  document.documentElement.classList.remove('has-custom-cursor')
   document.body.classList.remove('has-custom-cursor')
 })
 </script>
