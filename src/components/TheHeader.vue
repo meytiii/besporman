@@ -878,10 +878,12 @@ onUnmounted(() => {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--space-2);
   width: 100%;
   height: 44px;
-  padding-inline: 14px;
+  flex-shrink: 0;
+  padding-inline: var(--space-3);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -889,10 +891,18 @@ onUnmounted(() => {
   font-family: inherit;
 }
 
+.mobile-morph-menu.is-open .morph-trigger-btn {
+  justify-content: space-between;
+  padding-inline: var(--space-4);
+}
+
 .morph-label {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-display);
   font-size: var(--text-lg);
   line-height: 1;
+  padding-top: 2px;
   color: var(--color-ink-primary);
   transition: color 0.35s ease;
 }
@@ -944,10 +954,10 @@ onUnmounted(() => {
 
 /* Menu Content & Staggered Reveal */
 .morph-nav-content {
+  display: none;
   position: relative;
   z-index: 10;
   flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   padding-inline: var(--space-4);
@@ -961,6 +971,7 @@ onUnmounted(() => {
 }
 
 .mobile-morph-menu.is-open .morph-nav-content {
+  display: flex;
   pointer-events: auto;
   opacity: 1;
   transform: translateY(0);
