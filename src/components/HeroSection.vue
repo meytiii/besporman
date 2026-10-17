@@ -71,7 +71,7 @@
         <!-- Creative Persian Headline Above Mascot -->
         <h1 id="hero-title" class="hero-title">
           خیالت از توسعه نرم‌افزار راحت؛<br />
-          <span class="title-highlight">کار رو بسپر من!</span>
+          کار رو <span class="title-highlight">بسپر من!</span>
         </h1>
 
         <!-- Centered Mascot Stage & Neon Sign -->
@@ -209,13 +209,23 @@ onUnmounted(() => {
 /* Continuous Unstoppable Comic Marquee Backdrop */
 .hero-comic-backdrop {
   position: absolute;
-  inset: 0;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 60px);
   overflow: hidden;
   pointer-events: none; /* Marquee is unstoppable and never captures mouse events */
   user-select: none;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-comic-backdrop {
+    top: 70px;
+    height: calc(100% - 70px);
+  }
 }
 
 .hero-comic-track {
@@ -251,7 +261,7 @@ onUnmounted(() => {
   height: 100%;
   width: auto;
   object-fit: cover;
-  object-position: center 18px;
+  object-position: center top;
   flex-shrink: 0;
   display: block;
 }
@@ -262,10 +272,10 @@ onUnmounted(() => {
   inset: 0;
   pointer-events: none;
   background:
-    /* Subtle top feathering that preserves full visibility of speech bubbles and comic art */
-    linear-gradient(to bottom, rgba(250, 247, 240, 0.35) 0%, rgba(250, 247, 240, 0.08) 18%, transparent 38%, rgba(250, 247, 240, 0.4) 100%),
+    /* Top fade gradient smoothly blending text into comic */
+    linear-gradient(to bottom, rgba(250, 247, 240, 0.95) 0%, rgba(250, 247, 240, 0.65) 15%, rgba(250, 247, 240, 0) 35%, rgba(250, 247, 240, 0.45) 100%),
     /* Soft left and right edge fades */
-    linear-gradient(to right, var(--color-canvas) 0%, transparent 50px, transparent calc(100% - 50px), var(--color-canvas) 100%);
+    linear-gradient(to right, var(--color-canvas) 0%, transparent 60px, transparent calc(100% - 60px), var(--color-canvas) 100%);
 }
 
 /* Foreground Stage Container */
