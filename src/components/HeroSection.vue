@@ -68,10 +68,25 @@
 
       <!-- Foreground Stage Content: Title, Mascot, and Neon Sign -->
       <div class="container hero-stage-container">
-        <!-- Creative Persian Headline Above Mascot -->
+        <!-- Creative Persian Headline Above Mascot with Fade-in-Blur Reveal -->
         <h1 id="hero-title" class="hero-title">
-          خیالت از توسعه نرم‌افزار راحت؛<br />
-          کار رو <span class="title-highlight">بسپر من!</span>
+          <TextReveal
+            as="span"
+            text="خیالت از توسعه نرم‌افزار راحت؛"
+            preset="fade-in-blur"
+            :delay="0.1"
+            :speed-reveal="1.2"
+          />
+          <br />
+          <TextReveal
+            as="span"
+            text="کار رو بسپر من!"
+            preset="fade-in-blur"
+            :delay="0.32"
+            :speed-reveal="1.2"
+            highlight="بسپر من!"
+            highlight-class="title-highlight"
+          />
         </h1>
 
         <!-- Centered Mascot Stage & Neon Sign -->
@@ -89,6 +104,7 @@
               class="mascot-layer mascot-layer--pose1"
               width="470"
               height="1200"
+              decoding="async"
             />
 
             <!-- Pose 2: Pointing down -->
@@ -99,6 +115,7 @@
               class="mascot-layer mascot-layer--pose2"
               width="607"
               height="1498"
+              decoding="async"
             />
           </div>
 
@@ -113,6 +130,7 @@
               class="neon-sign-img neon-sign-img--off"
               width="1052"
               height="599"
+              decoding="async"
             />
 
             <!-- On State (when mascot pose 2: pointing down to sign) -->
@@ -123,6 +141,7 @@
               class="neon-sign-img neon-sign-img--on"
               width="1052"
               height="598"
+              decoding="async"
             />
           </div>
         </div>
@@ -131,7 +150,7 @@
 
     <!-- 2. Primary Action Triggers & Trust Badges (Below the Stage) -->
     <div class="container hero-lower-container">
-      <div class="hero-actions">
+      <div class="hero-actions comic-pop delay-1">
         <a href="#contact" class="btn btn-primary hero-btn-primary">
           <span class="btn-text">شروع پروژه و ثبت سفارش</span>
           <span class="btn-arrow" aria-hidden="true">←</span>
@@ -142,7 +161,7 @@
         </a>
       </div>
 
-      <div class="hero-trust-chips">
+      <div class="hero-trust-chips comic-pop delay-2">
         <div class="trust-chip">
           <span class="chip-dot" aria-hidden="true"></span>
           <span>کدنویسی اختصاصی و استاندارد</span>
@@ -162,6 +181,10 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
 
 // 1.5-Second Mechanical Hard-Cut Pose & Neon Sign Switching
 const currentPose = ref<1 | 2>(1)

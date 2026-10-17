@@ -376,4 +376,66 @@ section[id],
   }
 }
 
+/* ==========================================================================
+   Playful Comic Pop-Up Scroll Reveal Kinetics
+   ========================================================================== */
+
+.comic-pop {
+  opacity: 0;
+  transform: translateY(32px) scale(0.92) rotate(var(--comic-tilt, -1.2deg));
+  transition: opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: var(--pop-delay, 0s);
+  will-change: transform, opacity;
+}
+
+/* Playful comic stagger variance across cards */
+.comic-pop:nth-child(even) {
+  --comic-tilt: 1.2deg;
+}
+
+.comic-pop:nth-child(3n) {
+  --comic-tilt: -0.8deg;
+}
+
+.comic-pop.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+/* Stagger delay utilities */
+.delay-1 { --pop-delay: 0.08s; }
+.delay-2 { --pop-delay: 0.16s; }
+.delay-3 { --pop-delay: 0.24s; }
+.delay-4 { --pop-delay: 0.32s; }
+
+/* Badge Comic Pop-in & Blur Reveal */
+.reveal-badge {
+  display: inline-flex;
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateY(14px) scale(0.9) rotate(-2deg);
+  transition: opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+              filter 0.4s ease,
+              transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  will-change: opacity, filter, transform;
+}
+
+.reveal-badge.is-revealed {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0) scale(1) rotate(0deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comic-pop,
+  .reveal-badge {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+
 

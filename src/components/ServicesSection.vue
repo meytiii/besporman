@@ -4,10 +4,23 @@
       
       <!-- Section Header -->
       <div class="section-header">
-        <span class="section-badge">تخصص‌های تیم</span>
-        <h2 id="services-title" class="section-title">خدمات تخصصی و زمینه کاری ما</h2>
+        <span class="section-badge reveal-badge comic-pop">تخصص‌های تیم</span>
+        <h2 id="services-title" class="section-title">
+          <TextReveal
+            as="span"
+            text="خدمات تخصصی و زمینه کاری ما"
+            preset="fade-in-blur"
+            :speed-reveal="1.2"
+          />
+        </h2>
         <p class="section-subtitle">
-          تمرکز ما بر سه حوزه کلیدی توسعه نرم‌افزار است؛ بدون پراکنده‌کاری، با بیشترین عمق فنی و کیفیت اجرایی.
+          <TextReveal
+            as="span"
+            text="تمرکز ما بر سه حوزه کلیدی توسعه نرم‌افزار است؛ بدون پراکنده‌کاری، با بیشترین عمق فنی و کیفیت اجرایی."
+            preset="fade-in-blur"
+            :delay="0.1"
+            :speed-reveal="1.3"
+          />
         </p>
       </div>
 
@@ -15,7 +28,7 @@
       <div class="services-grid">
         
         <!-- 1. Web Development -->
-        <article class="service-card service-card--web">
+        <article class="service-card service-card--web comic-pop delay-1">
           <div class="card-bezel">
             <div class="card-header">
               <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -48,7 +61,7 @@
         </article>
 
         <!-- 2. Telegram Bots -->
-        <article class="service-card service-card--bot">
+        <article class="service-card service-card--bot comic-pop delay-2">
           <div class="card-bezel">
             <div class="card-header">
               <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -83,7 +96,7 @@
         </article>
 
         <!-- 3. Windows Applications -->
-        <article class="service-card service-card--app">
+        <article class="service-card service-card--app comic-pop delay-3">
           <div class="card-bezel">
             <div class="card-header">
               <svg class="service-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -119,6 +132,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
+</script>
 
 <style scoped>
 .services-section {

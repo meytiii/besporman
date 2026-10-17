@@ -4,8 +4,15 @@
       
       <div class="about-card">
         <div class="about-content">
-          <span class="about-badge">داستان و ارزش‌های تیم</span>
-          <h2 id="about-title" class="about-title">چرا «بسپر من» ساخته شد؟</h2>
+          <span class="about-badge reveal-badge comic-pop">داستان و ارزش‌های تیم</span>
+          <h2 id="about-title" class="about-title">
+            <TextReveal
+              as="span"
+              text="چرا «بسپر من» ساخته شد؟"
+              preset="fade-in-blur"
+              :speed-reveal="1.2"
+            />
+          </h2>
           
           <p class="about-paragraph">
             توسعه نرم‌افزار نباید پر از استرس، بدقولی و بهانه‌های فنی باشد. ما «بسپر من» را با یک هدف مشخص راه‌اندازی کردیم:
@@ -18,7 +25,7 @@
           </p>
 
           <div class="values-grid">
-            <div class="value-item">
+            <div class="value-item comic-pop delay-1">
               <span class="value-num">۰۱</span>
               <div>
                 <h3 class="value-title">کدنویسی تمیز و ساختارمند</h3>
@@ -26,7 +33,7 @@
               </div>
             </div>
 
-            <div class="value-item">
+            <div class="value-item comic-pop delay-2">
               <span class="value-num">۰۲</span>
               <div>
                 <h3 class="value-title">ارتباط مستقیم با توسعه‌دهنده</h3>
@@ -34,7 +41,7 @@
               </div>
             </div>
 
-            <div class="value-item">
+            <div class="value-item comic-pop delay-3">
               <span class="value-num">۰۳</span>
               <div>
                 <h3 class="value-title">تعهد کامل به زمان‌بندی</h3>
@@ -45,7 +52,7 @@
         </div>
 
         <div class="about-side-panel">
-          <div class="quote-card">
+          <div class="quote-card comic-pop delay-2">
             <span class="quote-mark" aria-hidden="true">«</span>
             <p class="quote-text">
               خیالت از بخش فنی پروژه‌ات راحت باشد. ما پشت سیستم نشسته‌ایم و کار را درست تحویل می‌دهیم.
@@ -58,6 +65,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
+</script>
 
 <style scoped>
 .about-section {

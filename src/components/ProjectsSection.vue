@@ -4,15 +4,28 @@
       
       <!-- Section Header -->
       <div class="section-header">
-        <span class="section-badge">پورتفولیو و نتایج</span>
-        <h2 id="projects-title" class="section-title">نمونه‌کارها و پروژه‌های واقعی</h2>
+        <span class="section-badge reveal-badge comic-pop">پورتفولیو و نتایج</span>
+        <h2 id="projects-title" class="section-title">
+          <TextReveal
+            as="span"
+            text="نمونه‌کارها و پروژه‌های واقعی"
+            preset="fade-in-blur"
+            :speed-reveal="1.2"
+          />
+        </h2>
         <p class="section-subtitle">
-          تنها پروژه‌های واقعی و اعتبارسنجی‌شده استودیو؛ بدون بزرگ‌نمایی، آمار خیالی یا مشتریان جعلی.
+          <TextReveal
+            as="span"
+            text="تنها پروژه‌های واقعی و اعتبارسنجی‌شده استودیو؛ بدون بزرگ‌نمایی، آمار خیالی یا مشتریان جعلی."
+            preset="fade-in-blur"
+            :delay="0.1"
+            :speed-reveal="1.3"
+          />
         </p>
       </div>
 
       <!-- Category Filter Tabs -->
-      <div class="filter-wrapper" role="tablist" aria-label="فیلتر دسته‌بندی پروژه‌ها">
+      <div class="filter-wrapper comic-pop delay-1" role="tablist" aria-label="فیلتر دسته‌بندی پروژه‌ها">
         <button
           v-for="cat in categories"
           :key="cat.key"
@@ -29,7 +42,7 @@
 
       <!-- Featured Project Card (Prominent Feature Treatment) -->
       <div v-if="featuredProject" class="featured-project-wrapper">
-        <article class="featured-card">
+        <article class="featured-card comic-pop delay-2">
           <div class="featured-content">
             <div class="featured-badge-row">
               <span class="badge-featured">پروژه برگزیده</span>
@@ -96,9 +109,10 @@
       <!-- Secondary Projects Grid -->
       <div class="projects-grid">
         <article
-          v-for="project in filteredSecondaryProjects"
+          v-for="(project, idx) in filteredSecondaryProjects"
           :key="project.id"
-          class="project-card"
+          class="project-card comic-pop"
+          :style="{ '--pop-delay': `${(idx + 1) * 0.08}s` }"
         >
           <div class="project-card-header">
             <span class="badge-category">{{ getCategoryLabel(project.category) }}</span>
@@ -148,6 +162,10 @@
 import { ref, computed } from 'vue'
 import { projectsData } from '@/data/projects'
 import type { ProjectCategory } from '@/types/project'
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
 
 const categories = [
   { key: 'all', label: 'همه پروژه‌ها' },

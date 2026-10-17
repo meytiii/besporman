@@ -4,17 +4,30 @@
       
       <!-- Section Header -->
       <div class="section-header">
-        <span class="section-badge">مراحل کار</span>
-        <h2 id="process-title" class="section-title">چگونه کارها را به ما می‌سپارید؟</h2>
+        <span class="section-badge reveal-badge comic-pop">مراحل کار</span>
+        <h2 id="process-title" class="section-title">
+          <TextReveal
+            as="span"
+            text="چگونه کارها را به ما می‌سپارید؟"
+            preset="fade-in-blur"
+            :speed-reveal="1.2"
+          />
+        </h2>
         <p class="section-subtitle">
-          مسیر همکاری با ما شفاف، بدون بوروکراسی خسته‌کننده و مبتنی بر تحویل واقعی خروجی باکیفیت است.
+          <TextReveal
+            as="span"
+            text="مسیر همکاری با ما شفاف، بدون بوروکراسی خسته‌کننده و مبتنی بر تحویل واقعی خروجی باکیفیت است."
+            preset="fade-in-blur"
+            :delay="0.1"
+            :speed-reveal="1.3"
+          />
         </p>
       </div>
 
       <!-- Process Steps (4-Step Flow) -->
       <div class="process-grid">
         
-        <div class="process-card">
+        <div class="process-card comic-pop delay-1">
           <div class="step-badge">گام ۰۱</div>
           <h3 class="step-title">گفتگو و شفاف‌سازی</h3>
           <p class="step-desc">
@@ -22,7 +35,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card comic-pop delay-2">
           <div class="step-badge">گام ۰۲</div>
           <h3 class="step-title">برنامه‌ریزی و توافق</h3>
           <p class="step-desc">
@@ -30,7 +43,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card comic-pop delay-3">
           <div class="step-badge">گام ۰۳</div>
           <h3 class="step-title">توسعه و آزمون</h3>
           <p class="step-desc">
@@ -38,7 +51,7 @@
           </p>
         </div>
 
-        <div class="process-card">
+        <div class="process-card comic-pop delay-4">
           <div class="step-badge">گام ۰۴</div>
           <h3 class="step-title">تحویل و پشتیبانی</h3>
           <p class="step-desc">
@@ -51,6 +64,13 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
+</script>
 
 <style scoped>
 .process-section {

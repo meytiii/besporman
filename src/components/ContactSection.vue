@@ -4,17 +4,30 @@
       
       <!-- Section Header -->
       <div class="section-header">
-        <span class="section-badge">ارتباط با استودیو</span>
-        <h2 id="contact-title" class="section-title">ثبت سفارش و آغاز گفتگو</h2>
+        <span class="section-badge reveal-badge comic-pop">ارتباط با استودیو</span>
+        <h2 id="contact-title" class="section-title">
+          <TextReveal
+            as="span"
+            text="ثبت سفارش و آغاز گفتگو"
+            preset="fade-in-blur"
+            :speed-reveal="1.2"
+          />
+        </h2>
         <p class="section-subtitle">
-          ایده یا پروژه خود را شرح دهید تا در سریع‌ترین زمان ممکن پاسخ و برآورد اولیه را دریافت کنید.
+          <TextReveal
+            as="span"
+            text="ایده یا پروژه خود را شرح دهید تا در سریع‌ترین زمان ممکن پاسخ و برآورد اولیه را دریافت کنید."
+            preset="fade-in-blur"
+            :delay="0.1"
+            :speed-reveal="1.3"
+          />
         </p>
       </div>
 
       <div class="contact-grid">
         
         <!-- Left Column: Direct Telegram & Guidelines -->
-        <div class="contact-info-card">
+        <div class="contact-info-card comic-pop delay-1">
           <div class="direct-telegram-box">
             <svg class="telegram-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -47,7 +60,7 @@
         </div>
 
         <!-- Right Column: Inquiry Form -->
-        <div class="contact-form-card">
+        <div class="contact-form-card comic-pop delay-2">
           <h3 class="form-card-title">فرم ثبت مشخصات پروژه</h3>
 
           <!-- Status Message Banner (Honest feedback) -->
@@ -222,6 +235,10 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 import { defaultContactAdapter, type ContactMessagePayload } from '@/services/contactAdapter'
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+
+useScrollReveal()
 
 interface FormErrors {
   name?: string;

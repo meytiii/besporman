@@ -6,7 +6,7 @@
       <div class="footer-brand">
         <router-link to="/" class="footer-logo">
           <span class="logo-badge" aria-hidden="true">
-            <img src="/favicon.png" alt="" width="24" height="24" />
+            <img src="/favicon.png" alt="" width="24" height="24" loading="lazy" decoding="async" />
           </span>
           <span class="logo-text">بسپر من</span>
         </router-link>

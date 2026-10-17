@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792265456.0196748,
-    "seen": 1792265644.3007605,
-    "ast_hash": "7aae2d2e5e5b46460939b247e407eb15",
+    "mtime": 1792267327.348806,
+    "seen": 1792267356.9619613,
+    "ast_hash": "c5cb4b549692e7129d50b2276818dac9",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -42,8 +42,8 @@
     "semantic_hash": "b408c4f50ac64b2e8c88f6a1b93d6612"
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792266452.2129674,
-    "seen": 1792266490.4391003,
+    "mtime": 1792266518.6334534,
+    "seen": 1792267356.9619753,
     "ast_hash": "183d3bd5bc7a7148c2787a919adb0f78",
     "semantic_hash": ""
   },
@@ -60,15 +60,15 @@
     "semantic_hash": "4e51cd72a31cf67b5305f5b21ca28b05"
   },
   "src/components/TheFooter.vue": {
-    "mtime": 1792265456.022679,
-    "seen": 1792265644.300779,
-    "ast_hash": "4a578daf6af18a4be94b534114526004",
+    "mtime": 1792267008.229167,
+    "seen": 1792267356.9619782,
+    "ast_hash": "c097324b9cb15efea96643aa4add42f3",
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792255838.7199318,
-    "seen": 1792264033.5147674,
-    "ast_hash": "ee392162f04d2a79360ac8a71ae33ee6",
+    "mtime": 1792267000.7118013,
+    "seen": 1792267356.961979,
+    "ast_hash": "bd983b2eec09e706e43b709b024bb304",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -84,9 +84,9 @@
     "semantic_hash": "417f698173a171a3f7e1cb1e2fcd7673"
   },
   "src/router/index.ts": {
-    "mtime": 1792252254.2479143,
-    "seen": 1792252325.234084,
-    "ast_hash": "232c432f266b81b443f5f73b8e4a4323",
+    "mtime": 1792266876.172109,
+    "seen": 1792267356.961982,
+    "ast_hash": "856529f37b2577171a12745c9b15b23a",
     "semantic_hash": ""
   },
   "src/services/contactAdapter.ts": {
@@ -432,9 +432,15 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792266465.568308,
-    "seen": 1792266490.4391294,
-    "ast_hash": "a1b320fa46dd74b1b35de9afd7313be5",
+    "mtime": 1792267334.5641108,
+    "seen": 1792267356.9620008,
+    "ast_hash": "c0dc3f7bd293d9652f22a36ec8e44a3e",
+    "semantic_hash": ""
+  },
+  "tests/navigation.spec.ts": {
+    "mtime": 1792267023.6306243,
+    "seen": 1792267356.9619918,
+    "ast_hash": "41049becfdee0e96124e1b2b2ffa66da",
     "semantic_hash": ""
   }
 }

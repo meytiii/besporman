@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.2.0] - 2026-10-17
+
+### Added
+- **Viewport-Aware Lazy Loading (`LazySection.vue`):** Implemented intersection-based lazy loading with 450px rootMargin anticipation, SSR safety, route-hash synchronization, and `content-visibility: auto` to optimize rendering performance across below-the-fold sections.
+- **Authentic Parchment Skeleton Loaders (`SectionSkeleton.vue`):** Designed lightweight tactile skeleton placeholders matching the neo-brutalist paper aesthetic (`--primitive-cream-100` canvas and `--color-border-bold` ink borders) with subtle non-glitzy shimmer animations.
+- **Word-by-Word Text Reveal Animation (`TextReveal.vue`):** Implemented native Vue 3 text reveal with `fade-in-blur`, `blur`, `scale`, `slide`, and `fade` presets. Tailored specifically for Persian typography to maintain cursive ligatures, non-breaking half-spaces (ZWNJ), and screen-reader accessibility (`.sr-only`), staggered with smooth cubic-bezier easing.
+- **Section Heading & Badge Reveals:** Integrated `TextReveal` across all major website titles, subtitles, and badges:
+  - Hero headline: «خیالت از توسعه نرم‌افزار راحت؛ کار رو بسپر من!»
+  - Services: «تخصص‌های تیم»، «خدمات تخصصی و زمینه کاری ما»، and descriptive subtitle.
+  - Projects: «پورتفولیو و نتایج»، «نمونه‌کارها و پروژه‌های واقعی»، and descriptive subtitle.
+  - Process: «مراحل کار»، «چگونه کارها را به ما می‌سپارید؟»، and descriptive subtitle.
+  - Contact: «ارتباط با استودیو»، «ثبت سفارش و آغاز گفتگو»، and descriptive subtitle.
+  - About: «داستان و ارزش‌های تیم» and «چرا «بسپر من» ساخته شد؟».
+- **Playful Comic Scroll Pop-up Kinematics (`.comic-pop`):** Added spring overshoot physics (`cubic-bezier(0.34, 1.56, 0.64, 1)`) with alternating retro comic tilts and staggered entrance delays on service cards, process step boxes, and about callouts upon scrolling into view.
+- **UI Components Directory (`src/components/ui/`):** Established dedicated UI directory containing standard motion components, including native `TextReveal.vue` and preserved external React templates (`text-reveal.tsx`, `demo.tsx`).
+
+---
+
 ## [2.1.1] - 2026-10-17
 
 ### Fixed
