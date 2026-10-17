@@ -74,11 +74,12 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
 
 ---
 
-## 7. Cavecrew (`/cavecrew`) — Context-Efficient Subagent Delegation
-- **Rule:** Optimize subagent task distribution to minimize context exhaustion and maximize precision.
+## 7. Caveman (`/caveman`) — Token-Efficient Communication Mode
+- **Rule:** Eliminate conversational fluff, sycophancy, and filler tokens while preserving 100% technical substance.
 - **Enforcement:**
-  - Use focused investigator/builder/reviewer workflows when delegating isolated code changes.
-  - Keep delegation output compact and evidence-first.
+  - Active whenever terse or compressed communication is beneficial to preserve context window.
+  - Keep all technical terms, code blocks, API names, and exact error strings verbatim.
+  - Drop pleasantries, filler words, and decorative preambles.
 
 ---
 

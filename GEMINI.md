@@ -12,13 +12,13 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 4. **`/ui-ux-pro-max`** — Accessibility (WCAG 2.2 AA), 44×44px touch targets, systemic z-index hierarchy, contrast.
 5. **`/ux-ui-agent-skills`** — 3-tier DTCG token system (Primitives → Semantics → Components), atomic design structure.
 6. **`/graphify`** — Codebase modularity, decoupled components, clean dependency graphs.
-7. **`/cavecrew`** — Efficient subagent delegation and token-preserving workflows.
+7. **`/caveman`** — Terse, token-efficient communication mode; drops conversational fluff while preserving all technical substance.
 8. **`/design-taste-frontend`** — Layout variance (Variance 8, Motion 6, Density 4), max 1 eyebrow per 3 sections, max 2 zigzag splits.
 9. **`/humanizer`** — Elimination of AI writing clichés, authentic and natural Persian/English copy.
 10. **`/modern-web-guidance`** — Modern web standards (CSS logical properties, Baseline APIs, transform/opacity hardware acceleration).
 
 ## Engineering Standards
-- **Framework:** Nuxt 4 (Vue 3, Composition API, `<script setup lang="ts">`).
-- **Language:** TypeScript strict mode (zero `any`).
+- **Framework:** Vue 3 (Composition API, `<script setup lang="ts">`) + Vite + TypeScript strict mode (zero `any`).
+- **Routing:** Vue Router 4 (HTML5 History Mode) with single-page scrolling homepage (`#contact`) and dedicated `/projects/:slug` routes.
 - **Direction:** Persian-first (`<html lang="fa" dir="rtl">`), Vazirmatn typography, zero `letter-spacing` on Persian.
-- **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`) adhering to [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
+- **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`) adhering strictly to [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).

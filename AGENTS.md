@@ -55,7 +55,8 @@ If instructions conflict, identify the conflict and follow the repository's esta
 - When a design-system gap prevents implementation, document the gap and propose a consistent solution rather than improvising an incompatible pattern.
 
 ### Strict Anti-Slop Enforcements:
-- ❌ **No Arbitrary Purple/Neon Glows or Dark Mesh Gradients:** Adhere to the approved palette (Parchment Paper `#FAF7F0`, Iron Charcoal `#0E0F12`, Vintage Neon Amber `#F59E0B`, Industrial Vermilion `#EA580C`).
+- ❌ **No Arbitrary Purple/Neon Glows or Dark Mesh Gradients:** Adhere strictly to the approved palette (Parchment Paper `#FAF7F0`, Iron Charcoal `#0E0F12`, Comic Accent Red `#D93829` for display & `#C92A1D` for text, Vintage Sage `#E2E8DF`, and Tan `#F0EAD6`).
+- ❌ **No Dark-Mode Flips:** The brand operates on a unified, authentic tactile paper identity. Uncontrolled dark-theme flipping is barred.
 - ❌ **No Fake Client Logos or Fabricated Testimonials:** Only display authentic projects and verified descriptions.
 - ❌ **No Invented Metrics:** Do not fabricate conversion numbers or vanity statistics.
 - ❌ **No Re-Drawn Fake UI Chrome:** Do not wrap images in fake browser bars or fake window controls.
@@ -70,9 +71,16 @@ If instructions conflict, identify the conflict and follow the repository's esta
 - Inspect existing code and conventions before changing anything.
 - Prefer small, cohesive, reusable components with clear responsibilities.
 - Follow the project's approved framework, language, architecture, and dependency conventions:
-  - **Framework:** Nuxt 4 (Vue 3, Composition API, `<script setup lang="ts">`).
-  - **Language:** TypeScript in strict mode (zero `any`).
-  - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`), scoped component styles, with optional Tailwind utilities constrained strictly to design system tokens.
+  - **Framework:** Vue 3 (Composition API, `<script setup lang="ts">`).
+  - **Tooling & Bundler:** Vite with TypeScript in strict mode (zero `any`, `noImplicitAny: true`).
+  - **Routing:** Vue Router 4 using HTML5 History Mode (`createWebHistory()`) with single-page scrolling homepage (`#contact`) and dedicated project routes (`/projects/:slug`).
+  - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`), scoped component styles, with zero heavy runtime CSS dependencies.
+- **Frontend / Backend Integration Boundary:**
+  - Client-side code must NEVER contain hardcoded secrets, Telegram bot API tokens, or speculative endpoints.
+  - Form UI is decoupled via `ContactSubmissionAdapter`. The development stub must return an explicit `NOT_CONFIGURED` status and never simulate false submission success.
+  - All backend tasks, serverless functions, and Telegram bot endpoints must be documented in `backend_tasks_YYYY-MM-DD.md` rather than invented in client code.
+- **Asset Preservation:**
+  - Never modify, overwrite, resize, or delete authentic mascot images (`pic/besporman1.png`, `pic/besporman2.png`) or `favicon.png`.
 - Use semantic HTML, accessible interactions, and maintainable CSS.
 - Avoid unnecessary dependencies, duplicate utilities, overengineering, and speculative abstractions.
 - Preserve existing functionality and unrelated work.
@@ -125,13 +133,14 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 4. **`/ui-ux-pro-max`** — Accessibility (WCAG 2.2 AA), 44×44px touch targets, systemic z-index hierarchy, contrast.
 5. **`/ux-ui-agent-skills`** — 3-tier DTCG token system (Primitives → Semantics → Components), atomic design structure.
 6. **`/graphify`** — Codebase modularity, decoupled components, clean dependency graphs.
-7. **`/cavecrew`** — Efficient subagent delegation and token-preserving workflows.
+7. **`/caveman`** — Terse, token-efficient communication mode; drops conversational fluff while preserving all technical substance.
 8. **`/design-taste-frontend`** — Layout variance (Variance 8, Motion 6, Density 4), max 1 eyebrow per 3 sections, max 2 zigzag splits.
 9. **`/humanizer`** — Elimination of AI writing clichés, authentic and natural Persian/English copy.
 10. **`/modern-web-guidance`** — Modern web standards (CSS logical properties, Baseline APIs, transform/opacity hardware acceleration).
 
 **Core Rules:**
-- **Always use these skills:** Every agent, pair programmer, and contributor MUST consult and apply these active skills throughout all planning, design, and code generation steps.
+- **Mandatory Pre-Task Reading:** Every agent, pair programmer, and contributor MUST consult and follow `AGENTS.md` and [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md) before making changes.
+- **Always use these skills:** Consult and apply these active skills throughout all planning, design, and code generation steps.
 - Inspect project-local skills in `.agents/skills/` and follow each skill's actual instructions.
 - Avoid unsafe installation scripts and unnecessary global changes.
 - Report significant tool limitations instead of hiding them.
