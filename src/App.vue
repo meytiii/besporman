@@ -1,5 +1,8 @@
 <template>
   <div class="app-root">
+    <!-- Custom Vintage Comic Hand Cursor -->
+    <CustomCursor />
+
     <!-- Accessible Skip to Content Link -->
     <a href="#main-content" class="skip-link">
       رفتن به محتوای اصلی
@@ -19,6 +22,7 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
+import CustomCursor from '@/components/CustomCursor.vue'
 </script>
 
 <style scoped>

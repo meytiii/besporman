@@ -216,3 +216,26 @@ section[id],
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================================================
+   Custom Vintage Comic Cursor Overrides (Fine Pointer Devices Only)
+   ========================================================================== */
+
+@media (pointer: fine) and (hover: hover) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor [role="button"],
+  body.has-custom-cursor .btn,
+  body.has-custom-cursor select,
+  body.has-custom-cursor summary {
+    cursor: none !important;
+  }
+
+  body.has-custom-cursor input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+  body.has-custom-cursor textarea,
+  body.has-custom-cursor [contenteditable="true"] {
+    cursor: text !important;
+  }
+}
+

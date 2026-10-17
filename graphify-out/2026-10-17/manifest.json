@@ -24,9 +24,9 @@
     "semantic_hash": "c7d26a13f0eb2b8efd51face92e50e47"
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792253416.3257205,
-    "seen": 1792253540.9760332,
-    "ast_hash": "aad7154cd471456e515bb2b74937ca67",
+    "mtime": 1792253957.0249975,
+    "seen": 1792254001.712694,
+    "ast_hash": "3226688babf9eedb7caafa74a3e94c8a",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
