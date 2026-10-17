@@ -174,16 +174,16 @@
     "semantic_hash": "55183ec4f39364cfd788a57c2fb7ab31"
   },
   ".agents/rules/mandatory-skills.md": {
-    "mtime": 1792242862.3729973,
-    "seen": 1792249196.4429798,
-    "ast_hash": "82305b767a92036d353114306196a8da",
-    "semantic_hash": "82305b767a92036d353114306196a8da"
+    "mtime": 1792249296.80592,
+    "seen": 1792249326.3188438,
+    "ast_hash": "a74035d6a65215b974b255667b1918a0",
+    "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1792242852.907924,
-    "seen": 1792249196.442981,
-    "ast_hash": "3603fdf43c0388a45a9b4d6c8180eada",
-    "semantic_hash": "3603fdf43c0388a45a9b4d6c8180eada"
+    "mtime": 1792249248.3959458,
+    "seen": 1792249326.3188453,
+    "ast_hash": "7a6c72e57400adb13d2bd0f6e3f76695",
+    "semantic_hash": ""
   },
   "DESIGN_SYSTEM.md": {
     "mtime": 1792242712.5933554,
@@ -192,10 +192,10 @@
     "semantic_hash": "9839d78862333e9a3a32ed7596859874"
   },
   "README.md": {
-    "mtime": 1792248729.3870134,
-    "seen": 1792249196.4429827,
-    "ast_hash": "19582bd3eebbc4897e9ecdb8af3297d1",
-    "semantic_hash": "19582bd3eebbc4897e9ecdb8af3297d1"
+    "mtime": 1792249308.7867754,
+    "seen": 1792249326.3188508,
+    "ast_hash": "9011980d1302975d638f116c0aa8a3ff",
+    "semantic_hash": ""
   },
   "backend_tasks_2026-10-17.md": {
     "mtime": 1792243883.9904466,
@@ -208,5 +208,173 @@
     "seen": 1792249196.4429836,
     "ast_hash": "abb39a614f958e7589cf06a266983e87",
     "semantic_hash": "abb39a614f958e7589cf06a266983e87"
+  },
+  "Agent.md": {
+    "mtime": 1792249284.7911785,
+    "seen": 1792249326.3188462,
+    "ast_hash": "d78fd79da8a4cf9ca411a8c81ac75a12",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1792249319.1046286,
+    "seen": 1792249326.3188472,
+    "ast_hash": "c6899e05297135ae6abc55a8ce61a39a",
+    "semantic_hash": ""
+  },
+  "GEMINI.md": {
+    "mtime": 1792249271.7164056,
+    "seen": 1792249326.3188496,
+    "ast_hash": "1ef809cae00dcb9454e2112b27165fa2",
+    "semantic_hash": ""
+  },
+  "favicon.png": {
+    "mtime": 1792240142.7377114,
+    "seen": 1792249326.318854,
+    "ast_hash": "de7b7090efb36a88bdcc1b53ef622473",
+    "semantic_hash": ""
+  },
+  "pic/besporman1.png": {
+    "mtime": 1792240069.2858932,
+    "seen": 1792249326.3188548,
+    "ast_hash": "3152d93ef2efcc7dac4a18e3d7ce3211",
+    "semantic_hash": ""
+  },
+  "pic/besporman2.png": {
+    "mtime": 1792240080.7856984,
+    "seen": 1792249326.3188558,
+    "ast_hash": "67d6f963cad4498c5948b3c18d6ef095",
+    "semantic_hash": ""
+  },
+  "pic/chat_bubble.png": {
+    "mtime": 1792245975.4526565,
+    "seen": 1792249326.3188567,
+    "ast_hash": "84c9fdb89e668735dda06a3935046d9c",
+    "semantic_hash": ""
+  },
+  "pic/chat_bubble_app.png": {
+    "mtime": 1792246226.9903119,
+    "seen": 1792249326.3188574,
+    "ast_hash": "93e45462e617b63a888dac3eb973d261",
+    "semantic_hash": ""
+  },
+  "pic/chat_bubble_bot.png": {
+    "mtime": 1792246226.914296,
+    "seen": 1792249326.3188584,
+    "ast_hash": "8bd6267793185cdd59e140e63d1a6ab0",
+    "semantic_hash": ""
+  },
+  "pic/chat_bubble_web.png": {
+    "mtime": 1792246226.837269,
+    "seen": 1792249326.3188596,
+    "ast_hash": "ee023a225a4112d5c8f24460e4803540",
+    "semantic_hash": ""
+  },
+  "pic/home.png": {
+    "mtime": 1792248341.749909,
+    "seen": 1792249326.3188603,
+    "ast_hash": "cb3661d760a23a54f9a0af38f3cf855b",
+    "semantic_hash": ""
+  },
+  "pic/neon_sign_off.png": {
+    "mtime": 1792246637.3692987,
+    "seen": 1792249326.318861,
+    "ast_hash": "ae1a05b7d5d8fc77f5e5c3f8b83e5dbd",
+    "semantic_hash": ""
+  },
+  "pic/neon_sign_on.png": {
+    "mtime": 1792246633.3600304,
+    "seen": 1792249326.3188617,
+    "ast_hash": "501ea87e1960ae48d72224a0ada5b722",
+    "semantic_hash": ""
+  },
+  "pic/star-empty.svg": {
+    "mtime": 1792247157.3100345,
+    "seen": 1792249326.318863,
+    "ast_hash": "bd6c50fb007b8985b83d7e84b5e56238",
+    "semantic_hash": ""
+  },
+  "pic/star-favorite-svgrepo-com.svg": {
+    "mtime": 1792246543.3662465,
+    "seen": 1792249326.3188636,
+    "ast_hash": "611f45a8366019c24faadb66ad536023",
+    "semantic_hash": ""
+  },
+  "pic/star-full.svg": {
+    "mtime": 1792247143.3102407,
+    "seen": 1792249326.3188646,
+    "ast_hash": "aae811fda94d2a596d2f48f9bfafcbf0",
+    "semantic_hash": ""
+  },
+  "pic/star-half.svg": {
+    "mtime": 1792247177.9262934,
+    "seen": 1792249326.3188658,
+    "ast_hash": "841ad368c981e88c737248b97666cdd4",
+    "semantic_hash": ""
+  },
+  "pic/webp/besporman1.webp": {
+    "mtime": 1792247021.9527335,
+    "seen": 1792249326.3188667,
+    "ast_hash": "ce3f0d27f48390cd95f49551532b4e76",
+    "semantic_hash": ""
+  },
+  "pic/webp/besporman2.webp": {
+    "mtime": 1792247022.4376893,
+    "seen": 1792249326.3188677,
+    "ast_hash": "28314bcf42088951bcd97e833cfef65a",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble.webp": {
+    "mtime": 1792247022.8726056,
+    "seen": 1792249326.3188684,
+    "ast_hash": "0ffdf27c109e454fa44c4ece56ce03ff",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_amber.webp": {
+    "mtime": 1792247024.555248,
+    "seen": 1792249326.3188689,
+    "ast_hash": "82fa73f5afcfe783efa070f6b5eafb07",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_app.webp": {
+    "mtime": 1792247024.125881,
+    "seen": 1792249326.31887,
+    "ast_hash": "d7daa7809b81c66ce869befe4f6c6c87",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_bot.webp": {
+    "mtime": 1792247023.7161715,
+    "seen": 1792249326.3188708,
+    "ast_hash": "0931ec122afefeeb494c090f90f76665",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_coral.webp": {
+    "mtime": 1792247024.9787478,
+    "seen": 1792249326.3188715,
+    "ast_hash": "4f0311346fc95d17c2ed4f862f27b167",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_slate.webp": {
+    "mtime": 1792247025.4106467,
+    "seen": 1792249326.3188722,
+    "ast_hash": "a84d5f7cf9a7d288dc20e7a97cc57669",
+    "semantic_hash": ""
+  },
+  "pic/webp/chat_bubble_web.webp": {
+    "mtime": 1792247023.2967978,
+    "seen": 1792249326.3188732,
+    "ast_hash": "7644f03389691be9fafb78192aca6131",
+    "semantic_hash": ""
+  },
+  "pic/webp/neon_sign_off.webp": {
+    "mtime": 1792247427.1847944,
+    "seen": 1792249326.318874,
+    "ast_hash": "21d4830b1f5e60d7d3e476ff7d053cd3",
+    "semantic_hash": ""
+  },
+  "pic/webp/neon_sign_on.webp": {
+    "mtime": 1792247429.3435926,
+    "seen": 1792249326.3188746,
+    "ast_hash": "f6704b1c105102c7485fb38598966036",
+    "semantic_hash": ""
   }
 }

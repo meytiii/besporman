@@ -155,6 +155,19 @@
       "source_location": "L10"
     },
     {
+      "id": "src_components_starrating_startype",
+      "label": "StarType",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "startype",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L90"
+    },
+    {
       "id": "src_components_marqueebanner_reviewitem",
       "label": "ReviewItem",
       "_callable": true,
@@ -179,19 +192,6 @@
       "norm_label": "reviewsource",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L79"
-    },
-    {
-      "id": "src_components_starrating_startype",
-      "label": "StarType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "startype",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L90"
     },
     {
       "id": "src_components_projectssection_getcategorylabel",
@@ -264,6 +264,18 @@
       "norm_label": ".submit()",
       "source_file": "src/services/contactAdapter.ts",
       "source_location": "L26"
+    },
+    {
+      "id": "src_components_starrating_getstartype",
+      "label": "getStarType()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "getstartype()",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L92"
     },
     {
       "id": "src_components_thefooter_scrolltotop",
@@ -396,18 +408,6 @@
       "norm_label": "updateloop()",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L263"
-    },
-    {
-      "id": "src_components_starrating_getstartype",
-      "label": "getStarType()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "getstartype()",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L92"
     },
     {
       "id": "src_components_projectssection",
@@ -788,6 +788,18 @@
       "source_location": "L24"
     },
     {
+      "id": "gemini_graphify",
+      "label": "graphify",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Besporman \u2014 Agent Rules (GEMINI.md)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "graphify",
+      "source_file": "GEMINI.md",
+      "source_location": "L31"
+    },
+    {
       "id": "gemini_knowledge_graph_token_conservation_graphify",
       "label": "Knowledge Graph & Token Conservation (`/graphify`)",
       "_origin": "ast",
@@ -848,28 +860,60 @@
       "source_location": "L1"
     },
     {
-      "id": "claude",
-      "label": "CLAUDE.md",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "CLAUDE.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "claude.md",
-      "source_file": "CLAUDE.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_graphify",
+      "id": "agent_graphify",
       "label": "graphify",
       "_origin": "ast",
-      "community": 16,
-      "community_name": "CLAUDE.md",
+      "community": 15,
+      "community_name": "Besporman \u2014 Agent Instructions (Agent.md)",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "graphify",
-      "source_file": "CLAUDE.md",
+      "source_file": "Agent.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "src_components_starrating",
+      "label": "StarRating.vue",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "starrating.vue",
+      "source_file": "src/components/StarRating.vue",
       "source_location": "L1"
+    },
+    {
+      "id": "src_components_starrating_clipuid",
+      "label": "clipUid",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "clipuid",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L88"
+    },
+    {
+      "id": "src_components_starrating_formattedscore",
+      "label": "formattedScore",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "formattedscore",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L102"
+    },
+    {
+      "id": "src_components_starrating_props",
+      "label": "props",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "StarRating.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L76"
     },
     {
       "id": "src_app",
@@ -1057,50 +1101,6 @@
       "norm_label": "trackref",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L236"
-    },
-    {
-      "id": "src_components_starrating",
-      "label": "StarRating.vue",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "starrating.vue",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_starrating_clipuid",
-      "label": "clipUid",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "clipuid",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L88"
-    },
-    {
-      "id": "src_components_starrating_formattedscore",
-      "label": "formattedScore",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "formattedscore",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L102"
-    },
-    {
-      "id": "src_components_starrating_props",
-      "label": "props",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "MarqueeBanner.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L76"
     },
     {
       "id": "tests_marquee_spec",
@@ -2867,14 +2867,14 @@
       "weight": 1.0
     },
     {
-      "source": "claude",
-      "target": "claude_graphify",
+      "source": "agent_besporman_agent_instructions_agent_md",
+      "target": "agent_graphify",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "L1",
+      "source_file": "Agent.md",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -2908,6 +2908,17 @@
       "confidence_score": 1.0,
       "source_file": "GEMINI.md",
       "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini_besporman_agent_rules_gemini_md",
+      "target": "gemini_graphify",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -4425,5 +4436,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "102c0c93781a4671a4d0d4ea60e573853945a7f7"
+  "built_at_commit": "aab2fbeabd78b51c498afb5938519aaaad20c885"
 }
