@@ -9,7 +9,7 @@
     <!-- 2. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
     <ul class="sr-only">
       <li v-for="(review, index) in reviewList" :key="'sr-' + index">
-        نظر {{ review.name }} درباره {{ review.tag }}: «{{ review.text }}»
+        نظر {{ review.name }} درباره {{ review.tag }} (امتیاز {{ review.rating }} از ۵): «{{ review.text }}»
       </li>
     </ul>
 
@@ -42,6 +42,9 @@
                 </div>
                 <span class="bubble-tag">{{ item.tag }}</span>
               </div>
+              <div class="bubble-rating-bar">
+                <StarRating :rating="item.rating" :uid="`tile-a-${idx}`" />
+              </div>
               <p class="bubble-text">«{{ item.text }}»</p>
             </div>
           </div>
@@ -63,6 +66,9 @@
                 </div>
                 <span class="bubble-tag">{{ item.tag }}</span>
               </div>
+              <div class="bubble-rating-bar">
+                <StarRating :rating="item.rating" :uid="`tile-b-${idx}`" />
+              </div>
               <p class="bubble-text">«{{ item.text }}»</p>
             </div>
           </div>
@@ -74,15 +80,22 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import StarRating from './StarRating.vue'
 
 interface ReviewItem {
   name: string;
   tag: string;
   text: string;
-  type: 'web' | 'bot' | 'app';
+  type: 'web' | 'bot' | 'app' | 'amber' | 'coral' | 'slate';
+  rating: number;
 }
 
-const reviewList: ReviewItem[] = [
+const getRandomRating = (): number => {
+  const options = [3.5, 4.0, 4.5, 5.0]
+  return options[Math.floor(Math.random() * options.length)]
+}
+
+const initialReviews: Omit<ReviewItem, 'rating'>[] = [
   {
     name: 'مهدی',
     tag: 'طراحی وب‌سایت',
@@ -93,7 +106,7 @@ const reviewList: ReviewItem[] = [
     name: 'سارا',
     tag: 'طراحی وب‌سایت',
     text: 'دیزاینتون واقعاً فوق‌العاده و درجه‌یکه، هر کی سایت رو می‌بینه کیف می‌کنه.',
-    type: 'web',
+    type: 'amber',
   },
   {
     name: 'رضا',
@@ -105,13 +118,13 @@ const reviewList: ReviewItem[] = [
     name: 'لیلا',
     tag: 'نرم‌افزار ویندوز',
     text: 'خدایی دمتون گرم ایده‌هاتون حرف نداره، نرم‌افزار انبار کارمون رو خیلی راه انداخت.',
-    type: 'app',
+    type: 'coral',
   },
   {
     name: 'علی',
     tag: 'بات تلگرام',
     text: 'ربات تلگرامی که ساختین روزی چندصدتا سفارش رو خودکار فاکتور می‌کنه، عالیه.',
-    type: 'bot',
+    type: 'slate',
   },
   {
     name: 'پویا',
@@ -132,6 +145,13 @@ const reviewList: ReviewItem[] = [
     type: 'app',
   },
 ]
+
+const reviewList = ref<ReviewItem[]>(
+  initialReviews.map((item) => ({
+    ...item,
+    rating: getRandomRating(),
+  }))
+)
 
 const trackRef = ref<HTMLDivElement | null>(null)
 const tileRefA = ref<HTMLDivElement | null>(null)
@@ -314,28 +334,46 @@ onUnmounted(() => {
 }
 
 .comic-bubble--web {
-  background-image: url('../../pic/chat_bubble_web.png');
+  background-image: url('../../pic/webp/chat_bubble_web.webp');
 }
 
 .comic-bubble--bot {
-  background-image: url('../../pic/chat_bubble_bot.png');
+  background-image: url('../../pic/webp/chat_bubble_bot.webp');
 }
 
 .comic-bubble--app {
-  background-image: url('../../pic/chat_bubble_app.png');
+  background-image: url('../../pic/webp/chat_bubble_app.webp');
+}
+
+.comic-bubble--amber {
+  background-image: url('../../pic/webp/chat_bubble_amber.webp');
+}
+
+.comic-bubble--coral {
+  background-image: url('../../pic/webp/chat_bubble_coral.webp');
+}
+
+.comic-bubble--slate {
+  background-image: url('../../pic/webp/chat_bubble_slate.webp');
 }
 
 /* Inner Safe Zone inside Comic Bubble Artwork */
 .bubble-inner-content {
   position: absolute;
-  top: 36px;
-  bottom: 64px;
-  inset-inline-start: 36px;
-  inset-inline-end: 42px;
+  top: 20px;
+  bottom: 50px;
+  inset-inline-start: 34px;
+  inset-inline-end: 38px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: var(--space-2);
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.bubble-rating-bar {
+  display: flex;
+  align-items: center;
+  margin-top: -2px;
 }
 
 /* Review Header */

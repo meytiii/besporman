@@ -29,7 +29,7 @@
           <!-- Pose 1: Pointing to himself -->
           <img
             v-show="currentPose === 1"
-            src="/pic/besporman1.png"
+            src="/pic/webp/besporman1.webp"
             alt=""
             class="mascot-layer mascot-layer--pose1"
             width="470"
@@ -39,7 +39,7 @@
           <!-- Pose 2: Pointing down -->
           <img
             v-show="currentPose === 2"
-            src="/pic/besporman2.png"
+            src="/pic/webp/besporman2.webp"
             alt=""
             class="mascot-layer mascot-layer--pose2"
             width="607"
