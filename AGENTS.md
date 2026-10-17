@@ -132,7 +132,7 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 3. **`/high-end-visual-design`** — Double-bezel machined container architecture, button-in-button nested icons, expansive section padding.
 4. **`/ui-ux-pro-max`** — Accessibility (WCAG 2.2 AA), 44×44px touch targets, systemic z-index hierarchy, contrast.
 5. **`/ux-ui-agent-skills`** — 3-tier DTCG token system (Primitives → Semantics → Components), atomic design structure.
-6. **`/graphify`** — Codebase modularity, decoupled components, clean dependency graphs.
+6. **`/graphify`** — Codebase modularity, decoupled components, clean dependency graphs, and persistent knowledge graph navigation.
 7. **`/caveman`** — Terse, token-efficient communication mode; drops conversational fluff while preserving all technical substance.
 8. **`/design-taste-frontend`** — Layout variance (Variance 8, Motion 6, Density 4), max 1 eyebrow per 3 sections, max 2 zigzag splits.
 9. **`/humanizer`** — Elimination of AI writing clichés, authentic and natural Persian/English copy.
@@ -141,6 +141,10 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 **Core Rules:**
 - **Mandatory Pre-Task Reading:** Every agent, pair programmer, and contributor MUST consult and follow `AGENTS.md` and [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md) before making changes.
 - **Always use these skills:** Consult and apply these active skills throughout all planning, design, and code generation steps.
+- **Knowledge Graph for Token Efficiency (`/graphify`):**
+  - Always query the project knowledge graph (`graphify query "<question>"`, `graphify path "<A>" "<B>"`, `graphify explain "<concept>"`, or `graphify-out/wiki/index.md`) before grepping or reading multiple raw source files. The graph yields focused, scoped subgraphs and prevents context-window exhaustion.
+  - Read `graphify-out/GRAPH_REPORT.md` only for broad architecture reviews or when graph queries need broader context.
+  - **Graph Maintenance on Major Changes:** When code modifications accumulate a substantial git diff, or when the knowledge graph has not been refreshed for a long while, run `graphify update .` (or full `/graphify .`) to keep node indices, god nodes, and community clusters synchronized with codebase reality.
 - Inspect project-local skills in `.agents/skills/` and follow each skill's actual instructions.
 - Avoid unsafe installation scripts and unnecessary global changes.
 - Report significant tool limitations instead of hiding them.

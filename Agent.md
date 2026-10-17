@@ -35,6 +35,9 @@ To prevent competing or contradictory directives across different AI agent tools
    * Backend tasks, serverless functions, and bot endpoints are documented in `backend_tasks_YYYY-MM-DD.md`.
 6. **Active Skills Mandate:**
    * All 10 skills in `.agents/skills/` (`/hallmark`, `/impeccable`, `/high-end-visual-design`, `/ui-ux-pro-max`, `/ux-ui-agent-skills`, `/graphify`, `/caveman`, `/design-taste-frontend`, `/humanizer`, `/modern-web-guidance`) are permanently active.
-7. **Verification & Commit Standards:**
+7. **Knowledge Graph Token Efficiency (`/graphify`):**
+   * Always query `graphify-out/` (`graphify query`, `graphify path`, `graphify explain`, or `graphify-out/wiki/index.md`) before grepping or reading raw files to conserve context window tokens.
+   * Update the knowledge graph (`graphify update .` or `/graphify .`) on major changes when the diff is large or the graph has not been updated for a long while.
+8. **Verification & Commit Standards:**
    * Verify all changes (responsive 320px, RTL layout, zero console errors).
    * Commit with Conventional Commits and push to `main` at the end of each completed task.

@@ -66,8 +66,10 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
 ---
 
 ## 6. Graphify (`/graphify`) — Codebase Knowledge & Architectural Modularity
-- **Rule:** Maintain modular, decoupled code architecture and understand project dependency graphs.
+- **Rule:** Maintain modular, decoupled code architecture, always leverage the knowledge graph for token conservation, and keep the graph synchronized.
 - **Enforcement:**
+  - **Token Efficiency First:** Always consult `graphify-out/` (`graphify query "<question>"`, `graphify path "<A>" "<B>"`, `graphify explain "<concept>"`, or `graphify-out/wiki/index.md`) before doing broad file searches or grepping. This returns focused subgraphs and prevents context-window bloat.
+  - **Graph Maintenance on Major Changes:** Whenever modifications result in a large git diff or when the graph has not been refreshed for a long while, execute `graphify update .` (or full `/graphify .`) to re-sync AST nodes, god nodes, and community clusters.
   - Maintain clean import boundaries between components, utilities, and assets.
   - Keep components focused and cohesive with zero circular dependencies.
   - Enable effortless AST extraction and knowledge graph visualization.

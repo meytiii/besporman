@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .playwright-mcp/
 
+# Graphify machine-specific cache & interpreters
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/cache/

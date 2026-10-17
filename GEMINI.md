@@ -17,6 +17,10 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 9. **`/humanizer`** — Elimination of AI writing clichés, authentic and natural Persian/English copy.
 10. **`/modern-web-guidance`** — Modern web standards (CSS logical properties, Baseline APIs, transform/opacity hardware acceleration).
 
+## Knowledge Graph & Token Conservation (`/graphify`)
+- **Always Check Graph First:** For questions about codebase architecture, components, data flow, or relations, always query `graphify-out/` first (`graphify query "<question>"`, `graphify path "<A>" "<B>"`, `graphify explain "<concept>"`, or browse `graphify-out/wiki/index.md`) to minimize prompt token consumption.
+- **Update on Major Changes:** When code modifications result in a large git diff or when the graph has not been updated for a long period, refresh the knowledge graph using `graphify update .` (or full `/graphify .`).
+
 ## Engineering Standards
 - **Framework:** Vue 3 (Composition API, `<script setup lang="ts">`) + Vite + TypeScript strict mode (zero `any`).
 - **Routing:** Vue Router 4 (HTML5 History Mode) with single-page scrolling homepage (`#contact`) and dedicated `/projects/:slug` routes.
