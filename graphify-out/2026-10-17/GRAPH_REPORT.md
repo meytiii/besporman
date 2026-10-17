@@ -1,21 +1,21 @@
 # Graph Report - besporman  (2026-10-17)
 
 ## Corpus Check
-- 36 files · ~581,965 words
+- 37 files · ~601,462 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 182 nodes · 202 edges · 16 communities (14 shown, 2 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.95)
+- 215 nodes · 242 edges · 18 communities (16 shown, 2 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3885d378`
+- Built from commit: `75f825e9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- Portfolio & Project Showcase
+- ProjectDetailView.vue
 - ContactSection.vue
 - TheHeader.vue
 - MarqueeBanner.vue
@@ -29,30 +29,32 @@
 - Anti-AI-Slop & Authentic Paper Brand Identity
 - Besporman — Agent Rules (GEMINI.md)
 - Besporman — Agent Instructions (Agent.md)
+- CustomCursor.vue
+- main.ts
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 15 edges
 2. `compilerOptions` - 7 edges
 3. `include` - 6 edges
-4. `scripts` - 5 edges
-5. `router` - 5 edges
-6. `ContactSubmissionAdapter` - 5 edges
-7. `Besporman — Agent Rules (GEMINI.md)` - 5 edges
-8. `projectsData` - 4 edges
+4. `updateMascotPosition()` - 5 edges
+5. `ContactSubmissionAdapter` - 5 edges
+6. `Besporman — Agent Rules (GEMINI.md)` - 5 edges
+7. `router` - 5 edges
+8. `scripts` - 5 edges
 9. `DevelopmentContactAdapter` - 4 edges
-10. `lib` - 4 edges
+10. `projectsData` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Besporman Portfolio & Services Overview` --references--> `projectsData`  [EXTRACTED]
-  README.md → src/data/projects.ts
 - `Telegram Bot Contact Form Webhook Architecture` --references--> `ContactSubmissionAdapter`  [EXTRACTED]
   backend_tasks_2026-10-17.md → src/services/contactAdapter.ts
+- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `ContactSubmissionAdapter`  [EXTRACTED]
+  AGENTS.md → src/services/contactAdapter.ts
+- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `DevelopmentContactAdapter`  [EXTRACTED]
+  AGENTS.md → src/services/contactAdapter.ts
 - `Frontend/Backend ContactSubmissionAdapter Boundary` --references--> `handleSubmit()`  [EXTRACTED]
   AGENTS.md → src/components/ContactSection.vue
-- `Mascot & Brand Visual Asset Preservation` --references--> `currentPose`  [EXTRACTED]
-  AGENTS.md → src/components/HeroSection.vue
-- `Vue 3 Composition API & Strict TypeScript Standards` --references--> `router`  [EXTRACTED]
-  AGENTS.md → src/router/index.ts
+- `Besporman Portfolio & Services Overview` --references--> `projectsData`  [EXTRACTED]
+  README.md → src/data/projects.ts
 
 ## Import Cycles
 - None detected.
@@ -61,19 +63,19 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (16 total, 2 thin omitted)
+## Communities (18 total, 2 thin omitted)
 
-### Community 0 - "Portfolio & Project Showcase"
-Cohesion: 0.12
-Nodes (16): activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects, projectsData, ProjectCategory, ProjectItem (+8 more)
+### Community 0 - "ProjectDetailView.vue"
+Cohesion: 0.11
+Nodes (17): Besporman Portfolio & Services Overview, activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects, projectsData, ProjectCategory (+9 more)
 
 ### Community 1 - "ContactSection.vue"
-Cohesion: 0.14
-Nodes (15): Frontend/Backend ContactSubmissionAdapter Boundary, Telegram Bot Contact Form Webhook Architecture, errors, FeedbackState, form, FormErrors, handleSubmit(), isLoading (+7 more)
+Cohesion: 0.13
+Nodes (16): Frontend/Backend ContactSubmissionAdapter Boundary, Telegram Bot Contact Form Webhook Architecture, 8-State Interactive Element Matrix, errors, FeedbackState, form, FormErrors, handleSubmit() (+8 more)
 
 ### Community 2 - "TheHeader.vue"
-Cohesion: 0.13
-Nodes (10): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, 8-State Interactive Element Matrix, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, isMobileMenuOpen, isScrolled (+2 more)
+Cohesion: 0.10
+Nodes (19): Persian RTL First-Class & CSS Logical Properties, activeTab, closeMobileMenu(), handleMobileNavClick(), handleMouseEnter(), handleMouseLeave(), handleNavClick(), handleScroll() (+11 more)
 
 ### Community 3 - "MarqueeBanner.vue"
 Cohesion: 0.10
@@ -92,8 +94,8 @@ Cohesion: 0.13
 Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
 
 ### Community 7 - "HomeView.vue"
-Cohesion: 0.18
-Nodes (6): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, Parchment & Iron Charcoal Design Palette, Besporman Portfolio & Services Overview, currentPose, router
+Cohesion: 0.20
+Nodes (5): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, Parchment & Iron Charcoal Design Palette, currentPose, router
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -111,25 +113,33 @@ Nodes (5): Active Skills & Rules Mandate, Besporman — Agent Rules (GEMINI.md),
 Cohesion: 0.40
 Nodes (4): 1. Single Source of Truth Notice, 2. Core Non-Negotiable Rules Summary, Besporman — Agent Instructions (Agent.md), graphify
 
+### Community 16 - "CustomCursor.vue"
+Cohesion: 0.12
+Nodes (11): bursts, checkTargetState(), ComicBurst, cursorContainerRef, handlePointerMove(), isInteractive, isPressed, isSupported (+3 more)
+
+### Community 17 - "main.ts"
+Cohesion: 0.31
+Nodes (6): Vue 3 Composition API & Strict TypeScript Standards, 10 Mandatory Active Engineering Skills, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, app, router
+
 ## Knowledge Gaps
-- **93 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+88 more)
+- **110 isolated node(s):** `ComicBurst`, `cursorContainerRef`, `isSupported`, `isVisible`, `isInteractive` (+105 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `8-State Interactive Element Matrix` connect `TheHeader.vue` to `ContactSection.vue`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
-- **Why does `devDependencies` connect `devDependencies` to `package.json`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **Why does `compilerOptions` connect `compilerOptions` to `include`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **What connects `name`, `private`, `version` to the rest of the system?**
-  _93 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Portfolio & Project Showcase` be split into smaller, more focused modules?**
-  _Cohesion score 0.11857707509881422 - nodes in this community are weakly interconnected._
+- **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+- **Why does `Parchment & Iron Charcoal Design Palette` connect `HomeView.vue` to `TheHeader.vue`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
+- **Why does `router` connect `main.ts` to `ProjectDetailView.vue`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **What connects `ComicBurst`, `cursorContainerRef`, `isSupported` to the rest of the system?**
+  _110 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `ProjectDetailView.vue` be split into smaller, more focused modules?**
+  _Cohesion score 0.11231884057971014 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.1368421052631579 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `TheHeader.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.12631578947368421 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._

@@ -95,46 +95,86 @@
           <span class="btn-arrow" aria-hidden="true">←</span>
         </a>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button
-          type="button"
-          class="mobile-toggle-btn"
-          :aria-expanded="isMobileMenuOpen"
-          aria-controls="mobile-nav-drawer"
-          :aria-label="isMobileMenuOpen ? 'بستن منو' : 'باز کردن منو'"
-          @click="toggleMobileMenu"
+        <!-- Mobile Liquid Morph Floating Navigation Menu (Single Button -> Morphing Dropdown) -->
+        <div
+          ref="mobileMenuRef"
+          class="mobile-morph-menu"
+          :class="{ 'is-open': isMobileMenuOpen }"
         >
-          <span class="hamburger-icon" aria-hidden="true">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </span>
-        </button>
+          <!-- Morph Card Container (Expands from Top to Bottom) -->
+          <div
+            class="morph-card"
+            @click="handleCardClick"
+          >
+            <!-- Yellow / Amber Base Background Layer -->
+            <div class="morph-bg-base" aria-hidden="true"></div>
+
+            <!-- Dark Liquid Charcoal Circle Expanding from Top to Bottom -->
+            <div class="morph-liquid-circle" aria-hidden="true"></div>
+
+            <!-- Top Header Bar: "منو" / "بستن" + 2-bar Morphing Cross Icon -->
+            <button
+              type="button"
+              class="morph-trigger-btn"
+              :aria-expanded="isMobileMenuOpen"
+              aria-controls="mobile-nav-content"
+              :aria-label="isMobileMenuOpen ? 'بستن منو' : 'باز کردن منو'"
+              @click.stop="toggleMobileMenu"
+            >
+              <span class="morph-label">{{ isMobileMenuOpen ? 'بستن' : 'منو' }}</span>
+              <div class="morph-icon" aria-hidden="true">
+                <span class="morph-bar bar-top"></span>
+                <span class="morph-bar bar-bottom"></span>
+              </div>
+            </button>
+
+            <!-- Nav Content: Staggered Cascade Revealed Inside Dark Layer -->
+            <nav
+              id="mobile-nav-content"
+              class="morph-nav-content"
+              aria-label="منوی موبایل"
+              :aria-hidden="!isMobileMenuOpen"
+              @click.stop
+            >
+              <ul class="morph-nav-list">
+                <li
+                  v-for="(item, idx) in navItems"
+                  :key="item.id"
+                  class="morph-nav-item"
+                  :style="{ '--item-idx': idx }"
+                >
+                  <a
+                    :href="item.href"
+                    class="morph-nav-link"
+                    :class="{ 'is-active': activeTab === item.id }"
+                    @click.stop="handleMobileNavClick(item.id)"
+                  >
+                    <!-- Kinetic Word Roll from Template -->
+                    <span class="morph-roll-box">
+                      <span class="morph-roll-track">
+                        <span class="morph-roll-line">{{ item.name }}</span>
+                        <span class="morph-roll-line morph-roll-hover" aria-hidden="true">{{ item.name }}</span>
+                      </span>
+                    </span>
+                    <span v-if="activeTab === item.id" class="morph-active-indicator" aria-hidden="true">←</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Mobile Drawer Navigation -->
-    <div
-      id="mobile-nav-drawer"
-      class="mobile-drawer"
-      :class="{ 'is-open': isMobileMenuOpen }"
-      :aria-hidden="!isMobileMenuOpen"
-    >
-      <nav class="mobile-nav" aria-label="منوی موبایل">
-        <ul class="mobile-nav-list">
-          <li v-for="item in navItems" :key="item.id">
-            <a
-              :href="item.href"
-              class="mobile-nav-link"
-              :class="{ 'is-active': activeTab === item.id }"
-              @click="handleMobileNavClick(item.id)"
-            >
-              {{ item.name }}
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <!-- Backdrop Overlay for Outside Click -->
+    <Transition name="fade">
+      <div
+        v-if="isMobileMenuOpen"
+        class="morph-backdrop"
+        aria-hidden="true"
+        @click="closeMobileMenu"
+      ></div>
+    </Transition>
   </header>
 </template>
 
@@ -165,6 +205,7 @@ const mascotOpacity = ref(0)
 
 const navListRef = ref<HTMLElement | null>(null)
 const itemRefs = ref<Record<string, HTMLElement>>({})
+const mobileMenuRef = ref<HTMLElement | null>(null)
 
 const setItemRef = (id: string, el: HTMLElement | null) => {
   if (el) {
@@ -202,6 +243,24 @@ const handleNavClick = (id: string) => {
 const handleMobileNavClick = (id: string) => {
   activeTab.value = id
   closeMobileMenu()
+}
+
+const handleCardClick = () => {
+  if (!isMobileMenuOpen.value) {
+    isMobileMenuOpen.value = true
+  }
+}
+
+const handleOutsideClick = (e: MouseEvent) => {
+  if (isMobileMenuOpen.value && mobileMenuRef.value && !mobileMenuRef.value.contains(e.target as Node)) {
+    closeMobileMenu()
+  }
+}
+
+const handleKeyDown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape' && isMobileMenuOpen.value) {
+    closeMobileMenu()
+  }
 }
 
 const handleScroll = () => {
@@ -258,11 +317,15 @@ onMounted(() => {
 
   window.addEventListener('scroll', handleScroll, { passive: true })
   window.addEventListener('resize', updateMascotPosition, { passive: true })
+  document.addEventListener('mousedown', handleOutsideClick)
+  window.addEventListener('keydown', handleKeyDown)
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('resize', updateMascotPosition)
+  document.removeEventListener('mousedown', handleOutsideClick)
+  window.removeEventListener('keydown', handleKeyDown)
 })
 </script>
 
@@ -734,76 +797,289 @@ onUnmounted(() => {
   }
 }
 
-/* Mobile Toggle Button */
-.mobile-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
+/* ==========================================================================
+   Mobile Device Exclusive Navbar: Liquid Morph Floating Menu
+   ========================================================================== */
+
+.mobile-morph-menu {
+  display: none;
+  position: relative;
+  width: 104px;
   height: 44px;
-  background-color: var(--color-surface);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
-  cursor: pointer;
+  z-index: 105;
 }
 
-@media (min-width: 860px) {
-  .mobile-toggle-btn {
-    display: none;
+@media (max-width: 859px) {
+  .mobile-morph-menu {
+    display: block;
   }
 }
 
-.hamburger-icon {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 20px;
-}
-
-.hamburger-icon .bar {
-  display: block;
-  height: 2px;
-  background-color: var(--color-ink-primary);
-  border-radius: 1px;
-}
-
-/* Mobile Drawer */
-.mobile-drawer {
-  display: none;
+.morph-card {
   position: absolute;
-  top: 100%;
-  inset-inline-start: 0;
+  top: 0;
   inset-inline-end: 0;
-  background-color: var(--color-canvas);
-  border-bottom: var(--border-width-bold) solid var(--color-border-bold);
-  box-shadow: 0 8px 0 var(--color-border-bold);
-  padding-block: var(--space-6);
-  padding-inline: var(--space-6);
-}
-
-.mobile-drawer.is-open {
-  display: block;
-}
-
-.mobile-nav-list {
+  width: 104px;
+  height: 44px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
-  list-style: none;
+  border-radius: var(--border-radius-full);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  box-shadow: 2px 2px 0 var(--color-border-bold);
+  cursor: pointer;
+  transform-origin: top inset-inline-end;
+  background-color: var(--primitive-amber-100);
+  transition:
+    width 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    border-radius 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.65s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.mobile-nav-link {
-  display: block;
+.mobile-morph-menu.is-open .morph-card {
+  width: min(280px, calc(100vw - 32px));
+  height: 350px;
+  border-radius: 28px;
+  box-shadow: 4px 8px 0 var(--color-border-bold);
+  cursor: default;
+}
+
+/* Yellow / Amber Base Background Layer */
+.morph-bg-base {
+  position: absolute;
+  inset: 0;
+  background-color: var(--primitive-amber-100);
+  border-radius: inherit;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Liquid Charcoal Circle Expanding from Top to Bottom */
+.morph-liquid-circle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260%;
+  height: 260%;
+  border-radius: 50%;
+  background-color: var(--color-ink-primary);
+  top: -270%;
+  transition: top 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-morph-menu.is-open .morph-liquid-circle {
+  top: -30%;
+  transition-delay: 0.08s;
+}
+
+/* Top Trigger Bar */
+.morph-trigger-btn {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 44px;
+  padding-inline: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+.morph-label {
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
+  line-height: 1;
   color: var(--color-ink-primary);
-  padding-block: var(--space-2);
+  transition: color 0.35s ease;
 }
 
-.mobile-nav-link:hover,
-.mobile-nav-link.is-active {
-  color: var(--color-accent-text);
+.mobile-morph-menu.is-open .morph-label {
+  color: var(--color-canvas);
+}
+
+/* Morphing Icon (2 bars -> 45deg cross) */
+.morph-icon {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.morph-bar {
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-ink-primary);
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.35s ease;
+}
+
+.bar-top {
+  transform: translateY(-3.5px) rotate(0deg);
+}
+
+.bar-bottom {
+  transform: translateY(3.5px) rotate(0deg);
+}
+
+.mobile-morph-menu.is-open .morph-bar {
+  background-color: var(--color-canvas);
+}
+
+.mobile-morph-menu.is-open .bar-top {
+  transform: translateY(0) rotate(45deg);
+}
+
+.mobile-morph-menu.is-open .bar-bottom {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* Menu Content & Staggered Reveal */
+.morph-nav-content {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: var(--space-4);
+  padding-block-end: var(--space-4);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-12px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.mobile-morph-menu.is-open .morph-nav-content {
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.4s ease 0.2s,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
+}
+
+.morph-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.morph-nav-item {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.mobile-morph-menu.is-open .morph-nav-item {
+  animation: morphItemReveal 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(0.24s + var(--item-idx) * 0.06s);
+}
+
+@keyframes morphItemReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.morph-nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  text-decoration: none;
+  padding-block: var(--space-1);
+  padding-inline: var(--space-3);
+  border-radius: var(--border-radius-full);
+  color: var(--color-canvas);
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  line-height: 1.2;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.morph-nav-link:hover,
+.morph-nav-link:focus-visible {
+  color: var(--color-accent);
+  transform: translateY(-1px) scale(1.04);
+}
+
+.morph-nav-link.is-active {
+  color: var(--color-accent);
+}
+
+/* Kinetic Word Roll from Template */
+.morph-roll-box {
+  display: inline-block;
+  overflow: hidden;
+  height: 1.25em;
+  vertical-align: middle;
+}
+
+.morph-roll-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.morph-nav-link:hover .morph-roll-track,
+.morph-nav-link:focus-visible .morph-roll-track {
+  transform: translateY(-50%);
+}
+
+.morph-roll-line {
+  display: block;
+  height: 1.25em;
+  line-height: 1.25em;
+}
+
+.morph-roll-hover {
+  color: var(--color-accent);
+}
+
+.morph-active-indicator {
+  font-size: var(--text-base);
+  color: var(--color-accent);
+}
+
+/* Backdrop */
+.morph-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(14, 15, 18, 0.4);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 104;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 
 /* Reduced Motion */
@@ -817,7 +1093,13 @@ onUnmounted(() => {
   .nav-pill-shine,
   .header-cta,
   .header-cta .btn-arrow,
-  .header-cta .btn-text {
+  .header-cta .btn-text,
+  .morph-card,
+  .morph-liquid-circle,
+  .morph-bar,
+  .morph-nav-content,
+  .morph-nav-item,
+  .morph-roll-track {
     animation: none !important;
     transition: none !important;
   }

@@ -1,5 +1,5 @@
 {
-  "0": "Portfolio & Project Showcase",
+  "0": "ProjectDetailView.vue",
   "1": "ContactSection.vue",
   "2": "TheHeader.vue",
   "3": "MarqueeBanner.vue",
@@ -14,5 +14,7 @@
   "12": "vite.config.ts",
   "13": "Vitest Test Runner Configuration",
   "14": "Besporman — Agent Rules (GEMINI.md)",
-  "15": "Besporman — Agent Instructions (Agent.md)"
+  "15": "Besporman — Agent Instructions (Agent.md)",
+  "16": "CustomCursor.vue",
+  "17": "main.ts"
 }

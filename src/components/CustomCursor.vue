@@ -63,8 +63,8 @@ const renderCursor = () => {
   }
 }
 
-const checkTargetState = (target: Element | null) => {
-  if (!target) {
+const checkTargetState = (target: EventTarget | null) => {
+  if (!target || !(target instanceof Element)) {
     isInteractive.value = false
     isText.value = false
     return
@@ -99,9 +99,9 @@ const checkTargetState = (target: Element | null) => {
   }
 }
 
-const handlePointerMove = (e: PointerEvent) => {
-  // Only track fine pointer (mouse / precision trackpad)
-  if (e.pointerType && e.pointerType !== 'mouse') return
+const handlePointerMove = (e: PointerEvent | MouseEvent) => {
+  // Only track fine pointer (ignore touch taps)
+  if ('pointerType' in e && e.pointerType && e.pointerType === 'touch') return
 
   mouseX = e.clientX
   mouseY = e.clientY
@@ -111,7 +111,7 @@ const handlePointerMove = (e: PointerEvent) => {
     document.body.classList.add('has-custom-cursor')
   }
 
-  checkTargetState(e.target as Element | null)
+  checkTargetState(e.target)
 
   if (!rafId) {
     rafId = requestAnimationFrame(renderCursor)
