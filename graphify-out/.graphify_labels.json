@@ -1,11 +1,11 @@
 {
-  "0": "ProjectsSection.vue",
+  "0": "ProjectDetailView.vue",
   "1": "ContactSection.vue",
   "2": "TheHeader.vue",
   "3": "MarqueeBanner.vue",
   "4": "compilerOptions",
   "5": "devDependencies",
-  "6": "package.json",
+  "6": "LazySection.vue",
   "7": "Changelog",
   "8": "compilerOptions",
   "9": "ui/TextReveal.vue",
@@ -20,5 +20,6 @@
   "18": "text-reveal.tsx",
   "19": "AppLoadingScreen.vue",
   "20": "components/TextReveal.vue",
-  "21": "liquid-loader-demo.tsx"
+  "21": "liquid-loader-demo.tsx",
+  "22": "StarRating.vue"
 }

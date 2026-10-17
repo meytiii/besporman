@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.0] - 2026-10-18
+
+### Added
+- **Mobile Double-Tap Pause & Resume:** Enabled double-tap gesture interaction on the comment marquee for mobile devices. Double-tapping halts the marquee using the identical smooth kinematic deceleration curve (~0.7s to halt) as desktop hover, and double-tapping again resumes movement with the smooth acceleration curve (~0.8s to cruising speed).
+- **Horizontal Touch Sweep & Scrubbing:** Added direct finger drag-and-swipe controls. Users on mobile can freely swipe left or right to browse between client review bubbles.
+- **Continuous Modulo Math Wrap-Around:** Built seamless bidirectional dragging mathematics (`((rawX % tileWidth) + tileWidth) % tileWidth`), enabling users to sweep infinitely in either direction across the duplicate tile clone without seam jumps or edge boundaries.
+- **Tactile State Feedback Pill:** Integrated an animated, floating feedback badge («متوقف شد • دو ضربه برای حرکت» / «در حال حرکت») with SVG pause/play glyphs and tactile cream-and-ink styling that appears briefly upon double-tapping.
+- **Vertical Scroll Protection:** Configured `touch-action: pan-y;` on the marquee viewport along with direction-locking gesture math (`Math.abs(deltaY) > Math.abs(deltaX)`), ensuring native vertical page scrolling passes through smoothly and never gets intercepted or blocked by the marquee.
+- **Comprehensive Mobile & Touch Test Suite:** Added unit tests in `tests/marquee.spec.ts` covering double-click/double-tap state transitions, status pill rendering, and touch gesture dragging.
+
+---
+
 ## [2.4.2] - 2026-10-18
 
 ### Changed

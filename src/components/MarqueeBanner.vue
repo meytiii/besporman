@@ -37,19 +37,67 @@
         </li>
       </ul>
 
+      <!-- Double-tap pause indicator badge -->
+      <transition name="status-pill-fade">
+        <div
+          v-if="statusBadgeVisible"
+          class="marquee-status-pill"
+          role="status"
+          aria-live="polite"
+        >
+          <svg
+            v-if="isDoubleTapPaused"
+            class="status-pill-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+          </svg>
+          <svg
+            v-else
+            class="status-pill-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <span>
+            {{ isDoubleTapPaused ? 'متوقف شد • دو ضربه برای حرکت' : 'در حال حرکت' }}
+          </span>
+        </div>
+      </transition>
+
       <!-- 3. Visual Looping Marquee Track (Strictly aria-hidden) -->
       <div
+        ref="viewportRef"
         class="marquee-viewport"
         aria-hidden="true"
         dir="ltr"
         @mouseenter="handleMouseEnter"
         @mouseleave="handleMouseLeave"
+        @dblclick="handleDoubleClick"
+        @touchstart="handleTouchStart"
+        @touchmove="handleTouchMove"
+        @touchend="handleTouchEnd"
+        @touchcancel="handleTouchCancel"
+        @mousedown="handleMouseDown"
       >
-      <div
-        ref="trackRef"
-        class="marquee-track"
-        :class="{ 'is-paused': isHovered }"
-      >
+        <div
+          ref="trackRef"
+          class="marquee-track"
+          :class="{ 'is-paused': isPaused, 'is-dragging': isDragging }"
+        >
         <!-- Tile A (Original) -->
         <div ref="tileRefA" class="marquee-tile">
           <div
@@ -98,7 +146,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import StarRating from './StarRating.vue'
 import TextReveal from '@/components/ui/TextReveal.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
@@ -265,8 +313,16 @@ const reviewList = ref<ReviewItem[]>(generateRandomReviewList())
 
 const trackRef = ref<HTMLDivElement | null>(null)
 const tileRefA = ref<HTMLDivElement | null>(null)
+const viewportRef = ref<HTMLDivElement | null>(null)
 
 const isHovered = ref(false)
+const isDoubleTapPaused = ref(false)
+const isDragging = ref(false)
+const statusBadgeVisible = ref(false)
+let badgeTimeout: number | null = null
+
+// Marquee is paused when hovered on desktop, double-tap toggled on mobile, or actively dragged
+const isPaused = computed(() => isHovered.value || isDoubleTapPaused.value || isDragging.value)
 
 // Smooth kinematic physics
 const BASE_SPEED = 45 // cruising speed (px/s)
@@ -297,8 +353,8 @@ const updateLoop = (timestamp: number) => {
   const dt = Math.min((timestamp - lastTimestamp) / 1000, 0.1) // limit dt to 100ms max
   lastTimestamp = timestamp
 
-  // Determine target speed based on hover
-  targetSpeed = isHovered.value ? 0 : BASE_SPEED
+  // Determine target speed based on pause state (hover, double-tap, or active touch drag)
+  targetSpeed = isPaused.value ? 0 : BASE_SPEED
 
   // Smooth acceleration / deceleration
   if (currentSpeed > targetSpeed) {
@@ -312,8 +368,8 @@ const updateLoop = (timestamp: number) => {
     measureTile()
   }
 
-  // Advance transform if moving
-  if (tileWidth > 0 && currentSpeed > 0) {
+  // Advance transform if moving and not actively dragged by user's finger/mouse
+  if (tileWidth > 0 && currentSpeed > 0 && !isDragging.value) {
     currentX = (currentX + currentSpeed * dt) % tileWidth
     if (trackRef.value) {
       trackRef.value.style.transform = `translate3d(-${currentX}px, 0, 0)`
@@ -324,11 +380,183 @@ const updateLoop = (timestamp: number) => {
 }
 
 const handleMouseEnter = () => {
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    if (window.matchMedia('(hover: none)').matches) {
+      return
+    }
+  }
   isHovered.value = true
 }
 
 const handleMouseLeave = () => {
   isHovered.value = false
+}
+
+let lastTouchDoubleTapTime = 0
+
+// Double-tap pause toggle and feedback pill
+const toggleDoubleTapPause = () => {
+  isDoubleTapPaused.value = !isDoubleTapPaused.value
+  showStatusBadge()
+}
+
+const showStatusBadge = () => {
+  statusBadgeVisible.value = true
+  if (badgeTimeout !== null && typeof window !== 'undefined') {
+    clearTimeout(badgeTimeout)
+  }
+  if (typeof window !== 'undefined') {
+    badgeTimeout = window.setTimeout(() => {
+      statusBadgeVisible.value = false
+    }, 2400)
+  }
+}
+
+const handleDoubleClick = () => {
+  const now = performance.now()
+  if (now - lastTouchDoubleTapTime < 500) {
+    return
+  }
+  toggleDoubleTapPause()
+}
+
+// Mobile touch gestures: horizontal sweep & double-tap
+let touchStartX = 0
+let touchStartY = 0
+let touchStartCurrentX = 0
+let isTouching = false
+let isHorizontalDrag = false
+let dragDirectionLocked = false
+let lastTapTime = 0
+let lastTapX = 0
+let lastTapY = 0
+
+const handleTouchStart = (e: TouchEvent) => {
+  isHovered.value = false // Clear any synthetic hover from touch devices
+  if (e.touches.length !== 1) return
+  const touch = e.touches[0]
+  touchStartX = touch.clientX
+  touchStartY = touch.clientY
+  touchStartCurrentX = currentX
+  isTouching = true
+  isHorizontalDrag = false
+  dragDirectionLocked = false
+}
+
+const handleTouchMove = (e: TouchEvent) => {
+  if (!isTouching || e.touches.length !== 1) return
+  const touch = e.touches[0]
+  const deltaX = touch.clientX - touchStartX
+  const deltaY = touch.clientY - touchStartY
+
+  // Lock drag direction after 7px of movement
+  if (!dragDirectionLocked) {
+    if (Math.hypot(deltaX, deltaY) > 7) {
+      dragDirectionLocked = true
+      if (Math.abs(deltaX) >= Math.abs(deltaY)) {
+        isHorizontalDrag = true
+        isDragging.value = true
+      } else {
+        isHorizontalDrag = false
+      }
+    }
+  }
+
+  if (isHorizontalDrag) {
+    if (e.cancelable) {
+      e.preventDefault()
+    }
+    if (tileWidth === 0) {
+      measureTile()
+    }
+    if (tileWidth > 0) {
+      // Swiping right/left moves the track accordingly with seamless modulo wrap-around
+      const rawX = touchStartCurrentX - deltaX
+      currentX = ((rawX % tileWidth) + tileWidth) % tileWidth
+      if (trackRef.value) {
+        trackRef.value.style.transform = `translate3d(-${currentX}px, 0, 0)`
+      }
+    }
+  }
+}
+
+const handleTouchEnd = (e: TouchEvent) => {
+  if (!isTouching) return
+  isTouching = false
+  const wasHorizontalDrag = isHorizontalDrag
+  isHorizontalDrag = false
+  isDragging.value = false
+
+  const touch = e.changedTouches[0]
+  if (!touch) return
+
+  const totalDeltaX = touch.clientX - touchStartX
+  const totalDeltaY = touch.clientY - touchStartY
+  const dist = Math.hypot(totalDeltaX, totalDeltaY)
+
+  // Stationary tap check for double-tap detection
+  if (dist < 16 && !wasHorizontalDrag) {
+    const now = performance.now()
+    const timeSinceLastTap = now - lastTapTime
+    const distFromLastTap = Math.hypot(touch.clientX - lastTapX, touch.clientY - lastTapY)
+
+    if (timeSinceLastTap >= 30 && timeSinceLastTap <= 400 && distFromLastTap < 45) {
+      lastTouchDoubleTapTime = performance.now()
+      toggleDoubleTapPause()
+      lastTapTime = 0
+    } else {
+      lastTapTime = now
+      lastTapX = touch.clientX
+      lastTapY = touch.clientY
+    }
+  }
+}
+
+const handleTouchCancel = () => {
+  isTouching = false
+  isHorizontalDrag = false
+  isDragging.value = false
+}
+
+// Mouse dragging support for desktop pair-programming and browser tests
+let isMouseDown = false
+let mouseStartX = 0
+let mouseStartCurrentX = 0
+
+const handleMouseDown = (e: MouseEvent) => {
+  if (e.button !== 0) return
+  isMouseDown = true
+  mouseStartX = e.clientX
+  mouseStartCurrentX = currentX
+  if (typeof window !== 'undefined') {
+    window.addEventListener('mousemove', handleWindowMouseMove)
+    window.addEventListener('mouseup', handleWindowMouseUp)
+  }
+}
+
+const handleWindowMouseMove = (e: MouseEvent) => {
+  if (!isMouseDown) return
+  const deltaX = e.clientX - mouseStartX
+  if (Math.abs(deltaX) > 5) {
+    isDragging.value = true
+    if (tileWidth === 0) measureTile()
+    if (tileWidth > 0) {
+      const rawX = mouseStartCurrentX - deltaX
+      currentX = ((rawX % tileWidth) + tileWidth) % tileWidth
+      if (trackRef.value) {
+        trackRef.value.style.transform = `translate3d(-${currentX}px, 0, 0)`
+      }
+    }
+  }
+}
+
+const handleWindowMouseUp = () => {
+  isMouseDown = false
+  isDragging.value = false
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('mousemove', handleWindowMouseMove)
+    window.removeEventListener('mouseup', handleWindowMouseUp)
+  }
 }
 
 onMounted(() => {
@@ -355,6 +583,13 @@ onUnmounted(() => {
   }
   if (resizeObserver) {
     resizeObserver.disconnect()
+  }
+  if (badgeTimeout !== null && typeof window !== 'undefined') {
+    clearTimeout(badgeTimeout)
+  }
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('mousemove', handleWindowMouseMove)
+    window.removeEventListener('mouseup', handleWindowMouseUp)
   }
 })
 </script>
@@ -448,6 +683,66 @@ onUnmounted(() => {
 .marquee-viewport {
   width: 100%;
   overflow: hidden;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.marquee-viewport:active,
+.marquee-track.is-dragging {
+  cursor: grabbing;
+}
+
+/* ==========================================================================
+   Tactile Double-Tap & Drag Status Badge
+   ========================================================================== */
+.marquee-status-pill {
+  position: absolute;
+  bottom: var(--space-3);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 14px;
+  background-color: var(--primitive-cream-100);
+  color: var(--color-ink-primary);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  border-radius: var(--border-radius-full);
+  box-shadow: 2px 2px 0 var(--color-border-bold);
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  pointer-events: none;
+  white-space: nowrap;
+  direction: rtl;
+}
+
+.status-pill-icon {
+  width: 14px;
+  height: 14px;
+  stroke: var(--color-brand-comic);
+  flex-shrink: 0;
+}
+
+.status-pill-fade-enter-active,
+.status-pill-fade-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.status-pill-fade-enter-from,
+.status-pill-fade-leave-to {
+  opacity: 0;
+  transform: translate(-50%, 8px) scale(0.95);
+}
+
+.status-pill-fade-enter-to,
+.status-pill-fade-leave-from {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
 }
 
 /* ==========================================================================
@@ -657,6 +952,13 @@ onUnmounted(() => {
     line-height: 1.55;
     margin-inline-start: 2px;
     margin-inline-end: 2px;
+  }
+
+  .marquee-status-pill {
+    bottom: var(--space-2);
+    font-size: 11px;
+    padding: 5px 12px;
+    max-width: 90vw;
   }
 }
 

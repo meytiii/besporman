@@ -1,27 +1,27 @@
 # Graph Report - besporman  (2026-10-18)
 
 ## Corpus Check
-- 52 files · ~752,609 words
+- 52 files · ~753,867 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 318 nodes · 372 edges · 22 communities (19 shown, 3 thin omitted)
-- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.88)
+- 335 nodes · 397 edges · 23 communities (20 shown, 3 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5752f1bf`
+- Built from commit: `98c9600d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- ProjectsSection.vue
+- ProjectDetailView.vue
 - ContactSection.vue
 - TheHeader.vue
 - MarqueeBanner.vue
 - compilerOptions
 - devDependencies
-- package.json
+- LazySection.vue
 - Changelog
 - compilerOptions
 - ui/TextReveal.vue
@@ -34,10 +34,11 @@
 - text-reveal.tsx
 - AppLoadingScreen.vue
 - liquid-loader-demo.tsx
+- StarRating.vue
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 15 edges
-2. `Changelog` - 13 edges
+2. `Changelog` - 14 edges
 3. `useScrollReveal()` - 8 edges
 4. `compilerOptions` - 7 edges
 5. `Besporman — Agent Rules (GEMINI.md)` - 7 edges
@@ -66,11 +67,11 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (22 total, 3 thin omitted)
+## Communities (23 total, 3 thin omitted)
 
-### Community 0 - "ProjectsSection.vue"
-Cohesion: 0.11
-Nodes (17): Besporman Portfolio & Services Overview, activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects, projectsData, ProjectCategory (+9 more)
+### Community 0 - "ProjectDetailView.vue"
+Cohesion: 0.15
+Nodes (12): Besporman Portfolio & Services Overview, projectsData, ProjectCategory, ProjectItem, ProjectStatus, categoryLabel, currentIndex, formattedParagraphs (+4 more)
 
 ### Community 1 - "ContactSection.vue"
 Cohesion: 0.13
@@ -81,32 +82,32 @@ Cohesion: 0.09
 Nodes (23): activeTab, closeMobileMenu(), handleKeyDown(), handleMobileNavClick(), handleMouseEnter(), handleMouseLeave(), handleNavClick(), handleOutsideClick() (+15 more)
 
 ### Community 3 - "MarqueeBanner.vue"
-Cohesion: 0.10
-Nodes (17): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), isHovered, measureTile(), ReviewItem, reviewList (+9 more)
+Cohesion: 0.08
+Nodes (26): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), handleDoubleClick(), handleMouseDown(), handleTouchEnd(), handleTouchMove() (+18 more)
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.07
 Nodes (26): DOM, DOM.Iterable, ESNext, src/components/ui/*.tsx, src/**/*.d.ts, src/**/*.ts, src/**/*.vue, tests/**/*.ts (+18 more)
 
 ### Community 5 - "devDependencies"
-Cohesion: 0.13
-Nodes (15): jsdom, devDependencies, jsdom, typescript, vite, @vitejs/plugin-vue, vitest, @vue/test-utils (+7 more)
+Cohesion: 0.07
+Nodes (29): jsdom, dependencies, vue, vue-router, devDependencies, jsdom, typescript, vite (+21 more)
 
-### Community 6 - "package.json"
-Cohesion: 0.13
-Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
+### Community 6 - "LazySection.vue"
+Cohesion: 0.25
+Nodes (5): Props, route, shouldRender, wrapperRef, Props
 
 ### Community 7 - "Changelog"
-Cohesion: 0.07
-Nodes (28): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, [2.3.2] - 2026-10-18 (+20 more)
+Cohesion: 0.06
+Nodes (30): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, [2.3.2] - 2026-10-18 (+22 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
 Nodes (10): vite.config.ts, vitest.config.ts, compilerOptions, allowSyntheticDefaultImports, composite, module, moduleResolution, skipLibCheck (+2 more)
 
 ### Community 9 - "ui/TextReveal.vue"
-Cohesion: 0.09
-Nodes (20): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, currentPose, Props, route, shouldRender, wrapperRef, Props (+12 more)
+Cohesion: 0.10
+Nodes (20): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, currentPose, activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects (+12 more)
 
 ### Community 14 - "Besporman — Agent Rules (GEMINI.md)"
 Cohesion: 0.25
@@ -132,8 +133,12 @@ Nodes (9): defaultContainerVariants, defaultItemVariants, defaultStaggerTimes, p
 Cohesion: 0.14
 Nodes (13): areTopElementsLoaded(), ensureFontsLoaded(), isExiting, isFontReady, isImageLoaded(), isVisible, waitForReadiness(), brandPalettes (+5 more)
 
+### Community 22 - "StarRating.vue"
+Cohesion: 0.33
+Nodes (4): clipUid, formattedScore, props, StarType
+
 ## Knowledge Gaps
-- **164 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+159 more)
+- **170 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+165 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -141,16 +146,16 @@ Nodes (13): areTopElementsLoaded(), ensureFontsLoaded(), isExiting, isFontReady,
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
-  _High betweenness centrality (0.068) - this node is a cross-community bridge._
+  _High betweenness centrality (0.070) - this node is a cross-community bridge._
 - **Why does `Parchment & Iron Charcoal Design Palette` connect `App.vue` to `ui/TextReveal.vue`?**
-  _High betweenness centrality (0.047) - this node is a cross-community bridge._
-- **Why does `useScrollReveal()` connect `ui/TextReveal.vue` to `ProjectsSection.vue`, `ContactSection.vue`, `MarqueeBanner.vue`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+- **Why does `useScrollReveal()` connect `ui/TextReveal.vue` to `ContactSection.vue`, `MarqueeBanner.vue`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _164 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `ProjectsSection.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.11231884057971014 - nodes in this community are weakly interconnected._
+  _170 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `TheHeader.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.09259259259259259 - nodes in this community are weakly interconnected._
+- **Should `MarqueeBanner.vue` be split into smaller, more focused modules?**
+  _Cohesion score 0.0846774193548387 - nodes in this community are weakly interconnected._

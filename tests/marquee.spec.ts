@@ -45,4 +45,51 @@ describe('MarqueeBanner Accessibility & Kinematics', () => {
     await viewport.trigger('mouseleave')
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
   })
+
+  it('toggles pause state on double click / double tap and shows status badge', async () => {
+    const wrapper = mount(MarqueeBanner)
+    const viewport = wrapper.find('.marquee-viewport')
+
+    // Initially not paused and badge not visible
+    expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
+    expect(wrapper.find('.marquee-status-pill').exists()).toBe(false)
+
+    // First double click -> pauses and reveals status badge
+    await viewport.trigger('dblclick')
+    expect(wrapper.find('.marquee-track').classes()).toContain('is-paused')
+    expect(wrapper.find('.marquee-status-pill').exists()).toBe(true)
+    expect(wrapper.find('.marquee-status-pill').text()).toContain('متوقف شد')
+
+    // Second double click -> resumes
+    await viewport.trigger('dblclick')
+    expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
+    expect(wrapper.find('.marquee-status-pill').text()).toContain('در حال حرکت')
+  })
+
+  it('handles mobile touch start, horizontal swipe, and drag state', async () => {
+    const wrapper = mount(MarqueeBanner)
+    const viewport = wrapper.find('.marquee-viewport')
+    const track = wrapper.find('.marquee-track')
+
+    // Touch start
+    await viewport.trigger('touchstart', {
+      touches: [{ clientX: 200, clientY: 100 }],
+    })
+
+    // Touch move horizontally by 50px
+    await viewport.trigger('touchmove', {
+      touches: [{ clientX: 150, clientY: 102 }],
+    })
+
+    // Should activate dragging and pause
+    expect(track.classes()).toContain('is-dragging')
+    expect(track.classes()).toContain('is-paused')
+
+    // Touch end completes swipe
+    await viewport.trigger('touchend', {
+      changedTouches: [{ clientX: 150, clientY: 102 }],
+    })
+
+    expect(track.classes()).not.toContain('is-dragging')
+  })
 })
