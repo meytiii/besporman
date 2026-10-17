@@ -115,11 +115,24 @@ If instructions conflict, identify the conflict and follow the repository's esta
 
 ---
 
-## 8. Skills and Tools
+## 8. Skills and Tools (Mandatory Active Skills)
 
-- Inspect available project-local skills and use relevant verified skills when the task benefits from them.
-- Follow each skill's actual instructions and prerequisites.
-- Do not claim to have used unavailable or unverified skills.
+The following 10 project-local skills in `.agents/skills/` are installed and permanently activated as mandatory rules for all tasks on Besporman:
+
+1. **`/hallmark`** — Anti-AI-slop design gates, locked CSS tokens, 320px mobile floor, roman-only headers.
+2. **`/impeccable`** — Production-grade craft, mandatory 8-state interactive element matrix, tactile feedback.
+3. **`/high-end-visual-design`** — Double-bezel machined container architecture, button-in-button nested icons, expansive section padding.
+4. **`/ui-ux-pro-max`** — Accessibility (WCAG 2.2 AA), 44×44px touch targets, systemic z-index hierarchy, contrast.
+5. **`/ux-ui-agent-skills`** — 3-tier DTCG token system (Primitives → Semantics → Components), atomic design structure.
+6. **`/graphify`** — Codebase modularity, decoupled components, clean dependency graphs.
+7. **`/cavecrew`** — Efficient subagent delegation and token-preserving workflows.
+8. **`/design-taste-frontend`** — Layout variance (Variance 8, Motion 6, Density 4), max 1 eyebrow per 3 sections, max 2 zigzag splits.
+9. **`/humanizer`** — Elimination of AI writing clichés, authentic and natural Persian/English copy.
+10. **`/modern-web-guidance`** — Modern web standards (CSS logical properties, Baseline APIs, transform/opacity hardware acceleration).
+
+**Core Rules:**
+- **Always use these skills:** Every agent, pair programmer, and contributor MUST consult and apply these active skills throughout all planning, design, and code generation steps.
+- Inspect project-local skills in `.agents/skills/` and follow each skill's actual instructions.
 - Avoid unsafe installation scripts and unnecessary global changes.
 - Report significant tool limitations instead of hiding them.
 

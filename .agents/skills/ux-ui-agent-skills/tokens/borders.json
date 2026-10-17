@@ -1,0 +1,76 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Border radius and width tokens. Radii follow a geometric scale; widths are kept minimal.",
+
+  "radius": {
+    "$description": "Geometric radius scale",
+    "none": { "$type": "dimension", "$value": "0px" },
+    "sm":   { "$type": "dimension", "$value": "4px" },
+    "md":   { "$type": "dimension", "$value": "6px" },
+    "lg":   { "$type": "dimension", "$value": "8px" },
+    "xl":   { "$type": "dimension", "$value": "12px" },
+    "2xl":  { "$type": "dimension", "$value": "16px" },
+    "3xl":  { "$type": "dimension", "$value": "24px" },
+    "full": { "$type": "dimension", "$value": "9999px" }
+  },
+
+  "radius-semantic": {
+    "$description": "Component-scoped radius aliases",
+    "button":    { "$type": "dimension", "$value": "{radius.md}",   "$description": "6px — consistent button rounding" },
+    "input":     { "$type": "dimension", "$value": "{radius.md}",   "$description": "6px — match button radius" },
+    "card":      { "$type": "dimension", "$value": "{radius.lg}",   "$description": "8px — cards and containers" },
+    "modal":     { "$type": "dimension", "$value": "{radius.xl}",   "$description": "12px — elevated overlays" },
+    "badge":     { "$type": "dimension", "$value": "{radius.full}", "$description": "Pill shape" },
+    "avatar":    { "$type": "dimension", "$value": "{radius.full}", "$description": "Circular" },
+    "tooltip":   { "$type": "dimension", "$value": "{radius.md}" },
+    "dropdown":  { "$type": "dimension", "$value": "{radius.lg}" },
+    "checkbox":  { "$type": "dimension", "$value": "{radius.sm}",   "$description": "4px — subtle rounding" },
+    "toggle":    { "$type": "dimension", "$value": "{radius.full}", "$description": "Pill track" },
+    "image":     { "$type": "dimension", "$value": "{radius.lg}" }
+  },
+
+  "width": {
+    "$description": "Border width scale",
+    "none":    { "$type": "dimension", "$value": "0px" },
+    "thin":    { "$type": "dimension", "$value": "1px",  "$description": "Default border — cards, inputs, dividers" },
+    "medium":  { "$type": "dimension", "$value": "2px",  "$description": "Emphasis — focus rings, active tabs" },
+    "thick":   { "$type": "dimension", "$value": "4px",  "$description": "Heavy emphasis — sidebar indicator, branded borders" }
+  },
+
+  "style": {
+    "default": {
+      "$type": "border",
+      "$value": {
+        "width": "{width.thin}",
+        "style": "solid",
+        "color": "{../colors.semantic.border.default}"
+      },
+      "$description": "1px solid gray-200 — standard separator"
+    },
+    "strong": {
+      "$type": "border",
+      "$value": {
+        "width": "{width.thin}",
+        "style": "solid",
+        "color": "{../colors.semantic.border.strong}"
+      }
+    },
+    "focus": {
+      "$type": "border",
+      "$value": {
+        "width": "{width.medium}",
+        "style": "solid",
+        "color": "{../colors.semantic.border.focus}"
+      },
+      "$description": "2px solid blue-500 — focus visible border"
+    },
+    "error": {
+      "$type": "border",
+      "$value": {
+        "width": "{width.medium}",
+        "style": "solid",
+        "color": "{../colors.semantic.border.error}"
+      }
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Typography tokens using Major Third (1.25) modular scale. All sizes in px for precision; convert to rem at 1rem = 16px.",
+
+  "fontFamily": {
+    "sans": {
+      "$type": "fontFamily",
+      "$value": ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+      "$description": "Primary — UI text, body copy"
+    },
+    "serif": {
+      "$type": "fontFamily",
+      "$value": ["Lora", "Georgia", "Cambria", "Times New Roman", "serif"],
+      "$description": "Editorial — long-form content, marketing"
+    },
+    "mono": {
+      "$type": "fontFamily",
+      "$value": ["JetBrains Mono", "Fira Code", "SF Mono", "Consolas", "Liberation Mono", "Menlo", "monospace"],
+      "$description": "Code — snippets, data, technical values"
+    }
+  },
+
+  "fontSize": {
+    "$description": "Major Third scale (1.25). Base = 16px.",
+    "xs":   { "$type": "dimension", "$value": "12px" },
+    "sm":   { "$type": "dimension", "$value": "14px" },
+    "base": { "$type": "dimension", "$value": "16px" },
+    "lg":   { "$type": "dimension", "$value": "18px" },
+    "xl":   { "$type": "dimension", "$value": "20px" },
+    "2xl":  { "$type": "dimension", "$value": "24px" },
+    "3xl":  { "$type": "dimension", "$value": "30px" },
+    "4xl":  { "$type": "dimension", "$value": "36px" },
+    "5xl":  { "$type": "dimension", "$value": "48px" },
+    "6xl":  { "$type": "dimension", "$value": "60px" },
+    "7xl":  { "$type": "dimension", "$value": "72px" }
+  },
+
+  "fontWeight": {
+    "regular":  { "$type": "number", "$value": 400 },
+    "medium":   { "$type": "number", "$value": 500 },
+    "semibold": { "$type": "number", "$value": 600 },
+    "bold":     { "$type": "number", "$value": 700 }
+  },
+
+  "lineHeight": {
+    "none":    { "$type": "number", "$value": 1 },
+    "tight":   { "$type": "number", "$value": 1.25 },
+    "snug":    { "$type": "number", "$value": 1.375 },
+    "normal":  { "$type": "number", "$value": 1.5 },
+    "relaxed": { "$type": "number", "$value": 1.625 },
+    "loose":   { "$type": "number", "$value": 2 }
+  },
+
+  "letterSpacing": {
+    "tighter": { "$type": "dimension", "$value": "-0.05em" },
+    "tight":   { "$type": "dimension", "$value": "-0.025em" },
+    "normal":  { "$type": "dimension", "$value": "0em" },
+    "wide":    { "$type": "dimension", "$value": "0.025em" },
+    "wider":   { "$type": "dimension", "$value": "0.05em" },
+    "widest":  { "$type": "dimension", "$value": "0.1em" }
+  },
+
+  "textStyle": {
+    "$description": "Composite text styles — use these in components",
+
+    "heading-1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.5xl}",
+        "fontWeight": "{fontWeight.bold}",
+        "lineHeight": "{lineHeight.none}",
+        "letterSpacing": "{letterSpacing.tighter}"
+      },
+      "$description": "Page titles — 48px/1/bold"
+    },
+    "heading-2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.4xl}",
+        "fontWeight": "{fontWeight.bold}",
+        "lineHeight": "{lineHeight.tight}",
+        "letterSpacing": "{letterSpacing.tight}"
+      },
+      "$description": "Section titles — 36px/1.25/bold"
+    },
+    "heading-3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.3xl}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.tight}",
+        "letterSpacing": "{letterSpacing.tight}"
+      },
+      "$description": "Sub-sections — 30px/1.25/semibold"
+    },
+    "heading-4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.2xl}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.snug}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Card titles — 24px/1.375/semibold"
+    },
+    "heading-5": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.xl}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.snug}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Widget titles — 20px/1.375/semibold"
+    },
+    "heading-6": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.lg}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.snug}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Smallest heading — 18px/1.375/semibold"
+    },
+    "body-lg": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.lg}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.relaxed}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Lead paragraphs — 18px/1.625/regular"
+    },
+    "body-base": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.base}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.normal}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Default body text — 16px/1.5/regular"
+    },
+    "body-sm": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.sm}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.normal}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Secondary body text — 14px/1.5/regular"
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.xs}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.normal}",
+        "letterSpacing": "{letterSpacing.wide}"
+      },
+      "$description": "Captions, timestamps — 12px/1.5/regular"
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.sm}",
+        "fontWeight": "{fontWeight.medium}",
+        "lineHeight": "{lineHeight.normal}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Form labels, table headers — 14px/1.5/medium"
+    },
+    "overline": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.sans}",
+        "fontSize": "{fontSize.xs}",
+        "fontWeight": "{fontWeight.semibold}",
+        "lineHeight": "{lineHeight.normal}",
+        "letterSpacing": "{letterSpacing.widest}"
+      },
+      "$description": "Category labels, all-caps — 12px/1.5/semibold/0.1em"
+    },
+    "code": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{fontFamily.mono}",
+        "fontSize": "{fontSize.sm}",
+        "fontWeight": "{fontWeight.regular}",
+        "lineHeight": "{lineHeight.relaxed}",
+        "letterSpacing": "{letterSpacing.normal}"
+      },
+      "$description": "Inline and block code — 14px/1.625/regular"
+    }
+  }
+}

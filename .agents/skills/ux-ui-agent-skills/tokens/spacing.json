@@ -1,0 +1,78 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "4px base unit spacing scale. Use semantic tokens for layout; use scale tokens for component internals.",
+
+  "scale": {
+    "$description": "Raw spacing values — 4px base unit",
+    "0":   { "$type": "dimension", "$value": "0px" },
+    "0.5": { "$type": "dimension", "$value": "2px" },
+    "1":   { "$type": "dimension", "$value": "4px" },
+    "1.5": { "$type": "dimension", "$value": "6px" },
+    "2":   { "$type": "dimension", "$value": "8px" },
+    "2.5": { "$type": "dimension", "$value": "10px" },
+    "3":   { "$type": "dimension", "$value": "12px" },
+    "3.5": { "$type": "dimension", "$value": "14px" },
+    "4":   { "$type": "dimension", "$value": "16px" },
+    "5":   { "$type": "dimension", "$value": "20px" },
+    "6":   { "$type": "dimension", "$value": "24px" },
+    "7":   { "$type": "dimension", "$value": "28px" },
+    "8":   { "$type": "dimension", "$value": "32px" },
+    "9":   { "$type": "dimension", "$value": "36px" },
+    "10":  { "$type": "dimension", "$value": "40px" },
+    "11":  { "$type": "dimension", "$value": "44px" },
+    "12":  { "$type": "dimension", "$value": "48px" },
+    "14":  { "$type": "dimension", "$value": "56px" },
+    "16":  { "$type": "dimension", "$value": "64px" },
+    "20":  { "$type": "dimension", "$value": "80px" },
+    "24":  { "$type": "dimension", "$value": "96px" }
+  },
+
+  "semantic": {
+    "$description": "Purpose-based spacing aliases",
+
+    "page": {
+      "inline-padding":  { "$type": "dimension", "$value": "{scale.4}", "$description": "16px — page horizontal padding (mobile)" },
+      "inline-padding-lg": { "$type": "dimension", "$value": "{scale.8}", "$description": "32px — page horizontal padding (desktop)" },
+      "section-gap":     { "$type": "dimension", "$value": "{scale.16}", "$description": "64px — gap between page sections" },
+      "section-gap-sm":  { "$type": "dimension", "$value": "{scale.10}", "$description": "40px — gap between sub-sections" }
+    },
+
+    "card": {
+      "padding":      { "$type": "dimension", "$value": "{scale.6}", "$description": "24px — card content padding" },
+      "padding-sm":   { "$type": "dimension", "$value": "{scale.4}", "$description": "16px — compact card padding" },
+      "gap":          { "$type": "dimension", "$value": "{scale.4}", "$description": "16px — gap between card items" }
+    },
+
+    "stack": {
+      "xs":  { "$type": "dimension", "$value": "{scale.1}", "$description": "4px — tight stack (icon + label)" },
+      "sm":  { "$type": "dimension", "$value": "{scale.2}", "$description": "8px — default inline gap" },
+      "md":  { "$type": "dimension", "$value": "{scale.3}", "$description": "12px — form field to label" },
+      "lg":  { "$type": "dimension", "$value": "{scale.4}", "$description": "16px — between card sections" },
+      "xl":  { "$type": "dimension", "$value": "{scale.6}", "$description": "24px — between logical groups" },
+      "2xl": { "$type": "dimension", "$value": "{scale.8}", "$description": "32px — major section separation" }
+    },
+
+    "inline": {
+      "xs":  { "$type": "dimension", "$value": "{scale.1}", "$description": "4px — tight inline (icon gap)" },
+      "sm":  { "$type": "dimension", "$value": "{scale.2}", "$description": "8px — default inline gap" },
+      "md":  { "$type": "dimension", "$value": "{scale.3}", "$description": "12px — button icon + text" },
+      "lg":  { "$type": "dimension", "$value": "{scale.4}", "$description": "16px — between inline items" }
+    },
+
+    "component": {
+      "button-padding-x":  { "$type": "dimension", "$value": "{scale.4}" },
+      "button-padding-y":  { "$type": "dimension", "$value": "{scale.2.5}" },
+      "button-padding-x-sm": { "$type": "dimension", "$value": "{scale.3}" },
+      "button-padding-y-sm": { "$type": "dimension", "$value": "{scale.2}" },
+      "button-padding-x-lg": { "$type": "dimension", "$value": "{scale.6}" },
+      "button-padding-y-lg": { "$type": "dimension", "$value": "{scale.3}" },
+      "input-padding-x":   { "$type": "dimension", "$value": "{scale.3}" },
+      "input-padding-y":   { "$type": "dimension", "$value": "{scale.2}" },
+      "badge-padding-x":   { "$type": "dimension", "$value": "{scale.2.5}" },
+      "badge-padding-y":   { "$type": "dimension", "$value": "{scale.0.5}" },
+      "modal-padding":     { "$type": "dimension", "$value": "{scale.6}" },
+      "table-cell-padding-x": { "$type": "dimension", "$value": "{scale.4}" },
+      "table-cell-padding-y": { "$type": "dimension", "$value": "{scale.3}" }
+    }
+  }
+}
