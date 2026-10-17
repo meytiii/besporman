@@ -433,10 +433,13 @@ All assets reside in `/assets/` and follow strict kebab-case naming:
 ```
 assets/
 ├── brand/
+│   ├── favicon.png (Studio Icon / Hand with Code Card)
 │   ├── besporman-wordmark.svg
 │   ├── besporman-sign-neon.svg
 │   └── besporman-sign-dark.svg
-├── character/
+├── character/ (and repository `pic/` source directory)
+│   ├── pic/besporman2.png (Frame A: character pointing down toward sign, 607x1498)
+│   ├── pic/besporman1.png (Frame B: character pointing to chest/self, 470x1200)
 │   ├── character-frame-a-pointing-sign.webp (and .svg)
 │   ├── character-frame-b-pointing-self.webp (and .svg)
 │   └── character-marquee-bust.webp
@@ -579,20 +582,20 @@ Cycle Timing:
     <!-- Dual Frame Character -->
     <div class="character-viewport">
       <img
-        src="/assets/character/character-frame-a-pointing-sign.webp"
-        alt="کاراکتر بسپر من در حال اشاره به تابلو"
+        src="/pic/besporman2.png"
+        alt="کاراکتر بسپر من در حال اشاره به تابلو (Frame A)"
         class="character-frame"
         :class="{ 'is-active': currentFrame === 'A' }"
-        width="480"
-        height="640"
+        width="607"
+        height="1498"
       />
       <img
-        src="/assets/character/character-frame-b-pointing-self.webp"
-        alt="کاراکتر بسپر من در حال اشاره به خود"
+        src="/pic/besporman1.png"
+        alt="کاراکتر بسپر من در حال اشاره به خود (Frame B)"
         class="character-frame"
         :class="{ 'is-active': currentFrame === 'B' }"
-        width="480"
-        height="640"
+        width="470"
+        height="1200"
       />
     </div>
   </div>

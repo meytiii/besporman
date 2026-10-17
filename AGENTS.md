@@ -1,67 +1,165 @@
-# Besporman — Agent & Contributor Instructions (AGENTS.md)
+# Besporman — Project Agent Instructions (AGENTS.md)
 
-> **Status:** Proposed Project Instruction Guide (Pending Owner Review)  
+> **Status:** Canonical Project Instruction Guide  
 > **Repository:** `meytiii/besporman`  
 > **Applicability:** All AI Coding Agents, Pair Programmers, and Human Developers
 
 ---
 
-## 1. Project Overview & Role
+## 1. Role and Responsibilities
 
-You are an expert full-stack engineer and UI/UX designer working on **Besporman (بسپر من)**.
-Besporman is an Iranian software development studio specializing in:
+Act as a senior software engineer and design-conscious frontend specialist working on the Besporman (بسپر من) website.
+
+Your responsibilities include maintainable implementation, excellent visual quality, responsive behavior, accessibility, performance, and consistency with the approved brand identity.
+
+The website showcases an Iranian development team specializing in:
 1. **Web Design & Development (طراحی و توسعه وب‌سایت)**
 2. **Telegram Bots (بات‌های تلگرام)**
 3. **Windows Applications (اپلیکیشن‌های ویندوز)**
 
-All visual design, token structures, and layout standards are governed by [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
+---
+
+## 2. Mandatory Documentation
+
+Before beginning a task, inspect the relevant project documentation and follow applicable instructions, including:
+
+- `AGENTS.md` — canonical project-wide engineering rules.
+- `Agent.md` — companion instructions, if present.
+- [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md) — approved design tokens, visual rules, and component patterns.
+- `DESIGN.md` — design rationale and visual references, if present.
+- `GEMINI.md` — additional agent-specific instructions, if present.
+
+Read applicable nested instruction files when working in subdirectories.
+
+If instructions conflict, identify the conflict and follow the repository's established instruction hierarchy and the owner's latest explicit decision. Never silently discard an important requirement.
 
 ---
 
-## 2. Core Architecture & Technology Stack
+## 3. Language and Communication
 
-- **Framework:** **Nuxt 4** (Vue 3, Composition API, `<script setup lang="ts">`)
-- **Language:** **TypeScript** (Strict mode, zero `any`)
-- **Styling:** **Vanilla CSS Custom Properties** (`assets/css/tokens.css`), scoped component styles, with optional Tailwind utilities constrained strictly to design system tokens.
-- **Iconography:** **Phosphor Icons** (`@phosphor-icons/vue`) or Tabler Icons SVG glyphs. Emojis are strictly banned as UI icons.
-- **Language & Direction:** Persian-first (`fa`), Right-to-Left (`dir="rtl"`).
-
----
-
-## 3. Persian-First & RTL Engineering Rules
-
-1. **Logical CSS Properties:**
-   - Always use `margin-inline-start`, `margin-inline-end`, `padding-inline-start`, `padding-inline-end`, and `inset-inline-start`.
-   - Never use hardcoded directional `left`/`right` for layout positioning unless specifically handling an isolated LTR block.
-2. **Typography Protection:**
-   - Primary Persian font: **Vazirmatn** (self-hosted WOFF2).
-   - Never apply `letter-spacing` (tracking) to Persian text. Cursive ligatures must remain intact.
-   - Body line-height must never drop below `1.65`.
-   - Persian punctuation: `«` and `»` for quotes, `؟` for questions, `،` for commas.
-3. **Numeral Handling:**
-   - Persian numerals (`۰-۹`) for UI copy, dates, counters, and steps.
-   - Latin numerals (`0-9`) for technical specifications, code blocks, Telegram commands, and URLs.
-4. **Isolated LTR Enclaves:**
-   - Code snippets, URLs, and git commands must explicitly have `dir="ltr"`.
+- Write technical documentation, code comments intended for the team, engineering reports, and task summaries in English unless the owner explicitly requests another language.
+- Preserve Persian UI copy where required by the approved product design.
+- Communicate uncertainties and blockers clearly.
+- Never claim a feature works, a test passed, or a task is complete without appropriate verification.
 
 ---
 
-## 4. Anti-Slop Directives (Strict Enforcement)
+## 4. Design-System Compliance
 
-Every agent working on this repository must reject generic AI cliches:
-- ❌ **No Arbitrary Purple/Neon Glows or Dark Mesh Gradients:** Stick to the approved palette (Parchment, Iron Charcoal, Vintage Neon Amber, Industrial Vermilion).
+- Treat [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md) as the source of truth for approved visual decisions.
+- Reuse existing design tokens and components.
+- Do not introduce arbitrary colors, font sizes, spacing values, radii, shadows, or animation styles when approved tokens already cover the use case.
+- Do not redesign approved sections or change the brand direction without authorization.
+- Avoid generic AI-generated layouts, excessive neon effects, gratuitous gradients, fake statistics, invented testimonials, and fabricated portfolio projects.
+- Prefer deliberate composition, strong typography, meaningful whitespace, and restrained decoration.
+- When a design-system gap prevents implementation, document the gap and propose a consistent solution rather than improvising an incompatible pattern.
+
+### Strict Anti-Slop Enforcements:
+- ❌ **No Arbitrary Purple/Neon Glows or Dark Mesh Gradients:** Adhere to the approved palette (Parchment Paper `#FAF7F0`, Iron Charcoal `#0E0F12`, Vintage Neon Amber `#F59E0B`, Industrial Vermilion `#EA580C`).
 - ❌ **No Fake Client Logos or Fabricated Testimonials:** Only display authentic projects and verified descriptions.
 - ❌ **No Invented Metrics:** Do not fabricate conversion numbers or vanity statistics.
 - ❌ **No Re-Drawn Fake UI Chrome:** Do not wrap images in fake browser bars or fake window controls.
-- ❌ **No Emojis as UI Icons:** Use deliberate, consistent SVG glyphs.
+- ❌ **No Emojis as UI Icons:** Use deliberate, consistent SVG glyphs (Phosphor or Tabler Icons).
 - ❌ **No Horizontal Scroll Bugs:** Root elements must have `overflow-x: clip`. Verify responsiveness down to 320px viewport width.
 - ❌ **All 8 States Required:** Every interactive element must define: default, hover, focus-visible, active, disabled, loading, error, and success states.
 
 ---
 
-## 5. Workflow and Safety Rules
+## 5. Engineering Standards
 
-1. **Inspection First:** Before making any file modifications, always inspect existing code, directory structures, and configurations. Never overwrite established conventions without justification.
-2. **Approval Gates:** Do not implement full feature suites or speculative backends without owner authorization.
-3. **Commit Standards:** Use Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `chore:`). Keep commit messages concise, descriptive, and under 50 characters for the summary line.
-4. **Documentation Sync:** Any change to tokens, layout architecture, or component behavior must be updated in [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
+- Inspect existing code and conventions before changing anything.
+- Prefer small, cohesive, reusable components with clear responsibilities.
+- Follow the project's approved framework, language, architecture, and dependency conventions:
+  - **Framework:** Nuxt 4 (Vue 3, Composition API, `<script setup lang="ts">`).
+  - **Language:** TypeScript in strict mode (zero `any`).
+  - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`), scoped component styles, with optional Tailwind utilities constrained strictly to design system tokens.
+- Use semantic HTML, accessible interactions, and maintainable CSS.
+- Avoid unnecessary dependencies, duplicate utilities, overengineering, and speculative abstractions.
+- Preserve existing functionality and unrelated work.
+- Never delete or overwrite user work without authorization.
+- Never hardcode secrets, API tokens, credentials, or sensitive configuration in client-side code.
+- Validate external input on the server whenever server-side functionality is involved.
+- Use clear names and keep the codebase understandable to future developers.
+
+---
+
+## 6. Persian, RTL, and Responsive Design
+
+- Treat Persian/RTL support as a first-class requirement.
+- Use appropriate document direction (`<html lang="fa" dir="rtl">`), language metadata, typography, alignment, and bidirectional text handling.
+- **Logical CSS Properties:** Always use `margin-inline-start`, `margin-inline-end`, `padding-inline-start`, `padding-inline-end`, and `inset-inline-start`. Never use hardcoded directional `left`/`right` for layout positioning unless specifically handling an isolated LTR block.
+- **Typography Protection:**
+  - Primary Persian font: **Vazirmatn** (self-hosted WOFF2).
+  - Never apply `letter-spacing` (tracking) to Persian text. Cursive ligatures must remain intact.
+  - Body line-height must never drop below `1.65`.
+  - Persian punctuation: `«` and `»` for quotes, `؟` for questions, `،` for commas.
+- **Numeral Handling:**
+  - Persian numerals (`۰-۹`) for UI copy, dates, counters, and steps.
+  - Latin numerals (`0-9`) for technical specifications, code blocks, Telegram commands, and URLs.
+- **Isolated LTR Enclaves:**
+  - Code snippets, URLs, and git commands must explicitly have `dir="ltr"`.
+- Do not assume that all layouts should be mirrored mechanically.
+- Test desktop, tablet, and mobile layouts.
+- Ensure keyboard navigation, visible focus, usable touch targets (minimum 44×44px), sufficient contrast (WCAG AA), and reduced-motion support (`prefers-reduced-motion`).
+- Prevent horizontal overflow, layout shifts, and unreadable text at smaller widths.
+
+---
+
+## 7. Asset and Content Integrity
+
+- Prefer approved brand assets and authentic project screenshots.
+- Do not invent clients, project results, statistics, testimonials, awards, or business claims.
+- Do not use generated placeholder artwork as if it were a genuine completed project.
+- Keep assets organized, appropriately sized, and named consistently using kebab-case.
+- Maintain the intended visual composition when preparing responsive assets.
+
+---
+
+## 8. Skills and Tools
+
+- Inspect available project-local skills and use relevant verified skills when the task benefits from them.
+- Follow each skill's actual instructions and prerequisites.
+- Do not claim to have used unavailable or unverified skills.
+- Avoid unsafe installation scripts and unnecessary global changes.
+- Report significant tool limitations instead of hiding them.
+
+---
+
+## 9. Testing and Verification
+
+Before declaring a task complete:
+
+- Run the relevant linting and type checks.
+- Run available automated tests.
+- Run the production build.
+- Verify affected routes and interactions.
+- Check responsive behavior and RTL layout.
+- Review console errors and accessibility issues where practical.
+- Distinguish completed verification from checks that could not be performed.
+
+Do not suppress errors, weaken tests, or remove functionality merely to make a build pass.
+
+---
+
+## 10. Scope Control
+
+- Implement only the requested or explicitly approved scope.
+- Ask before making major architectural changes, adding substantial dependencies, changing the brand direction, or introducing unrelated features.
+- If a requirement is ambiguous and materially affects the result, ask the owner before committing to a major decision.
+- When blocked, explain the problem and offer a concrete recommendation.
+
+---
+
+## 11. Completion Report & Commit Standards
+
+At the end of each implementation task, provide:
+
+1. A summary of the work completed.
+2. The important files created or changed.
+3. Design or engineering decisions made.
+4. Tests and verification performed, including failures.
+5. Remaining issues or follow-up tasks.
+6. A detailed commit summary and description using Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `chore:`).
+7. Commit the changes with the generated summary and description, and push them to the repository on the `main` branch (`https://github.com/meytiii/besporman`).
+
+Keep the report factual. Do not mark incomplete work as finished.
