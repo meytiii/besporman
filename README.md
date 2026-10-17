@@ -46,5 +46,5 @@ npm run build
 
 ## Releases & Changelog
 
-See [CHANGELOG.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/CHANGELOG.md) for version history, milestone releases, and migration notes following Semantic Versioning (current: `v2.0.0`).
+See [CHANGELOG.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/CHANGELOG.md) for version history, milestone releases, and migration notes following Semantic Versioning (current: `v2.1.0`).
 

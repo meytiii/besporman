@@ -31,7 +31,7 @@
               class="btn btn-primary telegram-btn"
               aria-label="گفتگو در تلگرام (باز شدن در تب جدید)"
             >
-              <span>پیام در تلگرام</span>
+              <span class="btn-text">پیام در تلگرام</span>
               <span class="btn-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -201,10 +201,13 @@
               class="btn btn-primary submit-btn"
               :disabled="isLoading"
             >
-              <span v-if="!isLoading">ارسال درخواست برای بررسی</span>
+              <template v-if="!isLoading">
+                <span class="btn-text">ارسال درخواست برای بررسی</span>
+                <span class="btn-arrow" aria-hidden="true">←</span>
+              </template>
               <span v-else class="loading-state">
                 <span class="loading-spinner" aria-hidden="true"></span>
-                <span>در حال ارسال...</span>
+                <span class="btn-text">در حال ارسال...</span>
               </span>
             </button>
           </form>

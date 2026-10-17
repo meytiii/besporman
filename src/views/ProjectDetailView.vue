@@ -52,7 +52,7 @@
               rel="noopener noreferrer"
               class="btn btn-primary"
             >
-              <span>مشاهده سورس‌کد / ریپازیتوری</span>
+              <span class="btn-text">مشاهده سورس‌کد / ریپازیتوری</span>
               <span class="btn-arrow" aria-hidden="true">↗</span>
             </a>
 
@@ -63,7 +63,7 @@
               rel="noopener noreferrer"
               class="btn btn-secondary"
             >
-              <span>مشاهده در تلگرام</span>
+              <span class="btn-text">مشاهده در تلگرام</span>
               <span class="btn-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
@@ -120,7 +120,8 @@
           ممکن است آدرس وارد شده نادرست باشد یا این پروژه هنوز در دسترس عموم قرار نگرفته باشد.
         </p>
         <router-link to="/#projects" class="btn btn-primary">
-          <span>بازگشت به فهرست پروژه‌ها</span>
+          <span class="btn-text">بازگشت به فهرست پروژه‌ها</span>
+          <span class="btn-arrow" aria-hidden="true">←</span>
         </router-link>
       </div>
 

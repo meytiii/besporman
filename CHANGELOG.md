@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.0] - 2026-10-17
+
+### Added
+- **Universal Button-in-Button Gliding Arrow Badge Animation:** Implemented global tactile button matrix in `base.css` with dynamic gliding arrow badge kinematics (`cubic-bezier(0.4, 0, 0.2, 1)` easing, 45-degree hover tilt, and bidirectional padding swap) across all buttons throughout the entire website (header CTA, hero actions, contact form submit, direct Telegram link, project showcase, project detail actions, 404 return, and back-to-top button).
+- **Design System Button Standard:** Formally documented the Button-in-Button Gliding Arrow Badge specification and motion physics in Section 9.2 of `DESIGN_SYSTEM.md`.
+
+---
+
 ## [2.0.0] - 2026-10-17
 
 ### Added

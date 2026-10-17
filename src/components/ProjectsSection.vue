@@ -63,7 +63,7 @@
                 :to="'/projects/' + featuredProject.slug"
                 class="btn btn-primary btn-sm"
               >
-                <span>مشاهده بررسی تخصصی پروژه</span>
+                <span class="btn-text">مشاهده بررسی تخصصی پروژه</span>
                 <span class="btn-arrow" aria-hidden="true">←</span>
               </router-link>
 
@@ -75,8 +75,8 @@
                 class="btn btn-secondary btn-sm"
                 aria-label="مشاهده سورس‌کد در گیت‌هاب (باز شدن در تب جدید)"
               >
-                <span>سورس‌کد پروژه</span>
-                <span aria-hidden="true">↗</span>
+                <span class="btn-text">سورس‌کد پروژه</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
           </div>

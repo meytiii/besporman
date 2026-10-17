@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-17)
 
 ## Corpus Check
-- 38 files · ~602,881 words
+- 38 files · ~603,294 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 227 nodes · 255 edges · 18 communities (16 shown, 2 thin omitted)
+- 229 nodes · 257 edges · 18 communities (16 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1e39db70`
+- Built from commit: `42cd71e2`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - compilerOptions
 - devDependencies
 - package.json
-- [2.0.0] - 2026-10-17
+- Changelog
 - compilerOptions
 - include
 - vite-env.d.ts
@@ -93,9 +93,9 @@ Nodes (15): jsdom, devDependencies, jsdom, typescript, vite, @vitejs/plugin-vue,
 Cohesion: 0.13
 Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
 
-### Community 7 - "[2.0.0] - 2026-10-17"
-Cohesion: 0.29
-Nodes (6): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, Added, Added, Changed, Changelog
+### Community 7 - "Changelog"
+Cohesion: 0.22
+Nodes (8): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, Added, Added, Added, Changed, Changelog
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -122,7 +122,7 @@ Cohesion: 0.15
 Nodes (10): Mascot & Brand Visual Asset Preservation, Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, Parchment & Iron Charcoal Design Palette, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, currentPose (+2 more)
 
 ## Knowledge Gaps
-- **115 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+110 more)
+- **116 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+111 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -130,11 +130,11 @@ Nodes (10): Mascot & Brand Visual Asset Preservation, Vue 3 Composition API & St
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
+  _High betweenness centrality (0.076) - this node is a cross-community bridge._
 - **Why does `router` connect `App.vue` to `ProjectDetailView.vue`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _115 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _116 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ProjectDetailView.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.08817204301075268 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**

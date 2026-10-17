@@ -1,14 +1,14 @@
 {
   "package.json": {
-    "mtime": 1792243046.9051435,
-    "seen": 1792249022.6550937,
-    "ast_hash": "236bc6c85f155502bd8b232ab1feb87c",
-    "semantic_hash": "236bc6c85f155502bd8b232ab1feb87c"
+    "mtime": 1792263916.1561382,
+    "seen": 1792264033.5147464,
+    "ast_hash": "ced4514e51a8021a98f1abfbc1550b96",
+    "semantic_hash": ""
   },
   "src/App.vue": {
-    "mtime": 1792254612.8125103,
-    "seen": 1792254650.2311056,
-    "ast_hash": "ffc2e4a431d32588c3ccd847f5e2e633",
+    "mtime": 1792255838.705931,
+    "seen": 1792264033.5147505,
+    "ast_hash": "1332539186be15f55dbe82cb6b075c5b",
     "semantic_hash": ""
   },
   "src/components/AboutSection.vue": {
@@ -24,9 +24,9 @@
     "semantic_hash": "c7d26a13f0eb2b8efd51face92e50e47"
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792253957.0249975,
-    "seen": 1792254001.712694,
-    "ast_hash": "3226688babf9eedb7caafa74a3e94c8a",
+    "mtime": 1792255838.7199318,
+    "seen": 1792264033.5147586,
+    "ast_hash": "37ef5fac6ed3a2a49fb755ef16fbab99",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
@@ -66,9 +66,9 @@
     "semantic_hash": "b9016de95c9ec866922eab48b6f22cc0"
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792255267.2870133,
-    "seen": 1792255277.0799916,
-    "ast_hash": "697bd9cbf990b8a9eb1f4eea31229834",
+    "mtime": 1792255838.7199318,
+    "seen": 1792264033.5147674,
+    "ast_hash": "ee392162f04d2a79360ac8a71ae33ee6",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -174,15 +174,15 @@
     "semantic_hash": "55183ec4f39364cfd788a57c2fb7ab31"
   },
   ".agents/rules/mandatory-skills.md": {
-    "mtime": 1792249296.80592,
-    "seen": 1792249326.3188438,
-    "ast_hash": "a74035d6a65215b974b255667b1918a0",
+    "mtime": 1792263991.508538,
+    "seen": 1792264033.514787,
+    "ast_hash": "6a7f9d1181e43c5bcf08179ec50b2270",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1792249523.2466798,
-    "seen": 1792249560.1328545,
-    "ast_hash": "108433d722e0ab00d5b58a57c05d7999",
+    "mtime": 1792263949.4208548,
+    "seen": 1792264033.514789,
+    "ast_hash": "affdcfe15d22e5c38f3692ae601aa4de",
     "semantic_hash": ""
   },
   "DESIGN_SYSTEM.md": {
@@ -192,9 +192,9 @@
     "semantic_hash": "9839d78862333e9a3a32ed7596859874"
   },
   "README.md": {
-    "mtime": 1792249515.3863854,
-    "seen": 1792249560.1328585,
-    "ast_hash": "9db616f97481b6392ee0e645d65d6277",
+    "mtime": 1792263981.7628884,
+    "seen": 1792264033.5147943,
+    "ast_hash": "73c4e4b5d666c7fa8ca242890ea1d4fc",
     "semantic_hash": ""
   },
   "backend_tasks_2026-10-17.md": {
@@ -204,21 +204,21 @@
     "semantic_hash": "14ed56e74d1d1007da69d76144ae74f8"
   },
   "index.html": {
-    "mtime": 1792253095.4952798,
-    "seen": 1792253173.2073097,
-    "ast_hash": "df5aeca8671978c29f69f205aaafd6be",
+    "mtime": 1792255838.687926,
+    "seen": 1792264033.5147963,
+    "ast_hash": "7086b5f5a5fd73f4397a2184dc8f6f5e",
     "semantic_hash": ""
   },
   "Agent.md": {
-    "mtime": 1792249528.5796478,
-    "seen": 1792249560.132856,
-    "ast_hash": "e59f6ad6cbdf84abe5c7edbdd2fc0fbf",
+    "mtime": 1792263958.652964,
+    "seen": 1792264033.5147898,
+    "ast_hash": "9c0acec21a749d3cccb276f876524adf",
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1792249532.6242564,
-    "seen": 1792249560.1328578,
-    "ast_hash": "d466315b1591c444b8ed4902eb5e1a3a",
+    "mtime": 1792263971.0740333,
+    "seen": 1792264033.5147934,
+    "ast_hash": "bde5e1d8b2eda55898645c8f73c7d75a",
     "semantic_hash": ""
   },
   "favicon.png": {
@@ -414,21 +414,27 @@
     "semantic_hash": ""
   },
   "pic/besporman_like.png": {
-    "mtime": 1792253498.6862316,
-    "seen": 1792253540.976069,
+    "mtime": 1792255838.6939273,
+    "seen": 1792264033.5148015,
     "ast_hash": "c9371ef059b3c5c745c567d79fcd14c8",
     "semantic_hash": ""
   },
   "src/components/CustomCursor.vue": {
-    "mtime": 1792254728.8005648,
-    "seen": 1792255277.0799816,
-    "ast_hash": "9889e34afffa109bfe295d749493a505",
+    "mtime": 1792255838.7149324,
+    "seen": 1792264033.5147574,
+    "ast_hash": "91da058686bdf564bc5a63c91dbb7fef",
     "semantic_hash": ""
   },
   "pic/cursor.png": {
-    "mtime": 1792254111.982995,
-    "seen": 1792254609.6756313,
+    "mtime": 1792255838.6999307,
+    "seen": 1792264033.5148065,
     "ast_hash": "320417131ed6afa660a5c4454595a7ca",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1792263932.5697937,
+    "seen": 1792264033.514791,
+    "ast_hash": "df407dcc269f35427514541bdb4bdd2d",
     "semantic_hash": ""
   }
 }

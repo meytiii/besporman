@@ -30,12 +30,12 @@
       <div class="footer-actions">
         <button
           type="button"
-          class="btn btn-secondary back-to-top-btn"
+          class="btn btn-secondary btn-sm back-to-top-btn"
           aria-label="بازگشت به ابتدای صفحه"
           @click="scrollToTop"
         >
-          <span>بالای صفحه</span>
-          <span aria-hidden="true">↑</span>
+          <span class="btn-text">بالای صفحه</span>
+          <span class="btn-arrow" aria-hidden="true">↑</span>
         </button>
       </div>
 
@@ -143,8 +143,6 @@ const scrollToTop = () => {
 }
 
 .back-to-top-btn {
-  min-height: 40px;
-  padding: var(--space-1) var(--space-4);
   font-size: var(--text-xs);
 }
 

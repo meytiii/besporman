@@ -132,16 +132,19 @@ section[id],
 }
 
 /* ==========================================================================
-   Tactile Neo-Brutalist Button Matrix (8-State Compliance)
+   Tactile Neo-Brutalist Button Matrix with Gliding Arrow Badge (8-State Compliance)
    ========================================================================== */
 
 .btn {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
   min-height: 48px; /* Exceeds 44px WCAG touch floor */
-  padding-inline: var(--space-6);
+  padding-inline-start: var(--space-6);
+  padding-inline-end: 54px;
   padding-block: var(--space-3);
   font-family: var(--font-body);
   font-weight: 500;
@@ -150,7 +153,96 @@ section[id],
   border-radius: var(--border-radius-sm);
   cursor: pointer;
   user-select: none;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+  transition:
+    padding-inline 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.btn:hover {
+  padding-inline-start: 54px;
+  padding-inline-end: var(--space-6);
+}
+
+/* Fallback for buttons without a .btn-arrow */
+.btn:not(:has(.btn-arrow)) {
+  padding-inline: var(--space-6);
+}
+.btn:not(:has(.btn-arrow)):hover {
+  padding-inline: var(--space-6);
+}
+
+/* Small Button Variant */
+.btn-sm {
+  min-height: 40px;
+  padding-inline-start: var(--space-4);
+  padding-inline-end: 42px;
+  padding-block: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.btn-sm:hover {
+  padding-inline-start: 42px;
+  padding-inline-end: var(--space-4);
+}
+
+.btn-sm:not(:has(.btn-arrow)) {
+  padding-inline: var(--space-4);
+}
+.btn-sm:not(:has(.btn-arrow)):hover {
+  padding-inline: var(--space-4);
+}
+
+/* Inner Text Label */
+.btn-text {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+/* Nested Gliding Arrow Badge */
+.btn-arrow {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-radius-full);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  z-index: 3;
+  margin: 0;
+  transition:
+    inset-inline-end 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-sm .btn-arrow {
+  inset-inline-end: 8px;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+}
+
+/* Hover Gliding Trajectory & Dynamic 45-degree Rotational Tilt */
+.btn:hover .btn-arrow {
+  inset-inline-end: calc(100% - 40px);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.btn-sm:hover .btn-arrow {
+  inset-inline-end: calc(100% - 32px);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 /* Primary Button (Vibrant Comic Red with White Text) */
@@ -160,10 +252,19 @@ section[id],
   box-shadow: var(--shadow-md);
 }
 
+.btn-primary .btn-arrow {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--primitive-white);
+}
+
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
   transform: translate(-1px, -1px);
   box-shadow: var(--shadow-hover);
+}
+
+.btn-primary:hover .btn-arrow {
+  background-color: rgba(255, 255, 255, 0.38);
 }
 
 .btn-primary:active {
@@ -179,10 +280,19 @@ section[id],
   box-shadow: var(--shadow-md);
 }
 
+.btn-secondary .btn-arrow {
+  background-color: rgba(14, 15, 18, 0.08);
+  color: var(--color-ink-primary);
+}
+
 .btn-secondary:hover {
   background-color: var(--primitive-cream-200);
   transform: translate(-1px, -1px);
   box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary:hover .btn-arrow {
+  background-color: rgba(14, 15, 18, 0.16);
 }
 
 .btn-secondary:active {
@@ -202,6 +312,21 @@ section[id],
   transform: none;
 }
 
+.btn:disabled .btn-arrow,
+.btn[aria-disabled="true"] .btn-arrow {
+  inset-inline-end: 10px !important;
+  transform: translateY(-50%) rotate(0deg) !important;
+}
+
+.btn:disabled:hover,
+.btn[aria-disabled="true"]:hover {
+  padding-inline-start: var(--space-6) !important;
+  padding-inline-end: 54px !important;
+  background-color: var(--color-disabled-bg) !important;
+  box-shadow: 2px 2px 0 var(--color-disabled-border) !important;
+  transform: none !important;
+}
+
 /* ==========================================================================
    Reduced Motion Rules
    ========================================================================== */
@@ -214,6 +339,14 @@ section[id],
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .btn,
+  .btn:hover,
+  .btn .btn-text,
+  .btn .btn-arrow,
+  .btn:hover .btn-arrow {
+    transition: none !important;
   }
 }
 

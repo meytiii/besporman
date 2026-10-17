@@ -8,7 +8,7 @@
           آدرسی که وارد کرده‌اید وجود ندارد یا ممکن است منتقل شده باشد. نگران نباشید، کارها هنوز سر جایش است!
         </p>
         <router-link to="/" class="btn btn-primary">
-          <span>بازگشت به صفحه اصلی</span>
+          <span class="btn-text">بازگشت به صفحه اصلی</span>
           <span class="btn-arrow" aria-hidden="true">←</span>
         </router-link>
       </div>
