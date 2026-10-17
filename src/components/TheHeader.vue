@@ -208,7 +208,7 @@ const navItems: NavItem[] = [
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 const mounted = ref(false)
-const activeTab = ref('services')
+const activeTab = ref('')
 const hoveredTab = ref<string | null>(null)
 const mascotX = ref(0)
 const mascotOpacity = ref(0)
@@ -280,8 +280,8 @@ const handleMobileNavClick = (id: string, event?: MouseEvent) => {
 const handleBrandClick = () => {
   if (route.path === '/') {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-    activeTab.value = 'services'
-    updateMascotPosition()
+    activeTab.value = ''
+    mascotOpacity.value = 0
   }
 }
 
@@ -310,8 +310,18 @@ const handleScroll = () => {
     return
   }
 
+  // When near the top of the homepage (Hero section), no section tab should be active
+  if (window.scrollY < 350 && !route.hash) {
+    if (activeTab.value !== '') {
+      activeTab.value = ''
+      mascotOpacity.value = 0
+    }
+    return
+  }
+
   // ScrollSpy to determine active section on homepage
-  const scrollPosition = window.scrollY + 120
+  const scrollPosition = window.scrollY + 160
+  let matched = false
   for (let i = navItems.length - 1; i >= 0; i--) {
     const item = navItems[i]
     const section = document.getElementById(item.id)
@@ -319,6 +329,7 @@ const handleScroll = () => {
       const top = section.offsetTop
       const height = section.offsetHeight
       if (scrollPosition >= top && scrollPosition < top + height) {
+        matched = true
         if (activeTab.value !== item.id) {
           activeTab.value = item.id
           if (!hoveredTab.value) {
@@ -327,6 +338,13 @@ const handleScroll = () => {
         }
         break
       }
+    }
+  }
+
+  if (!matched && window.scrollY < 700) {
+    if (activeTab.value !== '') {
+      activeTab.value = ''
+      mascotOpacity.value = 0
     }
   }
 }
@@ -355,6 +373,9 @@ watch(
           activeTab.value = hashId
           nextTick(updateMascotPosition)
         }
+      } else {
+        activeTab.value = ''
+        mascotOpacity.value = 0
       }
     } else if (typeof path === 'string' && path.startsWith('/projects')) {
       activeTab.value = 'projects'
@@ -375,6 +396,9 @@ onMounted(() => {
       if (navItems.some((item) => item.id === hashId)) {
         activeTab.value = hashId
       }
+    } else {
+      activeTab.value = ''
+      mascotOpacity.value = 0
     }
   } else if (route.path.startsWith('/projects')) {
     activeTab.value = 'projects'

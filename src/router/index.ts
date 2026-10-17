@@ -22,6 +22,10 @@ const router = createRouter({
     },
   ],
   scrollBehavior(to, _from, savedPosition) {
+    // Fresh homepage load without hash must always start at the hero section
+    if (to.path === '/' && !to.hash) {
+      return { top: 0, left: 0 }
+    }
     if (savedPosition) {
       return savedPosition
     }

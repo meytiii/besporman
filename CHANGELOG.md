@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.3.1] - 2026-10-18
+
+### Fixed
+- **Initial Page Open Scroll-To-Top Assurance:** Resolved an issue where opening or refreshing the homepage without an anchor hash could restore previous scroll positions mid-page (near services) due to browser automatic scroll restoration and router `savedPosition` precedence.
+- **Manual Scroll Restoration:** Configured `history.scrollRestoration = 'manual'` in `main.ts` and prioritized `{ top: 0, left: 0 }` for homepage visits without hashes in `router/index.ts`.
+- **Loading Screen Initial Pinning:** Added proactive `window.scrollTo(0, 0)` during `AppLoadingScreen` mount and curtain dismissal when no anchor hash is present.
+- **Header Active Tab Default:** Corrected `TheHeader.vue`'s initial `activeTab` value from `'services'` to empty string (`''`), hiding the mascot indicator and red pill at the top of the page until the user scrolls down into specific section bounds.
+- **ScrollSpy Bounds:** Added near-top boundary detection in `handleScroll` (`scrollY < 350`) to cleanly clear active navigation pills while viewing the Hero section.
+
+---
+
 ## [2.3.0] - 2026-10-17
 
 ### Added

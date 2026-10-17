@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792268886.044355,
-    "seen": 1792268907.9478235,
-    "ast_hash": "ae2a8b1f78142084af327bce97848948",
+    "mtime": 1792269270.0281265,
+    "seen": 1792269289.7917676,
+    "ast_hash": "fa9dd3af7820c0a3b1f5a7156b6f1afb",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792267000.7118013,
-    "seen": 1792267356.961979,
-    "ast_hash": "bd983b2eec09e706e43b709b024bb304",
+    "mtime": 1792269185.251509,
+    "seen": 1792269289.7917902,
+    "ast_hash": "a10e8800d9830834cf73b5b266187a99",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -78,15 +78,15 @@
     "semantic_hash": ""
   },
   "src/main.ts": {
-    "mtime": 1792243241.4363418,
-    "seen": 1792249022.6551056,
-    "ast_hash": "417f698173a171a3f7e1cb1e2fcd7673",
-    "semantic_hash": "417f698173a171a3f7e1cb1e2fcd7673"
+    "mtime": 1792269211.3856924,
+    "seen": 1792269289.7917998,
+    "ast_hash": "49fbd57a12bc7368317c0bc351c7694c",
+    "semantic_hash": ""
   },
   "src/router/index.ts": {
-    "mtime": 1792266876.172109,
-    "seen": 1792267356.961982,
-    "ast_hash": "856529f37b2577171a12745c9b15b23a",
+    "mtime": 1792269148.1741338,
+    "seen": 1792269289.791801,
+    "ast_hash": "c01d399bf1cec749fc244fa7a34ed330",
     "semantic_hash": ""
   },
   "src/services/contactAdapter.ts": {
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792268897.61971,
-    "seen": 1792268907.9478786,
-    "ast_hash": "ef04b43cf3feea999ab4748aca050c31",
+    "mtime": 1792269280.217641,
+    "seen": 1792269289.7918227,
+    "ast_hash": "a546ab3b73a44e832425117af357e728",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -492,9 +492,9 @@
     "semantic_hash": ""
   },
   "src/components/AppLoadingScreen.vue": {
-    "mtime": 1792268835.5965438,
-    "seen": 1792268907.9478314,
-    "ast_hash": "9a8416311ff3bdebd420a7ab06443d94",
+    "mtime": 1792269199.2798767,
+    "seen": 1792269289.791776,
+    "ast_hash": "be7c2ccc24a120ccd70a12d3535e3527",
     "semantic_hash": ""
   },
   "src/components/ui/LiquidLoader.vue": {
