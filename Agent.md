@@ -40,7 +40,8 @@ To prevent competing or contradictory directives across different AI agent tools
    * Update the knowledge graph (`graphify update .` or `/graphify .`) on major changes when the diff is large or the graph has not been updated for a long while.
 8. **Verification & Commit Standards:**
    * Verify all changes (responsive 320px, RTL layout, zero console errors).
-   * Commit with Conventional Commits and push to `main` at the end of each completed task.
+   * Commit with Conventional Commits and **push strictly to `main`** (`git push origin main`) at the end of each completed task.
+   * 🛑 **NEVER push to `deploy` branch:** Only the human owner can push to `deploy`. AI agents are strictly forbidden from pushing to `deploy`.
 9. **Version Management & SemVer Protocol:**
    * Upgrade the application version in `package.json` / `package-lock.json` and document entries in `CHANGELOG.md` whenever major architectural changes, milestone features, or substantial overhauls are made. Follow Semantic Versioning (`MAJOR.MINOR.PATCH`).
 

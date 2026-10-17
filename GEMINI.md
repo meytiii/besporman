@@ -31,6 +31,10 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 - **Version Bumping on Major Changes:** Whenever major architectural changes, substantial new features, or comprehensive redesigns are introduced, upgrade the version in `package.json` (and `package-lock.json`) following Semantic Versioning (`MAJOR.MINOR.PATCH`).
 - **Changelog Maintenance:** Document all notable changes under the corresponding version in `CHANGELOG.md` (`Added`, `Changed`, `Fixed`, `Removed`).
 
+## Git Push & Branch Governance
+- 🛑 **STRICT BAN ON PUSHING TO `deploy`:** AI Agents must NEVER push directly to the `deploy` branch. Only the repository owner is permitted to push to `deploy`.
+- ✅ **PUSH EXCLUSIVELY TO `main`:** All commits and updates by agents must be pushed strictly to the `main` branch (`git push origin main`).
+
 
 ## graphify
 

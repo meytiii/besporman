@@ -187,7 +187,9 @@ At the end of each implementation task, provide:
 5. Tests and verification performed, including failures.
 6. Remaining issues or follow-up tasks.
 7. A detailed commit summary and description using Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `chore:`).
-8. Commit the changes with the generated summary and description, and push them to the repository on the `main` branch (`https://github.com/meytiii/besporman`).
+8. Commit the changes with the generated summary and description, and push them to the repository **strictly on the `main` branch** (`git push origin main`).
+   - 🛑 **CRITICAL RESTRICTION ON `deploy` BRANCH:** AI Agents and pair programmers **MUST NEVER push to the `deploy` branch**. Only the human owner/operator is authorized to push to `deploy`.
+   - ✅ **Permitted Branch:** AI agents can **ONLY push to the `main` branch** (`https://github.com/meytiii/besporman`).
 
 Keep the report factual. Do not mark incomplete work as finished.
 

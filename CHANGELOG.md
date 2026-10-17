@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Loading Screen Initial Pinning:** Added proactive `window.scrollTo(0, 0)` during `AppLoadingScreen` mount and curtain dismissal when no anchor hash is present.
 - **Header Active Tab Default:** Corrected `TheHeader.vue`'s initial `activeTab` value from `'services'` to empty string (`''`), hiding the mascot indicator and red pill at the top of the page until the user scrolls down into specific section bounds.
 - **ScrollSpy Bounds:** Added near-top boundary detection in `handleScroll` (`scrollY < 350`) to cleanly clear active navigation pills while viewing the Hero section.
+- **Git Push Governance Documentation:** Formally established and documented across all instruction files (`AGENTS.md`, `Agent.md`, `GEMINI.md`, and `.agents/rules/mandatory-skills.md`) that AI agents and contributors must strictly and exclusively push to the `main` branch, and are permanently forbidden from pushing to the `deploy` branch (reserved strictly for the human owner).
 
 ---
 

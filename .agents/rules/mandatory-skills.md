@@ -121,3 +121,12 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
 - **Enforcement:**
   - Whenever major architectural revisions, new core subsystem additions, or milestone features are added, bump the application version in `package.json` / `package-lock.json` (e.g. `npm version <newversion> --no-git-tag-version`).
   - Document all version updates with release dates and categorized entries (`Added`, `Changed`, `Fixed`, `Removed`) in `CHANGELOG.md`.
+
+---
+
+## 12. Git Push Governance & Branch Restriction
+- **Rule:** Strict protection of the `deploy` branch.
+- **Enforcement:**
+  - 🛑 **NEVER push to `deploy`:** AI Agents and pair programmers are strictly prohibited from pushing directly to the `deploy` branch. Pushing to `deploy` is reserved solely for the human owner.
+  - ✅ **Push strictly to `main`:** All agent commits, enhancements, and bug fixes must be pushed exclusively to the `main` branch (`git push origin main`).
+
