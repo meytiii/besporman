@@ -188,7 +188,7 @@ onUnmounted(() => {
 <style scoped>
 .hero-section {
   position: relative;
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) + var(--space-4));
   padding-bottom: var(--space-12);
   text-align: center;
   overflow-x: clip;
@@ -200,7 +200,7 @@ onUnmounted(() => {
 .hero-stage {
   position: relative;
   width: 100%;
-  padding-top: var(--space-5);
+  padding-top: var(--space-4);
   padding-bottom: 0;
   overflow: hidden;
   background-color: var(--primitive-cream-100);
@@ -251,6 +251,7 @@ onUnmounted(() => {
   height: 100%;
   width: auto;
   object-fit: cover;
+  object-position: center 18px;
   flex-shrink: 0;
   display: block;
 }
@@ -261,10 +262,10 @@ onUnmounted(() => {
   inset: 0;
   pointer-events: none;
   background:
-    /* Top parchment gradient ensures headline has 100% contrast & legibility */
-    linear-gradient(to bottom, rgba(250, 247, 240, 0.92) 0%, rgba(250, 247, 240, 0.6) 22%, rgba(250, 247, 240, 0.15) 55%, rgba(250, 247, 240, 0.55) 100%),
+    /* Subtle top feathering that preserves full visibility of speech bubbles and comic art */
+    linear-gradient(to bottom, rgba(250, 247, 240, 0.35) 0%, rgba(250, 247, 240, 0.08) 18%, transparent 38%, rgba(250, 247, 240, 0.4) 100%),
     /* Soft left and right edge fades */
-    linear-gradient(to right, var(--color-canvas) 0%, transparent 60px, transparent calc(100% - 60px), var(--color-canvas) 100%);
+    linear-gradient(to right, var(--color-canvas) 0%, transparent 50px, transparent calc(100% - 50px), var(--color-canvas) 100%);
 }
 
 /* Foreground Stage Container */
@@ -284,7 +285,7 @@ onUnmounted(() => {
   color: var(--color-ink-primary);
   margin-bottom: var(--space-2);
   max-width: 22ch;
-  text-shadow: 0 1px 3px rgba(250, 247, 240, 0.95), 0 0 16px rgba(250, 247, 240, 0.9);
+  text-shadow: 0 0 16px rgba(250, 247, 240, 0.98), 0 0 6px rgba(250, 247, 240, 0.98), 0 2px 4px rgba(250, 247, 240, 0.95);
 }
 
 .title-highlight {
