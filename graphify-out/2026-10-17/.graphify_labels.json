@@ -11,9 +11,8 @@
   "9": "include",
   "10": "vite-env.d.ts",
   "11": "Anti-AI-Slop & Authentic Paper Brand Identity",
-  "12": "Vite Bundler Configuration",
+  "12": "vite.config.ts",
   "13": "Vitest Test Runner Configuration",
   "14": "Besporman — Agent Rules (GEMINI.md)",
-  "15": "Besporman — Agent Instructions (Agent.md)",
-  "16": "StarRating.vue"
+  "15": "Besporman — Agent Instructions (Agent.md)"
 }

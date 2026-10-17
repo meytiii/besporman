@@ -24,9 +24,9 @@
     "semantic_hash": "c7d26a13f0eb2b8efd51face92e50e47"
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792251704.1614716,
-    "seen": 1792251910.5802915,
-    "ast_hash": "2c1bf9f80ffd333a18a480c1d5c89ae7",
+    "mtime": 1792253416.3257205,
+    "seen": 1792253540.9760332,
+    "ast_hash": "aad7154cd471456e515bb2b74937ca67",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
@@ -84,10 +84,10 @@
     "semantic_hash": "417f698173a171a3f7e1cb1e2fcd7673"
   },
   "src/router/index.ts": {
-    "mtime": 1792243235.2000728,
-    "seen": 1792249022.6551063,
-    "ast_hash": "b05b0040cd3bd0ff75e176a4ee907dc4",
-    "semantic_hash": "b05b0040cd3bd0ff75e176a4ee907dc4"
+    "mtime": 1792252254.2479143,
+    "seen": 1792252325.234084,
+    "ast_hash": "232c432f266b81b443f5f73b8e4a4323",
+    "semantic_hash": ""
   },
   "src/services/contactAdapter.ts": {
     "mtime": 1792243228.693341,
@@ -162,10 +162,10 @@
     "semantic_hash": "ad67f354ebcc14674d23c94e9faf67a5"
   },
   "vite.config.ts": {
-    "mtime": 1792243095.316793,
-    "seen": 1792249022.655114,
-    "ast_hash": "614f0cfdc1ebe78715b85b579d17e999",
-    "semantic_hash": "614f0cfdc1ebe78715b85b579d17e999"
+    "mtime": 1792252267.6277583,
+    "seen": 1792252325.234097,
+    "ast_hash": "ed3c50db9f57872ca483308e8d6e3c31",
+    "semantic_hash": ""
   },
   "vitest.config.ts": {
     "mtime": 1792243100.748226,
@@ -204,10 +204,10 @@
     "semantic_hash": "14ed56e74d1d1007da69d76144ae74f8"
   },
   "index.html": {
-    "mtime": 1792247052.7846966,
-    "seen": 1792249196.4429836,
-    "ast_hash": "abb39a614f958e7589cf06a266983e87",
-    "semantic_hash": "abb39a614f958e7589cf06a266983e87"
+    "mtime": 1792253095.4952798,
+    "seen": 1792253173.2073097,
+    "ast_hash": "df5aeca8671978c29f69f205aaafd6be",
+    "semantic_hash": ""
   },
   "Agent.md": {
     "mtime": 1792249528.5796478,
@@ -405,6 +405,18 @@
     "mtime": 1792251110.062767,
     "seen": 1792251910.5803492,
     "ast_hash": "d1e275334eb3b278c457dcd6f04d1a0b",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1792252552.6858962,
+    "seen": 1792252928.8269546,
+    "ast_hash": "7fc1da8ecad4d900b2dad00f1fd78f10",
+    "semantic_hash": ""
+  },
+  "pic/besporman_like.png": {
+    "mtime": 1792253498.6862316,
+    "seen": 1792253540.976069,
+    "ast_hash": "c9371ef059b3c5c745c567d79fcd14c8",
     "semantic_hash": ""
   }
 }

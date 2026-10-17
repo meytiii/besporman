@@ -24,9 +24,9 @@
     "semantic_hash": "c7d26a13f0eb2b8efd51face92e50e47"
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792252875.0770376,
-    "seen": 1792252928.8269284,
-    "ast_hash": "9a26fff7da728b879b52ba6d22dc32b5",
+    "mtime": 1792253957.0249975,
+    "seen": 1792254001.712694,
+    "ast_hash": "3226688babf9eedb7caafa74a3e94c8a",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
@@ -204,10 +204,10 @@
     "semantic_hash": "14ed56e74d1d1007da69d76144ae74f8"
   },
   "index.html": {
-    "mtime": 1792247052.7846966,
-    "seen": 1792249196.4429836,
-    "ast_hash": "abb39a614f958e7589cf06a266983e87",
-    "semantic_hash": "abb39a614f958e7589cf06a266983e87"
+    "mtime": 1792253095.4952798,
+    "seen": 1792253173.2073097,
+    "ast_hash": "df5aeca8671978c29f69f205aaafd6be",
+    "semantic_hash": ""
   },
   "Agent.md": {
     "mtime": 1792249528.5796478,
@@ -411,6 +411,12 @@
     "mtime": 1792252552.6858962,
     "seen": 1792252928.8269546,
     "ast_hash": "7fc1da8ecad4d900b2dad00f1fd78f10",
+    "semantic_hash": ""
+  },
+  "pic/besporman_like.png": {
+    "mtime": 1792253498.6862316,
+    "seen": 1792253540.976069,
+    "ast_hash": "c9371ef059b3c5c745c567d79fcd14c8",
     "semantic_hash": ""
   }
 }

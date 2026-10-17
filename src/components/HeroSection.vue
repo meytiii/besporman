@@ -133,11 +133,12 @@
     <div class="container hero-lower-container">
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary hero-btn-primary">
-          <span>شروع پروژه و ثبت سفارش</span>
+          <span class="btn-text">شروع پروژه و ثبت سفارش</span>
           <span class="btn-arrow" aria-hidden="true">←</span>
         </a>
         <a href="#projects" class="btn btn-secondary hero-btn-secondary">
-          <span>بررسی نمونه‌کارها</span>
+          <span class="btn-text">بررسی نمونه‌کارها</span>
+          <span class="btn-arrow" aria-hidden="true">←</span>
         </a>
       </div>
 
@@ -425,24 +426,90 @@ onUnmounted(() => {
   margin-bottom: var(--space-8);
 }
 
-.hero-btn-primary {
+.hero-actions .btn {
+  position: relative;
+  overflow: hidden;
   font-size: var(--text-lg);
-  padding-inline: var(--space-8);
+  padding-inline-start: var(--space-6);
+  padding-inline-end: 54px;
+  min-height: 50px;
+  cursor: pointer;
+  transition:
+    padding-inline 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background-color 0.15s ease;
 }
 
-.hero-btn-secondary {
-  font-size: var(--text-lg);
+.hero-actions .btn:hover {
+  padding-inline-start: 54px;
+  padding-inline-end: var(--space-6);
+}
+
+.btn-text {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-arrow {
+  position: absolute;
+  inset-inline-end: 10px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 30px;
+  height: 30px;
+  border-radius: var(--border-radius-full);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  border-radius: var(--border-radius-full);
+  font-size: 16px;
+  line-height: 1;
+  z-index: 3;
+  margin: 0;
+  transition:
+    inset-inline-end 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.2s ease;
+}
+
+.hero-btn-primary .btn-arrow {
   background-color: rgba(255, 255, 255, 0.25);
-  margin-inline-start: var(--space-1);
+  color: var(--primitive-white);
+}
+
+.hero-btn-primary:hover .btn-arrow {
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.hero-btn-secondary .btn-arrow {
+  background-color: rgba(14, 15, 18, 0.08);
+  color: var(--color-ink-primary);
+}
+
+.hero-btn-secondary:hover .btn-arrow {
+  background-color: rgba(14, 15, 18, 0.16);
+}
+
+.hero-actions .btn:hover .btn-arrow {
+  inset-inline-end: calc(100% - 40px);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-actions .btn,
+  .btn-text,
+  .btn-arrow {
+    transition: none !important;
+  }
+  .hero-actions .btn:hover {
+    padding-inline-start: var(--space-6) !important;
+    padding-inline-end: 54px !important;
+  }
+  .hero-actions .btn:hover .btn-arrow {
+    inset-inline-end: 10px !important;
+    transform: translateY(-50%) rotate(0deg) !important;
+  }
 }
 
 /* Trust Chips */

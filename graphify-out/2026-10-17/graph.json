@@ -155,19 +155,6 @@
       "source_location": "L10"
     },
     {
-      "id": "src_components_starrating_startype",
-      "label": "StarType",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
-      "file_type": "code",
-      "norm_label": "startype",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L90"
-    },
-    {
       "id": "src_components_marqueebanner_reviewitem",
       "label": "ReviewItem",
       "_callable": true,
@@ -192,6 +179,19 @@
       "norm_label": "reviewsource",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L79"
+    },
+    {
+      "id": "src_components_starrating_startype",
+      "label": "StarType",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "startype",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L90"
     },
     {
       "id": "src_components_projectssection_getcategorylabel",
@@ -266,16 +266,16 @@
       "source_location": "L26"
     },
     {
-      "id": "src_components_starrating_getstartype",
-      "label": "getStarType()",
+      "id": "vite_config_githubpagesspa",
+      "label": "githubPagesSpa()",
       "_callable": true,
       "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
+      "community": 12,
+      "community_name": "vite.config.ts",
       "file_type": "code",
-      "norm_label": "getstartype()",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L92"
+      "norm_label": "githubpagesspa()",
+      "source_file": "vite.config.ts",
+      "source_location": "L6"
     },
     {
       "id": "src_components_thefooter_scrolltotop",
@@ -408,6 +408,18 @@
       "norm_label": "updateloop()",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L263"
+    },
+    {
+      "id": "src_components_starrating_getstartype",
+      "label": "getStarType()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "getstartype()",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L92"
     },
     {
       "id": "src_components_projectssection",
@@ -722,7 +734,7 @@
       "label": "vite.config.ts",
       "_origin": "ast",
       "community": 12,
-      "community_name": "Vite Bundler Configuration",
+      "community_name": "vite.config.ts",
       "file_type": "code",
       "norm_label": "vite.config.ts",
       "source_file": "vite.config.ts",
@@ -870,50 +882,6 @@
       "norm_label": "graphify",
       "source_file": "Agent.md",
       "source_location": "L45"
-    },
-    {
-      "id": "src_components_starrating",
-      "label": "StarRating.vue",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
-      "file_type": "code",
-      "norm_label": "starrating.vue",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_starrating_clipuid",
-      "label": "clipUid",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
-      "file_type": "code",
-      "norm_label": "clipuid",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L88"
-    },
-    {
-      "id": "src_components_starrating_formattedscore",
-      "label": "formattedScore",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
-      "file_type": "code",
-      "norm_label": "formattedscore",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L102"
-    },
-    {
-      "id": "src_components_starrating_props",
-      "label": "props",
-      "_origin": "ast",
-      "community": 16,
-      "community_name": "StarRating.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/StarRating.vue",
-      "source_location": "L76"
     },
     {
       "id": "src_app",
@@ -1101,6 +1069,50 @@
       "norm_label": "trackref",
       "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L236"
+    },
+    {
+      "id": "src_components_starrating",
+      "label": "StarRating.vue",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "starrating.vue",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_starrating_clipuid",
+      "label": "clipUid",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "clipuid",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L88"
+    },
+    {
+      "id": "src_components_starrating_formattedscore",
+      "label": "formattedScore",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "formattedscore",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L102"
+    },
+    {
+      "id": "src_components_starrating_props",
+      "label": "props",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "MarqueeBanner.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/StarRating.vue",
+      "source_location": "L76"
     },
     {
       "id": "tests_marquee_spec",
@@ -4110,6 +4122,17 @@
       "weight": 1.0
     },
     {
+      "source": "vite_config",
+      "target": "vite_config_githubpagesspa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vite.config.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "src_router_index",
       "target": "src_views_notfoundview",
       "relation": "dynamic_import",
@@ -4436,5 +4459,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "accba1f7300ad32e30c8dc4d7211fb86603ea1ee"
+  "built_at_commit": "f4b11f1ffbcab2741ccdb649fe5d3e4e89bb6006"
 }
