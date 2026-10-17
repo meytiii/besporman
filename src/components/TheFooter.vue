@@ -47,9 +47,6 @@
         <p class="copyright-text">
           © {{ currentYearFa }} بسپر من. تمامی حقوق متعلق به تیم توسعه‌دهندگان است.
         </p>
-        <p class="anti-slop-notice">
-          توسعه‌یافته با استاندارد Vue 3، کدنویسی تمیز و بدون وابستگی‌های سنگین.
-        </p>
       </div>
     </div>
   </footer>
@@ -159,22 +156,12 @@ const scrollToTop = () => {
 
 .bottom-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: var(--space-2);
+  justify-content: center;
   text-align: center;
 }
 
-@media (min-width: 768px) {
-  .bottom-container {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: start;
-  }
-}
-
-.copyright-text,
-.anti-slop-notice {
+.copyright-text {
   font-size: var(--text-xs);
   color: var(--color-ink-muted);
 }
