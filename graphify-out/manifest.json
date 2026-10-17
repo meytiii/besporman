@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792269954.7328255,
-    "seen": 1792269985.0843844,
-    "ast_hash": "329ac08c124483557b656347326ba5b0",
+    "mtime": 1792270607.576806,
+    "seen": 1792270631.2874138,
+    "ast_hash": "e96d6c0f9542aa4396faadada4470a07",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -30,10 +30,10 @@
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
-    "mtime": 1792249096.0115664,
-    "seen": 1792249196.4410431,
-    "ast_hash": "0fdcc11333c3c8bbae58e4517ab0708a",
-    "semantic_hash": "0fdcc11333c3c8bbae58e4517ab0708a"
+    "mtime": 1792270458.5907004,
+    "seen": 1792270631.2874284,
+    "ast_hash": "1d1b487e0dfaa66b49087f89e5a398ad",
+    "semantic_hash": ""
   },
   "src/components/ProcessSection.vue": {
     "mtime": 1792267887.189438,
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792269972.9523907,
-    "seen": 1792269985.0844395,
-    "ast_hash": "a0d48e12ba1a9cf6b85d78ef3d074892",
+    "mtime": 1792270616.5134628,
+    "seen": 1792270631.287464,
+    "ast_hash": "096a5a1aa0e181fbc483e09d2988d732",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {

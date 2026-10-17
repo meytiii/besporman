@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.3.3] - 2026-10-18
+
+### Changed
+- **Mobile Marquee Chat Bubble Proportions:** Reduced the dimensions of `.comic-bubble` review bubbles on mobile devices (`max-width: 768px`) from `380px × 265px` down to `280px × 195px`, strictly preserving the ~1.43 comic vector aspect ratio while allowing adjacent bubbles to peek on screen.
+- **Enlarged Review Typography:** Increased `.bubble-text` font size from `13.5px` to `15px` (`line-height: 1.55`) on mobile screens to significantly improve legibility and visual weight within the speech bubble area.
+- **Calibrated Inner Bubble Spacing on Mobile:** Adjusted `.bubble-inner-content` offsets (`top: 22px; inset-inline-start: 34px; inset-inline-end: 24px; gap: 8px;`), author avatar size (`24px × 24px`), author margin (`margin-inline-start: 6px`), and star icons (`14px × 14px`) to ensure comfortable margins that never touch the comic ink border or the bottom speech tail.
+- **Refined Mobile Edge Fade:** Decreased mobile `.marquee-fade` width from `60px` to `28px` to prevent edge gradients from washing out bubbles during entry and exit across 320px–390px mobile viewports.
+- **Playwright Mobile Emulation Validation:** Thoroughly verified rendering, text bounds, and absence of horizontal overflow across 390px (iPhone), 360px (Android), and 320px (minimum mobile floor) viewports.
+
+---
+
 ## [2.3.2] - 2026-10-18
 
 ### Fixed

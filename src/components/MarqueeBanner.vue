@@ -346,7 +346,7 @@ onUnmounted(() => {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 60px;
+  width: 28px;
   z-index: 10;
   pointer-events: none;
 }
@@ -497,6 +497,75 @@ onUnmounted(() => {
   color: var(--color-ink-primary);
   margin: 0;
 }
+
+/* ==========================================================================
+   Mobile Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 768px) {
+  .marquee-wrapper {
+    padding-block: var(--space-6);
+  }
+
+  .marquee-tile {
+    gap: var(--space-4);
+    padding-inline-end: var(--space-4);
+  }
+
+  .comic-bubble {
+    width: 280px;
+    height: 195px;
+    filter: drop-shadow(2.5px 2.5px 0 var(--color-border-bold));
+  }
+
+  .comic-bubble:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(3.5px 3.5px 0 var(--color-border-bold));
+  }
+
+  .bubble-inner-content {
+    top: 22px;
+    inset-inline-start: 34px;
+    inset-inline-end: 24px;
+    gap: 8px;
+  }
+
+  .bubble-author {
+    margin-inline-start: 6px;
+    gap: 6px;
+  }
+
+  .author-avatar {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+  }
+
+  .author-name {
+    font-size: 13.5px;
+  }
+
+  :deep(.star-icon) {
+    width: 14px;
+    height: 14px;
+  }
+
+  :deep(.stars-track) {
+    gap: 1.5px;
+  }
+
+  :deep(.score-badge) {
+    font-size: 12px;
+  }
+
+  .bubble-text {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.55;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+  }
+}
+
 
 /* ==========================================================================
    Accessible Reduced Motion Layout

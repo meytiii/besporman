@@ -1,5 +1,5 @@
 {
-  "0": "ProjectsSection.vue",
+  "0": "ProjectDetailView.vue",
   "1": "ContactSection.vue",
   "2": "TheHeader.vue",
   "3": "MarqueeBanner.vue",
@@ -20,5 +20,6 @@
   "18": "text-reveal.tsx",
   "19": "AppLoadingScreen.vue",
   "20": "components/TextReveal.vue",
-  "21": "liquid-loader-demo.tsx"
+  "21": "liquid-loader-demo.tsx",
+  "22": "LazySection.vue"
 }
