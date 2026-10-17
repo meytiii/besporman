@@ -354,13 +354,13 @@ onUnmounted(() => {
 /* Inner Safe Zone inside Comic Bubble Artwork */
 .bubble-inner-content {
   position: absolute;
-  top: 42px;
+  top: 28px;
   inset-inline-start: 46px;
   inset-inline-end: 34px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 10px;
   box-sizing: border-box;
 }
 
@@ -376,7 +376,7 @@ onUnmounted(() => {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  margin-inline-start: 26px; /* Shift author name and avatar a bit left */
+  margin-inline-start: 32px; /* Shift author name and avatar a bit left */
 }
 
 .author-avatar {
