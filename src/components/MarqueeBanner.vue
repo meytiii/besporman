@@ -1,15 +1,19 @@
 <template>
   <aside class="marquee-wrapper" aria-labelledby="marquee-heading">
-    <h2 id="marquee-heading" class="sr-only">نمونه درخواست‌ها و نیازهای متداول مشتریان</h2>
+    <h2 id="marquee-heading" class="sr-only">نظرات و رضایت مشتریان بسپر من</h2>
 
-    <!-- 1. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
+    <!-- 1. Edge Fades (Smoothly blending cards into the background) -->
+    <div class="marquee-fade marquee-fade--left" aria-hidden="true"></div>
+    <div class="marquee-fade marquee-fade--right" aria-hidden="true"></div>
+
+    <!-- 2. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
     <ul class="sr-only">
-      <li v-for="(request, index) in requestList" :key="'sr-' + index">
-        {{ request.text }} (دسته‌بندی: {{ request.category }})
+      <li v-for="(review, index) in reviewList" :key="'sr-' + index">
+        نظر {{ review.name }} درباره {{ review.tag }}: «{{ review.text }}»
       </li>
     </ul>
 
-    <!-- 2. Visual Looping Marquee Track (Strictly aria-hidden) -->
+    <!-- 3. Visual Looping Marquee Track (Strictly aria-hidden) -->
     <div
       class="marquee-viewport"
       aria-hidden="true"
@@ -18,18 +22,25 @@
       @mouseleave="handleMouseLeave"
     >
       <div
+        ref="trackRef"
         class="marquee-track"
         :class="{ 'is-paused': isPaused || isHovered }"
       >
         <!-- Tile A (Original) -->
-        <div class="marquee-tile">
+        <div ref="tileRefA" class="marquee-tile">
           <div
-            v-for="(item, idx) in requestList"
+            v-for="(item, idx) in reviewList"
             :key="'tile-a-' + idx"
             class="comic-bubble"
             :class="'comic-bubble--' + item.type"
           >
-            <span class="bubble-tag">{{ item.category }}</span>
+            <div class="bubble-header">
+              <div class="bubble-author">
+                <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
+                <span class="author-name">{{ item.name }}</span>
+              </div>
+              <span class="bubble-tag">{{ item.tag }}</span>
+            </div>
             <p class="bubble-text">«{{ item.text }}»</p>
           </div>
         </div>
@@ -37,25 +48,31 @@
         <!-- Tile B (Exact Identical Clone for Seamless Math Loop) -->
         <div class="marquee-tile">
           <div
-            v-for="(item, idx) in requestList"
+            v-for="(item, idx) in reviewList"
             :key="'tile-b-' + idx"
             class="comic-bubble"
             :class="'comic-bubble--' + item.type"
           >
-            <span class="bubble-tag">{{ item.category }}</span>
+            <div class="bubble-header">
+              <div class="bubble-author">
+                <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
+                <span class="author-name">{{ item.name }}</span>
+              </div>
+              <span class="bubble-tag">{{ item.tag }}</span>
+            </div>
             <p class="bubble-text">«{{ item.text }}»</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 3. Explicit WCAG 2.2.2 Keyboard Pause/Play Control -->
+    <!-- 4. Explicit WCAG 2.2.2 Keyboard Pause/Play Control -->
     <div class="marquee-controls container">
       <button
         type="button"
         class="marquee-toggle-btn"
         :aria-pressed="isPaused"
-        :aria-label="isPaused ? 'پخش انیمیشن نوار درخواست‌ها' : 'توقف انیمیشن نوار درخواست‌ها'"
+        :aria-label="isPaused ? 'پخش انیمیشن نوار نظرات' : 'توقف انیمیشن نوار نظرات'"
         @click="toggleMarquee"
       >
         <span class="btn-icon" aria-hidden="true">{{ isPaused ? '▶' : '⏸' }}</span>
@@ -66,44 +83,126 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
-interface RequestBubble {
-  category: string;
+interface ReviewItem {
+  name: string;
+  tag: string;
   text: string;
   type: 'web' | 'bot' | 'app';
 }
 
-const requestList: RequestBubble[] = [
+const reviewList: ReviewItem[] = [
   {
-    category: 'بات تلگرام',
-    text: 'یه بات تلگرام می‌خوام که سفارشات مشتری رو خودکار ثبت کنه و فاکتور بفرسته',
-    type: 'bot'
+    name: 'مهدی',
+    tag: 'طراحی وب‌سایت',
+    text: 'از وقتی سایت برای مغازه‌ام بالا آوردین، فروشم دوبرابر شده ممنونم ازتون!',
+    type: 'web',
   },
   {
-    category: 'طراحی وب‌سایت',
-    text: 'یه پورتفولیوی شخصی، خفن و سریع با طراحی اختصاصی برای نمونه‌کارهام نیاز دارم',
-    type: 'web'
+    name: 'سارا',
+    tag: 'طراحی وب‌سایت',
+    text: 'دیزاینتون واقعاً فوق‌العاده و درجه‌یکه، هر کی سایت رو می‌بینه کیف می‌کنه.',
+    type: 'web',
   },
   {
-    category: 'نرم‌افزار ویندوز',
-    text: 'یه برنامه سبک ویندوزی می‌خوایم که فایل‌های اکسل انبار رو تطبیق بده و گزارش بسازه',
-    type: 'app'
+    name: 'رضا',
+    tag: 'بات تلگرام',
+    text: 'تشکر از تیم خوب بسپرمن بخاطر پشتیبانی عالی و خوبشون! دمتون گرم.',
+    type: 'bot',
   },
   {
-    category: 'بات تلگرام',
-    text: 'رباتی لازم داریم برای اتصال کانال اطلاع‌رسانی به پنل سفارش‌ها با پاسخ آنی',
-    type: 'bot'
+    name: 'لیلا',
+    tag: 'نرم‌افزار ویندوز',
+    text: 'خدایی دمتون گرم ایده‌هاتون حرف نداره، نرم‌افزار انبار کارمون رو خیلی راه انداخت.',
+    type: 'app',
   },
   {
-    category: 'طراحی وب‌سایت',
-    text: 'سایتی می‌خوایم که در گوشی بدون معطلی لود بشه و فرم سفارشاتش خطا نده',
-    type: 'web'
-  }
+    name: 'علی',
+    tag: 'بات تلگرام',
+    text: 'ربات تلگرامی که ساختین روزی چندصدتا سفارش رو خودکار فاکتور می‌کنه، عالیه.',
+    type: 'bot',
+  },
+  {
+    name: 'پویا',
+    tag: 'طراحی وب‌سایت',
+    text: 'سرعت لود سایتمون عالی شده، تو گوشی برق‌آسا باز می‌شه و مشتری معطل نمی‌مونه.',
+    type: 'web',
+  },
+  {
+    name: 'مریم',
+    tag: 'بات تلگرام',
+    text: 'پشتیبانی و پیگیریتون واقعاً حرفه‌ای و صبورانه‌ست، مرسی از زحماتتون.',
+    type: 'bot',
+  },
+  {
+    name: 'امید',
+    tag: 'نرم‌افزار ویندوز',
+    text: 'برنامه ویندوزی تطبیق اکسل بعد از ماه‌ها هنوز بدون خطا کار می‌کنه، خسته نباشید.',
+    type: 'app',
+  },
 ]
+
+const trackRef = ref<HTMLDivElement | null>(null)
+const tileRefA = ref<HTMLDivElement | null>(null)
 
 const isPaused = ref(false)
 const isHovered = ref(false)
+
+// Smooth kinematic physics
+const BASE_SPEED = 45 // cruising speed (px/s)
+const DECEL_RATE = 65 // deceleration rate (~0.7s to complete halt)
+const ACCEL_RATE = 55 // acceleration rate (~0.8s to full speed)
+
+let currentX = 0
+let currentSpeed = BASE_SPEED
+let targetSpeed = BASE_SPEED
+let lastTimestamp: number | null = null
+let animationFrameId: number | null = null
+let tileWidth = 0
+let resizeObserver: ResizeObserver | null = null
+
+const measureTile = () => {
+  if (tileRefA.value) {
+    const width = tileRefA.value.scrollWidth || tileRefA.value.offsetWidth
+    if (width > 0) {
+      tileWidth = width
+    }
+  }
+}
+
+const updateLoop = (timestamp: number) => {
+  if (lastTimestamp === null) {
+    lastTimestamp = timestamp
+  }
+  const dt = Math.min((timestamp - lastTimestamp) / 1000, 0.1) // limit dt to 100ms max
+  lastTimestamp = timestamp
+
+  // Determine target speed
+  targetSpeed = (isPaused.value || isHovered.value) ? 0 : BASE_SPEED
+
+  // Smooth acceleration / deceleration
+  if (currentSpeed > targetSpeed) {
+    currentSpeed = Math.max(targetSpeed, currentSpeed - DECEL_RATE * dt)
+  } else if (currentSpeed < targetSpeed) {
+    currentSpeed = Math.min(targetSpeed, currentSpeed + ACCEL_RATE * dt)
+  }
+
+  // Ensure tile width is measured
+  if (tileWidth === 0) {
+    measureTile()
+  }
+
+  // Advance transform if moving
+  if (tileWidth > 0 && currentSpeed > 0) {
+    currentX = (currentX + currentSpeed * dt) % tileWidth
+    if (trackRef.value) {
+      trackRef.value.style.transform = `translate3d(-${currentX}px, 0, 0)`
+    }
+  }
+
+  animationFrameId = requestAnimationFrame(updateLoop)
+}
 
 const toggleMarquee = () => {
   isPaused.value = !isPaused.value
@@ -116,6 +215,33 @@ const handleMouseEnter = () => {
 const handleMouseLeave = () => {
   isHovered.value = false
 }
+
+onMounted(() => {
+  measureTile()
+
+  if (typeof window !== 'undefined') {
+    if (window.ResizeObserver && tileRefA.value) {
+      resizeObserver = new ResizeObserver(() => {
+        measureTile()
+      })
+      resizeObserver.observe(tileRefA.value)
+    }
+
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!prefersReducedMotion && typeof window.requestAnimationFrame === 'function') {
+      animationFrameId = requestAnimationFrame(updateLoop)
+    }
+  }
+})
+
+onUnmounted(() => {
+  if (animationFrameId !== null && typeof window !== 'undefined') {
+    cancelAnimationFrame(animationFrameId)
+  }
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+  }
+})
 </script>
 
 <style scoped>
@@ -126,6 +252,34 @@ const handleMouseLeave = () => {
   padding-block: var(--space-6);
   border-block: var(--border-width-bold) solid var(--color-border-bold);
   background-color: var(--primitive-cream-100);
+}
+
+/* ==========================================================================
+   Edge Fades (Gradient masks blending into --primitive-cream-100)
+   ========================================================================== */
+.marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .marquee-fade {
+    width: 120px;
+  }
+}
+
+.marquee-fade--left {
+  left: 0;
+  background: linear-gradient(to right, var(--primitive-cream-100) 0%, rgba(244, 239, 230, 0) 100%);
+}
+
+.marquee-fade--right {
+  right: 0;
+  background: linear-gradient(to left, var(--primitive-cream-100) 0%, rgba(244, 239, 230, 0) 100%);
 }
 
 .marquee-viewport {
@@ -142,20 +296,6 @@ const handleMouseLeave = () => {
   gap: 0; /* Strictly zero gap to prevent seam jumps */
   will-change: transform;
   transform: translate3d(0, 0, 0);
-  animation: marquee-scroll-left 38s linear infinite;
-}
-
-.marquee-track.is-paused {
-  animation-play-state: paused;
-}
-
-@keyframes marquee-scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 /* Identical Tile Construction */
@@ -167,20 +307,26 @@ const handleMouseLeave = () => {
   flex-shrink: 0;
 }
 
-/* Comic Request Bubbles */
+/* Comic Review Bubbles */
 .comic-bubble {
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
-  min-width: 300px;
-  max-width: 360px;
+  gap: var(--space-2);
+  min-width: 310px;
+  max-width: 380px;
   padding: var(--space-4) var(--space-5);
   background-color: var(--color-canvas);
   border: var(--border-width-bold) solid var(--color-border-bold);
   border-radius: var(--border-radius-md);
   box-shadow: 3px 3px 0 var(--color-border-bold);
-  direction: rtl; /* Persian text within tile */
+  direction: rtl; /* Persian text within bubble */
   text-align: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.comic-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 var(--color-border-bold);
 }
 
 .comic-bubble--bot {
@@ -191,14 +337,51 @@ const handleMouseLeave = () => {
   background-color: var(--primitive-tan-100);
 }
 
+/* Review Header */
+.bubble-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.bubble-author {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.author-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  color: var(--color-ink-primary);
+  background-color: var(--primitive-amber-100);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  border-radius: var(--border-radius-full);
+  box-shadow: 1px 1px 0 var(--color-border-bold);
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-ink-primary);
+}
+
 .bubble-tag {
   display: inline-block;
-  align-self: flex-start;
+  align-self: center;
   font-family: var(--font-body);
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--color-ink-primary);
-  background-color: rgba(0, 0, 0, 0.08);
+  color: var(--color-ink-muted);
+  background-color: rgba(0, 0, 0, 0.06);
   padding: 2px var(--space-2);
   border-radius: var(--border-radius-sm);
 }
@@ -207,7 +390,7 @@ const handleMouseLeave = () => {
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 500;
-  line-height: var(--leading-snug);
+  line-height: var(--leading-normal);
   color: var(--color-ink-primary);
 }
 
@@ -251,7 +434,6 @@ const handleMouseLeave = () => {
    ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
-    animation: none !important;
     transform: none !important;
     flex-wrap: wrap;
     justify-content: center;
@@ -269,7 +451,8 @@ const handleMouseLeave = () => {
     justify-content: center;
   }
 
-  .marquee-controls {
+  .marquee-controls,
+  .marquee-fade {
     display: none !important;
   }
 }
