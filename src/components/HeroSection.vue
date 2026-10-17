@@ -322,8 +322,9 @@ onUnmounted(() => {
   text-shadow: 0 0 16px rgba(250, 247, 240, 0.98), 0 0 6px rgba(250, 247, 240, 0.98), 0 2px 4px rgba(250, 247, 240, 0.95);
 }
 
-.title-highlight {
-  color: var(--color-accent);
+.title-highlight,
+:deep(.title-highlight) {
+  color: var(--color-accent, #D93829) !important;
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 6px;

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.3.2] - 2026-10-18
+
+### Fixed
+- **Hero Title Highlight Color Restoration:** Resolved an issue where the brand highlight «بسپر من!» in the hero headline rendered black instead of red due to scoped CSS boundaries between `HeroSection.vue` and `TextReveal.vue`.
+- **Global & Deep Title Highlight Scoping:** Added `:deep(.title-highlight)` in `HeroSection.vue`, defined `.text-reveal-segment.title-highlight` in `TextReveal.vue`, and added `.title-highlight` to `base.css` to guarantee vibrant comic red (`#D93829`) coloring on the brand text while preserving iron charcoal black on the surrounding words.
+- **Robust Persian Text Normalization:** Enhanced `isHighlighted` matching in `TextReveal.vue` to flexibly handle full Persian words, punctuation, spaces, and zero-width non-joiner (ZWNJ) half-spaces.
+
+---
+
 ## [2.3.1] - 2026-10-18
 
 ### Fixed

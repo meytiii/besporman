@@ -77,9 +77,15 @@ const segments = computed(() => {
 
 const isHighlighted = (segment: string): boolean => {
   if (!props.highlight) return false
-  const cleanSeg = segment.replace(/[!؟؛.,،«»]/g, '').trim()
-  const cleanHighlight = props.highlight.replace(/[!؟؛.,،«»]/g, '').trim()
-  return cleanHighlight.split(/\s+/).some((w) => w === cleanSeg)
+  const normalize = (str: string) => str.replace(/[!؟؛.,،«»\s\u200c]/g, '').trim()
+  const cleanSeg = normalize(segment)
+  if (!cleanSeg) return false
+
+  const cleanHighlight = normalize(props.highlight)
+  if (cleanHighlight.includes(cleanSeg)) return true
+
+  const words = props.highlight.split(/\s+/).map(normalize)
+  return words.some((w) => w && (w === cleanSeg || cleanSeg.includes(w)))
 }
 
 const staggerDelay = computed(() => {
@@ -208,6 +214,14 @@ onUnmounted(() => {
 .preset-slide .text-reveal-segment.is-revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Highlighted segments */
+.text-reveal-segment.title-highlight {
+  color: var(--color-accent, #D93829) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
 }
 
 /* Non-breaking space wrapper between words */

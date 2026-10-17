@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-18)
 
 ## Corpus Check
-- 52 files · ~610,301 words
+- 52 files · ~610,446 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 306 nodes · 356 edges · 22 communities (19 shown, 3 thin omitted)
+- 308 nodes · 358 edges · 22 communities (19 shown, 3 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `01e9b79f`
+- Built from commit: `479cc667`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,7 +37,7 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 15 edges
-2. `Changelog` - 8 edges
+2. `Changelog` - 9 edges
 3. `useScrollReveal()` - 7 edges
 4. `compilerOptions` - 7 edges
 5. `Besporman — Agent Rules (GEMINI.md)` - 7 edges
@@ -97,8 +97,8 @@ Cohesion: 0.13
 Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
 
 ### Community 7 - "Changelog"
-Cohesion: 0.11
-Nodes (18): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, Added (+10 more)
+Cohesion: 0.10
+Nodes (20): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, [2.3.2] - 2026-10-18 (+12 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -133,7 +133,7 @@ Cohesion: 0.15
 Nodes (11): areTopElementsLoaded(), isExiting, isImageLoaded(), isVisible, waitForReadiness(), brandPalettes, columns, ColumnState (+3 more)
 
 ## Knowledge Gaps
-- **158 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+153 more)
+- **159 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+154 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **3 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -141,13 +141,13 @@ Nodes (11): areTopElementsLoaded(), isExiting, isImageLoaded(), isVisible, waitF
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
-  _High betweenness centrality (0.073) - this node is a cross-community bridge._
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
 - **Why does `Parchment & Iron Charcoal Design Palette` connect `App.vue` to `ui/TextReveal.vue`?**
   _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Why does `router` connect `App.vue` to `ProjectsSection.vue`?**
   _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _158 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _159 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ProjectsSection.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.11231884057971014 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
