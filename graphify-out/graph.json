@@ -2204,7 +2204,7 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42"
+      "source_location": "L43"
     },
     {
       "id": "changelog_2_0_0_2026_10_17",
@@ -2216,7 +2216,7 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L24"
+      "source_location": "L25"
     },
     {
       "id": "changelog_2_1_0_2026_10_17",
@@ -2243,7 +2243,7 @@
       "source_location": "L12"
     },
     {
-      "id": "changelog_added_26",
+      "id": "changelog_added_27",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -2252,10 +2252,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
-      "id": "changelog_added_44",
+      "id": "changelog_added_45",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -2264,7 +2264,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L44"
+      "source_location": "L45"
     },
     {
       "id": "changelog_changed",
@@ -2276,10 +2276,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
-      "id": "changelog_changed_36",
+      "id": "changelog_changed_37",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -2288,7 +2288,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L36"
+      "source_location": "L37"
     },
     {
       "id": "changelog_changelog",
@@ -2312,7 +2312,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L19"
+      "source_location": "L20"
     },
     {
       "id": "tsconfig_node",
@@ -3583,35 +3583,35 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_44",
+      "target": "changelog_added_45",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L44",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_26",
+      "target": "changelog_added_27",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_36",
+      "target": "changelog_changed_37",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -3633,7 +3633,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3644,7 +3644,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3666,7 +3666,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3677,7 +3677,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -5669,5 +5669,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "4155992f029a4f77cae3aec222306685d5ab16db"
+  "built_at_commit": "b42d2eca11b2f094e8d4a647ce63908e3bba7193"
 }

@@ -126,10 +126,10 @@
           <div class="project-card-footer">
             <router-link
               :to="'/projects/' + project.slug"
-              class="card-link"
+              class="btn btn-primary btn-sm"
             >
-              <span>جزئیات پروژه</span>
-              <span class="link-arrow" aria-hidden="true">←</span>
+              <span class="btn-text">مشاهده بررسی تخصصی پروژه</span>
+              <span class="btn-arrow" aria-hidden="true">←</span>
             </router-link>
           </div>
         </article>
@@ -464,37 +464,8 @@ const filteredProjectsCount = computed(() => {
   margin-top: auto;
   padding-top: var(--space-4);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.card-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-ink-primary);
-}
-
-.card-link:hover {
-  color: var(--color-accent-text);
-}
-
-.link-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  background-color: var(--color-border-bold);
-  color: var(--primitive-white);
-  border-radius: var(--border-radius-full);
-  font-size: 13px;
-  transition: transform 0.15s ease;
-}
-
-.card-link:hover .link-arrow {
-  transform: translateX(-3px);
-  background-color: var(--color-accent);
 }
 
 .empty-state {
