@@ -180,9 +180,9 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1792249248.3959458,
-    "seen": 1792249326.3188453,
-    "ast_hash": "7a6c72e57400adb13d2bd0f6e3f76695",
+    "mtime": 1792249523.2466798,
+    "seen": 1792249560.1328545,
+    "ast_hash": "108433d722e0ab00d5b58a57c05d7999",
     "semantic_hash": ""
   },
   "DESIGN_SYSTEM.md": {
@@ -192,9 +192,9 @@
     "semantic_hash": "9839d78862333e9a3a32ed7596859874"
   },
   "README.md": {
-    "mtime": 1792249308.7867754,
-    "seen": 1792249326.3188508,
-    "ast_hash": "9011980d1302975d638f116c0aa8a3ff",
+    "mtime": 1792249515.3863854,
+    "seen": 1792249560.1328585,
+    "ast_hash": "9db616f97481b6392ee0e645d65d6277",
     "semantic_hash": ""
   },
   "backend_tasks_2026-10-17.md": {
@@ -210,21 +210,15 @@
     "semantic_hash": "abb39a614f958e7589cf06a266983e87"
   },
   "Agent.md": {
-    "mtime": 1792249284.7911785,
-    "seen": 1792249326.3188462,
-    "ast_hash": "d78fd79da8a4cf9ca411a8c81ac75a12",
-    "semantic_hash": ""
-  },
-  "CLAUDE.md": {
-    "mtime": 1792249319.1046286,
-    "seen": 1792249326.3188472,
-    "ast_hash": "c6899e05297135ae6abc55a8ce61a39a",
+    "mtime": 1792249528.5796478,
+    "seen": 1792249560.132856,
+    "ast_hash": "e59f6ad6cbdf84abe5c7edbdd2fc0fbf",
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1792249271.7164056,
-    "seen": 1792249326.3188496,
-    "ast_hash": "1ef809cae00dcb9454e2112b27165fa2",
+    "mtime": 1792249532.6242564,
+    "seen": 1792249560.1328578,
+    "ast_hash": "d466315b1591c444b8ed4902eb5e1a3a",
     "semantic_hash": ""
   },
   "favicon.png": {

@@ -1,67 +1,136 @@
 <template>
   <section class="hero-section" aria-labelledby="hero-title">
-    <div class="container hero-container">
-      
-      <!-- Creative Persian Headline Above Mascot -->
-      <h1 id="hero-title" class="hero-title">
-        خیالت از توسعه نرم‌افزار راحت؛<br />
-        <span class="title-highlight">کار رو بسپر من!</span>
-      </h1>
+    <!-- 1. Hero Stage: Exactly spans the red zone behind mascot & neon sign -->
+    <div class="hero-stage">
+      <!-- Continuous Unstoppable Comic Strip Marquee Backdrop -->
+      <div class="hero-comic-backdrop" aria-hidden="true" dir="ltr">
+        <div class="hero-comic-track">
+          <!-- Tile A -->
+          <div class="hero-comic-tile">
+            <img
+              src="/pic/webp/header_1.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+            <img
+              src="/pic/webp/header_2.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+            <img
+              src="/pic/webp/header_3.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+          </div>
 
-      <!-- 3. Centered Mascot Stage (2-Second Mechanical Hard Cut) -->
-      <div class="mascot-wrapper">
-        <div
-          class="mascot-stage"
-          role="img"
-          aria-label="کاراکتر بسپر من در حال اشاره با اعتمادبه‌نفس"
-        >
-          <!-- Pose 1: Pointing to himself -->
-          <img
-            v-show="currentPose === 1"
-            src="/pic/webp/besporman1.webp"
-            alt=""
-            class="mascot-layer mascot-layer--pose1"
-            width="470"
-            height="1200"
-          />
-
-          <!-- Pose 2: Pointing down -->
-          <img
-            v-show="currentPose === 2"
-            src="/pic/webp/besporman2.webp"
-            alt=""
-            class="mascot-layer mascot-layer--pose2"
-            width="607"
-            height="1498"
-          />
+          <!-- Tile B (Exact Clone for Seamless Mathematical Loop) -->
+          <div class="hero-comic-tile">
+            <img
+              src="/pic/webp/header_1.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+            <img
+              src="/pic/webp/header_2.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+            <img
+              src="/pic/webp/header_3.webp"
+              alt=""
+              class="hero-comic-img"
+              width="1376"
+              height="768"
+              loading="eager"
+            />
+          </div>
         </div>
 
-        <!-- 4. Physical Neon Sign Below Mascot -->
-        <div class="comic-sign-plate neon-sign-plate" role="img" aria-label="تابلوی نئون بسپر من">
-          <span class="sr-only">بسپر من</span>
-          <!-- Off State (when mascot pose 1: pointing to himself) -->
-          <img
-            v-show="currentPose === 1"
-            src="/pic/webp/neon_sign_off.webp"
-            alt="تابلوی بسپر من خاموش"
-            class="neon-sign-img neon-sign-img--off"
-            width="1052"
-            height="599"
-          />
-
-          <!-- On State (when mascot pose 2: pointing down to sign) -->
-          <img
-            v-show="currentPose === 2"
-            src="/pic/webp/neon_sign_on.webp"
-            alt="تابلوی نئون بسپر من روشن"
-            class="neon-sign-img neon-sign-img--on"
-            width="1052"
-            height="598"
-          />
-        </div>
+        <!-- Legibility & Vignette Overlay -->
+        <div class="hero-comic-overlay"></div>
       </div>
 
-      <!-- 5. Primary Action Triggers -->
+      <!-- Foreground Stage Content: Title, Mascot, and Neon Sign -->
+      <div class="container hero-stage-container">
+        <!-- Creative Persian Headline Above Mascot -->
+        <h1 id="hero-title" class="hero-title">
+          خیالت از توسعه نرم‌افزار راحت؛<br />
+          <span class="title-highlight">کار رو بسپر من!</span>
+        </h1>
+
+        <!-- Centered Mascot Stage & Neon Sign -->
+        <div class="mascot-wrapper">
+          <div
+            class="mascot-stage"
+            role="img"
+            aria-label="کاراکتر بسپر من در حال اشاره با اعتمادبه‌نفس"
+          >
+            <!-- Pose 1: Pointing to himself -->
+            <img
+              v-show="currentPose === 1"
+              src="/pic/webp/besporman1.webp"
+              alt=""
+              class="mascot-layer mascot-layer--pose1"
+              width="470"
+              height="1200"
+            />
+
+            <!-- Pose 2: Pointing down -->
+            <img
+              v-show="currentPose === 2"
+              src="/pic/webp/besporman2.webp"
+              alt=""
+              class="mascot-layer mascot-layer--pose2"
+              width="607"
+              height="1498"
+            />
+          </div>
+
+          <!-- Physical Neon Sign Below Mascot -->
+          <div class="comic-sign-plate neon-sign-plate" role="img" aria-label="تابلوی نئون بسپر من">
+            <span class="sr-only">بسپر من</span>
+            <!-- Off State (when mascot pose 1: pointing to himself) -->
+            <img
+              v-show="currentPose === 1"
+              src="/pic/webp/neon_sign_off.webp"
+              alt="تابلوی بسپر من خاموش"
+              class="neon-sign-img neon-sign-img--off"
+              width="1052"
+              height="599"
+            />
+
+            <!-- On State (when mascot pose 2: pointing down to sign) -->
+            <img
+              v-show="currentPose === 2"
+              src="/pic/webp/neon_sign_on.webp"
+              alt="تابلوی نئون بسپر من روشن"
+              class="neon-sign-img neon-sign-img--on"
+              width="1052"
+              height="598"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Primary Action Triggers & Trust Badges (Below the Stage) -->
+    <div class="container hero-lower-container">
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary hero-btn-primary">
           <span>شروع پروژه و ثبت سفارش</span>
@@ -72,7 +141,6 @@
         </a>
       </div>
 
-      <!-- 6. Trust Badges -->
       <div class="hero-trust-chips">
         <div class="trust-chip">
           <span class="chip-dot" aria-hidden="true"></span>
@@ -87,7 +155,6 @@
           <span>ارتباط مستقیم با توسعه‌دهنده</span>
         </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -121,13 +188,89 @@ onUnmounted(() => {
 <style scoped>
 .hero-section {
   position: relative;
-  padding-top: calc(var(--header-height) + var(--space-8));
+  padding-top: var(--header-height);
   padding-bottom: var(--space-12);
   text-align: center;
-  overflow: visible;
+  overflow-x: clip;
 }
 
-.hero-container {
+/* ==========================================================================
+   Hero Stage (Exact Red Box Boundary: Full Width Behind Mascot & Sign)
+   ========================================================================== */
+.hero-stage {
+  position: relative;
+  width: 100%;
+  padding-top: var(--space-8);
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: var(--primitive-cream-100);
+}
+
+/* Continuous Unstoppable Comic Marquee Backdrop */
+.hero-comic-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* Marquee is unstoppable and never captures mouse events */
+  user-select: none;
+  z-index: 1;
+}
+
+.hero-comic-track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  animation: heroComicScroll 65s linear infinite;
+  will-change: transform;
+}
+
+@keyframes heroComicScroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-comic-track {
+    animation: none !important;
+  }
+}
+
+.hero-comic-tile {
+  display: flex;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.hero-comic-img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Legibility & Vignette Overlay */
+.hero-comic-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    /* Top parchment gradient ensures headline has 100% contrast & legibility */
+    linear-gradient(to bottom, rgba(250, 247, 240, 0.92) 0%, rgba(250, 247, 240, 0.6) 22%, rgba(250, 247, 240, 0.15) 55%, rgba(250, 247, 240, 0.55) 100%),
+    /* Soft left and right edge fades */
+    linear-gradient(to right, var(--color-canvas) 0%, transparent 60px, transparent calc(100% - 60px), var(--color-canvas) 100%);
+}
+
+/* Foreground Stage Container */
+.hero-stage-container {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,6 +284,7 @@ onUnmounted(() => {
   color: var(--color-ink-primary);
   margin-bottom: var(--space-4);
   max-width: 22ch;
+  text-shadow: 0 1px 3px rgba(250, 247, 240, 0.95), 0 0 16px rgba(250, 247, 240, 0.9);
 }
 
 .title-highlight {
@@ -158,21 +302,26 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: var(--space-8);
+  margin-bottom: 0;
   width: 100%;
 }
 
+/* 3D Depth Shadow: Mascot casting silhouette shadow onto comic strip */
 .mascot-stage {
   position: relative;
   width: 300px;
   height: 460px;
   overflow: visible;
+  filter: drop-shadow(0 20px 25px rgba(14, 15, 18, 0.4))
+          drop-shadow(0 35px 50px rgba(14, 15, 18, 0.3));
 }
 
 @media (min-width: 768px) {
   .mascot-stage {
     width: 400px;
     height: 620px;
+    filter: drop-shadow(0 25px 35px rgba(14, 15, 18, 0.45))
+            drop-shadow(0 45px 65px rgba(14, 15, 18, 0.35));
   }
 }
 
@@ -210,7 +359,7 @@ onUnmounted(() => {
   }
 }
 
-/* Physical Neon Sign Below Mascot */
+/* Physical Neon Sign Below Mascot: Depth shadow and neon glow over comic strip */
 .comic-sign-plate.neon-sign-plate {
   position: relative;
   width: 280px;
@@ -220,8 +369,9 @@ onUnmounted(() => {
   border: none;
   box-shadow: none;
   padding: 0;
-  z-index: 2;
-  filter: drop-shadow(4px 4px 0 var(--color-border-bold));
+  z-index: 3;
+  filter: drop-shadow(4px 4px 0 var(--color-border-bold))
+          drop-shadow(0 18px 24px rgba(14, 15, 18, 0.45));
   user-select: none;
 }
 
@@ -239,11 +389,22 @@ onUnmounted(() => {
 }
 
 .neon-sign-img--on {
-  /* Physical glowing red neon aura */
-  filter: drop-shadow(0 0 16px rgba(225, 40, 25, 0.6)) drop-shadow(0 0 32px rgba(225, 40, 25, 0.35));
+  /* Physical glowing red neon aura casting light over comic backdrop */
+  filter: drop-shadow(0 0 16px rgba(225, 40, 25, 0.7))
+          drop-shadow(0 0 35px rgba(225, 40, 25, 0.45))
+          drop-shadow(0 0 60px rgba(225, 40, 25, 0.25));
 }
 
-/* Actions */
+/* ==========================================================================
+   Lower Actions & Trust Chips
+   ========================================================================== */
+.hero-lower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--space-8);
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
