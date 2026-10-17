@@ -176,7 +176,7 @@ Font files reside in `src/assets/fonts/` to leverage Vite's content-hashing, ass
   src: url('../fonts/Lalezar-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Block fallback font rendering to ensure zero FOUT on display typography */
 }
 
 @font-face {

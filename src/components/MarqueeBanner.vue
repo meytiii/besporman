@@ -388,7 +388,7 @@ onUnmounted(() => {
 }
 
 .marquee-mascot-box {
-  height: 92px;
+  height: 190px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -399,13 +399,8 @@ onUnmounted(() => {
   height: 100%;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(2px 2px 0 var(--color-border-bold));
+  filter: drop-shadow(3px 3px 0 var(--color-border-bold));
   user-select: none;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.marquee-mascot-img:hover {
-  transform: scale(1.08) rotate(-3deg);
 }
 
 .marquee-section-title {
@@ -598,7 +593,7 @@ onUnmounted(() => {
   }
 
   .marquee-mascot-box {
-    height: 70px;
+    height: 140px;
   }
 
   .marquee-section-title {

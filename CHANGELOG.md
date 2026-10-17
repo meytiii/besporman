@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.1] - 2026-10-18
+
+### Fixed
+- **Loading Screen Font Rendering (Elimination of Fallback FOUT):** Resolved an issue where initial cold visits rendered the loading screen title «داریم میرسیم عجله نکن!» and subtitle in the system fallback font (Tahoma) instead of Lalezar and Vazirmatn.
+- **Critical Typography Font Preloading:** Added `<link rel="preload" as="font" type="font/woff2" crossorigin>` in `index.html` for `Lalezar-Regular.woff2`, `Vazirmatn-Regular.woff2`, `Vazirmatn-Medium.woff2`, and `Vazirmatn-Bold.woff2`, instructing browsers to download brand typography with highest priority during `<head>` parsing.
+- **Display Typography `font-display: block`:** Updated `fonts.css` and `DESIGN_SYSTEM.md` to use `font-display: block;` for Lalezar, preventing the browser engine from painting unstyled system fallback fonts for display titles.
+- **Font-Readiness Gating in `AppLoadingScreen`:** Added reactive font checking and explicit loading via `document.fonts.load('400 1em Lalezar')` and `document.fonts.ready`. The loading copy remains smoothly hidden at `opacity: 0` until Lalezar is confirmed ready by the browser, then gently transitions into view with zero FOUT. Repeat visits with cached fonts display immediately with no delay.
+
+---
+
 ## [2.4.0] - 2026-10-18
 
 ### Added

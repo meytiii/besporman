@@ -24,7 +24,7 @@ describe('LiquidLoader & AppLoadingScreen', () => {
     expect(wrapper.find('.liquid-bubble').exists()).toBe(true)
   })
 
-  it('renders AppLoadingScreen with Lalezar Persian title text', () => {
+  it('renders AppLoadingScreen with Lalezar Persian title text and font readiness class', () => {
     const wrapper = mount(AppLoadingScreen, {
       global: {
         stubs: {
@@ -36,5 +36,7 @@ describe('LiquidLoader & AppLoadingScreen', () => {
     // In test environment, AppLoadingScreen unmounts or handles isVisible
     // Let's verify component definition and text
     expect(wrapper.vm).toBeDefined()
+    // Verify font readiness flag exists and is true in test env
+    expect((wrapper.vm as any).isFontReady).toBe(true)
   })
 })

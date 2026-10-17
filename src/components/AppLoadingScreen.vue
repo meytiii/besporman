@@ -17,7 +17,10 @@
         <LiquidLoader variant="brand" />
 
         <!-- Persian Lalezar Loading Copy -->
-        <div class="loading-title-wrapper">
+        <div
+          class="loading-title-wrapper"
+          :class="{ 'font-loaded': isFontReady }"
+        >
           <h2 class="loading-title">
             داریم میرسیم عجله نکن!
           </h2>
@@ -29,7 +32,10 @@
         </div>
 
         <!-- Studio Subtitle -->
-        <p class="loading-subtitle">
+        <p
+          class="loading-subtitle"
+          :class="{ 'font-loaded': isFontReady }"
+        >
           آماده‌سازی کارگاه برنامه‌نویسی بسپر من
         </p>
       </div>
@@ -44,6 +50,40 @@ import LiquidLoader from '@/components/ui/LiquidLoader.vue'
 const isTestEnv = typeof import.meta !== 'undefined' && import.meta.env?.MODE === 'test'
 const isVisible = ref(!isTestEnv)
 const isExiting = ref(false)
+
+// Check if Lalezar font is already loaded and ready in the browser font set
+const isFontReady = ref(
+  isTestEnv ||
+  (typeof document !== 'undefined' && 'fonts' in document && document.fonts.check('1em Lalezar'))
+)
+
+const ensureFontsLoaded = async (): Promise<void> => {
+  if (isFontReady.value || typeof document === 'undefined' || !('fonts' in document)) {
+    isFontReady.value = true
+    return
+  }
+
+  const timeoutPromise = new Promise<void>((resolve) => setTimeout(resolve, 1200))
+  const loadPromise = (async () => {
+    try {
+      await Promise.allSettled([
+        document.fonts.load('400 1em Lalezar'),
+        document.fonts.load('500 1em Vazirmatn'),
+        document.fonts.ready,
+      ])
+    } catch {
+      // Graceful fallback
+    }
+  })()
+
+  await Promise.race([loadPromise, timeoutPromise])
+  isFontReady.value = true
+}
+
+// Kick off font loading immediately if not ready
+if (!isFontReady.value && typeof window !== 'undefined') {
+  ensureFontsLoaded()
+}
 
 const MINIMUM_DISPLAY_TIME_MS = 2000 // 2 seconds minimum display rule
 const MAX_FALLBACK_TIMEOUT_MS = 6000 // Safety fallback in case slow network blocks an image
@@ -85,7 +125,7 @@ const waitForReadiness = async (): Promise<void> => {
   const timerPromise = new Promise((resolve) => setTimeout(resolve, MINIMUM_DISPLAY_TIME_MS))
 
   // 2. Fonts readiness promise
-  const fontsPromise = (document.fonts ? document.fonts.ready : Promise.resolve()).catch(() => {})
+  const fontsPromise = ensureFontsLoaded()
 
   // 3. Top elements polling promise
   const elementsPromise = new Promise<void>((resolve) => {
@@ -187,6 +227,15 @@ onMounted(async () => {
   justify-content: center;
   gap: 0.15rem;
   direction: rtl;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.loading-title-wrapper.font-loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .loading-title {
@@ -227,6 +276,15 @@ onMounted(async () => {
   color: var(--color-ink-muted, #55575E);
   margin: 0;
   direction: rtl;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.05s, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+  will-change: opacity, transform;
+}
+
+.loading-subtitle.font-loaded {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Keyframes */
@@ -268,6 +326,11 @@ onMounted(async () => {
   .loading-title,
   .dot {
     animation: none !important;
+  }
+  .loading-title-wrapper,
+  .loading-subtitle {
+    transform: none !important;
+    transition: opacity 0.1s ease !important;
   }
   .loading-curtain-leave-active {
     transition: opacity 0.3s ease !important;
