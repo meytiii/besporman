@@ -117,12 +117,12 @@ const formattedScore = computed(() => {
 .stars-track {
   display: inline-flex;
   align-items: center;
-  gap: 2px;
+  gap: 2.5px;
 }
 
 .star-icon {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
   display: block;
   flex-shrink: 0;
   filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.25));
@@ -130,7 +130,7 @@ const formattedScore = computed(() => {
 
 .score-badge {
   font-family: var(--font-body);
-  font-size: var(--text-xs);
+  font-size: 13px;
   font-weight: 700;
   color: var(--color-ink-primary);
   line-height: 1;

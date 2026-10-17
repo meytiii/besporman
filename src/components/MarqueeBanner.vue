@@ -9,7 +9,7 @@
     <!-- 2. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
     <ul class="sr-only">
       <li v-for="(review, index) in reviewList" :key="'sr-' + index">
-        نظر {{ review.name }} درباره {{ review.tag }} (امتیاز {{ review.rating }} از ۵): «{{ review.text }}»
+        نظر {{ review.name }} (امتیاز {{ review.rating }} از ۵): «{{ review.text }}»
       </li>
     </ul>
 
@@ -40,9 +40,6 @@
                   <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
                   <span class="author-name">{{ item.name }}</span>
                 </div>
-                <span class="bubble-tag">{{ item.tag }}</span>
-              </div>
-              <div class="bubble-rating-bar">
                 <StarRating :rating="item.rating" :uid="`tile-a-${idx}`" />
               </div>
               <p class="bubble-text">«{{ item.text }}»</p>
@@ -64,9 +61,6 @@
                   <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
                   <span class="author-name">{{ item.name }}</span>
                 </div>
-                <span class="bubble-tag">{{ item.tag }}</span>
-              </div>
-              <div class="bubble-rating-bar">
                 <StarRating :rating="item.rating" :uid="`tile-b-${idx}`" />
               </div>
               <p class="bubble-text">«{{ item.text }}»</p>
@@ -360,20 +354,15 @@ onUnmounted(() => {
 /* Inner Safe Zone inside Comic Bubble Artwork */
 .bubble-inner-content {
   position: absolute;
-  top: 20px;
-  bottom: 50px;
-  inset-inline-start: 34px;
-  inset-inline-end: 38px;
+  top: 48px;
+  bottom: 78px;
+  inset-inline-start: 46px;
+  inset-inline-end: 34px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 7px;
-}
-
-.bubble-rating-bar {
-  display: flex;
-  align-items: center;
-  margin-top: -2px;
+  justify-content: center;
+  gap: 12px;
+  box-sizing: border-box;
 }
 
 /* Review Header */
@@ -381,7 +370,7 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-3);
+  gap: var(--space-2);
 }
 
 .bubble-author {
@@ -397,7 +386,7 @@ onUnmounted(() => {
   width: 28px;
   height: 28px;
   font-family: var(--font-display);
-  font-size: var(--text-sm);
+  font-size: var(--text-xs);
   color: var(--color-ink-primary);
   background-color: var(--primitive-amber-100);
   border: var(--border-width-bold) solid var(--color-border-bold);
@@ -411,26 +400,16 @@ onUnmounted(() => {
   font-size: var(--text-sm);
   font-weight: 700;
   color: var(--color-ink-primary);
-}
-
-.bubble-tag {
-  display: inline-block;
-  align-self: center;
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  color: var(--color-ink-muted);
-  background-color: rgba(0, 0, 0, 0.06);
-  padding: 2px var(--space-2);
-  border-radius: var(--border-radius-sm);
+  white-space: nowrap;
 }
 
 .bubble-text {
   font-family: var(--font-body);
-  font-size: var(--text-sm);
+  font-size: 13.5px;
   font-weight: 500;
-  line-height: var(--leading-normal);
+  line-height: 1.65;
   color: var(--color-ink-primary);
+  margin: 0;
 }
 
 /* ==========================================================================
