@@ -66,9 +66,9 @@
     "semantic_hash": "b9016de95c9ec866922eab48b6f22cc0"
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792254461.8961937,
-    "seen": 1792254609.675598,
-    "ast_hash": "8cd8497c5adbabaff04235d1951b822d",
+    "mtime": 1792255267.2870133,
+    "seen": 1792255277.0799916,
+    "ast_hash": "697bd9cbf990b8a9eb1f4eea31229834",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -420,9 +420,9 @@
     "semantic_hash": ""
   },
   "src/components/CustomCursor.vue": {
-    "mtime": 1792254582.8709493,
-    "seen": 1792254609.6755881,
-    "ast_hash": "3ac97733212c10a872be6c4655e42df8",
+    "mtime": 1792254728.8005648,
+    "seen": 1792255277.0799816,
+    "ast_hash": "9889e34afffa109bfe295d749493a505",
     "semantic_hash": ""
   },
   "pic/cursor.png": {
