@@ -2,22 +2,11 @@
   <section class="hero-section" aria-labelledby="hero-title">
     <div class="container hero-container">
       
-      <!-- 1. Eyebrow Tag -->
-      <div class="hero-eyebrow">
-        <span class="eyebrow-badge">استودیو توسعه نرم‌افزار</span>
-        <span class="eyebrow-tagline">وب‌سایت · بات تلگرام · نرم‌افزار ویندوز</span>
-      </div>
-
-      <!-- 2. Creative Persian Headline Above Mascot -->
+      <!-- Creative Persian Headline Above Mascot -->
       <h1 id="hero-title" class="hero-title">
         خیالت از توسعه نرم‌افزار راحت؛<br />
         <span class="title-highlight">کار رو بسپر من!</span>
       </h1>
-
-      <p class="hero-description">
-        ما یک تیم برنامه‌نویس ایرانی هستیم که با تمرکز بر کدنویسی استاندارد، طراحی تمیز و تحویل
-        سروقت، ایده‌های شما را به وب‌سایت‌های مدرن، بات‌های اختصاصی تلگرام و برنامه‌های قدرتمند ویندوز تبدیل می‌کنیم.
-      </p>
 
       <!-- 3. Centered Mascot Stage (2-Second Mechanical Hard Cut) -->
       <div class="mascot-wrapper">
@@ -144,36 +133,6 @@ onUnmounted(() => {
   align-items: center;
 }
 
-/* Eyebrow */
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-1) var(--space-3);
-  background-color: var(--primitive-cream-100);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-full);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
-  margin-bottom: var(--space-4);
-}
-
-.eyebrow-badge {
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  color: var(--primitive-white);
-  background-color: var(--color-accent);
-  padding: 2px var(--space-2);
-  border-radius: var(--border-radius-full);
-}
-
-.eyebrow-tagline {
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  color: var(--color-ink-primary);
-}
-
 /* Title */
 .hero-title {
   font-family: var(--font-display);
@@ -189,16 +148,6 @@ onUnmounted(() => {
   text-decoration: underline;
   text-decoration-thickness: 4px;
   text-underline-offset: 6px;
-}
-
-/* Description */
-.hero-description {
-  font-family: var(--font-body);
-  font-size: var(--text-lg);
-  line-height: var(--leading-normal);
-  color: var(--color-ink-muted);
-  max-width: 58ch;
-  margin-bottom: var(--space-8);
 }
 
 /* ==========================================================================
