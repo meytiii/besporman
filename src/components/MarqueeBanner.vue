@@ -34,14 +34,16 @@
             class="comic-bubble"
             :class="'comic-bubble--' + item.type"
           >
-            <div class="bubble-header">
-              <div class="bubble-author">
-                <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
-                <span class="author-name">{{ item.name }}</span>
+            <div class="bubble-inner-content">
+              <div class="bubble-header">
+                <div class="bubble-author">
+                  <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
+                  <span class="author-name">{{ item.name }}</span>
+                </div>
+                <span class="bubble-tag">{{ item.tag }}</span>
               </div>
-              <span class="bubble-tag">{{ item.tag }}</span>
+              <p class="bubble-text">«{{ item.text }}»</p>
             </div>
-            <p class="bubble-text">«{{ item.text }}»</p>
           </div>
         </div>
 
@@ -53,14 +55,16 @@
             class="comic-bubble"
             :class="'comic-bubble--' + item.type"
           >
-            <div class="bubble-header">
-              <div class="bubble-author">
-                <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
-                <span class="author-name">{{ item.name }}</span>
+            <div class="bubble-inner-content">
+              <div class="bubble-header">
+                <div class="bubble-author">
+                  <span class="author-avatar" aria-hidden="true">{{ item.name[0] }}</span>
+                  <span class="author-name">{{ item.name }}</span>
+                </div>
+                <span class="bubble-tag">{{ item.tag }}</span>
               </div>
-              <span class="bubble-tag">{{ item.tag }}</span>
+              <p class="bubble-text">«{{ item.text }}»</p>
             </div>
-            <p class="bubble-text">«{{ item.text }}»</p>
           </div>
         </div>
       </div>
@@ -230,7 +234,7 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-block: var(--space-6);
+  padding-block: var(--space-8);
   border-block: var(--border-width-bold) solid var(--color-border-bold);
   background-color: var(--primitive-cream-100);
 }
@@ -290,32 +294,48 @@ onUnmounted(() => {
 
 /* Comic Review Bubbles */
 .comic-bubble {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  min-width: 310px;
-  max-width: 380px;
-  padding: var(--space-4) var(--space-5);
-  background-color: var(--color-canvas);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-md);
-  box-shadow: 3px 3px 0 var(--color-border-bold);
+  position: relative;
+  width: 380px;
+  height: 265px;
+  flex-shrink: 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(3px 3px 0 var(--color-border-bold));
   direction: rtl; /* Persian text within bubble */
   text-align: start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  user-select: none;
 }
 
 .comic-bubble:hover {
-  transform: translateY(-2px);
-  box-shadow: 4px 4px 0 var(--color-border-bold);
+  transform: translateY(-3px);
+  filter: drop-shadow(5px 5px 0 var(--color-border-bold));
+}
+
+.comic-bubble--web {
+  background-image: url('../../pic/chat_bubble_web.png');
 }
 
 .comic-bubble--bot {
-  background-color: var(--primitive-sage-100);
+  background-image: url('../../pic/chat_bubble_bot.png');
 }
 
 .comic-bubble--app {
-  background-color: var(--primitive-tan-100);
+  background-image: url('../../pic/chat_bubble_app.png');
+}
+
+/* Inner Safe Zone inside Comic Bubble Artwork */
+.bubble-inner-content {
+  position: absolute;
+  top: 36px;
+  bottom: 64px;
+  inset-inline-start: 36px;
+  inset-inline-end: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2);
 }
 
 /* Review Header */
