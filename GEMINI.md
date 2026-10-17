@@ -26,3 +26,14 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 - **Routing:** Vue Router 4 (HTML5 History Mode) with single-page scrolling homepage (`#contact`) and dedicated `/projects/:slug` routes.
 - **Direction:** Persian-first (`<html lang="fa" dir="rtl">`), Vazirmatn typography, zero `letter-spacing` on Persian.
 - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`) adhering strictly to [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
+
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, and especially on major changes (when the git diff is large or the graph has not been updated for a long while), run `graphify update .` to keep the graph current (AST-only, no API cost).

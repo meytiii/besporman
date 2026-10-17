@@ -44,16 +44,3 @@ Build for production:
 npm run build
 ```
 
-## Knowledge Graph (`graphify-out/`)
-
-The repository includes a persistent architectural knowledge graph for token-efficient agent navigation and codebase comprehension:
-- **Interactive Visualizer:** Open [`graphify-out/graph.html`](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/graphify-out/graph.html) directly in any browser.
-- **Audit Report:** Read [`graphify-out/GRAPH_REPORT.md`](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/graphify-out/GRAPH_REPORT.md) for community clusters, god nodes, and cross-cutting connections.
-- **Wiki Navigation:** Browse [`graphify-out/wiki/index.md`](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/graphify-out/wiki/index.md) for fast, low-token exploration.
-- **Query & Update:**
-  ```bash
-  graphify query "<question>"     # Query graph without reading entire codebase
-  graphify path "<A>" "<B>"       # Find shortest relationship path between symbols
-  graphify update .               # Incrementally update graph after major diffs
-  ```
-
