@@ -138,6 +138,10 @@ onUnmounted(() => {
   text-decoration: none;
 }
 
+.brand-text {
+  white-space: nowrap;
+}
+
 .brand-badge {
   display: inline-flex;
   align-items: center;
@@ -148,6 +152,7 @@ onUnmounted(() => {
   border: var(--border-width-bold) solid var(--color-border-bold);
   border-radius: var(--border-radius-sm);
   box-shadow: 2px 2px 0 var(--color-border-bold);
+  flex-shrink: 0;
 }
 
 .brand-icon {
@@ -201,6 +206,13 @@ onUnmounted(() => {
   padding-inline: var(--space-4);
   padding-block: var(--space-2);
   font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .header-cta {
+    display: none;
+  }
 }
 
 .btn-arrow {

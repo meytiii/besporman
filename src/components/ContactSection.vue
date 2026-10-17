@@ -16,7 +16,10 @@
         <!-- Left Column: Direct Telegram & Guidelines -->
         <div class="contact-info-card">
           <div class="direct-telegram-box">
-            <span class="telegram-icon" aria-hidden="true">✈️</span>
+            <svg class="telegram-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
             <h3 class="telegram-title">گفتگوی مستقیم و سریع در تلگرام</h3>
             <p class="telegram-desc">
               برای هماهنگی فوری، مشاوره اولیه و طرح مستقیم سوالات خود می‌توانید همین حالا به اکانت تلگرام تیم پیام دهید:
@@ -56,7 +59,16 @@
             aria-live="polite"
           >
             <span class="feedback-icon" aria-hidden="true">
-              {{ submissionFeedback.type === 'error' ? '⚠️' : 'ℹ️' }}
+              <svg v-if="submissionFeedback.type === 'error'" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <svg v-else width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
             </span>
             <p class="feedback-text">{{ submissionFeedback.message }}</p>
           </div>
