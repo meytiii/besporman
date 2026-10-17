@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Besporman Design Tokens (tokens.css)
+   Canonical Version 2.1.0 - DTCG 3-Tier Architecture
+   ========================================================================== */
+
+:root {
+  /* ==========================================================================
+     1. Primitive Color Tokens
+     ========================================================================== */
+  --primitive-cream-50:   #FAF7F0; /* Primary Parchment Paper Canvas */
+  --primitive-cream-100:  #F4EFE6; /* Elevated Card / Surface */
+  --primitive-cream-200:  #EBE3D5; /* Subtle Inset / Framing Surface */
+  --primitive-ink-950:    #0E0F12; /* Deep Charcoal Black Ink */
+  --primitive-ink-800:    #27272A; /* Secondary Ink / Deep Muted */
+  --primitive-ink-600:    #52525B; /* Accessible Muted Copy */
+  --primitive-ink-500:    #71717A; /* Accessible Structural Border */
+  --primitive-ink-400:    #78716C; /* Warm Slate / Secondary Border */
+  --primitive-red-600:    #D93829; /* Restrained Comic Accent Red (Display/Buttons) */
+  --primitive-red-700:    #C92A1D; /* Calibrated Red for Small Body Text */
+  --primitive-red-800:    #B91C1C; /* Hover State for Red Buttons */
+  --primitive-red-900:    #991B1B; /* Active / Pressed State */
+  --primitive-sage-100:   #E2E8DF; /* Vintage Comic Soft Green */
+  --primitive-tan-100:    #F0EAD6; /* Secondary Warm Comic Neutral */
+  --primitive-amber-100:  #FEF3C7; /* Warm Comic Warning / Accent Chip */
+  --primitive-white:      #FFFFFF; /* High-Contrast Knockout */
+
+  /* ==========================================================================
+     2. Semantic Color Mapping
+     ========================================================================== */
+  --color-canvas:         var(--primitive-cream-50);
+  --color-surface:        var(--primitive-cream-100);
+  --color-surface-sunken: var(--primitive-cream-200);
+  --color-ink-primary:    var(--primitive-ink-950);
+  --color-ink-muted:      var(--primitive-ink-600);
+  
+  /* Dual-Red Strategy: Display vs Body Text (WCAG 2.2 AA) */
+  --color-accent:         var(--primitive-red-600); /* Buttons & Display (>= 24px) */
+  --color-accent-text:    var(--primitive-red-700); /* Small text links & errors (< 24px) */
+  --color-accent-hover:   var(--primitive-red-800);
+  --color-accent-active:  var(--primitive-red-900);
+  
+  --color-border-bold:    var(--primitive-ink-950);
+  --color-border-subtle:  var(--primitive-ink-400);
+
+  /* Status Semantics */
+  --color-error-bg:       #FEE2E2;
+  --color-error-text:     #991B1B;
+  --color-success-bg:     #DCFCE7;
+  --color-success-text:   #166534;
+  --color-warning-bg:     #FEF9C3;
+  --color-warning-text:   #854D0E;
+  --color-info-bg:        #DBEAFE;
+  --color-info-text:      #1E40AF;
+
+  /* Inactive / Disabled Semantics */
+  --color-disabled-bg:     #E4E4E7;
+  --color-disabled-text:   #71717A;
+  --color-disabled-border: #A1A1AA;
+
+  /* ==========================================================================
+     3. Typography & Font Stacks
+     ========================================================================== */
+  --font-display: 'Lalezar', -apple-system, BlinkMacSystemFont, Tahoma, sans-serif;
+  --font-body:    'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Tahoma, sans-serif;
+  --font-mono:    'Cascadia Code', 'Consolas', 'Courier New', monospace;
+
+  /* Modular Typography Scale (Major Third - 1.25) */
+  --text-xs:    clamp(0.75rem,  0.70rem + 0.25vw, 0.8125rem); /* 12px - 13px */
+  --text-sm:    clamp(0.875rem, 0.82rem + 0.28vw, 0.9375rem); /* 14px - 15px */
+  --text-base:  clamp(1.00rem,  0.95rem + 0.25vw, 1.0625rem); /* 16px - 17px */
+  --text-lg:    clamp(1.1875rem,1.10rem + 0.44vw, 1.25rem);   /* 19px - 20px */
+  --text-xl:    clamp(1.4375rem,1.30rem + 0.69vw, 1.5625rem); /* 23px - 25px */
+  --text-2xl:   clamp(1.75rem,  1.55rem + 1.00vw, 2.00rem);   /* 28px - 32px */
+  --text-3xl:   clamp(2.1875rem,1.90rem + 1.44vw, 2.50rem);   /* 35px - 40px */
+  --text-4xl:   clamp(2.75rem,  2.30rem + 2.25vw, 3.25rem);   /* 44px - 52px */
+  --text-hero:  clamp(3.00rem,  2.50rem + 2.50vw, 4.25rem);   /* 48px - 68px */
+
+  --leading-tight:  1.25;
+  --leading-snug:   1.40;
+  --leading-normal: 1.65; /* Strict minimum for Persian body text */
+  --leading-loose:  1.85;
+
+  /* ==========================================================================
+     4. Spacing System
+     ========================================================================== */
+  --space-1:  0.25rem;  /* 4px */
+  --space-2:  0.50rem;  /* 8px */
+  --space-3:  0.75rem;  /* 12px */
+  --space-4:  1.00rem;  /* 16px */
+  --space-5:  1.25rem;  /* 20px */
+  --space-6:  1.50rem;  /* 24px */
+  --space-8:  2.00rem;  /* 32px */
+  --space-10: 2.50rem;  /* 40px */
+  --space-12: 3.00rem;  /* 48px */
+  --space-16: 4.00rem;  /* 64px */
+  --space-20: 5.00rem;  /* 80px */
+  --space-24: 6.00rem;  /* 96px */
+
+  /* ==========================================================================
+     5. Neo-Brutalist Borders & Tactile Shadows
+     ========================================================================== */
+  --border-width-bold:   2px;
+  --border-width-heavy:  3px;
+  --border-radius-sm:    3px;
+  --border-radius-md:    6px;
+  --border-radius-lg:    10px;
+  --border-radius-full:  9999px;
+
+  /* Crisp non-blurred offset shadows */
+  --shadow-sm:     2px 2px 0 var(--color-border-bold);
+  --shadow-md:     3px 3px 0 var(--color-border-bold);
+  --shadow-lg:     5px 5px 0 var(--color-border-bold);
+  --shadow-hover:  4px 4px 0 var(--color-border-bold);
+  --shadow-active: 1px 1px 0 var(--color-border-bold);
+
+  /* Layout Constants */
+  --container-max: 1240px;
+  --header-height: 72px;
+}
