@@ -76,76 +76,162 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import StarRating from './StarRating.vue'
 
+interface ReviewSource {
+  name: string;
+  text: string;
+}
+
 interface ReviewItem {
   name: string;
-  tag: string;
   text: string;
   type: 'web' | 'bot' | 'app' | 'amber' | 'coral' | 'slate';
   rating: number;
 }
+
+const BUBBLE_THEMES: ReviewItem['type'][] = ['web', 'amber', 'bot', 'coral', 'slate', 'app']
+const DISPLAY_COUNT = 9
 
 const getRandomRating = (): number => {
   const options = [3.5, 4.0, 4.5, 5.0]
   return options[Math.floor(Math.random() * options.length)]
 }
 
-const initialReviews: Omit<ReviewItem, 'rating'>[] = [
+const ALL_REVIEWS: ReviewSource[] = [
   {
     name: 'مهدی',
-    tag: 'طراحی وب‌سایت',
     text: 'از وقتی سایت برای مغازه‌ام بالا آوردین، فروشم دوبرابر شده ممنونم ازتون!',
-    type: 'web',
   },
   {
     name: 'سارا',
-    tag: 'طراحی وب‌سایت',
     text: 'دیزاینتون واقعاً فوق‌العاده و درجه‌یکه، هر کی سایت رو می‌بینه کیف می‌کنه.',
-    type: 'amber',
   },
   {
     name: 'رضا',
-    tag: 'بات تلگرام',
     text: 'تشکر از تیم خوب بسپرمن بخاطر پشتیبانی عالی و خوبشون! دمتون گرم.',
-    type: 'bot',
   },
   {
     name: 'لیلا',
-    tag: 'نرم‌افزار ویندوز',
     text: 'خدایی دمتون گرم ایده‌هاتون حرف نداره، نرم‌افزار انبار کارمون رو خیلی راه انداخت.',
-    type: 'coral',
   },
   {
     name: 'علی',
-    tag: 'بات تلگرام',
     text: 'ربات تلگرامی که ساختین روزی چندصدتا سفارش رو خودکار فاکتور می‌کنه، عالیه.',
-    type: 'slate',
   },
   {
     name: 'پویا',
-    tag: 'طراحی وب‌سایت',
     text: 'سرعت لود سایتمون عالی شده، تو گوشی برق‌آسا باز می‌شه و مشتری معطل نمی‌مونه.',
-    type: 'web',
   },
   {
     name: 'مریم',
-    tag: 'بات تلگرام',
     text: 'پشتیبانی و پیگیریتون واقعاً حرفه‌ای و صبورانه‌ست، مرسی از زحماتتون.',
-    type: 'bot',
   },
   {
     name: 'امید',
-    tag: 'نرم‌افزار ویندوز',
     text: 'برنامه ویندوزی تطبیق اکسل بعد از ماه‌ها هنوز بدون خطا کار می‌کنه، خسته نباشید.',
-    type: 'app',
+  },
+  {
+    name: 'نیما',
+    text: 'بات تلگرام پشتیبانی که برامون نوشتید، بار پاسخگویی تیم رو نصف کرد، دمتون گرم.',
+  },
+  {
+    name: 'فرنوش',
+    text: 'سایت فروشگاهی دقیقا همونی شد که تو ذهنم بود؛ شیک، سریع و بدون هیچ پیچیدگی.',
+  },
+  {
+    name: 'میلاد',
+    text: 'نرم‌افزار مدیریت فاکتور ویندوز عالیه، حتی روی سیستم‌های قدیمی دفتر هم روون اجرا می‌شه.',
+  },
+  {
+    name: 'سوگند',
+    text: 'تحویل به‌موقع و اخلاق حرفه‌ای‌تون برام خیلی باارزش بود، همکاری با شما لذت‌بخش بود.',
+  },
+  {
+    name: 'حسام',
+    text: 'بات تلگرام قرعه‌کشی بدون حتی یه ثانیه قطعی کار کرد و اعضای کانال کلی راضی بودن.',
+  },
+  {
+    name: 'نگار',
+    text: 'واکنش‌گرایی سایت روی تبلت و موبایل بی‌نقصه، طراحی رنگ‌ها هم حسابی چشم‌نوازه.',
+  },
+  {
+    name: 'احسان',
+    text: 'اتوماسیون اکسل به دیتابیسی که زدید، روزی سه ساعت وقت حسابدارمون رو آزاد کرد.',
+  },
+  {
+    name: 'پریا',
+    text: 'از دیزاین تمیز و کدنویسی سبکتون مشخصه چقدر روی کار مسلط هستید، خدا قوت.',
+  },
+  {
+    name: 'آرش',
+    text: 'ربات ارسال پیامک و تلگرام همزمان خیلی به دردمون خورد، مشتری‌ها سریع مطلع می‌شن.',
+  },
+  {
+    name: 'بهنام',
+    text: 'نرم‌افزار ثبت سفارش آفلاین بدون باگ کار می‌کنه؛ دمتون گرم بابت پشتیبانی دقیق.',
+  },
+  {
+    name: 'نسترن',
+    text: 'صفحه اصلی سایت انقدر جذاب شده که تایم موندن کاربرها دو برابر شده، واقعا مرسی.',
+  },
+  {
+    name: 'دانیال',
+    text: 'ربات پرداخت تلگرام بدون معطلی تراکنش‌ها رو تایید می‌کنه، فروش شبانه رو متحول کرد.',
+  },
+  {
+    name: 'هانیه',
+    text: 'پنل کاربری انقدر ساده و خوش‌دست طراحی شده که بچه‌های دفتر بدون آموزش یاد گرفتن.',
+  },
+  {
+    name: 'فرهاد',
+    text: 'سرعت، دقت و درک نیاز مشتری؛ چیزی که توی کمتر تیمی دیدم. کارتون حرف نداشت.',
+  },
+  {
+    name: 'ترانه',
+    text: 'دیزاین مینیمال و فونت زیبای سایت نظر همه همکارها رو جلب کرد، دست‌مریزاد.',
+  },
+  {
+    name: 'کیان',
+    text: 'برنامه ویندوزی گزارش‌گیری سود و زیان دقیقاً همون چیزی بود که ماه‌ها دنبالش بودم.',
+  },
+  {
+    name: 'سامان',
+    text: 'بات تلگرام ادمین خودکار، اسپم‌ها رو درجا حذف می‌کنه و گروه کلاً امن و منظم شده.',
+  },
+  {
+    name: 'شیما',
+    text: 'تجربه کاربری سایت فوق‌العاده‌ست؛ مراحل خرید انقدر روونه که انصراف از خرید نداریم.',
+  },
+  {
+    name: 'نوید',
+    text: 'نرم‌افزار بایگانی اسناد خیلی سبک و پرسرعته، کار چندماهه تیم رو جمع کرد.',
+  },
+  {
+    name: 'سپیده',
+    text: 'بهترین تصمیمی بود که برای کسب‌وکارم گرفتم، از پشتیبانی گرمتون بی‌نهایت سپاسگزارم.',
   },
 ]
 
-const reviewList = ref<ReviewItem[]>(
-  initialReviews.map((item) => ({
-    ...item,
+const shuffleArray = <T>(array: T[]): T[] => {
+  const arr = [...array]
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[arr[i], arr[j]] = [arr[j], arr[i]]
+  }
+  return arr
+}
+
+const generateRandomReviewList = (): ReviewItem[] => {
+  const shuffled = shuffleArray(ALL_REVIEWS)
+  const selected = shuffled.slice(0, DISPLAY_COUNT)
+  return selected.map((item, index) => ({
+    name: item.name,
+    text: item.text,
+    type: BUBBLE_THEMES[index % BUBBLE_THEMES.length],
     rating: getRandomRating(),
   }))
-)
+}
+
+const reviewList = ref<ReviewItem[]>(generateRandomReviewList())
 
 const trackRef = ref<HTMLDivElement | null>(null)
 const tileRefA = ref<HTMLDivElement | null>(null)
