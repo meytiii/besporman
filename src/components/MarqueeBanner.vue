@@ -1,26 +1,50 @@
 <template>
   <aside class="marquee-wrapper" aria-labelledby="marquee-heading">
-    <h2 id="marquee-heading" class="sr-only">نظرات و رضایت مشتریان بسپر من</h2>
+    <!-- Section Header: Mascot & Title -->
+    <div class="container marquee-header-container">
+      <div class="marquee-header-inner">
+        <div class="marquee-mascot-box comic-pop">
+          <img
+            :src="mascotLikeImg"
+            alt="بسپر من - رضایت مشتریان"
+            class="marquee-mascot-img"
+            width="452"
+            height="1162"
+            loading="lazy"
+          />
+        </div>
+        <h2 id="marquee-heading" class="marquee-section-title">
+          <TextReveal
+            as="span"
+            text="نظرات مشتریای عزیزمون"
+            preset="fade-in-blur"
+            :speed-reveal="1.2"
+          />
+        </h2>
+      </div>
+    </div>
 
-    <!-- 1. Edge Fades (Smoothly blending cards into the background) -->
-    <div class="marquee-fade marquee-fade--left" aria-hidden="true"></div>
-    <div class="marquee-fade marquee-fade--right" aria-hidden="true"></div>
+    <!-- Marquee Track Area (Scoped edge fades and moving cards) -->
+    <div class="marquee-track-area">
+      <!-- 1. Edge Fades (Smoothly blending cards into the background) -->
+      <div class="marquee-fade marquee-fade--left" aria-hidden="true"></div>
+      <div class="marquee-fade marquee-fade--right" aria-hidden="true"></div>
 
-    <!-- 2. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
-    <ul class="sr-only">
-      <li v-for="(review, index) in reviewList" :key="'sr-' + index">
-        نظر {{ review.name }} (امتیاز {{ review.rating }} از ۵): «{{ review.text }}»
-      </li>
-    </ul>
+      <!-- 2. Semantic Screen Reader Transcription (Never repeating in assistive tech) -->
+      <ul class="sr-only">
+        <li v-for="(review, index) in reviewList" :key="'sr-' + index">
+          نظر {{ review.name }} (امتیاز {{ review.rating }} از ۵): «{{ review.text }}»
+        </li>
+      </ul>
 
-    <!-- 3. Visual Looping Marquee Track (Strictly aria-hidden) -->
-    <div
-      class="marquee-viewport"
-      aria-hidden="true"
-      dir="ltr"
-      @mouseenter="handleMouseEnter"
-      @mouseleave="handleMouseLeave"
-    >
+      <!-- 3. Visual Looping Marquee Track (Strictly aria-hidden) -->
+      <div
+        class="marquee-viewport"
+        aria-hidden="true"
+        dir="ltr"
+        @mouseenter="handleMouseEnter"
+        @mouseleave="handleMouseLeave"
+      >
       <div
         ref="trackRef"
         class="marquee-track"
@@ -69,12 +93,18 @@
         </div>
       </div>
     </div>
-  </aside>
+  </div>
+</aside>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import StarRating from './StarRating.vue'
+import TextReveal from '@/components/ui/TextReveal.vue'
+import { useScrollReveal } from '@/composables/useScrollReveal'
+import mascotLikeImg from '../../pic/webp/besporman_like.webp'
+
+useScrollReveal()
 
 interface ReviewSource {
   name: string;
@@ -340,6 +370,59 @@ onUnmounted(() => {
 }
 
 /* ==========================================================================
+   Marquee Section Header with Mascot
+   ========================================================================== */
+.marquee-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.marquee-header-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.marquee-mascot-box {
+  height: 92px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marquee-mascot-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 0 var(--color-border-bold));
+  user-select: none;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.marquee-mascot-img:hover {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.marquee-section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  color: var(--color-ink-primary);
+  margin: 0;
+  line-height: var(--leading-tight);
+}
+
+.marquee-track-area {
+  position: relative;
+  width: 100%;
+}
+
+/* ==========================================================================
    Edge Fades (Gradient masks blending into --primitive-cream-100)
    ========================================================================== */
 .marquee-fade {
@@ -504,6 +587,22 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .marquee-wrapper {
     padding-block: var(--space-6);
+  }
+
+  .marquee-header-container {
+    margin-bottom: var(--space-4);
+  }
+
+  .marquee-header-inner {
+    gap: var(--space-3);
+  }
+
+  .marquee-mascot-box {
+    height: 70px;
+  }
+
+  .marquee-section-title {
+    font-size: var(--text-2xl);
   }
 
   .marquee-tile {

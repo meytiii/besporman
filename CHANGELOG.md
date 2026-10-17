@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.4.0] - 2026-10-18
+
+### Added
+- **Client Testimonial Section Title:** Added display heading «نظرات مشتریای عزیزمون» rendered via animated `TextReveal` (in Lalezar font) directly between the hero trust chips and the comment marquee chat bubbles in `MarqueeBanner.vue`.
+- **Mascot Thumbs-Up Artwork (`besporman_like.webp`):** Converted the new authentic mascot image `pic/besporman_like.png` to high-performance WebP (`128 KB`, compressed with PIL method 6), and placed it beside the title with thumbs-up gesturing towards the text, complete with comic drop-shadow and tactile micro-hover feedback.
+- **Isolated Marquee Track Area:** Refactored `.marquee-fade` and track elements inside `.marquee-track-area` to guarantee edge fades blend solely across moving bubbles without obscuring the section title or mascot header.
+
+---
+
 ## [2.3.3] - 2026-10-18
 
 ### Changed
