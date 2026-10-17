@@ -66,9 +66,9 @@
     "semantic_hash": "b9016de95c9ec866922eab48b6f22cc0"
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792255338.6398678,
-    "seen": 1792255458.3423133,
-    "ast_hash": "e3d8e8076e8303883f9268e4387239ab",
+    "mtime": 1792255657.6272113,
+    "seen": 1792255720.8691509,
+    "ast_hash": "01423774e269a1264fba38fbb4d311ce",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
