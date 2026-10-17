@@ -6,7 +6,12 @@
   >
     <div class="container header-container">
       <!-- Brand Logo / Identity -->
-      <router-link to="/" class="brand-link" aria-label="بسپر من - بازگشت به صفحه اصلی">
+      <router-link
+        to="/"
+        class="brand-link"
+        aria-label="بسپر من - بازگشت به صفحه اصلی"
+        @click="handleBrandClick"
+      >
         <span class="brand-badge" aria-hidden="true">
           <img src="/favicon.png" alt="" width="28" height="28" class="brand-icon" />
         </span>
@@ -58,7 +63,7 @@
               :href="item.href"
               class="nav-link"
               :class="{ 'is-active': activeTab === item.id }"
-              @click="handleNavClick(item.id)"
+              @click="handleNavClick(item.id, $event)"
               @mouseenter="handleMouseEnter(item.id)"
               @mouseleave="handleMouseLeave"
             >
@@ -88,8 +93,9 @@
       <!-- Direct Contact CTA with Gliding Badge Animation -->
       <div class="header-actions">
         <a
-          href="#contact"
+          href="/#contact"
           class="btn btn-primary header-cta"
+          @click="handleNavClick('contact', $event)"
         >
           <span class="btn-text">سفارش پروژه</span>
           <span class="btn-arrow" aria-hidden="true">←</span>
@@ -147,7 +153,7 @@
                     :href="item.href"
                     class="morph-nav-link"
                     :class="{ 'is-active': activeTab === item.id }"
-                    @click.stop="handleMobileNavClick(item.id)"
+                    @click.stop="handleMobileNavClick(item.id, $event)"
                   >
                     <!-- Kinetic Word Roll from Template -->
                     <span class="morph-roll-box">
@@ -180,6 +186,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick, watch } from 'vue'
+import { useRouter, useRoute } from 'vue-router'
 
 interface NavItem {
   id: string
@@ -187,12 +194,15 @@ interface NavItem {
   href: string
 }
 
+const router = useRouter()
+const route = useRoute()
+
 const navItems: NavItem[] = [
-  { id: 'services', name: 'خدمات', href: '#services' },
-  { id: 'process', name: 'روند همکاری', href: '#process' },
-  { id: 'projects', name: 'نمونه‌کارها', href: '#projects' },
-  { id: 'about', name: 'درباره ما', href: '#about' },
-  { id: 'contact', name: 'ثبت سفارش', href: '#contact' },
+  { id: 'services', name: 'خدمات', href: '/#services' },
+  { id: 'process', name: 'روند همکاری', href: '/#process' },
+  { id: 'projects', name: 'نمونه‌کارها', href: '/#projects' },
+  { id: 'about', name: 'درباره ما', href: '/#about' },
+  { id: 'contact', name: 'ثبت سفارش', href: '/#contact' },
 ]
 
 const isScrolled = ref(false)
@@ -215,9 +225,14 @@ const setItemRef = (id: string, el: HTMLElement | null) => {
 
 const updateMascotPosition = () => {
   const currentId = hoveredTab.value || activeTab.value
-  const targetEl = itemRefs.value[currentId]
+  const targetEl = currentId ? itemRefs.value[currentId] : null
   const listEl = navListRef.value
-  if (!targetEl || !listEl) return
+  if (!targetEl || !listEl) {
+    if (!hoveredTab.value && !activeTab.value) {
+      mascotOpacity.value = 0
+    }
+    return
+  }
 
   const left = targetEl.offsetLeft
   const width = targetEl.offsetWidth
@@ -235,14 +250,39 @@ const handleMouseLeave = () => {
   updateMascotPosition()
 }
 
-const handleNavClick = (id: string) => {
+const handleNavClick = (id: string, event?: MouseEvent) => {
+  if (event && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0)) {
+    return
+  }
+  event?.preventDefault()
+
   activeTab.value = id
   updateMascotPosition()
+
+  if (route.path === '/') {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+    if (route.hash !== '#' + id) {
+      return router.push({ path: '/', hash: '#' + id }).catch(() => {})
+    }
+  } else {
+    return router.push({ path: '/', hash: '#' + id })
+  }
 }
 
-const handleMobileNavClick = (id: string) => {
-  activeTab.value = id
+const handleMobileNavClick = (id: string, event?: MouseEvent) => {
   closeMobileMenu()
+  return handleNavClick(id, event)
+}
+
+const handleBrandClick = () => {
+  if (route.path === '/') {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    activeTab.value = 'services'
+    updateMascotPosition()
+  }
 }
 
 const handleCardClick = () => {
@@ -266,11 +306,15 @@ const handleKeyDown = (e: KeyboardEvent) => {
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 20
 
-  // ScrollSpy to determine active section
+  if (route.path !== '/') {
+    return
+  }
+
+  // ScrollSpy to determine active section on homepage
   const scrollPosition = window.scrollY + 120
   for (let i = navItems.length - 1; i >= 0; i--) {
     const item = navItems[i]
-    const section = document.querySelector(item.href) as HTMLElement | null
+    const section = document.getElementById(item.id)
     if (section) {
       const top = section.offsetTop
       const height = section.offsetHeight
@@ -300,13 +344,40 @@ watch([activeTab, hoveredTab], () => {
   updateMascotPosition()
 })
 
+// Synchronize activeTab with route changes (including cross-route back navigation)
+watch(
+  () => [route.path, route.hash],
+  ([path, hash]) => {
+    if (path === '/') {
+      if (hash) {
+        const hashId = hash.replace('#', '')
+        if (navItems.some((item) => item.id === hashId)) {
+          activeTab.value = hashId
+          nextTick(updateMascotPosition)
+        }
+      }
+    } else if (typeof path === 'string' && path.startsWith('/projects')) {
+      activeTab.value = 'projects'
+      nextTick(updateMascotPosition)
+    } else {
+      activeTab.value = ''
+      mascotOpacity.value = 0
+    }
+  },
+  { immediate: true }
+)
+
 onMounted(() => {
   mounted.value = true
-  if (window.location.hash) {
-    const hashId = window.location.hash.replace('#', '')
-    if (navItems.some((item) => item.id === hashId)) {
-      activeTab.value = hashId
+  if (route.path === '/') {
+    if (window.location.hash) {
+      const hashId = window.location.hash.replace('#', '')
+      if (navItems.some((item) => item.id === hashId)) {
+        activeTab.value = hashId
+      }
     }
+  } else if (route.path.startsWith('/projects')) {
+    activeTab.value = 'projects'
   }
 
   nextTick(() => {

@@ -18,11 +18,15 @@
       <!-- Quick Links -->
       <nav class="footer-nav" aria-label="پیوندهای پاورقی">
         <ul class="footer-nav-list">
-          <li><a href="#services" class="footer-link">خدمات</a></li>
-          <li><a href="#process" class="footer-link">روند همکاری</a></li>
-          <li><a href="#projects" class="footer-link">نمونه‌کارها</a></li>
-          <li><a href="#about" class="footer-link">درباره ما</a></li>
-          <li><a href="#contact" class="footer-link">تماس و سفارش</a></li>
+          <li v-for="link in footerNavItems" :key="link.id">
+            <a
+              :href="'/#' + link.id"
+              class="footer-link"
+              @click="handleFooterNav(link.id, $event)"
+            >
+              {{ link.name }}
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -53,7 +57,39 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter, useRoute } from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
+
 const currentYearFa = '۱۴۰۳'
+
+const footerNavItems = [
+  { id: 'services', name: 'خدمات' },
+  { id: 'process', name: 'روند همکاری' },
+  { id: 'projects', name: 'نمونه‌کارها' },
+  { id: 'about', name: 'درباره ما' },
+  { id: 'contact', name: 'تماس و سفارش' },
+]
+
+const handleFooterNav = (id: string, event?: MouseEvent) => {
+  if (event && (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0)) {
+    return
+  }
+  event?.preventDefault()
+
+  if (route.path === '/') {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' })
+    }
+    if (route.hash !== '#' + id) {
+      return router.push({ path: '/', hash: '#' + id }).catch(() => {})
+    }
+  } else {
+    return router.push({ path: '/', hash: '#' + id })
+  }
+}
 
 const scrollToTop = () => {
   window.scrollTo({

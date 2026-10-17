@@ -42,9 +42,9 @@
     "semantic_hash": "b408c4f50ac64b2e8c88f6a1b93d6612"
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792265580.141718,
-    "seen": 1792265644.300776,
-    "ast_hash": "f45fb25e9c496b101f32070ee45736d5",
+    "mtime": 1792266452.2129674,
+    "seen": 1792266490.4391003,
+    "ast_hash": "183d3bd5bc7a7148c2787a919adb0f78",
     "semantic_hash": ""
   },
   "src/components/ServicesSection.vue": {
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
-    "mtime": 1792265564.3495152,
-    "seen": 1792265644.300781,
-    "ast_hash": "bee778adf0a523e28807939e89fd7c17",
+    "mtime": 1792265739.731179,
+    "seen": 1792266490.439106,
+    "ast_hash": "d6f1ea89380da1855d420ef031659958",
     "semantic_hash": ""
   },
   "src/main.ts": {
@@ -186,8 +186,8 @@
     "semantic_hash": ""
   },
   "DESIGN_SYSTEM.md": {
-    "mtime": 1792265622.278811,
-    "seen": 1792265644.3008022,
+    "mtime": 1792265739.7076144,
+    "seen": 1792266490.43913,
     "ast_hash": "ac9099f2a4692ad7bd22aa40ad490cf8",
     "semantic_hash": ""
   },
@@ -432,9 +432,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792265670.331667,
-    "seen": 1792265713.037773,
-    "ast_hash": "95b9e9566741908441217f7c8a23010b",
+    "mtime": 1792266465.568308,
+    "seen": 1792266490.4391294,
+    "ast_hash": "a1b320fa46dd74b1b35de9afd7313be5",
     "semantic_hash": ""
   }
 }

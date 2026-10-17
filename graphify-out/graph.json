@@ -178,7 +178,7 @@
       "file_type": "code",
       "norm_label": "navitem",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L184"
+      "source_location": "L191"
     },
     {
       "id": "src_components_marqueebanner_reviewitem",
@@ -412,18 +412,6 @@
       "source_location": "L163"
     },
     {
-      "id": "src_components_thefooter_scrolltotop",
-      "label": "scrollToTop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "App.vue",
-      "file_type": "code",
-      "norm_label": "scrolltotop()",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L58"
-    },
-    {
       "id": "src_components_theheader_closemobilemenu",
       "label": "closeMobileMenu()",
       "_callable": true,
@@ -433,7 +421,19 @@
       "file_type": "code",
       "norm_label": "closemobilemenu()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L294"
+      "source_location": "L338"
+    },
+    {
+      "id": "src_components_theheader_handlebrandclick",
+      "label": "handleBrandClick()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "TheHeader.vue",
+      "file_type": "code",
+      "norm_label": "handlebrandclick()",
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L280"
     },
     {
       "id": "src_components_theheader_handlecardclick",
@@ -445,7 +445,7 @@
       "file_type": "code",
       "norm_label": "handlecardclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L248"
+      "source_location": "L288"
     },
     {
       "id": "src_components_theheader_handlekeydown",
@@ -457,7 +457,7 @@
       "file_type": "code",
       "norm_label": "handlekeydown()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L260"
+      "source_location": "L300"
     },
     {
       "id": "src_components_theheader_handlemobilenavclick",
@@ -469,7 +469,7 @@
       "file_type": "code",
       "norm_label": "handlemobilenavclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L243"
+      "source_location": "L275"
     },
     {
       "id": "src_components_theheader_handlemouseenter",
@@ -481,7 +481,7 @@
       "file_type": "code",
       "norm_label": "handlemouseenter()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L228"
+      "source_location": "L243"
     },
     {
       "id": "src_components_theheader_handlemouseleave",
@@ -493,7 +493,7 @@
       "file_type": "code",
       "norm_label": "handlemouseleave()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L233"
+      "source_location": "L248"
     },
     {
       "id": "src_components_theheader_handlenavclick",
@@ -505,7 +505,7 @@
       "file_type": "code",
       "norm_label": "handlenavclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L238"
+      "source_location": "L253"
     },
     {
       "id": "src_components_theheader_handleoutsideclick",
@@ -517,7 +517,7 @@
       "file_type": "code",
       "norm_label": "handleoutsideclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L254"
+      "source_location": "L294"
     },
     {
       "id": "src_components_theheader_handlescroll",
@@ -529,7 +529,7 @@
       "file_type": "code",
       "norm_label": "handlescroll()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L266"
+      "source_location": "L306"
     },
     {
       "id": "src_components_theheader_setitemref",
@@ -541,7 +541,7 @@
       "file_type": "code",
       "norm_label": "setitemref()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L210"
+      "source_location": "L220"
     },
     {
       "id": "src_components_theheader_togglemobilemenu",
@@ -553,7 +553,7 @@
       "file_type": "code",
       "norm_label": "togglemobilemenu()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L290"
+      "source_location": "L334"
     },
     {
       "id": "src_components_theheader_updatemascotposition",
@@ -565,7 +565,7 @@
       "file_type": "code",
       "norm_label": "updatemascotposition()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L216"
+      "source_location": "L226"
     },
     {
       "id": "src_components_marqueebanner_generaterandomreviewlist",
@@ -662,6 +662,42 @@
       "norm_label": "getstartype()",
       "source_file": "src/components/StarRating.vue",
       "source_location": "L92"
+    },
+    {
+      "id": "src_components_thefooter_handlefooternav",
+      "label": "handleFooterNav()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "handlefooternav()",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L75"
+    },
+    {
+      "id": "src_components_thefooter_scrolltotop",
+      "label": "scrollToTop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "scrolltotop()",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L94"
+    },
+    {
+      "id": "tests_navigation_spec_setuprouter",
+      "label": "setupRouter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "setuprouter()",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L7"
     },
     {
       "id": "src_components_aboutsection",
@@ -1325,17 +1361,6 @@
       "source_location": "L167"
     },
     {
-      "id": "src_components_thefooter",
-      "label": "TheFooter.vue",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "App.vue",
-      "file_type": "code",
-      "norm_label": "thefooter.vue",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L1"
-    },
-    {
       "id": "src_main",
       "label": "main.ts",
       "_origin": "ast",
@@ -1410,7 +1435,7 @@
       "file_type": "code",
       "norm_label": "activetab",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L201"
+      "source_location": "L211"
     },
     {
       "id": "src_components_theheader_hoveredtab",
@@ -1421,7 +1446,7 @@
       "file_type": "code",
       "norm_label": "hoveredtab",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L202"
+      "source_location": "L212"
     },
     {
       "id": "src_components_theheader_ismobilemenuopen",
@@ -1432,7 +1457,7 @@
       "file_type": "code",
       "norm_label": "ismobilemenuopen",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L199"
+      "source_location": "L209"
     },
     {
       "id": "src_components_theheader_isscrolled",
@@ -1443,7 +1468,7 @@
       "file_type": "code",
       "norm_label": "isscrolled",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L198"
+      "source_location": "L208"
     },
     {
       "id": "src_components_theheader_itemrefs",
@@ -1454,7 +1479,7 @@
       "file_type": "code",
       "norm_label": "itemrefs",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L207"
+      "source_location": "L217"
     },
     {
       "id": "src_components_theheader_mascotopacity",
@@ -1465,7 +1490,7 @@
       "file_type": "code",
       "norm_label": "mascotopacity",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L204"
+      "source_location": "L214"
     },
     {
       "id": "src_components_theheader_mascotx",
@@ -1476,7 +1501,7 @@
       "file_type": "code",
       "norm_label": "mascotx",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L203"
+      "source_location": "L213"
     },
     {
       "id": "src_components_theheader_mobilemenuref",
@@ -1487,7 +1512,7 @@
       "file_type": "code",
       "norm_label": "mobilemenuref",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L208"
+      "source_location": "L218"
     },
     {
       "id": "src_components_theheader_mounted",
@@ -1498,7 +1523,7 @@
       "file_type": "code",
       "norm_label": "mounted",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L200"
+      "source_location": "L210"
     },
     {
       "id": "src_components_theheader_navitems",
@@ -1509,7 +1534,7 @@
       "file_type": "code",
       "norm_label": "navitems",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L190"
+      "source_location": "L200"
     },
     {
       "id": "src_components_theheader_navlistref",
@@ -1520,7 +1545,29 @@
       "file_type": "code",
       "norm_label": "navlistref",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L206"
+      "source_location": "L216"
+    },
+    {
+      "id": "src_components_theheader_route",
+      "label": "route",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "TheHeader.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L198"
+    },
+    {
+      "id": "src_components_theheader_router",
+      "label": "router",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "TheHeader.vue",
+      "file_type": "code",
+      "norm_label": "router",
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L197"
     },
     {
       "id": "src_components_marqueebanner",
@@ -1652,6 +1699,17 @@
       "file_type": "code",
       "norm_label": "marquee.spec.ts",
       "source_file": "tests/marquee.spec.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tsconfig",
+      "label": "tsconfig.json",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "code",
+      "norm_label": "tsconfig.json",
+      "source_file": "tsconfig.json",
       "source_location": "L1"
     },
     {
@@ -1820,6 +1878,28 @@
       "source_location": "L4"
     },
     {
+      "id": "tsconfig_include",
+      "label": "include",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "code",
+      "norm_label": "include",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "tsconfig_references",
+      "label": "references",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "code",
+      "norm_label": "references",
+      "source_file": "tsconfig.json",
+      "source_location": "L21"
+    },
+    {
       "id": "ref_dom",
       "label": "DOM",
       "_origin": "ast",
@@ -1851,6 +1931,61 @@
       "norm_label": "esnext",
       "source_file": "tsconfig.json",
       "source_location": "L12"
+    },
+    {
+      "id": "ref_src_d_ts",
+      "label": "src/**/*.d.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "concept",
+      "norm_label": "src/**/*.d.ts",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "ref_src_ts",
+      "label": "src/**/*.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "concept",
+      "norm_label": "src/**/*.ts",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "ref_src_tsx",
+      "label": "src/**/*.tsx",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "concept",
+      "norm_label": "src/**/*.tsx",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "ref_src_vue",
+      "label": "src/**/*.vue",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "concept",
+      "norm_label": "src/**/*.vue",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "ref_tests_ts",
+      "label": "tests/**/*.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "compilerOptions",
+      "file_type": "concept",
+      "norm_label": "tests/**/*.ts",
+      "source_file": "tsconfig.json",
+      "source_location": "L20"
     },
     {
       "id": "package_devdependencies",
@@ -2187,7 +2322,7 @@
       "label": "CHANGELOG.md",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "changelog.md",
@@ -2199,34 +2334,46 @@
       "label": "[1.0.0] - 2026-10-17",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L43"
+      "source_location": "L53"
     },
     {
       "id": "changelog_2_0_0_2026_10_17",
       "label": "[2.0.0] - 2026-10-17",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L25"
+      "source_location": "L35"
     },
     {
       "id": "changelog_2_1_0_2026_10_17",
       "label": "[2.1.0] - 2026-10-17",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "changelog_2_1_1_2026_10_17",
+      "label": "[2.1.1] - 2026-10-17",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
       "source_location": "L10"
     },
@@ -2235,67 +2382,67 @@
       "label": "Added",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12"
+      "source_location": "L22"
     },
     {
-      "id": "changelog_added_27",
+      "id": "changelog_added_37",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L27"
+      "source_location": "L37"
     },
     {
-      "id": "changelog_added_45",
+      "id": "changelog_added_55",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L45"
+      "source_location": "L55"
     },
     {
       "id": "changelog_changed",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L17"
+      "source_location": "L27"
     },
     {
-      "id": "changelog_changed_37",
+      "id": "changelog_changed_47",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L37"
+      "source_location": "L47"
     },
     {
       "id": "changelog_changelog",
       "label": "Changelog",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changelog",
@@ -2307,12 +2454,24 @@
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
-      "community_name": "[2.1.0] - 2026-10-17",
+      "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L20"
+      "source_location": "L12"
+    },
+    {
+      "id": "changelog_fixed_30",
+      "label": "Fixed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30"
     },
     {
       "id": "tsconfig_node",
@@ -2436,92 +2595,59 @@
       "source_location": "L10"
     },
     {
-      "id": "tsconfig",
-      "label": "tsconfig.json",
+      "id": "src_components_thefooter",
+      "label": "TheFooter.vue",
       "_origin": "ast",
       "community": 9,
-      "community_name": "include",
+      "community_name": "TheFooter.vue",
       "file_type": "code",
-      "norm_label": "tsconfig.json",
-      "source_file": "tsconfig.json",
+      "norm_label": "thefooter.vue",
+      "source_file": "src/components/TheFooter.vue",
       "source_location": "L1"
     },
     {
-      "id": "tsconfig_include",
-      "label": "include",
+      "id": "src_components_thefooter_footernavitems",
+      "label": "footerNavItems",
       "_origin": "ast",
       "community": 9,
-      "community_name": "include",
+      "community_name": "TheFooter.vue",
       "file_type": "code",
-      "norm_label": "include",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
+      "norm_label": "footernavitems",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L67"
     },
     {
-      "id": "tsconfig_references",
-      "label": "references",
+      "id": "src_components_thefooter_route",
+      "label": "route",
       "_origin": "ast",
       "community": 9,
-      "community_name": "include",
+      "community_name": "TheFooter.vue",
       "file_type": "code",
-      "norm_label": "references",
-      "source_file": "tsconfig.json",
-      "source_location": "L21"
+      "norm_label": "route",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L63"
     },
     {
-      "id": "ref_src_d_ts",
-      "label": "src/**/*.d.ts",
+      "id": "src_components_thefooter_router",
+      "label": "router",
       "_origin": "ast",
       "community": 9,
-      "community_name": "include",
-      "file_type": "concept",
-      "norm_label": "src/**/*.d.ts",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "router",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L62"
     },
     {
-      "id": "ref_src_ts",
-      "label": "src/**/*.ts",
+      "id": "tests_navigation_spec",
+      "label": "navigation.spec.ts",
       "_origin": "ast",
       "community": 9,
-      "community_name": "include",
-      "file_type": "concept",
-      "norm_label": "src/**/*.ts",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "ref_src_tsx",
-      "label": "src/**/*.tsx",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "include",
-      "file_type": "concept",
-      "norm_label": "src/**/*.tsx",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "ref_src_vue",
-      "label": "src/**/*.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "include",
-      "file_type": "concept",
-      "norm_label": "src/**/*.vue",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "ref_tests_ts",
-      "label": "tests/**/*.ts",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "include",
-      "file_type": "concept",
-      "norm_label": "tests/**/*.ts",
-      "source_file": "tsconfig.json",
-      "source_location": "L20"
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "navigation.spec.ts",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "backend_tasks_md_telegram_bot_spec",
@@ -2781,6 +2907,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_theheader_handlebrandclick",
+      "target": "src_components_theheader_updatemascotposition",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_theheader_handlekeydown",
       "target": "src_components_theheader_closemobilemenu",
       "relation": "calls",
@@ -2789,7 +2927,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L262",
+      "source_location": "L302",
       "weight": 1.0
     },
     {
@@ -2801,7 +2939,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L245",
+      "source_location": "L276",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader_handlemobilenavclick",
+      "target": "src_components_theheader_handlenavclick",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L277",
       "weight": 1.0
     },
     {
@@ -2813,7 +2963,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L230",
+      "source_location": "L245",
       "weight": 1.0
     },
     {
@@ -2825,7 +2975,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L235",
+      "source_location": "L250",
       "weight": 1.0
     },
     {
@@ -2837,7 +2987,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L240",
+      "source_location": "L260",
       "weight": 1.0
     },
     {
@@ -2849,7 +2999,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L256",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -2861,7 +3011,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L281",
+      "source_location": "L325",
       "weight": 1.0
     },
     {
@@ -3503,6 +3653,30 @@
       "weight": 1.0
     },
     {
+      "source": "tests_navigation_spec",
+      "target": "src_components_theheader",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_navigation_spec",
+      "target": "src_components_thefooter",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "tests_project_detail_spec",
       "target": "src_views_projectdetailview",
       "relation": "imports_from",
@@ -3583,35 +3757,35 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_45",
+      "target": "changelog_added_55",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L45",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_27",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_37",
+      "target": "changelog_added_37",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
       "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_changed_47",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -3622,7 +3796,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L12",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3633,23 +3807,34 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L17",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_fixed_30",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_1_2026_10_17",
       "target": "changelog_fixed",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L20",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_2_1_1_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3660,13 +3845,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_1_0_2026_10_17",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_0_0_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L25",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -3677,7 +3873,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L43",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -4540,13 +4736,57 @@
     },
     {
       "source": "src_components_thefooter",
+      "target": "src_components_thefooter_router",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_thefooter",
+      "target": "src_components_thefooter_route",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_thefooter",
+      "target": "src_components_thefooter_footernavitems",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L67",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_thefooter",
+      "target": "src_components_thefooter_handlefooternav",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L75",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_thefooter",
       "target": "src_components_thefooter_scrolltotop",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheFooter.vue",
-      "source_location": "L58",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
@@ -4557,23 +4797,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L184",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_navitems",
+      "target": "src_components_theheader_router",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L190",
+      "source_location": "L197",
       "weight": 1.0
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_isscrolled",
+      "target": "src_components_theheader_route",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4584,18 +4824,7 @@
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_ismobilemenuopen",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L199",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_mounted",
+      "target": "src_components_theheader_navitems",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4606,73 +4835,7 @@
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_activetab",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L201",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_hoveredtab",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L202",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_mascotx",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L203",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_mascotopacity",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L204",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_navlistref",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L206",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_itemrefs",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L207",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_mobilemenuref",
+      "target": "src_components_theheader_isscrolled",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4683,7 +4846,18 @@
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_setitemref",
+      "target": "src_components_theheader_ismobilemenuopen",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L209",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_mounted",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4694,7 +4868,51 @@
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_updatemascotposition",
+      "target": "src_components_theheader_activetab",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L211",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_hoveredtab",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_mascotx",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L213",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_mascotopacity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_navlistref",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4705,40 +4923,51 @@
     },
     {
       "source": "src_components_theheader",
+      "target": "src_components_theheader_itemrefs",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_mobilemenuref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L218",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_setitemref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_updatemascotposition",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L226",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
       "target": "src_components_theheader_handlemouseenter",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L228",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_handlemouseleave",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L233",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_handlenavclick",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/TheHeader.vue",
-      "source_location": "L238",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_theheader",
-      "target": "src_components_theheader_handlemobilenavclick",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4749,7 +4978,7 @@
     },
     {
       "source": "src_components_theheader",
-      "target": "src_components_theheader_handlecardclick",
+      "target": "src_components_theheader_handlemouseleave",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4760,13 +4989,57 @@
     },
     {
       "source": "src_components_theheader",
+      "target": "src_components_theheader_handlenavclick",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L253",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_handlemobilenavclick",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L275",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_handlebrandclick",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L280",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
+      "target": "src_components_theheader_handlecardclick",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/TheHeader.vue",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_theheader",
       "target": "src_components_theheader_handleoutsideclick",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L254",
+      "source_location": "L294",
       "weight": 1.0
     },
     {
@@ -4777,7 +5050,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L260",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -4788,7 +5061,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L266",
+      "source_location": "L306",
       "weight": 1.0
     },
     {
@@ -4799,7 +5072,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L290",
+      "source_location": "L334",
       "weight": 1.0
     },
     {
@@ -4810,7 +5083,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L294",
+      "source_location": "L338",
       "weight": 1.0
     },
     {
@@ -5031,6 +5304,17 @@
       "confidence_score": 1.0,
       "source_file": "tests/homepage.spec.ts",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_navigation_spec",
+      "target": "tests_navigation_spec_setuprouter",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -5669,5 +5953,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "b42d2eca11b2f094e8d4a647ce63908e3bba7193"
+  "built_at_commit": "51c39ce04ee82dba055283e43ecce690841ae074"
 }

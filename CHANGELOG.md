@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.1] - 2026-10-17
+
+### Fixed
+- **Cross-Route Navbar & Footer Section Navigation:** Resolved an issue where clicking navigation items (e.g., «درباره ما», «خدمات», «ثبت سفارش») or footer quick links while viewing a project detail page (`/projects/:slug`) simply updated the URL fragment (e.g., `/projects/besporman-web#about`) without returning to the homepage. Navigation now cleanly transitions to the homepage (`/`) and smoothly scrolls to the requested anchor target.
+- **Vue Router Async Scroll Restoration:** Added polling retry in router `scrollBehavior` to reliably find and scroll to section targets (`to.hash`) across lazy-mounted view transitions.
+- **Header Active Tab & Mascot Synchronization:** Synchronized `activeTab` with route and hash changes to keep the anime mascot indicator resting accurately above «نمونه‌کارها» on project detail pages, and dynamically tracking target sections upon cross-route return.
+- **ScrollSpy Query Selector Safety:** Replaced fragile `document.querySelector(item.href)` with `document.getElementById(item.id)` to prevent invalid DOM selector exceptions with absolute path hashes.
+
+---
+
 ## [2.1.0] - 2026-10-17
 
 ### Added

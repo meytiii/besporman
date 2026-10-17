@@ -21,15 +21,40 @@ const router = createRouter({
       component: () => import('@/views/NotFoundView.vue'),
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     }
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
+      return new Promise((resolve) => {
+        let attempts = 0
+        const maxAttempts = 30
+        const interval = 50
+
+        const poll = () => {
+          try {
+            const el = document.querySelector(to.hash)
+            if (el) {
+              resolve({
+                el: to.hash,
+                behavior: 'smooth',
+              })
+              return
+            }
+          } catch {
+            // Invalid selector fallback
+          }
+
+          if (attempts < maxAttempts) {
+            attempts++
+            setTimeout(poll, interval)
+          } else {
+            resolve({ top: 0 })
+          }
+        }
+
+        setTimeout(poll, 20)
+      })
     }
     return { top: 0 }
   },
