@@ -47,11 +47,28 @@
           />
         </div>
 
-        <!-- 4. Physical Comic Sign Below Mascot -->
-        <div class="comic-sign-plate" aria-hidden="true">
-          <span class="sign-text">بسپر من</span>
-          <span class="sign-screws sign-screws--start"></span>
-          <span class="sign-screws sign-screws--end"></span>
+        <!-- 4. Physical Neon Sign Below Mascot -->
+        <div class="comic-sign-plate neon-sign-plate" role="img" aria-label="تابلوی نئون بسپر من">
+          <span class="sr-only">بسپر من</span>
+          <!-- Off State (when mascot pose 1: pointing to himself) -->
+          <img
+            v-show="currentPose === 1"
+            src="/pic/webp/neon_sign_off.webp"
+            alt="تابلوی بسپر من خاموش"
+            class="neon-sign-img neon-sign-img--off"
+            width="1052"
+            height="599"
+          />
+
+          <!-- On State (when mascot pose 2: pointing down to sign) -->
+          <img
+            v-show="currentPose === 2"
+            src="/pic/webp/neon_sign_on.webp"
+            alt="تابلوی نئون بسپر من روشن"
+            class="neon-sign-img neon-sign-img--on"
+            width="1052"
+            height="598"
+          />
         </div>
       </div>
 
@@ -89,14 +106,20 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
-// 2-Second Mechanical Hard-Cut Pose Switching
+// 1.5-Second Mechanical Hard-Cut Pose & Neon Sign Switching
 const currentPose = ref<1 | 2>(1)
 let poseInterval: number | null = null
 
 onMounted(() => {
-  poseInterval = window.setInterval(() => {
-    currentPose.value = currentPose.value === 1 ? 2 : 1
-  }, 2000)
+  if (typeof window !== 'undefined') {
+    const prefersReducedMotion =
+      window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!prefersReducedMotion) {
+      poseInterval = window.setInterval(() => {
+        currentPose.value = currentPose.value === 1 ? 2 : 1
+      }, 1500)
+    }
+  }
 })
 
 onUnmounted(() => {
@@ -238,41 +261,37 @@ onUnmounted(() => {
   }
 }
 
-/* Physical Comic Sign Below Mascot */
-.comic-sign-plate {
+/* Physical Neon Sign Below Mascot */
+.comic-sign-plate.neon-sign-plate {
   position: relative;
-  margin-top: -16px; /* Sits snugly under the mascot baseline */
-  padding: var(--space-2) var(--space-8);
-  background-color: var(--primitive-amber-100);
-  border: var(--border-width-heavy) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 4px 4px 0 var(--color-border-bold);
+  width: 260px;
+  max-width: 85vw;
+  margin-top: -22px; /* Sits snugly under the mascot baseline */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
   z-index: 2;
+  filter: drop-shadow(4px 4px 0 var(--color-border-bold));
+  user-select: none;
 }
 
-.sign-text {
-  font-family: var(--font-display);
-  font-size: var(--text-3xl);
-  color: var(--color-ink-primary);
-  letter-spacing: 0;
+@media (min-width: 768px) {
+  .comic-sign-plate.neon-sign-plate {
+    width: 320px;
+    margin-top: -28px;
+  }
 }
 
-.sign-screws {
-  position: absolute;
-  top: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: var(--color-border-bold);
-  border-radius: var(--border-radius-full);
-  transform: translateY(-50%);
+.neon-sign-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.sign-screws--start {
-  inset-inline-start: 10px;
-}
-
-.sign-screws--end {
-  inset-inline-end: 10px;
+.neon-sign-img--on {
+  /* Physical glowing red neon aura */
+  filter: drop-shadow(0 0 16px rgba(225, 40, 25, 0.6)) drop-shadow(0 0 32px rgba(225, 40, 25, 0.35));
 }
 
 /* Actions */
