@@ -1672,7 +1672,7 @@
       "file_type": "code",
       "norm_label": "currentpose",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L110"
+      "source_location": "L166"
     },
     {
       "id": "src_components_processsection",
@@ -3248,7 +3248,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L110",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -4436,5 +4436,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "aab2fbeabd78b51c498afb5938519aaaad20c885"
+  "built_at_commit": "accba1f7300ad32e30c8dc4d7211fb86603ea1ee"
 }

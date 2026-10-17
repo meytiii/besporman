@@ -200,7 +200,7 @@ onUnmounted(() => {
 .hero-stage {
   position: relative;
   width: 100%;
-  padding-top: var(--space-8);
+  padding-top: var(--space-5);
   padding-bottom: 0;
   overflow: hidden;
   background-color: var(--primitive-cream-100);
@@ -222,7 +222,7 @@ onUnmounted(() => {
   display: flex;
   height: 100%;
   width: max-content;
-  animation: heroComicScroll 65s linear infinite;
+  animation: heroComicScroll 55s linear infinite;
   will-change: transform;
 }
 
@@ -279,10 +279,10 @@ onUnmounted(() => {
 /* Title */
 .hero-title {
   font-family: var(--font-display);
-  font-size: var(--text-hero);
+  font-size: clamp(2.2rem, 1.8rem + 1.8vw, 3.2rem);
   line-height: var(--leading-tight);
   color: var(--color-ink-primary);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
   max-width: 22ch;
   text-shadow: 0 1px 3px rgba(250, 247, 240, 0.95), 0 0 16px rgba(250, 247, 240, 0.9);
 }
@@ -309,19 +309,19 @@ onUnmounted(() => {
 /* 3D Depth Shadow: Mascot casting silhouette shadow onto comic strip */
 .mascot-stage {
   position: relative;
-  width: 300px;
-  height: 460px;
+  width: 220px;
+  height: 340px;
   overflow: visible;
-  filter: drop-shadow(0 20px 25px rgba(14, 15, 18, 0.4))
-          drop-shadow(0 35px 50px rgba(14, 15, 18, 0.3));
+  filter: drop-shadow(0 14px 18px rgba(14, 15, 18, 0.38))
+          drop-shadow(0 24px 36px rgba(14, 15, 18, 0.28));
 }
 
 @media (min-width: 768px) {
   .mascot-stage {
-    width: 400px;
-    height: 620px;
-    filter: drop-shadow(0 25px 35px rgba(14, 15, 18, 0.45))
-            drop-shadow(0 45px 65px rgba(14, 15, 18, 0.35));
+    width: 280px;
+    height: 420px;
+    filter: drop-shadow(0 18px 24px rgba(14, 15, 18, 0.42))
+            drop-shadow(0 32px 46px rgba(14, 15, 18, 0.32));
   }
 }
 
@@ -337,24 +337,24 @@ onUnmounted(() => {
 
 /* Normalized Dimensions and Horizontal Head Centering */
 .mascot-layer--pose1 {
-  height: 470px;
+  height: 350px;
   width: auto;
   transform: translateX(-50.4%);
 }
 
 .mascot-layer--pose2 {
-  height: 460px;
+  height: 340px;
   width: auto;
   transform: translateX(-45.6%);
 }
 
 @media (min-width: 768px) {
   .mascot-layer--pose1 {
-    height: 630px;
+    height: 430px;
     transform: translateX(-50.4%);
   }
   .mascot-layer--pose2 {
-    height: 620px;
+    height: 420px;
     transform: translateX(-45.6%);
   }
 }
@@ -362,23 +362,23 @@ onUnmounted(() => {
 /* Physical Neon Sign Below Mascot: Depth shadow and neon glow over comic strip */
 .comic-sign-plate.neon-sign-plate {
   position: relative;
-  width: 280px;
+  width: 220px;
   max-width: 85vw;
-  margin-top: -26px; /* Sits snugly under the mascot baseline */
+  margin-top: -20px; /* Sits snugly under the mascot baseline */
   background: transparent;
   border: none;
   box-shadow: none;
   padding: 0;
   z-index: 3;
   filter: drop-shadow(4px 4px 0 var(--color-border-bold))
-          drop-shadow(0 18px 24px rgba(14, 15, 18, 0.45));
+          drop-shadow(0 14px 18px rgba(14, 15, 18, 0.4));
   user-select: none;
 }
 
 @media (min-width: 768px) {
   .comic-sign-plate.neon-sign-plate {
-    width: 410px;
-    margin-top: -36px;
+    width: 290px;
+    margin-top: -24px;
   }
 }
 

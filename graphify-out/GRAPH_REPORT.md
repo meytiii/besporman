@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-17)
 
 ## Corpus Check
-- 36 files · ~560,729 words
+- 36 files · ~674,716 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 181 nodes · 201 edges · 17 communities (15 shown, 2 thin omitted)
+- 182 nodes · 202 edges · 16 communities (14 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.95)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `accba1f7`
+- Built from commit: `f4b11f1f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,7 +29,6 @@
 - Anti-AI-Slop & Authentic Paper Brand Identity
 - Besporman — Agent Rules (GEMINI.md)
 - Besporman — Agent Instructions (Agent.md)
-- StarRating.vue
 
 ## God Nodes (most connected - your core abstractions)
 1. `compilerOptions` - 15 edges
@@ -62,7 +61,7 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (17 total, 2 thin omitted)
+## Communities (16 total, 2 thin omitted)
 
 ### Community 0 - "Portfolio & Project Showcase"
 Cohesion: 0.12
@@ -77,8 +76,8 @@ Cohesion: 0.13
 Nodes (10): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, 8-State Interactive Element Matrix, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, isMobileMenuOpen, isScrolled (+2 more)
 
 ### Community 3 - "MarqueeBanner.vue"
-Cohesion: 0.14
-Nodes (13): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), isHovered, measureTile(), ReviewItem, reviewList (+5 more)
+Cohesion: 0.10
+Nodes (17): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), isHovered, measureTile(), ReviewItem, reviewList (+9 more)
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.11
@@ -112,10 +111,6 @@ Nodes (5): Active Skills & Rules Mandate, Besporman — Agent Rules (GEMINI.md),
 Cohesion: 0.40
 Nodes (4): 1. Single Source of Truth Notice, 2. Core Non-Negotiable Rules Summary, Besporman — Agent Instructions (Agent.md), graphify
 
-### Community 16 - "StarRating.vue"
-Cohesion: 0.33
-Nodes (4): clipUid, formattedScore, props, StarType
-
 ## Knowledge Gaps
 - **93 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+88 more)
   These have ≤1 connection - possible missing edges or undocumented components.
@@ -129,7 +124,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `devDependencies` connect `devDependencies` to `package.json`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `compilerOptions` connect `compilerOptions` to `include`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
   _93 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Portfolio & Project Showcase` be split into smaller, more focused modules?**

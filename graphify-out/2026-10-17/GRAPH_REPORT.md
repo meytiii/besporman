@@ -1,7 +1,7 @@
 # Graph Report - besporman  (2026-10-17)
 
 ## Corpus Check
-- 36 files · ~407,323 words
+- 36 files · ~560,729 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `aab2fbea`
+- Built from commit: `accba1f7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -35,25 +35,25 @@
 1. `compilerOptions` - 15 edges
 2. `compilerOptions` - 7 edges
 3. `include` - 6 edges
-4. `Besporman — Agent Rules (GEMINI.md)` - 5 edges
-5. `ContactSubmissionAdapter` - 5 edges
-6. `router` - 5 edges
-7. `scripts` - 5 edges
-8. `Besporman — Agent Instructions (Agent.md)` - 4 edges
+4. `scripts` - 5 edges
+5. `router` - 5 edges
+6. `ContactSubmissionAdapter` - 5 edges
+7. `Besporman — Agent Rules (GEMINI.md)` - 5 edges
+8. `projectsData` - 4 edges
 9. `DevelopmentContactAdapter` - 4 edges
-10. `projectsData` - 4 edges
+10. `lib` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Telegram Bot Contact Form Webhook Architecture` --references--> `ContactSubmissionAdapter`  [EXTRACTED]
-  backend_tasks_2026-10-17.md → src/services/contactAdapter.ts
 - `Besporman Portfolio & Services Overview` --references--> `projectsData`  [EXTRACTED]
   README.md → src/data/projects.ts
-- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `ContactSubmissionAdapter`  [EXTRACTED]
-  AGENTS.md → src/services/contactAdapter.ts
-- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `DevelopmentContactAdapter`  [EXTRACTED]
-  AGENTS.md → src/services/contactAdapter.ts
+- `Telegram Bot Contact Form Webhook Architecture` --references--> `ContactSubmissionAdapter`  [EXTRACTED]
+  backend_tasks_2026-10-17.md → src/services/contactAdapter.ts
 - `Frontend/Backend ContactSubmissionAdapter Boundary` --references--> `handleSubmit()`  [EXTRACTED]
   AGENTS.md → src/components/ContactSection.vue
+- `Mascot & Brand Visual Asset Preservation` --references--> `currentPose`  [EXTRACTED]
+  AGENTS.md → src/components/HeroSection.vue
+- `Vue 3 Composition API & Strict TypeScript Standards` --references--> `router`  [EXTRACTED]
+  AGENTS.md → src/router/index.ts
 
 ## Import Cycles
 - None detected.
@@ -117,7 +117,7 @@ Cohesion: 0.33
 Nodes (4): clipUid, formattedScore, props, StarType
 
 ## Knowledge Gaps
-- **93 isolated node(s):** `1. Single Source of Truth Notice`, `2. Core Non-Negotiable Rules Summary`, `graphify`, `Active Skills & Rules Mandate`, `Knowledge Graph & Token Conservation (`/graphify`)` (+88 more)
+- **93 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+88 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -130,7 +130,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `compilerOptions` connect `compilerOptions` to `include`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `1. Single Source of Truth Notice`, `2. Core Non-Negotiable Rules Summary`, `graphify` to the rest of the system?**
+- **What connects `name`, `private`, `version` to the rest of the system?**
   _93 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Portfolio & Project Showcase` be split into smaller, more focused modules?**
   _Cohesion score 0.11857707509881422 - nodes in this community are weakly interconnected._

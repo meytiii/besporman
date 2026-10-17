@@ -28,3 +28,6 @@ dist-ssr
 graphify-out/.graphify_python
 graphify-out/.graphify_root
 graphify-out/cache/
+
+# Local test screenshots
+hero_*.png

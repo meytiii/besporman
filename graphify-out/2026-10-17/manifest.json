@@ -24,10 +24,10 @@
     "semantic_hash": "c7d26a13f0eb2b8efd51face92e50e47"
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792247597.196749,
-    "seen": 1792249022.6550999,
-    "ast_hash": "04b72dc27cfee20ad000884c04dd8e85",
-    "semantic_hash": "04b72dc27cfee20ad000884c04dd8e85"
+    "mtime": 1792251704.1614716,
+    "seen": 1792251910.5802915,
+    "ast_hash": "2c1bf9f80ffd333a18a480c1d5c89ae7",
+    "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
     "mtime": 1792249096.0115664,
@@ -369,6 +369,42 @@
     "mtime": 1792247429.3435926,
     "seen": 1792249326.3188746,
     "ast_hash": "f6704b1c105102c7485fb38598966036",
+    "semantic_hash": ""
+  },
+  "pic/header_1.jpg": {
+    "mtime": 1792250175.2441492,
+    "seen": 1792251910.5803301,
+    "ast_hash": "af619e2b716f697197427fe3a82098e6",
+    "semantic_hash": ""
+  },
+  "pic/header_2.jpg": {
+    "mtime": 1792250668.4911191,
+    "seen": 1792251910.5803313,
+    "ast_hash": "67b80465613112602f7e5bc017aa0806",
+    "semantic_hash": ""
+  },
+  "pic/header_3.jpg": {
+    "mtime": 1792250670.5020206,
+    "seen": 1792251910.580332,
+    "ast_hash": "0b1f1a42434f668aae58e9143589ce7a",
+    "semantic_hash": ""
+  },
+  "pic/webp/header_1.webp": {
+    "mtime": 1792251109.5483599,
+    "seen": 1792251910.5803475,
+    "ast_hash": "c9c628130b6079df73cf5a80e91a7221",
+    "semantic_hash": ""
+  },
+  "pic/webp/header_2.webp": {
+    "mtime": 1792251109.8066194,
+    "seen": 1792251910.5803485,
+    "ast_hash": "5614346dc897afa5f1cd7effa25c480a",
+    "semantic_hash": ""
+  },
+  "pic/webp/header_3.webp": {
+    "mtime": 1792251110.062767,
+    "seen": 1792251910.5803492,
+    "ast_hash": "d1e275334eb3b278c457dcd6f04d1a0b",
     "semantic_hash": ""
   }
 }
