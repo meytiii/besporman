@@ -164,15 +164,15 @@ onUnmounted(() => {
 
 .mascot-stage {
   position: relative;
-  width: 280px;
-  height: 420px;
+  width: 300px;
+  height: 460px;
   overflow: visible;
 }
 
 @media (min-width: 768px) {
   .mascot-stage {
-    width: 320px;
-    height: 480px;
+    width: 400px;
+    height: 620px;
   }
 }
 
@@ -188,24 +188,24 @@ onUnmounted(() => {
 
 /* Normalized Dimensions and Horizontal Head Centering */
 .mascot-layer--pose1 {
-  height: 428px;
+  height: 470px;
   width: auto;
   transform: translateX(-50.4%);
 }
 
 .mascot-layer--pose2 {
-  height: 420px;
+  height: 460px;
   width: auto;
   transform: translateX(-45.6%);
 }
 
 @media (min-width: 768px) {
   .mascot-layer--pose1 {
-    height: 488px;
+    height: 630px;
     transform: translateX(-50.4%);
   }
   .mascot-layer--pose2 {
-    height: 480px;
+    height: 620px;
     transform: translateX(-45.6%);
   }
 }
@@ -213,9 +213,9 @@ onUnmounted(() => {
 /* Physical Neon Sign Below Mascot */
 .comic-sign-plate.neon-sign-plate {
   position: relative;
-  width: 260px;
+  width: 280px;
   max-width: 85vw;
-  margin-top: -22px; /* Sits snugly under the mascot baseline */
+  margin-top: -26px; /* Sits snugly under the mascot baseline */
   background: transparent;
   border: none;
   box-shadow: none;
@@ -227,8 +227,8 @@ onUnmounted(() => {
 
 @media (min-width: 768px) {
   .comic-sign-plate.neon-sign-plate {
-    width: 320px;
-    margin-top: -28px;
+    width: 410px;
+    margin-top: -36px;
   }
 }
 
