@@ -29,23 +29,20 @@ describe('MarqueeBanner Accessibility & Kinematics', () => {
     expect(srList.findAll('li').length).toBeGreaterThan(0)
   })
 
-  it('toggles pause state via keyboard/click control button', async () => {
+  it('toggles pause state on mouse hover and leave', async () => {
     const wrapper = mount(MarqueeBanner)
-    const button = wrapper.find('.marquee-toggle-btn')
-    expect(button.exists()).toBe(true)
+    const viewport = wrapper.find('.marquee-viewport')
+    expect(viewport.exists()).toBe(true)
 
     // Initial state: running
-    expect(button.attributes('aria-pressed')).toBe('false')
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
 
-    // Click to pause
-    await button.trigger('click')
-    expect(button.attributes('aria-pressed')).toBe('true')
+    // Mouse enter -> paused
+    await viewport.trigger('mouseenter')
     expect(wrapper.find('.marquee-track').classes()).toContain('is-paused')
 
-    // Click to resume
-    await button.trigger('click')
-    expect(button.attributes('aria-pressed')).toBe('false')
+    // Mouse leave -> resumed
+    await viewport.trigger('mouseleave')
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
   })
 })

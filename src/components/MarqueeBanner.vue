@@ -24,7 +24,7 @@
       <div
         ref="trackRef"
         class="marquee-track"
-        :class="{ 'is-paused': isPaused || isHovered }"
+        :class="{ 'is-paused': isHovered }"
       >
         <!-- Tile A (Original) -->
         <div ref="tileRefA" class="marquee-tile">
@@ -64,20 +64,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- 4. Explicit WCAG 2.2.2 Keyboard Pause/Play Control -->
-    <div class="marquee-controls container">
-      <button
-        type="button"
-        class="marquee-toggle-btn"
-        :aria-pressed="isPaused"
-        :aria-label="isPaused ? 'پخش انیمیشن نوار نظرات' : 'توقف انیمیشن نوار نظرات'"
-        @click="toggleMarquee"
-      >
-        <span class="btn-icon" aria-hidden="true">{{ isPaused ? '▶' : '⏸' }}</span>
-        <span class="btn-label">{{ isPaused ? 'پخش حرکت' : 'توقف حرکت' }}</span>
-      </button>
     </div>
   </aside>
 </template>
@@ -146,7 +132,6 @@ const reviewList: ReviewItem[] = [
 const trackRef = ref<HTMLDivElement | null>(null)
 const tileRefA = ref<HTMLDivElement | null>(null)
 
-const isPaused = ref(false)
 const isHovered = ref(false)
 
 // Smooth kinematic physics
@@ -178,8 +163,8 @@ const updateLoop = (timestamp: number) => {
   const dt = Math.min((timestamp - lastTimestamp) / 1000, 0.1) // limit dt to 100ms max
   lastTimestamp = timestamp
 
-  // Determine target speed
-  targetSpeed = (isPaused.value || isHovered.value) ? 0 : BASE_SPEED
+  // Determine target speed based on hover
+  targetSpeed = isHovered.value ? 0 : BASE_SPEED
 
   // Smooth acceleration / deceleration
   if (currentSpeed > targetSpeed) {
@@ -202,10 +187,6 @@ const updateLoop = (timestamp: number) => {
   }
 
   animationFrameId = requestAnimationFrame(updateLoop)
-}
-
-const toggleMarquee = () => {
-  isPaused.value = !isPaused.value
 }
 
 const handleMouseEnter = () => {
@@ -394,41 +375,6 @@ onUnmounted(() => {
   color: var(--color-ink-primary);
 }
 
-/* Controls */
-.marquee-controls {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: var(--space-3);
-}
-
-.marquee-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  min-height: 36px;
-  padding: var(--space-1) var(--space-3);
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  color: var(--color-ink-primary);
-  background-color: var(--color-canvas);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
-.marquee-toggle-btn:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--color-border-bold);
-}
-
-.marquee-toggle-btn:active {
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 var(--color-border-bold);
-}
-
 /* ==========================================================================
    Accessible Reduced Motion Layout
    ========================================================================== */
@@ -451,7 +397,6 @@ onUnmounted(() => {
     justify-content: center;
   }
 
-  .marquee-controls,
   .marquee-fade {
     display: none !important;
   }
