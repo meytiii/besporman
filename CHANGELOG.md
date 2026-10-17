@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Universal Button-in-Button Gliding Arrow Badge Animation:** Implemented global tactile button matrix in `base.css` with dynamic gliding arrow badge kinematics (`cubic-bezier(0.4, 0, 0.2, 1)` easing, 45-degree hover tilt, and bidirectional padding swap) across all buttons throughout the entire website (header CTA, hero actions, contact form submit, direct Telegram link, project showcase, project detail actions, 404 return, and back-to-top button).
 - **Design System Button Standard:** Formally documented the Button-in-Button Gliding Arrow Badge specification and motion physics in Section 9.2 of `DESIGN_SYSTEM.md`.
 
+### Changed
+- **Project Completion Year:** Updated completion year of the core studio platform project (`besporman-web`) to **۱۴۰۵** (`completedYearFa: '۱۴۰۵'`).
+
+### Fixed
+- **Button Arrow Badge Clearance:** Removed conflicting scoped `.btn-sm` padding override and expanded button padding to $48\text{px}$ (compact) and $58\text{px}$ (standard) to eliminate text collision and guarantee generous clearance around circular arrow badges.
+
 ---
 
 ## [2.0.0] - 2026-10-17

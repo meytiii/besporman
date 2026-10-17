@@ -144,7 +144,7 @@ section[id],
   gap: var(--space-2);
   min-height: 48px; /* Exceeds 44px WCAG touch floor */
   padding-inline-start: var(--space-6);
-  padding-inline-end: 54px;
+  padding-inline-end: 58px;
   padding-block: var(--space-3);
   font-family: var(--font-body);
   font-weight: 500;
@@ -163,7 +163,7 @@ section[id],
 }
 
 .btn:hover {
-  padding-inline-start: 54px;
+  padding-inline-start: 58px;
   padding-inline-end: var(--space-6);
 }
 
@@ -178,15 +178,15 @@ section[id],
 /* Small Button Variant */
 .btn-sm {
   min-height: 40px;
-  padding-inline-start: var(--space-4);
-  padding-inline-end: 42px;
+  padding-inline-start: var(--space-5);
+  padding-inline-end: 48px;
   padding-block: var(--space-2);
   font-size: var(--text-sm);
 }
 
 .btn-sm:hover {
-  padding-inline-start: 42px;
-  padding-inline-end: var(--space-4);
+  padding-inline-start: 48px;
+  padding-inline-end: var(--space-5);
 }
 
 .btn-sm:not(:has(.btn-arrow)) {

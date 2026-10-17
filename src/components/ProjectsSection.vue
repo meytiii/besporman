@@ -377,12 +377,6 @@ const filteredProjectsCount = computed(() => {
   margin-top: auto;
 }
 
-.btn-sm {
-  min-height: 40px;
-  padding: var(--space-2) var(--space-4);
-  font-size: var(--text-sm);
-}
-
 .featured-plate {
   display: flex;
   align-items: center;

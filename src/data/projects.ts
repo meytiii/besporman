@@ -8,7 +8,7 @@ export const projectsData: ProjectItem[] = [
     category: 'web',
     summaryFa: 'طراحی و پیاده‌سازی کامل وب‌سایت استودیو با رویکرد کمیک نئوبروتالیست، تایپوگرافی فارسی، و معماری بدون وابستگی خارجی.',
     status: 'verified',
-    completedYearFa: '۱۴۰۳',
+    completedYearFa: '۱۴۰۵',
     technologies: ['Vue 3', 'Vite', 'TypeScript', 'CSS Custom Properties'],
     externalUrl: 'https://github.com/meytiii/besporman',
     keyHighlightsFa: [

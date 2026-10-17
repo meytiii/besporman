@@ -427,10 +427,10 @@ Every button MUST be structured with a dedicated label span and nested circular 
 #### 2. Motion & Kinematics Specification
 - **Default State:**
   - `padding-inline-start: var(--space-6)` ($24\text{px}$)
-  - `padding-inline-end: 54px` (room for arrow badge)
+  - `padding-inline-end: 58px` (generous clearance for arrow badge)
   - Arrow badge anchored at `inset-inline-end: 10px; top: 50%; transform: translateY(-50%) rotate(0deg);`
 - **Hover Gliding State:**
-  - **Padding Swap:** `padding-inline-start: 54px; padding-inline-end: var(--space-6);` with `cubic-bezier(0.4, 0, 0.2, 1)` easing across $0.45\text{s}$.
+  - **Padding Swap:** `padding-inline-start: 58px; padding-inline-end: var(--space-6);` with `cubic-bezier(0.4, 0, 0.2, 1)` easing across $0.45\text{s}$.
   - **Badge Trajectory:** Glides from right to left across the button to `inset-inline-end: calc(100% - 40px);`.
   - **Rotational Tilt:** Rotates dynamically by $-45^\circ$ (`transform: translateY(-50%) rotate(-45deg);`).
   - **Tactile Hover Lift:** Button lifts `translate(-1px, -1px)` and shadow deepens to `var(--shadow-hover)` ($4\text{px}$).
@@ -440,7 +440,7 @@ Every button MUST be structured with a dedicated label span and nested circular 
 #### 3. Variant Matrix
 - **Primary (`.btn-primary`):** Comic red background (`var(--color-accent)`), white text (`var(--primitive-white)`). Arrow badge background: `rgba(255, 255, 255, 0.25)` (hover: `0.38`).
 - **Secondary (`.btn-secondary`):** Parchment surface (`var(--color-surface)`), dark ink text (`var(--color-ink-primary)`). Arrow badge background: `rgba(14, 15, 18, 0.08)` (hover: `0.16`).
-- **Compact (`.btn-sm`):** `min-height: 40px`, padding swap $42\text{px} \leftrightarrow 16\text{px}$, arrow badge $24\text{px} \times 24\text{px}$ (`inset-inline-end: 8px` $\rightarrow$ `calc(100% - 32px)`).
+- **Compact (`.btn-sm`):** `min-height: 40px`, padding swap $48\text{px} \leftrightarrow 20\text{px}$ (`padding-inline-end: 48px; padding-inline-start: var(--space-5)`), arrow badge $24\text{px} \times 24\text{px}$ (`inset-inline-end: 8px` $\rightarrow$ `calc(100% - 32px)`).
 
 #### 4. Reduced Motion & Accessibility
 Under `prefers-reduced-motion: reduce`, all spatial transitions and badge gliding animations are immediately disabled (`transition: none !important`), maintaining static, accessible layouts.
