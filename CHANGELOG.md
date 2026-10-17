@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.3.0] - 2026-10-17
+
+### Added
+- **Full-Screen Tactile Studio Loading Screen (`AppLoadingScreen.vue`):** Implemented an initial entrance loading curtain with retro halftone parchment paper background (`--color-canvas`, `#FAF7F0`), sliding up smoothly via cubic-bezier curtain easing upon asset readiness.
+- **2-Second Minimum Display & Asset Readiness Orchestration:** Enforced a strict minimum 2-second display duration paired with proactive asset verification (`document.fonts.ready`, DOM existence of `.site-header`, and completion of top images/mascots `complete && naturalHeight > 0`) before dismissing the loading screen.
+- **Lalezar Persian Loading Typography:** Rendered rhythmic title «داریم میرسیم عجله نکن!» in Lalezar display font with text-shadow and pulsing comic ellipsis dots (`. . .`).
+- **Liquid Wave Physics Loader (`LiquidLoader.vue`):** Developed a 7-column multi-frequency liquid wave simulation with surface tension elasticity, rising bubble physics, internal light shimmer, and peak droplet launches, styled in Besporman's branded comic ink gradients.
+- **Preserved React Component References:** Placed `liquid-loader.tsx` and `liquid-loader-demo.tsx` in `src/components/ui/` for cross-framework documentation.
+- **Unit Testing Suite:** Added `tests/loader.spec.ts` validating liquid column structures, DOM layers, and loading screen lifecycles.
+
+---
+
 ## [2.2.0] - 2026-10-17
 
 ### Added

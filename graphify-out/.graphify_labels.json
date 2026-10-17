@@ -18,6 +18,7 @@
   "16": "CustomCursor.vue",
   "17": "App.vue",
   "18": "text-reveal.tsx",
-  "19": "LazySection.vue",
-  "20": "components/TextReveal.vue"
+  "19": "AppLoadingScreen.vue",
+  "20": "components/TextReveal.vue",
+  "21": "liquid-loader-demo.tsx"
 }

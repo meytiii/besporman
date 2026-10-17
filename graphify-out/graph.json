@@ -207,30 +207,30 @@
       "source_location": "L20"
     },
     {
-      "id": "src_components_lazysection_props",
-      "label": "Props",
+      "id": "src_components_ui_liquidloader_columnstate",
+      "label": "ColumnState",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L15"
+      "norm_label": "columnstate",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L66"
     },
     {
-      "id": "src_components_skeletons_sectionskeleton_props",
-      "label": "Props",
+      "id": "src_components_ui_liquidloader_liquidloaderprops",
+      "label": "LiquidLoaderProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
-      "source_location": "L31"
+      "norm_label": "liquidloaderprops",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L58"
     },
     {
       "id": "src_components_theheader_navitem",
@@ -283,6 +283,32 @@
       "norm_label": "startype",
       "source_file": "src/components/StarRating.vue",
       "source_location": "L90"
+    },
+    {
+      "id": "src_components_lazysection_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
+      "source_location": "L31"
     },
     {
       "id": "src_components_ui_textreveal_props",
@@ -613,6 +639,66 @@
       "source_location": "L165"
     },
     {
+      "id": "src_components_apploadingscreen_aretopelementsloaded",
+      "label": "areTopElementsLoaded()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "aretopelementsloaded()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L57"
+    },
+    {
+      "id": "src_components_apploadingscreen_dismissloadingscreen",
+      "label": "dismissLoadingScreen()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "dismissloadingscreen()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L115"
+    },
+    {
+      "id": "src_components_apploadingscreen_isimageloaded",
+      "label": "isImageLoaded()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "isimageloaded()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L52"
+    },
+    {
+      "id": "src_components_apploadingscreen_waitforreadiness",
+      "label": "waitForReadiness()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "waitforreadiness()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L79"
+    },
+    {
+      "id": "src_components_ui_liquidloader_updatephysics",
+      "label": "updatePhysics()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "updatephysics()",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L130"
+    },
+    {
       "id": "src_components_theheader_closemobilemenu",
       "label": "closeMobileMenu()",
       "_callable": true,
@@ -767,6 +853,30 @@
       "norm_label": "updatemascotposition()",
       "source_file": "src/components/TheHeader.vue",
       "source_location": "L226"
+    },
+    {
+      "id": "src_components_ui_liquid_loader_demo_dotloaderdemo",
+      "label": "DotLoaderDemo()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "liquid-loader-demo.tsx",
+      "file_type": "code",
+      "norm_label": "dotloaderdemo()",
+      "source_file": "src/components/ui/liquid-loader-demo.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_liquid_loader_liquidloading",
+      "label": "LiquidLoading()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "liquid-loader-demo.tsx",
+      "file_type": "code",
+      "norm_label": "liquidloading()",
+      "source_file": "src/components/ui/liquid-loader.tsx",
+      "source_location": "L3"
     },
     {
       "id": "src_components_marqueebanner_generaterandomreviewlist",
@@ -1638,69 +1748,102 @@
       "source_location": "L62"
     },
     {
-      "id": "src_components_lazysection",
-      "label": "LazySection.vue",
+      "id": "src_components_apploadingscreen",
+      "label": "AppLoadingScreen.vue",
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "lazysection.vue",
-      "source_file": "src/components/LazySection.vue",
+      "norm_label": "apploadingscreen.vue",
+      "source_file": "src/components/AppLoadingScreen.vue",
       "source_location": "L1"
     },
     {
-      "id": "src_components_lazysection_route",
-      "label": "route",
+      "id": "src_components_apploadingscreen_isexiting",
+      "label": "isExiting",
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "route",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L31"
+      "norm_label": "isexiting",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L46"
     },
     {
-      "id": "src_components_lazysection_shouldrender",
-      "label": "shouldRender",
+      "id": "src_components_apploadingscreen_isvisible",
+      "label": "isVisible",
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "shouldrender",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L34"
+      "norm_label": "isvisible",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L45"
     },
     {
-      "id": "src_components_lazysection_wrapperref",
-      "label": "wrapperRef",
+      "id": "src_components_ui_liquidloader",
+      "label": "LiquidLoader.vue",
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "wrapperref",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L33"
-    },
-    {
-      "id": "src_components_skeletons_sectionskeleton",
-      "label": "SectionSkeleton.vue",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "sectionskeleton.vue",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
+      "norm_label": "liquidloader.vue",
+      "source_file": "src/components/ui/LiquidLoader.vue",
       "source_location": "L1"
     },
     {
-      "id": "tests_reveal_lazy_spec",
-      "label": "reveal-lazy.spec.ts",
+      "id": "src_components_ui_liquidloader_brandpalettes",
+      "label": "brandPalettes",
       "_origin": "ast",
       "community": 19,
-      "community_name": "LazySection.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "reveal-lazy.spec.ts",
-      "source_file": "tests/reveal-lazy.spec.ts",
+      "norm_label": "brandpalettes",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L85"
+    },
+    {
+      "id": "src_components_ui_liquidloader_columns",
+      "label": "columns",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "columns",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L107"
+    },
+    {
+      "id": "src_components_ui_liquidloader_props",
+      "label": "props",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L62"
+    },
+    {
+      "id": "src_components_ui_liquidloader_rainbowpalettes",
+      "label": "rainbowPalettes",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "rainbowpalettes",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L95"
+    },
+    {
+      "id": "tests_loader_spec",
+      "label": "loader.spec.ts",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "loader.spec.ts",
+      "source_file": "tests/loader.spec.ts",
       "source_location": "L1"
     },
     {
@@ -1866,6 +2009,28 @@
       "file_type": "code",
       "norm_label": "components/textreveal.vue",
       "source_file": "src/components/TextReveal.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_liquid_loader",
+      "label": "liquid-loader.tsx",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "liquid-loader-demo.tsx",
+      "file_type": "code",
+      "norm_label": "liquid-loader.tsx",
+      "source_file": "src/components/ui/liquid-loader.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_liquid_loader_demo",
+      "label": "liquid-loader-demo.tsx",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "liquid-loader-demo.tsx",
+      "file_type": "code",
+      "norm_label": "liquid-loader-demo.tsx",
+      "source_file": "src/components/ui/liquid-loader-demo.tsx",
       "source_location": "L1"
     },
     {
@@ -2649,7 +2814,7 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L71"
+      "source_location": "L83"
     },
     {
       "id": "changelog_2_0_0_2026_10_17",
@@ -2661,7 +2826,7 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L53"
+      "source_location": "L65"
     },
     {
       "id": "changelog_2_1_0_2026_10_17",
@@ -2673,7 +2838,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L38"
+      "source_location": "L50"
     },
     {
       "id": "changelog_2_1_1_2026_10_17",
@@ -2685,7 +2850,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L28"
+      "source_location": "L40"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -2696,6 +2861,18 @@
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "changelog_2_3_0_2026_10_17",
+      "label": "[2.3.0] - 2026-10-17",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
       "source_location": "L10"
     },
@@ -2712,7 +2889,7 @@
       "source_location": "L12"
     },
     {
-      "id": "changelog_added_40",
+      "id": "changelog_added_24",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -2721,10 +2898,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L40"
+      "source_location": "L24"
     },
     {
-      "id": "changelog_added_55",
+      "id": "changelog_added_52",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -2733,10 +2910,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L55"
+      "source_location": "L52"
     },
     {
-      "id": "changelog_added_73",
+      "id": "changelog_added_67",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -2745,7 +2922,19 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L73"
+      "source_location": "L67"
+    },
+    {
+      "id": "changelog_added_85",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L85"
     },
     {
       "id": "changelog_changed",
@@ -2757,10 +2946,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L45"
+      "source_location": "L57"
     },
     {
-      "id": "changelog_changed_65",
+      "id": "changelog_changed_77",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -2769,7 +2958,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L65"
+      "source_location": "L77"
     },
     {
       "id": "changelog_changelog",
@@ -2793,10 +2982,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L30"
+      "source_location": "L42"
     },
     {
-      "id": "changelog_fixed_48",
+      "id": "changelog_fixed_60",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -2805,7 +2994,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48"
+      "source_location": "L60"
     },
     {
       "id": "tsconfig_node",
@@ -2962,6 +3151,50 @@
       "source_location": "L190"
     },
     {
+      "id": "src_components_lazysection",
+      "label": "LazySection.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "lazysection.vue",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_lazysection_route",
+      "label": "route",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L31"
+    },
+    {
+      "id": "src_components_lazysection_shouldrender",
+      "label": "shouldRender",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "shouldrender",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L34"
+    },
+    {
+      "id": "src_components_lazysection_wrapperref",
+      "label": "wrapperRef",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "wrapperref",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L33"
+    },
+    {
       "id": "src_components_processsection",
       "label": "ProcessSection.vue",
       "_origin": "ast",
@@ -2981,6 +3214,17 @@
       "file_type": "code",
       "norm_label": "servicessection.vue",
       "source_file": "src/components/ServicesSection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton",
+      "label": "SectionSkeleton.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "sectionskeleton.vue",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
       "source_location": "L1"
     },
     {
@@ -3103,6 +3347,17 @@
       "norm_label": "router",
       "source_file": "tests/homepage.spec.ts",
       "source_location": "L6"
+    },
+    {
+      "id": "tests_reveal_lazy_spec",
+      "label": "reveal-lazy.spec.ts",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "reveal-lazy.spec.ts",
+      "source_file": "tests/reveal-lazy.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "backend_tasks_md_telegram_bot_spec",
@@ -3301,6 +3556,18 @@
     }
   ],
   "links": [
+    {
+      "source": "src_components_apploadingscreen_waitforreadiness",
+      "target": "src_components_apploadingscreen_aretopelementsloaded",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L95",
+      "weight": 1.0
+    },
     {
       "source": "src_components_contactsection_handlesubmit",
       "target": "src_components_contactsection_validateform",
@@ -3868,6 +4135,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_liquid_loader_demo",
+      "target": "src_components_ui_liquid_loader_liquidloading",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/liquid-loader-demo.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "src_data_projects",
       "target": "src_types_project_projectitem",
       "relation": "imports",
@@ -3929,6 +4208,18 @@
     },
     {
       "source": "src_app",
+      "target": "src_components_apploadingscreen",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/App.vue",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app",
       "target": "src_components_theheader",
       "relation": "imports_from",
       "_origin": "ast",
@@ -3936,7 +4227,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L23",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -3948,7 +4239,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L24",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -3960,7 +4251,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L25",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -3985,6 +4276,18 @@
       "context": "import",
       "source_file": "src/components/AboutSection.vue",
       "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_ui_liquidloader",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -4176,6 +4479,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ui/demo.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquid_loader_demo",
+      "target": "src_components_ui_liquid_loader",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/liquid-loader-demo.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -4372,6 +4687,30 @@
       "weight": 1.0
     },
     {
+      "source": "tests_loader_spec",
+      "target": "src_components_ui_liquidloader",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/loader.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_loader_spec",
+      "target": "src_components_apploadingscreen",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/loader.spec.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "tests_marquee_spec",
       "target": "src_components_marqueebanner",
       "relation": "imports_from",
@@ -4512,46 +4851,46 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_73",
+      "target": "changelog_added_85",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L73",
+      "source_location": "L85",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_55",
+      "target": "changelog_added_67",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L55",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_65",
+      "target": "changelog_changed_77",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L65",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_40",
+      "target": "changelog_added_52",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L40",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -4562,18 +4901,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L45",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_48",
+      "target": "changelog_fixed_60",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -4584,11 +4923,22 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L30",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
+      "target": "changelog_added_24",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_3_0_2026_10_17",
       "target": "changelog_added",
       "relation": "contains",
       "_origin": "ast",
@@ -4600,7 +4950,7 @@
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_2_0_2026_10_17",
+      "target": "changelog_2_3_0_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4611,13 +4961,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_2_0_2026_10_17",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_1_1_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L28",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -4628,7 +4989,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L38",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -4639,7 +5000,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L53",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -4650,7 +5011,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L71",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -4937,6 +5298,72 @@
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_dismissloadingscreen",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_isvisible",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_isexiting",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_isimageloaded",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_aretopelementsloaded",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_waitforreadiness",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -5930,6 +6357,105 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_liquid_loader",
+      "target": "src_components_ui_liquid_loader_liquidloading",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/liquid-loader.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquid_loader_demo",
+      "target": "src_components_ui_liquid_loader_demo_dotloaderdemo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/liquid-loader-demo.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_columns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_updatephysics",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_liquidloaderprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_props",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L62",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_columnstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_brandpalettes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_liquidloader",
+      "target": "src_components_ui_liquidloader_rainbowpalettes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_text_reveal",
       "target": "src_components_ui_text_reveal_splittext",
       "relation": "contains",
@@ -6751,6 +7277,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_apploadingscreen_aretopelementsloaded",
+      "target": "src_components_apploadingscreen_isimageloaded",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_customcursor_handlepointermove",
       "target": "src_components_customcursor_rendercursor",
       "relation": "indirect_call",
@@ -7049,5 +7587,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "b6a98e49d59e214e015ccfba16c9cd59cc0ad644"
+  "built_at_commit": "62e1bb5b02295257d0a0e6c0f0ec82d134faa0a1"
 }

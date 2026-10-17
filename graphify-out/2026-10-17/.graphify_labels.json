@@ -1,5 +1,5 @@
 {
-  "0": "ProjectDetailView.vue",
+  "0": "ProjectsSection.vue",
   "1": "ContactSection.vue",
   "2": "TheHeader.vue",
   "3": "MarqueeBanner.vue",
@@ -8,7 +8,7 @@
   "6": "package.json",
   "7": "Changelog",
   "8": "compilerOptions",
-  "9": "TheFooter.vue",
+  "9": "ui/TextReveal.vue",
   "10": "vite-env.d.ts",
   "11": "Anti-AI-Slop & Authentic Paper Brand Identity",
   "12": "vite.config.ts",
@@ -16,5 +16,8 @@
   "14": "Besporman — Agent Rules (GEMINI.md)",
   "15": "Besporman — Agent Instructions (Agent.md)",
   "16": "CustomCursor.vue",
-  "17": "App.vue"
+  "17": "App.vue",
+  "18": "text-reveal.tsx",
+  "19": "LazySection.vue",
+  "20": "components/TextReveal.vue"
 }

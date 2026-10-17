@@ -1,5 +1,8 @@
 <template>
   <div class="app-root">
+    <!-- Full-screen Studio Loading Screen -->
+    <AppLoadingScreen />
+
     <!-- Custom Vintage Comic Hand Cursor -->
     <CustomCursor />
 
@@ -20,6 +23,7 @@
 </template>
 
 <script setup lang="ts">
+import AppLoadingScreen from '@/components/AppLoadingScreen.vue'
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
 import CustomCursor from '@/components/CustomCursor.vue'
