@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-17)
 
 ## Corpus Check
-- 37 files · ~602,117 words
+- 38 files · ~602,881 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 219 nodes · 248 edges · 18 communities (16 shown, 2 thin omitted)
+- 227 nodes · 255 edges · 18 communities (16 shown, 2 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `83969317`
+- Built from commit: `1e39db70`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - compilerOptions
 - devDependencies
 - package.json
-- HomeView.vue
+- [2.0.0] - 2026-10-17
 - compilerOptions
 - include
 - vite-env.d.ts
@@ -36,11 +36,11 @@
 1. `compilerOptions` - 15 edges
 2. `compilerOptions` - 7 edges
 3. `include` - 6 edges
-4. `scripts` - 5 edges
-5. `updateMascotPosition()` - 5 edges
-6. `router` - 5 edges
-7. `ContactSubmissionAdapter` - 5 edges
-8. `Besporman — Agent Rules (GEMINI.md)` - 5 edges
+4. `Besporman — Agent Rules (GEMINI.md)` - 6 edges
+5. `scripts` - 5 edges
+6. `updateMascotPosition()` - 5 edges
+7. `router` - 5 edges
+8. `ContactSubmissionAdapter` - 5 edges
 9. `closeMobileMenu()` - 4 edges
 10. `projectsData` - 4 edges
 
@@ -66,8 +66,8 @@
 ## Communities (18 total, 2 thin omitted)
 
 ### Community 0 - "ProjectDetailView.vue"
-Cohesion: 0.11
-Nodes (17): Besporman Portfolio & Services Overview, activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects, projectsData, ProjectCategory (+9 more)
+Cohesion: 0.09
+Nodes (19): Double-Bezel Machined Card Architecture, Besporman Portfolio & Services Overview, activeCategory, categories, featuredProject, filteredProjectsCount, filteredSecondaryProjects, projectsData (+11 more)
 
 ### Community 1 - "ContactSection.vue"
 Cohesion: 0.13
@@ -93,9 +93,9 @@ Nodes (15): jsdom, devDependencies, jsdom, typescript, vite, @vitejs/plugin-vue,
 Cohesion: 0.13
 Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
 
-### Community 7 - "HomeView.vue"
-Cohesion: 0.20
-Nodes (5): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, Parchment & Iron Charcoal Design Palette, currentPose, router
+### Community 7 - "[2.0.0] - 2026-10-17"
+Cohesion: 0.29
+Nodes (6): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, Added, Added, Changed, Changelog
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -106,8 +106,8 @@ Cohesion: 0.25
 Nodes (7): src/**/*.d.ts, src/**/*.ts, src/**/*.tsx, src/**/*.vue, tests/**/*.ts, include, references
 
 ### Community 14 - "Besporman — Agent Rules (GEMINI.md)"
-Cohesion: 0.33
-Nodes (5): Active Skills & Rules Mandate, Besporman — Agent Rules (GEMINI.md), Engineering Standards, graphify, Knowledge Graph & Token Conservation (`/graphify`)
+Cohesion: 0.29
+Nodes (6): Active Skills & Rules Mandate, Besporman — Agent Rules (GEMINI.md), Engineering Standards, graphify, Knowledge Graph & Token Conservation (`/graphify`), Version Management Protocol (SemVer)
 
 ### Community 15 - "Besporman — Agent Instructions (Agent.md)"
 Cohesion: 0.40
@@ -118,11 +118,11 @@ Cohesion: 0.12
 Nodes (11): bursts, checkTargetState(), ComicBurst, cursorContainerRef, handlePointerMove(), isInteractive, isPressed, isSupported (+3 more)
 
 ### Community 17 - "App.vue"
-Cohesion: 0.21
-Nodes (7): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, app, router
+Cohesion: 0.15
+Nodes (10): Mascot & Brand Visual Asset Preservation, Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, Parchment & Iron Charcoal Design Palette, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, currentPose (+2 more)
 
 ## Knowledge Gaps
-- **111 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+106 more)
+- **115 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+110 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -130,16 +130,16 @@ Nodes (7): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL Firs
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
-  _High betweenness centrality (0.083) - this node is a cross-community bridge._
-- **Why does `Parchment & Iron Charcoal Design Palette` connect `HomeView.vue` to `App.vue`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.077) - this node is a cross-community bridge._
 - **Why does `router` connect `App.vue` to `ProjectDetailView.vue`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _111 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _115 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ProjectDetailView.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.11231884057971014 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08817204301075268 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.12857142857142856 - nodes in this community are weakly interconnected._
 - **Should `TheHeader.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.10333333333333333 - nodes in this community are weakly interconnected._
+- **Should `MarqueeBanner.vue` be split into smaller, more focused modules?**
+  _Cohesion score 0.09881422924901186 - nodes in this community are weakly interconnected._

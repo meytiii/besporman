@@ -664,6 +664,28 @@
       "source_location": "L92"
     },
     {
+      "id": "src_components_aboutsection",
+      "label": "AboutSection.vue",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "aboutsection.vue",
+      "source_file": "src/components/AboutSection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_processsection",
+      "label": "ProcessSection.vue",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "processsection.vue",
+      "source_file": "src/components/ProcessSection.vue",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_projectssection",
       "label": "ProjectsSection.vue",
       "_origin": "ast",
@@ -730,6 +752,17 @@
       "source_location": "L181"
     },
     {
+      "id": "src_components_servicessection",
+      "label": "ServicesSection.vue",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "servicessection.vue",
+      "source_file": "src/components/ServicesSection.vue",
+      "source_location": "L1"
+    },
+    {
       "id": "src_data_projects",
       "label": "projects.ts",
       "_origin": "ast",
@@ -760,6 +793,17 @@
       "file_type": "code",
       "norm_label": "project.ts",
       "source_file": "src/types/project.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_views_homeview",
+      "label": "HomeView.vue",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "homeview.vue",
+      "source_file": "src/views/HomeView.vue",
       "source_location": "L1"
     },
     {
@@ -849,6 +893,28 @@
       "norm_label": "route",
       "source_file": "src/views/ProjectDetailView.vue",
       "source_location": "L137"
+    },
+    {
+      "id": "tests_homepage_spec",
+      "label": "homepage.spec.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "homepage.spec.ts",
+      "source_file": "tests/homepage.spec.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_homepage_spec_router",
+      "label": "router",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "router",
+      "source_file": "tests/homepage.spec.ts",
+      "source_location": "L6"
     },
     {
       "id": "tests_project_detail_spec",
@@ -1051,7 +1117,7 @@
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "GEMINI.md",
-      "source_location": "L31"
+      "source_location": "L35"
     },
     {
       "id": "gemini_knowledge_graph_token_conservation_graphify",
@@ -1064,6 +1130,18 @@
       "norm_label": "knowledge graph & token conservation (`/graphify`)",
       "source_file": "GEMINI.md",
       "source_location": "L20"
+    },
+    {
+      "id": "gemini_version_management_protocol_semver",
+      "label": "Version Management Protocol (SemVer)",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Besporman \u2014 Agent Rules (GEMINI.md)",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "version management protocol (semver)",
+      "source_file": "GEMINI.md",
+      "source_location": "L30"
     },
     {
       "id": "agent",
@@ -1123,7 +1201,7 @@
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "Agent.md",
-      "source_location": "L45"
+      "source_location": "L47"
     },
     {
       "id": "src_components_customcursor",
@@ -1223,6 +1301,28 @@
       "norm_label": "app.vue",
       "source_file": "src/App.vue",
       "source_location": "L1"
+    },
+    {
+      "id": "src_components_herosection",
+      "label": "HeroSection.vue",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "App.vue",
+      "file_type": "code",
+      "norm_label": "herosection.vue",
+      "source_file": "src/components/HeroSection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_herosection_currentpose",
+      "label": "currentPose",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "App.vue",
+      "file_type": "code",
+      "norm_label": "currentpose",
+      "source_file": "src/components/HeroSection.vue",
+      "source_location": "L167"
     },
     {
       "id": "src_components_thefooter",
@@ -2083,92 +2183,88 @@
       "source_location": "L14"
     },
     {
-      "id": "src_components_aboutsection",
-      "label": "AboutSection.vue",
+      "id": "changelog",
+      "label": "CHANGELOG.md",
       "_origin": "ast",
       "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "aboutsection.vue",
-      "source_file": "src/components/AboutSection.vue",
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "changelog.md",
+      "source_file": "CHANGELOG.md",
       "source_location": "L1"
     },
     {
-      "id": "src_components_herosection",
-      "label": "HeroSection.vue",
+      "id": "changelog_1_0_0_2026_10_17",
+      "label": "[1.0.0] - 2026-10-17",
       "_origin": "ast",
       "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "herosection.vue",
-      "source_file": "src/components/HeroSection.vue",
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[1.0.0] - 2026-10-17",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L28"
+    },
+    {
+      "id": "changelog_2_0_0_2026_10_17",
+      "label": "[2.0.0] - 2026-10-17",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.0.0] - 2026-10-17",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "changelog_added",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "changelog_added_30",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30"
+    },
+    {
+      "id": "changelog_changed",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "changelog_changelog",
+      "label": "Changelog",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "[2.0.0] - 2026-10-17",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changelog",
+      "source_file": "CHANGELOG.md",
       "source_location": "L1"
-    },
-    {
-      "id": "src_components_herosection_currentpose",
-      "label": "currentPose",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "currentpose",
-      "source_file": "src/components/HeroSection.vue",
-      "source_location": "L167"
-    },
-    {
-      "id": "src_components_processsection",
-      "label": "ProcessSection.vue",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "processsection.vue",
-      "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_servicessection",
-      "label": "ServicesSection.vue",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "servicessection.vue",
-      "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_views_homeview",
-      "label": "HomeView.vue",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "homeview.vue",
-      "source_file": "src/views/HomeView.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "tests_homepage_spec",
-      "label": "homepage.spec.ts",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "homepage.spec.ts",
-      "source_file": "tests/homepage.spec.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "tests_homepage_spec_router",
-      "label": "router",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "file_type": "code",
-      "norm_label": "router",
-      "source_file": "tests/homepage.spec.ts",
-      "source_location": "L6"
     },
     {
       "id": "tsconfig_node",
@@ -2410,6 +2506,21 @@
       "source_url": null
     },
     {
+      "id": "agents_md_asset_preservation",
+      "label": "Mascot & Brand Visual Asset Preservation",
+      "_origin": "semantic",
+      "author": "Besporman Core",
+      "captured_at": null,
+      "community": 17,
+      "community_name": "App.vue",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "mascot & brand visual asset preservation",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
       "id": "agents_md_engineering_standards",
       "label": "Vue 3 Composition API & Strict TypeScript Standards",
       "_origin": "semantic",
@@ -2455,17 +2566,17 @@
       "source_url": null
     },
     {
-      "id": "agents_md_asset_preservation",
-      "label": "Mascot & Brand Visual Asset Preservation",
+      "id": "design_system_md_double_bezel_cards",
+      "label": "Double-Bezel Machined Card Architecture",
       "_origin": "semantic",
-      "author": "Besporman Core",
+      "author": "Besporman Design Team",
       "captured_at": null,
-      "community": 7,
-      "community_name": "HomeView.vue",
+      "community": 0,
+      "community_name": "ProjectDetailView.vue",
       "contributor": null,
-      "file_type": "document",
-      "norm_label": "mascot & brand visual asset preservation",
-      "source_file": "AGENTS.md",
+      "file_type": "concept",
+      "norm_label": "double-bezel machined card architecture",
+      "source_file": "DESIGN_SYSTEM.md",
       "source_location": null,
       "source_url": null
     },
@@ -2500,6 +2611,21 @@
       "source_url": null
     },
     {
+      "id": "design_system_md_tokens_palette",
+      "label": "Parchment & Iron Charcoal Design Palette",
+      "_origin": "semantic",
+      "author": "Besporman Design Team",
+      "captured_at": null,
+      "community": 17,
+      "community_name": "App.vue",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "parchment & iron charcoal design palette",
+      "source_file": "DESIGN_SYSTEM.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
       "id": "design_system_md_vazirmatn_typography",
       "label": "Persian Vazirmatn & Lalezar Typography Rules",
       "_origin": "semantic",
@@ -2510,36 +2636,6 @@
       "contributor": null,
       "file_type": "rationale",
       "norm_label": "persian vazirmatn & lalezar typography rules",
-      "source_file": "DESIGN_SYSTEM.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "design_system_md_double_bezel_cards",
-      "label": "Double-Bezel Machined Card Architecture",
-      "_origin": "semantic",
-      "author": "Besporman Design Team",
-      "captured_at": null,
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "double-bezel machined card architecture",
-      "source_file": "DESIGN_SYSTEM.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "design_system_md_tokens_palette",
-      "label": "Parchment & Iron Charcoal Design Palette",
-      "_origin": "semantic",
-      "author": "Besporman Design Team",
-      "captured_at": null,
-      "community": 7,
-      "community_name": "HomeView.vue",
-      "contributor": null,
-      "file_type": "rationale",
-      "norm_label": "parchment & iron charcoal design palette",
       "source_file": "DESIGN_SYSTEM.md",
       "source_location": null,
       "source_url": null
@@ -3423,7 +3519,73 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Agent.md",
-      "source_location": "L45",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog",
+      "target": "changelog_changelog",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_1_0_0_2026_10_17",
+      "target": "changelog_added_30",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_added",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_changed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_0_0_2026_10_17",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_1_0_0_2026_10_17",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -3461,13 +3623,24 @@
     },
     {
       "source": "gemini_besporman_agent_rules_gemini_md",
+      "target": "gemini_version_management_protocol_semver",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "GEMINI.md",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "gemini_besporman_agent_rules_gemini_md",
       "target": "gemini_graphify",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "GEMINI.md",
-      "source_location": "L31",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -5404,5 +5577,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "83969317086309c3ab1228cf4b8107fe34e4d0af"
+  "built_at_commit": "1e39db70d311754948856b108d360fe4aa701878"
 }

@@ -113,3 +113,11 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
   - Use native CSS Logical Properties (`margin-inline-start`, `padding-inline-start`, etc.) for all layouts.
   - Prefer modern CSS (`:has()`, container queries, View Transitions, CSS scroll-driven animations) over bulky runtime libraries.
   - Hardware-accelerate motion using exclusively `transform` and `opacity`.
+
+---
+
+## 11. Version Management & SemVer Protocol
+- **Rule:** Maintain synchronized Semantic Versioning (`MAJOR.MINOR.PATCH`) in `package.json` and `CHANGELOG.md`.
+- **Enforcement:**
+  - Whenever major architectural revisions, new core subsystem additions, or milestone features are added, bump the application version in `package.json` / `package-lock.json` (e.g. `npm version <newversion> --no-git-tag-version`).
+  - Document all version updates with release dates and categorized entries (`Added`, `Changed`, `Fixed`, `Removed`) in `CHANGELOG.md`.

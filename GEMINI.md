@@ -27,6 +27,10 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 - **Direction:** Persian-first (`<html lang="fa" dir="rtl">`), Vazirmatn typography, zero `letter-spacing` on Persian.
 - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`) adhering strictly to [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
 
+## Version Management Protocol (SemVer)
+- **Version Bumping on Major Changes:** Whenever major architectural changes, substantial new features, or comprehensive redesigns are introduced, upgrade the version in `package.json` (and `package-lock.json`) following Semantic Versioning (`MAJOR.MINOR.PATCH`).
+- **Changelog Maintenance:** Document all notable changes under the corresponding version in `CHANGELOG.md` (`Added`, `Changed`, `Fixed`, `Removed`).
+
 
 ## graphify
 

@@ -183,12 +183,30 @@ At the end of each implementation task, provide:
 1. A summary of the work completed.
 2. The important files created or changed.
 3. Design or engineering decisions made.
-4. Tests and verification performed, including failures.
-5. Remaining issues or follow-up tasks.
-6. A detailed commit summary and description using Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `chore:`).
-7. Commit the changes with the generated summary and description, and push them to the repository on the `main` branch (`https://github.com/meytiii/besporman`).
+4. Version update status (if major or minor milestone changes were introduced, confirm version bump in `package.json` and entry in `CHANGELOG.md`).
+5. Tests and verification performed, including failures.
+6. Remaining issues or follow-up tasks.
+7. A detailed commit summary and description using Conventional Commits (`feat:`, `fix:`, `docs:`, `style:`, `refactor:`, `chore:`).
+8. Commit the changes with the generated summary and description, and push them to the repository on the `main` branch (`https://github.com/meytiii/besporman`).
 
 Keep the report factual. Do not mark incomplete work as finished.
+
+---
+
+## 12. Version Management & Release Standards
+
+The project follows [Semantic Versioning (SemVer 2.0.0)](https://semver.org/spec/v2.0.0.html) (`MAJOR.MINOR.PATCH`) to communicate progress and evolution:
+
+1. **Versioning Triggers:**
+   - **`MAJOR` (e.g. `1.0.0` → `2.0.0`):** Substantial milestone evolution, major architectural enhancements, new core subsystem additions (e.g., custom interactive systems, complex mobile menu overhauls, significant visual/workflow revolutions), or breaking changes.
+   - **`MINOR` (e.g. `2.0.0` → `2.1.0`):** New features, new sections, or substantial enhancements added in a backward-compatible manner (e.g., adding a new project showcase, review category, or interactive module).
+   - **`PATCH` (e.g. `2.0.0` → `2.0.1`):** Bug fixes, design token refinements, accessibility patches, documentation updates, or minor performance tweaks.
+
+2. **Upgrade Workflow on Major Changes:**
+   Whenever major changes or significant feature milestones are implemented:
+   - **Bump Version:** Update `"version"` in `package.json` and sync `package-lock.json` (e.g. using `npm version <newversion> --no-git-tag-version`).
+   - **Maintain `CHANGELOG.md`:** Document the version bump with the release date and categorized changes following Keep a Changelog conventions (`Added`, `Changed`, `Fixed`, `Removed`).
+   - **Commit & Report:** Reference the new version in the Conventional Commit message and include the updated version in the final completion report.
 
 ## graphify
 

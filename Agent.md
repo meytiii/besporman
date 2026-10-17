@@ -41,6 +41,8 @@ To prevent competing or contradictory directives across different AI agent tools
 8. **Verification & Commit Standards:**
    * Verify all changes (responsive 320px, RTL layout, zero console errors).
    * Commit with Conventional Commits and push to `main` at the end of each completed task.
+9. **Version Management & SemVer Protocol:**
+   * Upgrade the application version in `package.json` / `package-lock.json` and document entries in `CHANGELOG.md` whenever major architectural changes, milestone features, or substantial overhauls are made. Follow Semantic Versioning (`MAJOR.MINOR.PATCH`).
 
 ## graphify
 
