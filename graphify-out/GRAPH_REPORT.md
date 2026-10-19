@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-19)
 
 ## Corpus Check
-- 52 files · ~753,858 words
+- 52 files · ~797,414 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 337 nodes · 399 edges · 24 communities (21 shown, 3 thin omitted)
+- 337 nodes · 398 edges · 23 communities (20 shown, 3 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cd876e80`
+- Built from commit: `90e13060`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -34,12 +34,11 @@
 - text-reveal.tsx
 - AppLoadingScreen.vue
 - liquid-loader-demo.tsx
-- StarRating.vue
 - package.json
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 15 edges
-2. `Changelog` - 15 edges
+1. `Changelog` - 16 edges
+2. `compilerOptions` - 15 edges
 3. `useScrollReveal()` - 8 edges
 4. `compilerOptions` - 7 edges
 5. `Besporman — Agent Rules (GEMINI.md)` - 7 edges
@@ -68,7 +67,7 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (24 total, 3 thin omitted)
+## Communities (23 total, 3 thin omitted)
 
 ### Community 0 - "ProjectDetailView.vue"
 Cohesion: 0.15
@@ -83,8 +82,8 @@ Cohesion: 0.09
 Nodes (23): activeTab, closeMobileMenu(), handleKeyDown(), handleMobileNavClick(), handleMouseEnter(), handleMouseLeave(), handleNavClick(), handleOutsideClick() (+15 more)
 
 ### Community 3 - "MarqueeBanner.vue"
-Cohesion: 0.08
-Nodes (26): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), handleDoubleClick(), handleMouseDown(), handleTouchEnd(), handleTouchMove() (+18 more)
+Cohesion: 0.07
+Nodes (28): ALL_REVIEWS, BUBBLE_THEMES, generateRandomReviewList(), getRandomRating(), handleDoubleClick(), handleMouseDown(), handleTouchEnd(), handleTouchMove() (+20 more)
 
 ### Community 4 - "compilerOptions"
 Cohesion: 0.07
@@ -100,7 +99,7 @@ Nodes (5): Props, route, shouldRender, wrapperRef, Props
 
 ### Community 7 - "Changelog"
 Cohesion: 0.06
-Nodes (32): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, [2.3.2] - 2026-10-18 (+24 more)
+Nodes (34): [1.0.0] - 2026-10-17, [2.0.0] - 2026-10-17, [2.1.0] - 2026-10-17, [2.1.1] - 2026-10-17, [2.2.0] - 2026-10-17, [2.3.0] - 2026-10-17, [2.3.1] - 2026-10-18, [2.3.2] - 2026-10-18 (+26 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -134,10 +133,6 @@ Nodes (9): defaultContainerVariants, defaultItemVariants, defaultStaggerTimes, p
 Cohesion: 0.14
 Nodes (13): areTopElementsLoaded(), ensureFontsLoaded(), isExiting, isFontReady, isImageLoaded(), isVisible, waitForReadiness(), brandPalettes (+5 more)
 
-### Community 22 - "StarRating.vue"
-Cohesion: 0.33
-Nodes (4): clipUid, formattedScore, props, StarType
-
 ### Community 23 - "package.json"
 Cohesion: 0.13
 Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+6 more)
@@ -151,11 +146,11 @@ Nodes (14): dependencies, vue, vue-router, name, private, scripts, build, dev (+
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `8-State Interactive Element Matrix` connect `ContactSection.vue` to `TheHeader.vue`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
+  _High betweenness centrality (0.068) - this node is a cross-community bridge._
 - **Why does `Parchment & Iron Charcoal Design Palette` connect `App.vue` to `ui/TextReveal.vue`?**
-  _High betweenness centrality (0.051) - this node is a cross-community bridge._
+  _High betweenness centrality (0.050) - this node is a cross-community bridge._
 - **Why does `useScrollReveal()` connect `ui/TextReveal.vue` to `ContactSection.vue`, `MarqueeBanner.vue`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
   _171 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
@@ -163,4 +158,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `TheHeader.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.09259259259259259 - nodes in this community are weakly interconnected._
 - **Should `MarqueeBanner.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.0846774193548387 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07142857142857142 - nodes in this community are weakly interconnected._

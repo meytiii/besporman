@@ -46,24 +46,23 @@ describe('MarqueeBanner Accessibility & Kinematics', () => {
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
   })
 
-  it('toggles pause state on double click / double tap and shows status badge', async () => {
+  it('toggles pause state on double click / double tap without showing messages', async () => {
     const wrapper = mount(MarqueeBanner)
     const viewport = wrapper.find('.marquee-viewport')
 
-    // Initially not paused and badge not visible
+    // Initially not paused and badge does not exist
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
     expect(wrapper.find('.marquee-status-pill').exists()).toBe(false)
 
-    // First double click -> pauses and reveals status badge
+    // First double click -> pauses without status badge
     await viewport.trigger('dblclick')
     expect(wrapper.find('.marquee-track').classes()).toContain('is-paused')
-    expect(wrapper.find('.marquee-status-pill').exists()).toBe(true)
-    expect(wrapper.find('.marquee-status-pill').text()).toContain('متوقف شد')
+    expect(wrapper.find('.marquee-status-pill').exists()).toBe(false)
 
-    // Second double click -> resumes
+    // Second double click -> resumes without status badge
     await viewport.trigger('dblclick')
     expect(wrapper.find('.marquee-track').classes()).not.toContain('is-paused')
-    expect(wrapper.find('.marquee-status-pill').text()).toContain('در حال حرکت')
+    expect(wrapper.find('.marquee-status-pill').exists()).toBe(false)
   })
 
   it('handles mobile touch start, horizontal swipe, and drag state', async () => {

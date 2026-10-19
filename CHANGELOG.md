@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.2] - 2026-10-19
+
+### Changed
+- **Silent Marquee Pause & Resume:** Removed the pop-up status indicator badge («متوقف شد • دو ضربه برای حرکت» / «در حال حرکت») from `MarqueeBanner.vue`. Double-tap and double-click gestures now cleanly halt and resume scrolling directly without displaying temporary overlay messages.
+- **Cleaned Up Obsolete Styles & State:** Removed unused badge state, timeout cleanup routines, and `.marquee-status-pill` CSS declarations.
+
+---
+
 ## [2.5.1] - 2026-10-19
 
 ### Changed

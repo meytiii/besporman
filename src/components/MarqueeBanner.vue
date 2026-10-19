@@ -37,46 +37,6 @@
         </li>
       </ul>
 
-      <!-- Double-tap pause indicator badge -->
-      <transition name="status-pill-fade">
-        <div
-          v-if="statusBadgeVisible"
-          class="marquee-status-pill"
-          role="status"
-          aria-live="polite"
-        >
-          <svg
-            v-if="isDoubleTapPaused"
-            class="status-pill-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <rect x="6" y="4" width="4" height="16" rx="1"></rect>
-            <rect x="14" y="4" width="4" height="16" rx="1"></rect>
-          </svg>
-          <svg
-            v-else
-            class="status-pill-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-          </svg>
-          <span>
-            {{ isDoubleTapPaused ? 'متوقف شد • دو ضربه برای حرکت' : 'در حال حرکت' }}
-          </span>
-        </div>
-      </transition>
 
       <!-- 3. Visual Looping Marquee Track (Strictly aria-hidden) -->
       <div
@@ -318,8 +278,6 @@ const viewportRef = ref<HTMLDivElement | null>(null)
 const isHovered = ref(false)
 const isDoubleTapPaused = ref(false)
 const isDragging = ref(false)
-const statusBadgeVisible = ref(false)
-let badgeTimeout: number | null = null
 
 // Marquee is paused when hovered on desktop, double-tap toggled on mobile, or actively dragged
 const isPaused = computed(() => isHovered.value || isDoubleTapPaused.value || isDragging.value)
@@ -394,22 +352,9 @@ const handleMouseLeave = () => {
 
 let lastTouchDoubleTapTime = 0
 
-// Double-tap pause toggle and feedback pill
+// Double-tap pause toggle
 const toggleDoubleTapPause = () => {
   isDoubleTapPaused.value = !isDoubleTapPaused.value
-  showStatusBadge()
-}
-
-const showStatusBadge = () => {
-  statusBadgeVisible.value = true
-  if (badgeTimeout !== null && typeof window !== 'undefined') {
-    clearTimeout(badgeTimeout)
-  }
-  if (typeof window !== 'undefined') {
-    badgeTimeout = window.setTimeout(() => {
-      statusBadgeVisible.value = false
-    }, 2400)
-  }
 }
 
 const handleDoubleClick = () => {
@@ -584,9 +529,6 @@ onUnmounted(() => {
   if (resizeObserver) {
     resizeObserver.disconnect()
   }
-  if (badgeTimeout !== null && typeof window !== 'undefined') {
-    clearTimeout(badgeTimeout)
-  }
   if (typeof window !== 'undefined') {
     window.removeEventListener('mousemove', handleWindowMouseMove)
     window.removeEventListener('mouseup', handleWindowMouseUp)
@@ -695,55 +637,6 @@ onUnmounted(() => {
   cursor: grabbing;
 }
 
-/* ==========================================================================
-   Tactile Double-Tap & Drag Status Badge
-   ========================================================================== */
-.marquee-status-pill {
-  position: absolute;
-  bottom: var(--space-3);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 25;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: 6px 14px;
-  background-color: var(--primitive-cream-100);
-  color: var(--color-ink-primary);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-full);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  font-weight: 700;
-  pointer-events: none;
-  white-space: nowrap;
-  direction: rtl;
-}
-
-.status-pill-icon {
-  width: 14px;
-  height: 14px;
-  stroke: var(--color-brand-comic);
-  flex-shrink: 0;
-}
-
-.status-pill-fade-enter-active,
-.status-pill-fade-leave-active {
-  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.status-pill-fade-enter-from,
-.status-pill-fade-leave-to {
-  opacity: 0;
-  transform: translate(-50%, 8px) scale(0.95);
-}
-
-.status-pill-fade-enter-to,
-.status-pill-fade-leave-from {
-  opacity: 1;
-  transform: translate(-50%, 0) scale(1);
-}
 
 /* ==========================================================================
    Continuous Seamless Loop Track (Math Proof: ΔX = -50% = -W)
@@ -954,12 +847,6 @@ onUnmounted(() => {
     margin-inline-end: 2px;
   }
 
-  .marquee-status-pill {
-    bottom: var(--space-2);
-    font-size: 11px;
-    padding: 5px 12px;
-    max-width: 90vw;
-  }
 }
 
 

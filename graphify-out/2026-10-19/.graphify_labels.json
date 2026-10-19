@@ -21,5 +21,6 @@
   "19": "AppLoadingScreen.vue",
   "20": "components/TextReveal.vue",
   "21": "liquid-loader-demo.tsx",
-  "22": "StarRating.vue"
+  "22": "StarRating.vue",
+  "23": "package.json"
 }
