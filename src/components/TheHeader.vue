@@ -258,9 +258,9 @@ const updateMascotPosition = () => {
   const tRect = targetEl.getBoundingClientRect()
 
   if (targetId === 'brand') {
-    // When perched on brand title at top of page, stay on the left edge of "بسپر من"
-    mascotX.value = Math.round(tRect.left - cRect.left - 4)
-    mascotY.value = Math.round(tRect.top - cRect.top - 20)
+    // When perched on brand title at top of page, stay on the middle-left of "بسپر من"
+    mascotX.value = Math.round(tRect.left - cRect.left - 18)
+    mascotY.value = Math.round(tRect.top - cRect.top + tRect.height / 2 - 14)
   } else {
     // When perched on nav items, stay centered above the item pill
     mascotX.value = Math.round(tRect.left - cRect.left + tRect.width / 2)
