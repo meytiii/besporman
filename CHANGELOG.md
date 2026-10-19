@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.3] - 2026-10-19
+
+### Fixed
+- **Navbar Mascot Indicator & ScrollSpy Restoration:** Resolved an issue where the anime mascot in the navbar froze above «ثبت سفارش» and failed to track sections during page scroll.
+- **Accurate Document Geometry Calculation:** Replaced fragile `section.offsetTop` (which evaluated to `0` inside lazy-wrapped containers due to CSS containment) with dynamic viewport bounding calculations (`getBoundingClientRect().top + window.scrollY`), guaranteeing accurate scrollspy section matching across all viewport heights.
+- **LazySection Anchor & ID Synchronization:** Added `:id="targetId || undefined"` to `.lazy-section-wrapper` in `LazySection.vue` and removed redundant `content-visibility: auto` to prevent CSS containment side-effects and layout shifts. All section anchors now exist in the DOM from initial render, ensuring smooth scrolling and instant anchor resolution.
+- **Hero Boundary Clearance & Edge Snap:** Updated `TheHeader.vue` scrollspy to cleanly hide the mascot when viewing the Hero and Marquee banner (`scrollPosition < servicesTop`), seamlessly track active sections in reverse order, and snap to `contact` when scrolled to the bottom of the page.
+- **Anchor Clearance Under Sticky Header:** Added `.lazy-section-wrapper[id]` to `scroll-margin-top` clearance rules in `base.css`.
+- **Automated ScrollSpy Testing:** Added unit tests in `tests/navigation.spec.ts` verifying dynamic mascot position updates, opacity transitions, and hero boundary clearance.
+
+---
+
 ## [2.5.2] - 2026-10-19
 
 ### Changed

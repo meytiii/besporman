@@ -1,5 +1,10 @@
 <template>
-  <div ref="wrapperRef" class="lazy-section-wrapper" :style="{ minHeight: `${minHeight}px` }">
+  <div
+    :id="targetId || undefined"
+    ref="wrapperRef"
+    class="lazy-section-wrapper"
+    :style="{ minHeight: `${minHeight}px` }"
+  >
     <slot v-if="shouldRender" />
     <slot v-else name="skeleton">
       <SectionSkeleton :min-height="minHeight" :columns="columns" :card-count="cardCount" />
@@ -95,7 +100,5 @@ onUnmounted(() => {
 <style scoped>
 .lazy-section-wrapper {
   width: 100%;
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 500px;
 }
 </style>

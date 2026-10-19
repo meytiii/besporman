@@ -295,7 +295,7 @@
       "file_type": "code",
       "norm_label": "props",
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L15"
+      "source_location": "L20"
     },
     {
       "id": "src_components_skeletons_sectionskeleton_props",
@@ -708,7 +708,7 @@
       "file_type": "code",
       "norm_label": "closemobilemenu()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L356"
+      "source_location": "L372"
     },
     {
       "id": "src_components_theheader_handlebrandclick",
@@ -732,7 +732,7 @@
       "file_type": "code",
       "norm_label": "handlecardclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L288"
+      "source_location": "L291"
     },
     {
       "id": "src_components_theheader_handlekeydown",
@@ -744,7 +744,7 @@
       "file_type": "code",
       "norm_label": "handlekeydown()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L300"
+      "source_location": "L303"
     },
     {
       "id": "src_components_theheader_handlemobilenavclick",
@@ -804,7 +804,7 @@
       "file_type": "code",
       "norm_label": "handleoutsideclick()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L294"
+      "source_location": "L297"
     },
     {
       "id": "src_components_theheader_handlescroll",
@@ -816,7 +816,7 @@
       "file_type": "code",
       "norm_label": "handlescroll()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L306"
+      "source_location": "L309"
     },
     {
       "id": "src_components_theheader_setitemref",
@@ -840,7 +840,7 @@
       "file_type": "code",
       "norm_label": "togglemobilemenu()",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L352"
+      "source_location": "L368"
     },
     {
       "id": "src_components_theheader_updatemascotposition",
@@ -2933,7 +2933,7 @@
       "file_type": "code",
       "norm_label": "route",
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L31"
+      "source_location": "L36"
     },
     {
       "id": "src_components_lazysection_shouldrender",
@@ -2944,7 +2944,7 @@
       "file_type": "code",
       "norm_label": "shouldrender",
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L34"
+      "source_location": "L39"
     },
     {
       "id": "src_components_lazysection_wrapperref",
@@ -2955,7 +2955,7 @@
       "file_type": "code",
       "norm_label": "wrapperref",
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L33"
+      "source_location": "L38"
     },
     {
       "id": "src_components_skeletons_sectionskeleton",
@@ -3001,7 +3001,7 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L171"
+      "source_location": "L183"
     },
     {
       "id": "changelog_2_0_0_2026_10_17",
@@ -3013,7 +3013,7 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L153"
+      "source_location": "L165"
     },
     {
       "id": "changelog_2_1_0_2026_10_17",
@@ -3025,7 +3025,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L138"
+      "source_location": "L150"
     },
     {
       "id": "changelog_2_1_1_2026_10_17",
@@ -3037,7 +3037,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L128"
+      "source_location": "L140"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3049,7 +3049,7 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L110"
+      "source_location": "L122"
     },
     {
       "id": "changelog_2_3_0_2026_10_17",
@@ -3061,7 +3061,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L98"
+      "source_location": "L110"
     },
     {
       "id": "changelog_2_3_1_2026_10_18",
@@ -3073,7 +3073,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L86"
+      "source_location": "L98"
     },
     {
       "id": "changelog_2_3_2_2026_10_18",
@@ -3085,7 +3085,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L77"
+      "source_location": "L89"
     },
     {
       "id": "changelog_2_3_3_2026_10_18",
@@ -3097,7 +3097,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L66"
+      "source_location": "L78"
     },
     {
       "id": "changelog_2_4_0_2026_10_18",
@@ -3109,7 +3109,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L57"
+      "source_location": "L69"
     },
     {
       "id": "changelog_2_4_1_2026_10_18",
@@ -3121,7 +3121,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L47"
+      "source_location": "L59"
     },
     {
       "id": "changelog_2_4_2_2026_10_18",
@@ -3133,7 +3133,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L38"
+      "source_location": "L50"
     },
     {
       "id": "changelog_2_5_0_2026_10_18",
@@ -3145,7 +3145,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L26"
+      "source_location": "L38"
     },
     {
       "id": "changelog_2_5_1_2026_10_19",
@@ -3157,7 +3157,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L18"
+      "source_location": "L30"
     },
     {
       "id": "changelog_2_5_2_2026_10_19",
@@ -3168,6 +3168,18 @@
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[2.5.2] - 2026-10-19",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22"
+    },
+    {
+      "id": "changelog_2_5_3_2026_10_19",
+      "label": "[2.5.3] - 2026-10-19",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
       "source_location": "L10"
     },
@@ -3181,19 +3193,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L28"
-    },
-    {
-      "id": "changelog_added_100",
-      "label": "Added",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "added",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L100"
+      "source_location": "L40"
     },
     {
       "id": "changelog_added_112",
@@ -3208,7 +3208,7 @@
       "source_location": "L112"
     },
     {
-      "id": "changelog_added_140",
+      "id": "changelog_added_124",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3217,10 +3217,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L140"
+      "source_location": "L124"
     },
     {
-      "id": "changelog_added_155",
+      "id": "changelog_added_152",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3229,10 +3229,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L155"
+      "source_location": "L152"
     },
     {
-      "id": "changelog_added_173",
+      "id": "changelog_added_167",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3241,10 +3241,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L173"
+      "source_location": "L167"
     },
     {
-      "id": "changelog_added_59",
+      "id": "changelog_added_185",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3253,7 +3253,19 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L59"
+      "source_location": "L185"
+    },
+    {
+      "id": "changelog_added_71",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L71"
     },
     {
       "id": "changelog_changed",
@@ -3265,10 +3277,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12"
+      "source_location": "L24"
     },
     {
-      "id": "changelog_changed_145",
+      "id": "changelog_changed_157",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3277,10 +3289,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L145"
+      "source_location": "L157"
     },
     {
-      "id": "changelog_changed_165",
+      "id": "changelog_changed_177",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3289,10 +3301,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L165"
+      "source_location": "L177"
     },
     {
-      "id": "changelog_changed_20",
+      "id": "changelog_changed_32",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3301,10 +3313,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L20"
+      "source_location": "L32"
     },
     {
-      "id": "changelog_changed_40",
+      "id": "changelog_changed_52",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3313,10 +3325,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L40"
+      "source_location": "L52"
     },
     {
-      "id": "changelog_changed_68",
+      "id": "changelog_changed_80",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3325,7 +3337,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L68"
+      "source_location": "L80"
     },
     {
       "id": "changelog_changelog",
@@ -3349,10 +3361,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L49"
+      "source_location": "L12"
     },
     {
-      "id": "changelog_fixed_130",
+      "id": "changelog_fixed_100",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3361,10 +3373,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L130"
+      "source_location": "L100"
     },
     {
-      "id": "changelog_fixed_148",
+      "id": "changelog_fixed_142",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3373,10 +3385,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L148"
+      "source_location": "L142"
     },
     {
-      "id": "changelog_fixed_79",
+      "id": "changelog_fixed_160",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3385,10 +3397,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L79"
+      "source_location": "L160"
     },
     {
-      "id": "changelog_fixed_88",
+      "id": "changelog_fixed_61",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3397,7 +3409,19 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L88"
+      "source_location": "L61"
+    },
+    {
+      "id": "changelog_fixed_91",
+      "label": "Fixed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L91"
     },
     {
       "id": "tsconfig_node",
@@ -4100,7 +4124,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L302",
+      "source_location": "L305",
       "weight": 1.0
     },
     {
@@ -4172,7 +4196,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L296",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
@@ -4184,7 +4208,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L336",
+      "source_location": "L329",
       "weight": 1.0
     },
     {
@@ -4822,7 +4846,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L13",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5338,83 +5362,94 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_173",
+      "target": "changelog_added_185",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L173",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_155",
+      "target": "changelog_added_167",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L155",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_165",
+      "target": "changelog_changed_177",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L165",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_140",
+      "target": "changelog_added_152",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L140",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_145",
+      "target": "changelog_changed_157",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L145",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_148",
+      "target": "changelog_fixed_160",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L148",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_130",
+      "target": "changelog_fixed_142",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L130",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
+      "target": "changelog_added_124",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_3_0_2026_10_17",
       "target": "changelog_added_112",
       "relation": "contains",
       "_origin": "ast",
@@ -5425,8 +5460,8 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_100",
+      "source": "changelog_2_3_1_2026_10_18",
+      "target": "changelog_fixed_100",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5436,69 +5471,58 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_88",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L88",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_79",
+      "target": "changelog_fixed_91",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L79",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_68",
+      "target": "changelog_changed_80",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L68",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_59",
+      "target": "changelog_added_71",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L59",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed",
+      "target": "changelog_fixed_61",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L49",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_40",
+      "target": "changelog_changed_52",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L40",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -5509,18 +5533,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L28",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_1_2026_10_19",
-      "target": "changelog_changed_20",
+      "target": "changelog_changed_32",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L20",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -5531,12 +5555,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_3_2026_10_19",
+      "target": "changelog_fixed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
       "source_location": "L12",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_5_2_2026_10_19",
+      "target": "changelog_2_5_3_2026_10_19",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5547,7 +5582,7 @@
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_2_0_2026_10_17",
+      "target": "changelog_2_3_0_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5558,13 +5593,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_2_0_2026_10_17",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L122",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_1_1_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L128",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -5575,7 +5621,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L138",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -5586,7 +5632,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L153",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -5597,7 +5643,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L171",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_5_2_2026_10_19",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -5608,7 +5665,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L18",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -5619,7 +5676,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L26",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -5630,7 +5687,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L38",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -5641,7 +5698,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L47",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -5652,7 +5709,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L57",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -5663,7 +5720,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L66",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -5674,23 +5731,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L77",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
       "target": "changelog_2_3_1_2026_10_18",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L86",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_3_0_2026_10_17",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6378,7 +6424,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L23",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -6389,7 +6435,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L31",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -6400,7 +6446,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L33",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -6411,7 +6457,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/LazySection.vue",
-      "source_location": "L34",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -7148,7 +7194,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L288",
+      "source_location": "L291",
       "weight": 1.0
     },
     {
@@ -7159,7 +7205,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L294",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -7170,7 +7216,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L300",
+      "source_location": "L303",
       "weight": 1.0
     },
     {
@@ -7181,7 +7227,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L306",
+      "source_location": "L309",
       "weight": 1.0
     },
     {
@@ -7192,7 +7238,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L352",
+      "source_location": "L368",
       "weight": 1.0
     },
     {
@@ -7203,7 +7249,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/TheHeader.vue",
-      "source_location": "L356",
+      "source_location": "L372",
       "weight": 1.0
     },
     {
@@ -8484,5 +8530,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "90e130605a24920532c924998be54cae1d3c8b7a"
+  "built_at_commit": "ec65a221ba15a891b7513ef1b5725bae7245d055"
 }

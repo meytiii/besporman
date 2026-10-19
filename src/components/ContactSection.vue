@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact-section" aria-labelledby="contact-title">
+  <section class="contact-section" aria-labelledby="contact-title">
     <div class="container">
       
       <!-- Section Header -->

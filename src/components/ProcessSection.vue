@@ -1,5 +1,5 @@
 <template>
-  <section id="process" class="process-section" aria-labelledby="process-title">
+  <section class="process-section" aria-labelledby="process-title">
     <div class="container">
       
       <!-- Section Header -->

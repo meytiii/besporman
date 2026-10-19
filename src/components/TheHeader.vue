@@ -282,6 +282,9 @@ const handleBrandClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
     activeTab.value = ''
     mascotOpacity.value = 0
+    if (route.hash) {
+      router.replace({ path: '/' }).catch(() => {})
+    }
   }
 }
 
@@ -310,8 +313,42 @@ const handleScroll = () => {
     return
   }
 
-  // When near the top of the homepage (Hero section), no section tab should be active
-  if (window.scrollY < 350 && !route.hash) {
+  // Reading line offset from top of viewport (clearance below sticky header)
+  const scrollPosition = window.scrollY + 200
+
+  // 1. Bottom-of-page snap for the final contact section (only when page is scrollable)
+  const isScrollable = document.documentElement.scrollHeight > window.innerHeight + 100
+  const isAtBottom =
+    isScrollable &&
+    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60
+
+  if (isAtBottom) {
+    if (activeTab.value !== 'contact') {
+      activeTab.value = 'contact'
+      if (!hoveredTab.value) {
+        updateMascotPosition()
+      }
+    }
+    return
+  }
+
+  // 2. Determine active section in reverse order (bottom to top) using live getBoundingClientRect
+  let currentActive = ''
+  for (let i = navItems.length - 1; i >= 0; i--) {
+    const item = navItems[i]
+    const section = document.getElementById(item.id)
+    if (section) {
+      const rect = section.getBoundingClientRect()
+      const top = rect.top + window.scrollY
+      if (scrollPosition >= top) {
+        currentActive = item.id
+        break
+      }
+    }
+  }
+
+  // 3. If above the first section (Hero / Marquee banner), clear active tab and hide mascot
+  if (!currentActive) {
     if (activeTab.value !== '') {
       activeTab.value = ''
       mascotOpacity.value = 0
@@ -319,32 +356,11 @@ const handleScroll = () => {
     return
   }
 
-  // ScrollSpy to determine active section on homepage
-  const scrollPosition = window.scrollY + 160
-  let matched = false
-  for (let i = navItems.length - 1; i >= 0; i--) {
-    const item = navItems[i]
-    const section = document.getElementById(item.id)
-    if (section) {
-      const top = section.offsetTop
-      const height = section.offsetHeight
-      if (scrollPosition >= top && scrollPosition < top + height) {
-        matched = true
-        if (activeTab.value !== item.id) {
-          activeTab.value = item.id
-          if (!hoveredTab.value) {
-            updateMascotPosition()
-          }
-        }
-        break
-      }
-    }
-  }
-
-  if (!matched && window.scrollY < 700) {
-    if (activeTab.value !== '') {
-      activeTab.value = ''
-      mascotOpacity.value = 0
+  // 4. Update active tab & mascot position
+  if (activeTab.value !== currentActive) {
+    activeTab.value = currentActive
+    if (!hoveredTab.value) {
+      updateMascotPosition()
     }
   }
 }
@@ -374,8 +390,7 @@ watch(
           nextTick(updateMascotPosition)
         }
       } else {
-        activeTab.value = ''
-        mascotOpacity.value = 0
+        nextTick(handleScroll)
       }
     } else if (typeof path === 'string' && path.startsWith('/projects')) {
       activeTab.value = 'projects'
@@ -397,8 +412,7 @@ onMounted(() => {
         activeTab.value = hashId
       }
     } else {
-      activeTab.value = ''
-      mascotOpacity.value = 0
+      handleScroll()
     }
   } else if (route.path.startsWith('/projects')) {
     activeTab.value = 'projects'
@@ -406,6 +420,7 @@ onMounted(() => {
 
   nextTick(() => {
     updateMascotPosition()
+    handleScroll()
     setTimeout(updateMascotPosition, 100)
     setTimeout(updateMascotPosition, 300)
   })

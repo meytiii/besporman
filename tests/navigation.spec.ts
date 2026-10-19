@@ -90,4 +90,73 @@ describe('Header & Footer Cross-Route Navigation', () => {
     expect(router.currentRoute.value.path).toBe('/')
     expect(router.currentRoute.value.hash).toBe('#services')
   })
+
+  it('updates active tab and mascot visibility dynamically during scrolling', async () => {
+    // Setup DOM with section elements and mocked getBoundingClientRect
+    const sectionServices = document.createElement('div')
+    sectionServices.id = 'services'
+    document.body.appendChild(sectionServices)
+
+    const sectionContact = document.createElement('div')
+    sectionContact.id = 'contact'
+    document.body.appendChild(sectionContact)
+
+    // Mock getBoundingClientRect
+    sectionServices.getBoundingClientRect = () => ({
+      top: 1500 - window.scrollY,
+      bottom: 2500 - window.scrollY,
+      left: 0,
+      right: 1000,
+      width: 1000,
+      height: 1000,
+      x: 0,
+      y: 1500 - window.scrollY,
+      toJSON: () => {},
+    })
+
+    sectionContact.getBoundingClientRect = () => ({
+      top: 5000 - window.scrollY,
+      bottom: 6000 - window.scrollY,
+      left: 0,
+      right: 1000,
+      width: 1000,
+      height: 1000,
+      x: 0,
+      y: 5000 - window.scrollY,
+      toJSON: () => {},
+    })
+
+    const router = await setupRouter('/')
+    const wrapper = mount(TheHeader, {
+      attachTo: document.body,
+      global: {
+        plugins: [router],
+      },
+    })
+    await flushPromises()
+
+    // 1. At top of page (scrollY = 0), hero is active, no nav tab active, mascot opacity is 0
+    Object.defineProperty(window, 'scrollY', { value: 0, writable: true })
+    window.dispatchEvent(new Event('scroll'))
+    await flushPromises()
+
+    const mascot = wrapper.find('.anime-mascot-wrapper')
+    expect(wrapper.find('.nav-link.is-active').exists()).toBe(false)
+    expect(mascot.attributes('style')).toContain('opacity: 0')
+
+    // 2. Scroll to Services (scrollY = 1400, scrollPosition = 1600 >= 1500)
+    window.scrollY = 1400
+    window.dispatchEvent(new Event('scroll'))
+    await flushPromises()
+
+    const activeLink = wrapper.find('.nav-link.is-active')
+    expect(activeLink.exists()).toBe(true)
+    expect(activeLink.text()).toContain('خدمات')
+    expect(mascot.attributes('style')).toContain('opacity: 1')
+
+    // Cleanup
+    wrapper.unmount()
+    sectionServices.remove()
+    sectionContact.remove()
+  })
 })

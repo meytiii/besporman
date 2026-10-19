@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="about-section" aria-labelledby="about-title">
+  <section class="about-section" aria-labelledby="about-title">
     <div class="container">
       
       <div class="about-card">

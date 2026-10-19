@@ -1,18 +1,31 @@
 <template>
-  <section id="services" class="services-section" aria-labelledby="services-title">
+  <section class="services-section" aria-labelledby="services-title">
     <div class="container">
       
       <!-- Section Header -->
       <div class="section-header">
         <span class="section-badge reveal-badge comic-pop">تخصص‌های تیم</span>
-        <h2 id="services-title" class="section-title">
-          <TextReveal
-            as="span"
-            text="خدمات تخصصی و زمینه کاری ما"
-            preset="fade-in-blur"
-            :speed-reveal="1.2"
-          />
-        </h2>
+        
+        <div class="services-title-wrapper">
+          <div class="services-mascot-box comic-pop">
+            <img
+              :src="specialtiesImg"
+              alt="بسپر من - تخصص‌ها و خدمات"
+              class="services-mascot-img"
+              width="896"
+              height="1200"
+              loading="lazy"
+            />
+          </div>
+          <h2 id="services-title" class="section-title">
+            <TextReveal
+              as="span"
+              text="خدمات تخصصی و زمینه کاری ما"
+              preset="fade-in-blur"
+              :speed-reveal="1.2"
+            />
+          </h2>
+        </div>
         <p class="section-subtitle">
           <TextReveal
             as="span"
@@ -136,6 +149,7 @@
 <script setup lang="ts">
 import TextReveal from '@/components/ui/TextReveal.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import specialtiesImg from '../../pic/webp/specialties.webp'
 
 useScrollReveal()
 </script>
@@ -148,7 +162,7 @@ useScrollReveal()
 
 .section-header {
   text-align: center;
-  max-width: 650px;
+  max-width: 720px;
   margin-inline: auto;
   margin-bottom: var(--space-12);
 }
@@ -165,15 +179,42 @@ useScrollReveal()
   margin-bottom: var(--space-3);
 }
 
+.services-title-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.services-mascot-box {
+  height: 190px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-mascot-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(3px 3px 0 var(--color-border-bold));
+  user-select: none;
+}
+
 .section-title {
   font-size: var(--text-3xl);
   color: var(--color-ink-primary);
-  margin-bottom: var(--space-3);
+  margin: 0;
+  line-height: var(--leading-tight);
 }
 
 .section-subtitle {
   font-size: var(--text-base);
   color: var(--color-ink-muted);
+  max-width: 650px;
+  margin-inline: auto;
 }
 
 /* Grid */
@@ -323,5 +364,20 @@ useScrollReveal()
 .card-cta:hover .cta-arrow {
   transform: translateX(-3px);
   background-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .services-title-wrapper {
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .services-mascot-box {
+    height: 140px;
+  }
+
+  .section-title {
+    font-size: var(--text-2xl);
+  }
 }
 </style>
