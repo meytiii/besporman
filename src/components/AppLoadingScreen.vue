@@ -30,14 +30,6 @@
             <span class="dot">.</span>
           </span>
         </div>
-
-        <!-- Studio Subtitle -->
-        <p
-          class="loading-subtitle"
-          :class="{ 'font-loaded': isFontReady }"
-        >
-          آماده‌سازی کارگاه برنامه‌نویسی بسپر من
-        </p>
       </div>
     </div>
   </Transition>
@@ -268,24 +260,6 @@ onMounted(async () => {
 .dot:nth-child(2) { animation-delay: 0.3s; }
 .dot:nth-child(3) { animation-delay: 0.6s; }
 
-/* Subtitle */
-.loading-subtitle {
-  font-family: var(--font-body, 'Vazirmatn', sans-serif);
-  font-size: var(--text-sm, 0.95rem);
-  font-weight: 500;
-  color: var(--color-ink-muted, #55575E);
-  margin: 0;
-  direction: rtl;
-  opacity: 0;
-  transform: translateY(4px);
-  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.05s, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
-  will-change: opacity, transform;
-}
-
-.loading-subtitle.font-loaded {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* Keyframes */
 @keyframes title-breath {
@@ -327,8 +301,7 @@ onMounted(async () => {
   .dot {
     animation: none !important;
   }
-  .loading-title-wrapper,
-  .loading-subtitle {
+  .loading-title-wrapper {
     transform: none !important;
     transition: opacity 0.1s ease !important;
   }

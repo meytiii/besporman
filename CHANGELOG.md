@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.1] - 2026-10-19
+
+### Changed
+- **Removed Loading Subtitle:** Removed the secondary subtitle text («آماده‌سازی کارگاه برنامه‌نویسی بسپر من») from `AppLoadingScreen.vue`, focusing the initial loading presentation purely on the liquid physics morph animation and the primary Lalezar title («داریم میرسیم عجله نکن!»).
+- **Cleaned Up Obsolete Styles:** Removed unused `.loading-subtitle` CSS rules and streamlined the reduced-motion media query.
+
+---
+
 ## [2.5.0] - 2026-10-18
 
 ### Added
