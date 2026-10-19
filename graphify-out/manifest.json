@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792426924.8816104,
-    "seen": 1792426971.8009574,
-    "ast_hash": "6d62c7a067202cb2e0193ca7870113cf",
+    "mtime": 1792427522.0037634,
+    "seen": 1792427549.1184857,
+    "ast_hash": "de8e64162e9955d5319c2391efb56042",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792426614.2041712,
-    "seen": 1792426971.8009768,
-    "ast_hash": "97661068f9625d4b4b0005b4905f8d87",
+    "mtime": 1792427461.274475,
+    "seen": 1792427549.1185071,
+    "ast_hash": "b62d4d50f30f5394af2772596d33cf27",
     "semantic_hash": ""
   },
   "src/components/ServicesSection.vue": {
@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792426861.3530178,
-    "seen": 1792426971.8009815,
-    "ast_hash": "556d09b6a4383c2d96aa32d4e7c5279b",
+    "mtime": 1792427427.7764647,
+    "seen": 1792427549.1185129,
+    "ast_hash": "7fe5daca060c2cba4b608704cd675675",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -432,15 +432,15 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792426935.0344093,
-    "seen": 1792426971.801014,
-    "ast_hash": "e2ab468ae720d61fb4fe2c72eb321087",
+    "mtime": 1792427537.8674858,
+    "seen": 1792427549.1185467,
+    "ast_hash": "c58e9a6e4269f7c11192510067960612",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
-    "mtime": 1792426838.5538442,
-    "seen": 1792426971.801003,
-    "ast_hash": "d9de427e6242cdc351ffc339cac3ca3e",
+    "mtime": 1792427441.4685745,
+    "seen": 1792427549.1185362,
+    "ast_hash": "d8e2a754b8e920c408b7c008ee880bc6",
     "semantic_hash": ""
   },
   "src/components/LazySection.vue": {

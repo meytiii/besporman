@@ -24,25 +24,9 @@
         </p>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="filter-wrapper comic-pop delay-1" role="tablist" aria-label="فیلتر دسته‌بندی پروژه‌ها">
-        <button
-          v-for="cat in categories"
-          :key="cat.key"
-          type="button"
-          role="tab"
-          class="filter-btn"
-          :class="{ 'is-active': activeCategory === cat.key }"
-          :aria-selected="activeCategory === cat.key"
-          @click="activeCategory = cat.key"
-        >
-          {{ cat.label }}
-        </button>
-      </div>
-
       <!-- Featured Project Card (Prominent Feature Treatment) -->
       <div v-if="featuredProject" class="featured-project-wrapper">
-        <article class="featured-card comic-pop delay-2">
+        <article class="featured-card comic-pop delay-1">
           <div class="featured-content">
             <div class="featured-badge-row">
               <span class="badge-featured">پروژه برگزیده</span>
@@ -149,32 +133,19 @@
         </article>
       </div>
 
-      <!-- Empty State if filtered out -->
-      <div v-if="filteredProjectsCount === 0" class="empty-state">
-        <p>در این دسته‌بندی فعلاً پروژه‌ای برای نمایش قرار نگرفته است.</p>
-      </div>
 
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { projectsData } from '@/data/projects'
 import type { ProjectCategory } from '@/types/project'
 import TextReveal from '@/components/ui/TextReveal.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
-
-const categories = [
-  { key: 'all', label: 'همه پروژه‌ها' },
-  { key: 'web', label: 'طراحی وب‌سایت' },
-  { key: 'telegram-bot', label: 'بات‌های تلگرام' },
-  { key: 'windows-app', label: 'نرم‌افزارهای ویندوز' },
-]
-
-const activeCategory = ref<string>('all')
 
 const getCategoryLabel = (cat: ProjectCategory): string => {
   switch (cat) {
@@ -189,30 +160,12 @@ const getCategoryLabel = (cat: ProjectCategory): string => {
 
 // Featured Project is prj-01
 const featuredProject = computed(() => {
-  if (activeCategory.value === 'all' || activeCategory.value === 'web') {
-    return projectsData.find((p) => p.id === 'prj-01')
-  }
-  return null
+  return projectsData.find((p) => p.id === 'prj-01')
 })
 
-// Secondary projects (excluding featured if displayed above)
+// Secondary projects (excluding featured)
 const filteredSecondaryProjects = computed(() => {
-  return projectsData.filter((p) => {
-    // If featured is displayed, don't duplicate it in grid
-    if (featuredProject.value && p.id === featuredProject.value.id) {
-      return false
-    }
-    if (activeCategory.value === 'all') {
-      return true
-    }
-    return p.category === activeCategory.value
-  })
-})
-
-const filteredProjectsCount = computed(() => {
-  let count = filteredSecondaryProjects.value.length
-  if (featuredProject.value) count += 1
-  return count
+  return projectsData.filter((p) => p.id !== 'prj-01')
 })
 </script>
 
@@ -226,7 +179,7 @@ const filteredProjectsCount = computed(() => {
   text-align: center;
   max-width: 650px;
   margin-inline: auto;
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-12);
 }
 
 .section-badge {
@@ -250,42 +203,6 @@ const filteredProjectsCount = computed(() => {
 .section-subtitle {
   font-size: var(--text-base);
   color: var(--color-ink-muted);
-}
-
-/* Category Filter Tabs */
-.filter-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-10);
-}
-
-.filter-btn {
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-ink-primary);
-  background-color: var(--color-surface);
-  border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
-  padding: var(--space-2) var(--space-4);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
-}
-
-.filter-btn:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 3px 3px 0 var(--color-border-bold);
-}
-
-.filter-btn.is-active {
-  background-color: var(--color-ink-primary);
-  color: var(--primitive-white);
-  transform: translate(1px, 1px);
-  box-shadow: 1px 1px 0 var(--color-border-bold);
 }
 
 /* ==========================================================================
@@ -484,13 +401,5 @@ const filteredProjectsCount = computed(() => {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-}
-
-.empty-state {
-  text-align: center;
-  padding: var(--space-12);
-  background-color: var(--primitive-cream-100);
-  border: var(--border-width-bold) dashed var(--color-border-bold);
-  border-radius: var(--border-radius-md);
 }
 </style>

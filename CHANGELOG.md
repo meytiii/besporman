@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.4] - 2026-10-19
+
+### Added
+- **Brand Title Mascot Perch & Smooth Leap Animation:** Configured the anime mascot to stay comfortably perched on the left edge of the «بسپر من» title when viewing the top of the page (Hero & Marquee), rather than fading away.
+- **Hardware-Accelerated 3D Header Kinematics:** Promoted the mascot indicator to the parent `.header-container` coordinate space with `translate3d()` and GPU compositing (`will-change: transform`). When scrolling down from the top, the mascot smoothly leaps from the brand title over to «خدمات» (`cubic-bezier(0.34, 1.4, 0.64, 1)`), and seamlessly returns to the brand title when scrolling back up.
+- **Brand Hover Micro-Interaction:** Added `@mouseenter="handleMouseEnter('brand')"` on the brand link, allowing the mascot to happily wiggle and display sparkles when hovering over the brand logo.
+- **Responsive Mobile Isolation:** Isolated the desktop mascot within a media query (`@media (max-width: 859px) { display: none; }`) to ensure mobile layout clarity alongside the morph menu button.
+
+---
+
 ## [2.5.3] - 2026-10-19
 
 ### Fixed

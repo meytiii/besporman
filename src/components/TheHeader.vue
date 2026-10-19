@@ -4,53 +4,25 @@
     :class="{ 'is-scrolled': isScrolled }"
     role="banner"
   >
-    <div class="container header-container">
+    <div class="container header-container" ref="headerContainerRef">
       <!-- Brand Logo / Identity -->
       <router-link
         to="/"
         class="brand-link"
         aria-label="بسپر من - بازگشت به صفحه اصلی"
         @click="handleBrandClick"
+        @mouseenter="handleMouseEnter('brand')"
+        @mouseleave="handleMouseLeave"
       >
         <span class="brand-badge" aria-hidden="true">
           <img src="/favicon.png" alt="" width="28" height="28" class="brand-icon" />
         </span>
-        <span class="brand-text">بسپر من</span>
+        <span class="brand-text" ref="brandTextRef">بسپر من</span>
       </router-link>
 
       <!-- Desktop Navigation with Anime Mascot Indicator -->
       <nav class="nav-desktop" aria-label="منوی اصلی وب‌سایت">
         <ul class="nav-list" ref="navListRef">
-          <!-- The Little Anime Mascot Indicator -->
-          <li
-            v-if="mounted"
-            class="anime-mascot-wrapper"
-            :class="{ 'is-hovered': hoveredTab !== null }"
-            :style="{
-              transform: `translateX(${mascotX}px) translateX(-50%)`,
-              opacity: mascotOpacity
-            }"
-            aria-hidden="true"
-          >
-            <div class="mascot-stage">
-              <!-- Mascot Head -->
-              <div class="mascot-head">
-                <!-- Mascot Eyes -->
-                <div class="mascot-eye eye-left"></div>
-                <div class="mascot-eye eye-right"></div>
-                <!-- Mascot Blush -->
-                <div class="mascot-blush blush-left"></div>
-                <div class="mascot-blush blush-right"></div>
-                <!-- Mascot Smile -->
-                <div class="mascot-mouth"></div>
-                <!-- Hover Sparkles -->
-                <span class="mascot-sparkle sparkle-1">✨</span>
-                <span class="mascot-sparkle sparkle-2">✨</span>
-              </div>
-              <!-- Pointer Tail Beak -->
-              <div class="mascot-tail"></div>
-            </div>
-          </li>
 
           <!-- Nav Items -->
           <li
@@ -170,6 +142,40 @@
           </div>
         </div>
       </div>
+
+      <!-- The Little Anime Mascot Indicator (Glides between Brand and Navigation Tabs) -->
+      <div
+        v-if="mounted"
+        class="anime-mascot-wrapper"
+        :class="{
+          'is-hovered': hoveredTab !== null,
+          'is-on-brand': (hoveredTab || activeTab || 'brand') === 'brand'
+        }"
+        :style="{
+          transform: `translate3d(${mascotX}px, ${mascotY}px, 0) translateX(-50%)`,
+          opacity: mascotOpacity
+        }"
+        aria-hidden="true"
+      >
+        <div class="mascot-stage">
+          <!-- Mascot Head -->
+          <div class="mascot-head">
+            <!-- Mascot Eyes -->
+            <div class="mascot-eye eye-left"></div>
+            <div class="mascot-eye eye-right"></div>
+            <!-- Mascot Blush -->
+            <div class="mascot-blush blush-left"></div>
+            <div class="mascot-blush blush-right"></div>
+            <!-- Mascot Smile -->
+            <div class="mascot-mouth"></div>
+            <!-- Hover Sparkles -->
+            <span class="mascot-sparkle sparkle-1">✨</span>
+            <span class="mascot-sparkle sparkle-2">✨</span>
+          </div>
+          <!-- Pointer Tail Beak -->
+          <div class="mascot-tail"></div>
+        </div>
+      </div>
     </div>
 
     <!-- Backdrop Overlay for Outside Click -->
@@ -211,8 +217,11 @@ const mounted = ref(false)
 const activeTab = ref('')
 const hoveredTab = ref<string | null>(null)
 const mascotX = ref(0)
-const mascotOpacity = ref(0)
+const mascotY = ref(0)
+const mascotOpacity = ref(1)
 
+const headerContainerRef = ref<HTMLElement | null>(null)
+const brandTextRef = ref<HTMLElement | null>(null)
 const navListRef = ref<HTMLElement | null>(null)
 const itemRefs = ref<Record<string, HTMLElement>>({})
 const mobileMenuRef = ref<HTMLElement | null>(null)
@@ -224,19 +233,40 @@ const setItemRef = (id: string, el: HTMLElement | null) => {
 }
 
 const updateMascotPosition = () => {
-  const currentId = hoveredTab.value || activeTab.value
-  const targetEl = currentId ? itemRefs.value[currentId] : null
-  const listEl = navListRef.value
-  if (!targetEl || !listEl) {
-    if (!hoveredTab.value && !activeTab.value) {
-      mascotOpacity.value = 0
-    }
+  const containerEl = headerContainerRef.value
+  if (!containerEl) return
+
+  const targetId = hoveredTab.value || activeTab.value || 'brand'
+  let targetEl: HTMLElement | null = null
+
+  if (targetId === 'brand') {
+    targetEl = brandTextRef.value
+  } else {
+    targetEl = itemRefs.value[targetId] || null
+  }
+
+  // Fallback to brand text if specific target not yet registered in refs
+  if (!targetEl) {
+    targetEl = brandTextRef.value
+  }
+
+  if (!targetEl) {
     return
   }
 
-  const left = targetEl.offsetLeft
-  const width = targetEl.offsetWidth
-  mascotX.value = Math.round(left + width / 2)
+  const cRect = containerEl.getBoundingClientRect()
+  const tRect = targetEl.getBoundingClientRect()
+
+  if (targetId === 'brand') {
+    // When perched on brand title at top of page, stay on the left edge of "بسپر من"
+    mascotX.value = Math.round(tRect.left - cRect.left - 4)
+    mascotY.value = Math.round(tRect.top - cRect.top - 20)
+  } else {
+    // When perched on nav items, stay centered above the item pill
+    mascotX.value = Math.round(tRect.left - cRect.left + tRect.width / 2)
+    mascotY.value = Math.round(tRect.top - cRect.top - 24)
+  }
+
   mascotOpacity.value = 1
 }
 
@@ -347,11 +377,11 @@ const handleScroll = () => {
     }
   }
 
-  // 3. If above the first section (Hero / Marquee banner), clear active tab and hide mascot
+  // 3. If above the first section (Hero / Marquee banner), clear active tab and keep mascot on brand
   if (!currentActive) {
     if (activeTab.value !== '') {
       activeTab.value = ''
-      mascotOpacity.value = 0
+      updateMascotPosition()
     }
     return
   }
@@ -461,6 +491,7 @@ onUnmounted(() => {
 }
 
 .header-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -631,12 +662,19 @@ onUnmounted(() => {
 /* Anime Mascot Indicator */
 .anime-mascot-wrapper {
   position: absolute;
-  top: -24px;
+  top: 0;
   left: 0;
   pointer-events: none;
   z-index: 10;
-  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.25s ease;
   list-style: none;
+}
+
+@media (max-width: 859px) {
+  .anime-mascot-wrapper {
+    display: none;
+  }
 }
 
 .mascot-stage {

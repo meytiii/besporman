@@ -135,14 +135,15 @@ describe('Header & Footer Cross-Route Navigation', () => {
     })
     await flushPromises()
 
-    // 1. At top of page (scrollY = 0), hero is active, no nav tab active, mascot opacity is 0
+    // 1. At top of page (scrollY = 0), hero is active, no nav tab active, mascot stays visible perched on brand
     Object.defineProperty(window, 'scrollY', { value: 0, writable: true })
     window.dispatchEvent(new Event('scroll'))
     await flushPromises()
 
     const mascot = wrapper.find('.anime-mascot-wrapper')
     expect(wrapper.find('.nav-link.is-active').exists()).toBe(false)
-    expect(mascot.attributes('style')).toContain('opacity: 0')
+    expect(mascot.classes()).toContain('is-on-brand')
+    expect(mascot.attributes('style')).toContain('opacity: 1')
 
     // 2. Scroll to Services (scrollY = 1400, scrollPosition = 1600 >= 1500)
     window.scrollY = 1400
