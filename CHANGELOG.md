@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Brand Hover Micro-Interaction:** Added `@mouseenter="handleMouseEnter('brand')"` on the brand link, allowing the mascot to happily wiggle and display sparkles when hovering over the brand logo.
 - **Responsive Mobile Isolation:** Isolated the desktop mascot within a media query (`@media (max-width: 859px) { display: none; }`) to ensure mobile layout clarity alongside the morph menu button.
 
+### Removed
+- **Project Filter Tabs:** Removed category filter tab buttons («همه پروژه‌ها», «طراحی وب‌سایت», «بات‌های تلگرام», «نرم‌افزارهای ویندوز») from `ProjectsSection.vue`, presenting all authentic portfolio projects in a unified, distraction-free gallery starting with the featured project card.
+
 ---
 
 ## [2.5.3] - 2026-10-19
