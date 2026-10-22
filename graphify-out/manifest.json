@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792665592.7846348,
-    "seen": 1792665634.2923784,
-    "ast_hash": "1a7df64b6a8303a6be4446ce018f2f20",
+    "mtime": 1792666106.819103,
+    "seen": 1792666136.2450223,
+    "ast_hash": "ace6c5a33e235a29dd5f3751e60da198",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792663525.5760255,
-    "seen": 1792663912.8875222,
-    "ast_hash": "7585e6c4c9c32b541bcb6056c55adc17",
+    "mtime": 1792665992.809589,
+    "seen": 1792666136.2450473,
+    "ast_hash": "a5f850e1bb814b65025e262a9ce57611",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792665612.6729014,
-    "seen": 1792665634.2924483,
-    "ast_hash": "808a8b51dac38a8501e2051d794231ae",
+    "mtime": 1792666126.3266835,
+    "seen": 1792666136.2450898,
+    "ast_hash": "edb8e675510e05ede555d8bf60c073f2",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -639,6 +639,18 @@
     "mtime": 1792665046.4346967,
     "seen": 1792665634.292417,
     "ast_hash": "5bcbb09424fe29869a28fa21d966b4e2",
+    "semantic_hash": ""
+  },
+  "src/components/ui/FlickeringText.vue": {
+    "mtime": 1792665942.9851112,
+    "seen": 1792666136.245051,
+    "ast_hash": "3a4973d2db5172edaa0db7d025c6a61f",
+    "semantic_hash": ""
+  },
+  "src/components/ui/flickering-text.tsx": {
+    "mtime": 1792665916.2930577,
+    "seen": 1792666136.245059,
+    "ast_hash": "c01990dfdacfcc9811617fc000fa5ff4",
     "semantic_hash": ""
   }
 }

@@ -17,7 +17,21 @@
         <span class="brand-badge" aria-hidden="true">
           <img src="/favicon.png" alt="" width="30" height="30" class="brand-icon" />
         </span>
-        <span class="brand-text" ref="brandTextRef">بسپر من</span>
+        <span class="brand-text" ref="brandTextRef">
+          <FlickeringText
+            text="بسپر من"
+            as="span"
+            :wiggles-per-second="2.4"
+            :correlation="0.5"
+            :min-opacity="0.3"
+            :min-amount="-0.85"
+            :max-amount="0.8"
+            :glow="true"
+            glow-color="#D93829"
+            :glow-intensity="0.9"
+            :glow-radius="0.85"
+          />
+        </span>
       </router-link>
 
       <!-- Desktop Navigation with Anime Mascot Indicator -->
@@ -197,6 +211,7 @@
 import { ref, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import AppButtonArrow from './AppButtonArrow.vue'
+import FlickeringText from '@/components/ui/FlickeringText.vue'
 
 interface NavItem {
   id: string

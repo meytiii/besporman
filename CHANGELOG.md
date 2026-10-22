@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.1] - 2026-10-22
+
+### Added
+- **Flickering Text Effect for Navbar Brand Title (`FlickeringText.vue`):** Applied an animated deterministic value noise flickering effect to the `بسپر من` title in `TheHeader.vue`.
+  - Driven by odd-prime hashing and smoothstep value noise interpolation across individual character lanes and a shared lane (`correlation: 0.5`).
+  - Multi-tier bloom halo using comic accent red (`#D93829`) with tight-to-wide radial falloff layers.
+  - Seamlessly integrates with Vazirmatn cursive ligatures without breaking character shapes.
+  - Full `prefers-reduced-motion` compliance with static rendering fallback.
+  - Preserved `brandTextRef` anchor element for desktop mascot stage positioning.
+- **Reference UI Component:** Saved `src/components/ui/flickering-text.tsx` reference component.
+
+---
+
 ## [2.8.0] - 2026-10-22
 
 ### Added
