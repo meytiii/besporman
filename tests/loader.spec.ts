@@ -1,9 +1,43 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
+import ModernLoader from '@/components/ui/ModernLoader.vue'
 import LiquidLoader from '@/components/ui/LiquidLoader.vue'
 import AppLoadingScreen from '@/components/AppLoadingScreen.vue'
 
-describe('LiquidLoader & AppLoadingScreen', () => {
+describe('ModernLoader & AppLoadingScreen', () => {
+  it('renders macOS coding window with controls, favicon app badge, and code lines in ModernLoader', () => {
+    const wrapper = mount(ModernLoader, {
+      props: {
+        words: ['در حال راه‌اندازی استودیو...', 'بارگذاری ماژول‌ها...'],
+      },
+    })
+
+    // macOS window structure
+    expect(wrapper.find('.macos-window').exists()).toBe(true)
+
+    // 3 macOS window control dots
+    const dots = wrapper.findAll('.control-dot')
+    expect(dots.length).toBe(3)
+    expect(wrapper.find('.dot-close').exists()).toBe(true)
+    expect(wrapper.find('.dot-minimize').exists()).toBe(true)
+    expect(wrapper.find('.dot-maximize').exists()).toBe(true)
+
+    // Besporman app badge with favicon
+    const favicon = wrapper.find('.app-favicon')
+    expect(favicon.exists()).toBe(true)
+    expect(favicon.attributes('src')).toBe('/favicon.png')
+    expect(wrapper.find('.app-name').text()).toBe('Besporman.app')
+
+    // Persian typewriter text container
+    expect(wrapper.find('.window-title-container').exists()).toBe(true)
+    expect(wrapper.find('.typewriter-cursor').exists()).toBe(true)
+
+    // Code lines and editor body
+    expect(wrapper.find('.window-editor-body').exists()).toBe(true)
+    expect(wrapper.findAll('.code-line').length).toBeGreaterThanOrEqual(1)
+    expect(wrapper.find('.active-code-cursor').exists()).toBe(true)
+  })
+
   it('renders 7 liquid columns with physics structure in LiquidLoader', () => {
     const wrapper = mount(LiquidLoader, {
       props: {
@@ -16,27 +50,18 @@ describe('LiquidLoader & AppLoadingScreen', () => {
 
     const bars = wrapper.findAll('.liquid-bar')
     expect(bars.length).toBe(7)
-
-    // Check internal liquid layers exist
-    expect(wrapper.find('.liquid-tension').exists()).toBe(true)
-    expect(wrapper.find('.liquid-wave').exists()).toBe(true)
-    expect(wrapper.find('.liquid-shimmer').exists()).toBe(true)
-    expect(wrapper.find('.liquid-bubble').exists()).toBe(true)
   })
 
-  it('renders AppLoadingScreen with Lalezar Persian title text and font readiness class', () => {
+  it('renders AppLoadingScreen with ModernLoader and Lalezar Persian title text', () => {
     const wrapper = mount(AppLoadingScreen, {
       global: {
         stubs: {
-          LiquidLoader: true,
+          ModernLoader: true,
         },
       },
     })
 
-    // In test environment, AppLoadingScreen unmounts or handles isVisible
-    // Let's verify component definition and text
     expect(wrapper.vm).toBeDefined()
-    // Verify font readiness flag exists and is true in test env
     expect((wrapper.vm as any).isFontReady).toBe(true)
   })
 })

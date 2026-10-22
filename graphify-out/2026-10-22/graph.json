@@ -246,6 +246,58 @@
       "source_location": "L201"
     },
     {
+      "id": "src_components_ui_typingeffect_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L51"
+    },
+    {
+      "id": "src_components_ui_typingeffect_sandparticle",
+      "label": "SandParticle",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "sandparticle",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L142"
+    },
+    {
+      "id": "src_components_ui_typingeffect_textsegment",
+      "label": "TextSegment",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "textsegment",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L101"
+    },
+    {
+      "id": "src_components_ui_typing_effect_typingeffectprops",
+      "label": "TypingEffectProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "typing-effect.tsx",
+      "file_type": "code",
+      "norm_label": "typingeffectprops",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L9"
+    },
+    {
       "id": "src_components_marqueebanner_reviewitem",
       "label": "ReviewItem",
       "_callable": true,
@@ -901,6 +953,66 @@
       "norm_label": "liquidloading()",
       "source_file": "src/components/ui/liquid-loader.tsx",
       "source_location": "L3"
+    },
+    {
+      "id": "src_components_ui_typingeffect_cleartimers",
+      "label": "clearTimers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "cleartimers()",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L165"
+    },
+    {
+      "id": "src_components_ui_typingeffect_steptyping",
+      "label": "stepTyping()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "steptyping()",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L295"
+    },
+    {
+      "id": "src_components_ui_typingeffect_triggersanddissolve",
+      "label": "triggerSandDissolve()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "triggersanddissolve()",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L181"
+    },
+    {
+      "id": "src_components_ui_typing_effect_cn",
+      "label": "cn()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "typing-effect.tsx",
+      "file_type": "code",
+      "norm_label": "cn()",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_components_ui_typing_effect_typingeffect",
+      "label": "TypingEffect()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "typing-effect.tsx",
+      "file_type": "code",
+      "norm_label": "typingeffect()",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L18"
     },
     {
       "id": "src_components_marqueebanner_generaterandomreviewlist",
@@ -2168,6 +2280,171 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_ui_typingeffect",
+      "label": "TypingEffect.vue",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "typingeffect.vue",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_typingeffect_canvasref",
+      "label": "canvasRef",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "canvasref",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L90"
+    },
+    {
+      "id": "src_components_ui_typingeffect_charindex",
+      "label": "charIndex",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "charindex",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L84"
+    },
+    {
+      "id": "src_components_ui_typingeffect_currenttext",
+      "label": "currentText",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "currenttext",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L92"
+    },
+    {
+      "id": "src_components_ui_typingeffect_currenttextindex",
+      "label": "currentTextIndex",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "currenttextindex",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L83"
+    },
+    {
+      "id": "src_components_ui_typingeffect_displayedtext",
+      "label": "displayedText",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "displayedtext",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L96"
+    },
+    {
+      "id": "src_components_ui_typingeffect_isdissolving",
+      "label": "isDissolving",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "isdissolving",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L85"
+    },
+    {
+      "id": "src_components_ui_typingeffect_isinview",
+      "label": "isInView",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "isinview",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L86"
+    },
+    {
+      "id": "src_components_ui_typingeffect_renderedsegments",
+      "label": "renderedSegments",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "renderedsegments",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L106"
+    },
+    {
+      "id": "src_components_ui_typingeffect_rootref",
+      "label": "rootRef",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "rootref",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L88"
+    },
+    {
+      "id": "src_components_ui_typingeffect_sandpalette",
+      "label": "sandPalette",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "sandpalette",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L155"
+    },
+    {
+      "id": "src_components_ui_typingeffect_textlist",
+      "label": "textList",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "textlist",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L77"
+    },
+    {
+      "id": "src_components_ui_typingeffect_textwrapperref",
+      "label": "textWrapperRef",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "textwrapperref",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L89"
+    },
+    {
+      "id": "src_components_ui_typing_effect",
+      "label": "typing-effect.tsx",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "typing-effect.tsx",
+      "file_type": "code",
+      "norm_label": "typing-effect.tsx",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_typing_effect_demo",
+      "label": "DEMO",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "typing-effect.tsx",
+      "file_type": "code",
+      "norm_label": "demo",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L16"
+    },
+    {
       "id": "src_components_marqueebanner",
       "label": "MarqueeBanner.vue",
       "_origin": "ast",
@@ -3058,7 +3335,7 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L226"
+      "source_location": "L243"
     },
     {
       "id": "changelog_2_0_0_2026_10_17",
@@ -3070,7 +3347,7 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L208"
+      "source_location": "L225"
     },
     {
       "id": "changelog_2_1_0_2026_10_17",
@@ -3082,7 +3359,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L193"
+      "source_location": "L210"
     },
     {
       "id": "changelog_2_1_1_2026_10_17",
@@ -3094,7 +3371,7 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L183"
+      "source_location": "L200"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3106,7 +3383,7 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L165"
+      "source_location": "L182"
     },
     {
       "id": "changelog_2_3_0_2026_10_17",
@@ -3118,7 +3395,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L153"
+      "source_location": "L170"
     },
     {
       "id": "changelog_2_3_1_2026_10_18",
@@ -3130,7 +3407,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L141"
+      "source_location": "L158"
     },
     {
       "id": "changelog_2_3_2_2026_10_18",
@@ -3142,7 +3419,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L132"
+      "source_location": "L149"
     },
     {
       "id": "changelog_2_3_3_2026_10_18",
@@ -3154,7 +3431,7 @@
       "node_kind": "heading",
       "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L121"
+      "source_location": "L138"
     },
     {
       "id": "changelog_2_4_0_2026_10_18",
@@ -3166,7 +3443,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L112"
+      "source_location": "L129"
     },
     {
       "id": "changelog_2_4_1_2026_10_18",
@@ -3178,7 +3455,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L102"
+      "source_location": "L119"
     },
     {
       "id": "changelog_2_4_2_2026_10_18",
@@ -3190,7 +3467,7 @@
       "node_kind": "heading",
       "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L93"
+      "source_location": "L110"
     },
     {
       "id": "changelog_2_5_0_2026_10_18",
@@ -3202,7 +3479,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L81"
+      "source_location": "L98"
     },
     {
       "id": "changelog_2_5_1_2026_10_19",
@@ -3214,7 +3491,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L73"
+      "source_location": "L90"
     },
     {
       "id": "changelog_2_5_2_2026_10_19",
@@ -3226,7 +3503,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.2] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L65"
+      "source_location": "L82"
     },
     {
       "id": "changelog_2_5_3_2026_10_19",
@@ -3238,7 +3515,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L53"
+      "source_location": "L70"
     },
     {
       "id": "changelog_2_5_4_2026_10_19",
@@ -3250,7 +3527,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.4] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L40"
+      "source_location": "L57"
     },
     {
       "id": "changelog_2_5_5_2026_10_22",
@@ -3262,7 +3539,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.5] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L26"
+      "source_location": "L43"
     },
     {
       "id": "changelog_2_6_0_2026_10_22",
@@ -3273,6 +3550,18 @@
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "[2.6.0] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L27"
+    },
+    {
+      "id": "changelog_2_7_0_2026_10_22",
+      "label": "[2.7.0] - 2026-10-22",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.7.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
       "source_location": "L10"
     },
@@ -3289,7 +3578,7 @@
       "source_location": "L12"
     },
     {
-      "id": "changelog_added_114",
+      "id": "changelog_added_100",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3298,10 +3587,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L114"
+      "source_location": "L100"
     },
     {
-      "id": "changelog_added_155",
+      "id": "changelog_added_131",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3310,10 +3599,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L155"
+      "source_location": "L131"
     },
     {
-      "id": "changelog_added_167",
+      "id": "changelog_added_172",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3322,10 +3611,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L167"
+      "source_location": "L172"
     },
     {
-      "id": "changelog_added_195",
+      "id": "changelog_added_184",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3334,10 +3623,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L195"
+      "source_location": "L184"
     },
     {
-      "id": "changelog_added_210",
+      "id": "changelog_added_212",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3346,10 +3635,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L210"
+      "source_location": "L212"
     },
     {
-      "id": "changelog_added_228",
+      "id": "changelog_added_227",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3358,10 +3647,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L228"
+      "source_location": "L227"
     },
     {
-      "id": "changelog_added_35",
+      "id": "changelog_added_245",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3370,10 +3659,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L35"
+      "source_location": "L245"
     },
     {
-      "id": "changelog_added_42",
+      "id": "changelog_added_29",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3382,10 +3671,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42"
+      "source_location": "L29"
     },
     {
-      "id": "changelog_added_83",
+      "id": "changelog_added_52",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -3394,7 +3683,19 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L83"
+      "source_location": "L52"
+    },
+    {
+      "id": "changelog_added_59",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L59"
     },
     {
       "id": "changelog_changed",
@@ -3406,10 +3707,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L20"
+      "source_location": "L37"
     },
     {
-      "id": "changelog_changed_123",
+      "id": "changelog_changed_112",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3418,10 +3719,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L123"
+      "source_location": "L112"
     },
     {
-      "id": "changelog_changed_200",
+      "id": "changelog_changed_140",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3430,10 +3731,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L200"
+      "source_location": "L140"
     },
     {
-      "id": "changelog_changed_220",
+      "id": "changelog_changed_217",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3442,10 +3743,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L220"
+      "source_location": "L217"
     },
     {
-      "id": "changelog_changed_28",
+      "id": "changelog_changed_237",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3454,10 +3755,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L28"
+      "source_location": "L237"
     },
     {
-      "id": "changelog_changed_67",
+      "id": "changelog_changed_45",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3466,10 +3767,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L67"
+      "source_location": "L45"
     },
     {
-      "id": "changelog_changed_75",
+      "id": "changelog_changed_84",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3478,10 +3779,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L75"
+      "source_location": "L84"
     },
     {
-      "id": "changelog_changed_95",
+      "id": "changelog_changed_92",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -3490,7 +3791,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L95"
+      "source_location": "L92"
     },
     {
       "id": "changelog_changelog",
@@ -3514,10 +3815,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L55"
+      "source_location": "L72"
     },
     {
-      "id": "changelog_fixed_104",
+      "id": "changelog_fixed_121",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3526,10 +3827,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L104"
+      "source_location": "L121"
     },
     {
-      "id": "changelog_fixed_134",
+      "id": "changelog_fixed_151",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3538,10 +3839,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L134"
+      "source_location": "L151"
     },
     {
-      "id": "changelog_fixed_143",
+      "id": "changelog_fixed_160",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3550,10 +3851,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L143"
+      "source_location": "L160"
     },
     {
-      "id": "changelog_fixed_185",
+      "id": "changelog_fixed_202",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3562,10 +3863,10 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L185"
+      "source_location": "L202"
     },
     {
-      "id": "changelog_fixed_203",
+      "id": "changelog_fixed_220",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -3574,7 +3875,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L203"
+      "source_location": "L220"
     },
     {
       "id": "changelog_removed",
@@ -3586,7 +3887,7 @@
       "node_kind": "heading",
       "norm_label": "removed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L48"
+      "source_location": "L65"
     },
     {
       "id": "tsconfig_node",
@@ -3751,7 +4052,7 @@
       "file_type": "code",
       "norm_label": "currentpose",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L191"
+      "source_location": "L182"
     },
     {
       "id": "src_components_processsection",
@@ -4403,6 +4704,42 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_typing_effect_typingeffect",
+      "target": "src_components_ui_typing_effect_cn",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect_steptyping",
+      "target": "src_components_ui_typingeffect_cleartimers",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L296",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect_steptyping",
+      "target": "src_components_ui_typingeffect_triggersanddissolve",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
       "source": "src_router_index_router",
       "target": "src_views_projectdetailview",
       "relation": "imports_from",
@@ -4677,7 +5014,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L237",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
@@ -4689,7 +5026,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L237",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
@@ -4713,7 +5050,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L186",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -4749,7 +5086,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L143",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -4761,7 +5098,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L144",
+      "source_location": "L143",
       "weight": 1.0
     },
     {
@@ -4965,12 +5302,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L237",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
       "source": "src_components_contactsection",
       "target": "src_components_ui_textreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ContactSection.vue",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_contactsection",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5013,7 +5362,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L184",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_herosection",
+      "target": "src_components_ui_typingeffect",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/HeroSection.vue",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -5025,7 +5386,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L185",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -5037,7 +5398,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L186",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -5061,12 +5422,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L110",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
       "source": "src_components_marqueebanner",
       "target": "src_components_ui_textreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/MarqueeBanner.vue",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_marqueebanner",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5097,6 +5470,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_processsection",
+      "target": "src_components_ui_typingeffect",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ProcessSection.vue",
       "source_location": "L69",
       "weight": 1.0
     },
@@ -5121,7 +5506,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L143",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -5133,12 +5518,24 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L144",
+      "source_location": "L143",
       "weight": 1.0
     },
     {
       "source": "src_components_projectssection",
       "target": "src_components_ui_textreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L144",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_projectssection",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5175,6 +5572,18 @@
     {
       "source": "src_components_servicessection",
       "target": "src_components_ui_textreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ServicesSection.vue",
+      "source_location": "L149",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_servicessection",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5625,29 +6034,62 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_228",
+      "target": "changelog_added_245",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L228",
+      "source_location": "L245",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_210",
+      "target": "changelog_added_227",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L210",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_220",
+      "target": "changelog_changed_237",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_added_212",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_changed_217",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L217",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_fixed_220",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5657,168 +6099,135 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_195",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L195",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_200",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L200",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_203",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L203",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_185",
+      "target": "changelog_fixed_202",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L185",
+      "source_location": "L202",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
-      "target": "changelog_added_167",
+      "target": "changelog_added_184",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L167",
+      "source_location": "L184",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_155",
+      "target": "changelog_added_172",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L155",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_143",
+      "target": "changelog_fixed_160",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L143",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_134",
+      "target": "changelog_fixed_151",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L134",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_123",
+      "target": "changelog_changed_140",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L123",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_114",
+      "target": "changelog_added_131",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L114",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed_104",
+      "target": "changelog_fixed_121",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L104",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_95",
+      "target": "changelog_changed_112",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L95",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_0_2026_10_18",
-      "target": "changelog_added_83",
+      "target": "changelog_added_100",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L83",
+      "source_location": "L100",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_1_2026_10_19",
-      "target": "changelog_changed_75",
+      "target": "changelog_changed_92",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L75",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_2_2026_10_19",
-      "target": "changelog_changed_67",
+      "target": "changelog_changed_84",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L67",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -5829,18 +6238,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L55",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_4_2026_10_19",
-      "target": "changelog_added_42",
+      "target": "changelog_added_59",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -5851,40 +6260,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L48",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_changed_28",
+      "target": "changelog_changed_45",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L28",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_added_35",
+      "target": "changelog_added_52",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L35",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
       "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_added",
+      "target": "changelog_added_29",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L12",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -5895,12 +6304,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L20",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_7_0_2026_10_22",
+      "target": "changelog_added",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_2_7_0_2026_10_22",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5911,13 +6331,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_4_2_2026_10_18",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_4_1_2026_10_18",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L102",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -5928,7 +6359,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L112",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -5939,7 +6370,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L121",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -5950,7 +6381,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L132",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -5961,7 +6392,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L141",
+      "source_location": "L158",
       "weight": 1.0
     },
     {
@@ -5972,7 +6403,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L153",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -5983,7 +6414,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L165",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -5994,7 +6425,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L183",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -6005,7 +6436,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L193",
+      "source_location": "L210",
       "weight": 1.0
     },
     {
@@ -6016,7 +6447,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L208",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -6027,7 +6458,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L226",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_6_0_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -6038,7 +6480,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L26",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -6049,7 +6491,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L40",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -6060,7 +6502,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L53",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -6071,7 +6513,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L65",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -6082,7 +6524,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L73",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -6093,18 +6535,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L81",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_4_2_2026_10_18",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L93",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -6775,7 +7206,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L191",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -7967,6 +8398,248 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_typing_effect",
+      "target": "src_components_ui_typing_effect_demo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typing_effect",
+      "target": "src_components_ui_typing_effect_typingeffect",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typing_effect",
+      "target": "src_components_ui_typing_effect_cn",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typing_effect",
+      "target": "src_components_ui_typing_effect_typingeffectprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/typing-effect.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_textsegment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_renderedsegments",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_sandparticle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L142",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_sandpalette",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_cleartimers",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L165",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_triggersanddissolve",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L181",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_steptyping",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_props",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_textlist",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_currenttextindex",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_charindex",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_isdissolving",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_isinview",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_rootref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_textwrapperref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_canvasref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_currenttext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_displayedtext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
       "source": "src_composables_usescrollreveal",
       "target": "src_composables_usescrollreveal_usescrollreveal",
       "relation": "contains",
@@ -8914,5 +9587,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "f61432da7165821785ff87331322ac34eb11b83d"
+  "built_at_commit": "c0766bcc6f9f73965c59b26601a096d89a3a174e"
 }

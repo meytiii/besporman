@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.0] - 2026-10-22
+
+### Added
+- **Modern macOS Code IDE Streaming Loader (`ModernLoader.vue`):** Replaced legacy liquid droplet loader with an authentic macOS coding window loader in `src/components/AppLoadingScreen.vue`.
+  - Top bar features 3 macOS window controls (`#FF5F56` close, `#FFBD2E` minimize, `#27C93F` maximize), official Besporman app favicon badge (`/favicon.png`), an animated typewriter displaying Persian status copy (`«در حال راه‌اندازی استودیو...»`, `«بارگذاری ماژول‌های پروژه...»`, etc.), and a pulsating `LIVE` status pill.
+  - Editor body streams simulated syntax-highlighted code blocks with dynamic colors (brand accent red, cyan, emerald, warm amber, royal blue, purple slate), indentation, circle tokens, divider lines, and a blinking cursor at the active line.
+  - Features sliding buffer memory management to prevent memory leaks during long-running sessions, and `?debug_loader=1` query parameter for developer inspection.
+- **Interactive Mouse/Touch Tracking Eyes (`EyeTracking.vue`):** Integrated hardware-accelerated pupil-tracking eyes in `src/components/ProjectsSection.vue` directly below the section heading:
+  - Damped spring physics (`stiffness: 300, damping: 25`) with independent eye calculations.
+  - Proximity-based reactive pupil dilation, desynchronized natural blinking intervals, and idle micro-movement wandering routines.
+  - High-contrast comic glints/reflections and 2px deep ink borders matching the studio's tactile paper aesthetic.
+- **Reference UI Components:** Added reference React components `src/components/ui/modern-loader.tsx` and `src/components/ui/eye-tracking.tsx` to maintain component library standard documentation.
+
+### Changed
+- **Loading Screen Architecture:** Updated `AppLoadingScreen.vue` to host `ModernLoader.vue` with optimized desktop and mobile dimensions (320px floor compliant).
+- **Test Suite Updates:** Extended `tests/loader.spec.ts` with tests verifying `ModernLoader` window controls, favicon badge, typewriter title container, code lines, and `AppLoadingScreen`.
+
+---
+
 ## [2.7.0] - 2026-10-22
 
 ### Added

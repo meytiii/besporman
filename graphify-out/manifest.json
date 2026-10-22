@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792664655.6598744,
-    "seen": 1792664692.9515195,
-    "ast_hash": "db6b3cdfa724abb7f984fac33d40af54",
+    "mtime": 1792665592.7846348,
+    "seen": 1792665634.2923784,
+    "ast_hash": "1a7df64b6a8303a6be4446ce018f2f20",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792664448.7345407,
-    "seen": 1792664692.9515383,
-    "ast_hash": "add10d272b5c09a1385a753b51dcf662",
+    "mtime": 1792664914.998257,
+    "seen": 1792665634.292398,
+    "ast_hash": "19006fedec9bf1799740a1d2ca05e8bb",
     "semantic_hash": ""
   },
   "src/components/ServicesSection.vue": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792664671.0566475,
-    "seen": 1792664692.9515777,
-    "ast_hash": "a9ef09b73961361bc370fc7564c510f4",
+    "mtime": 1792665612.6729014,
+    "seen": 1792665634.2924483,
+    "ast_hash": "808a8b51dac38a8501e2051d794231ae",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -468,9 +468,9 @@
     "semantic_hash": ""
   },
   "src/components/AppLoadingScreen.vue": {
-    "mtime": 1792428102.4104717,
-    "seen": 1792661098.3743424,
-    "ast_hash": "d5f0d40464fccc9d00e12ac9c5be0635",
+    "mtime": 1792665491.406895,
+    "seen": 1792665634.29239,
+    "ast_hash": "1205d98b2f03c5b299a3740749e26c2f",
     "semantic_hash": ""
   },
   "src/components/ui/LiquidLoader.vue": {
@@ -492,9 +492,9 @@
     "semantic_hash": ""
   },
   "tests/loader.spec.ts": {
-    "mtime": 1792272881.4174433,
-    "seen": 1792425657.2386377,
-    "ast_hash": "4451bdde2aa56b542fe1f8a361c7d7ba",
+    "mtime": 1792665146.5220187,
+    "seen": 1792665634.2924335,
+    "ast_hash": "7145b03b8b437e41f906b5aae2e22970",
     "semantic_hash": ""
   },
   "pic/besporman_reading.png": {
@@ -615,6 +615,30 @@
     "mtime": 1792664161.7973866,
     "seen": 1792664692.9515522,
     "ast_hash": "1668111fef0ecab72f50dab5e87ff2b8",
+    "semantic_hash": ""
+  },
+  "src/components/ui/EyeTracking.vue": {
+    "mtime": 1792664831.4624093,
+    "seen": 1792665634.292406,
+    "ast_hash": "80c9a2a77aa9b386e639d437f1895416",
+    "semantic_hash": ""
+  },
+  "src/components/ui/ModernLoader.vue": {
+    "mtime": 1792665338.7552533,
+    "seen": 1792665634.2924082,
+    "ast_hash": "39bbb2f3f44867b24c8872a86113a88c",
+    "semantic_hash": ""
+  },
+  "src/components/ui/eye-tracking.tsx": {
+    "mtime": 1792664799.2503707,
+    "seen": 1792665634.292413,
+    "ast_hash": "eb34799a6394cdee2d27f4d14ab37682",
+    "semantic_hash": ""
+  },
+  "src/components/ui/modern-loader.tsx": {
+    "mtime": 1792665046.4346967,
+    "seen": 1792665634.292417,
+    "ast_hash": "5bcbb09424fe29869a28fa21d966b4e2",
     "semantic_hash": ""
   }
 }

@@ -13,8 +13,8 @@
 
       <!-- Centered Content Box -->
       <div class="loading-content">
-        <!-- Liquid Animation -->
-        <LiquidLoader variant="brand" />
+        <!-- Modern macOS IDE Code Streaming Loader -->
+        <ModernLoader />
 
         <!-- Persian Lalezar Loading Copy -->
         <div
@@ -37,7 +37,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import LiquidLoader from '@/components/ui/LiquidLoader.vue'
+import ModernLoader from '@/components/ui/ModernLoader.vue'
 
 const isTestEnv = typeof import.meta !== 'undefined' && import.meta.env?.MODE === 'test'
 const isVisible = ref(!isTestEnv)
@@ -157,6 +157,13 @@ onMounted(async () => {
     return
   }
 
+  // Developer inspection support
+  const isDebugLoader = typeof window !== 'undefined' && window.location.search.includes('debug_loader')
+  if (isDebugLoader) {
+    isVisible.value = true
+    return
+  }
+
   // Ensure fresh initial load starts at the top of the hero section
   if (typeof window !== 'undefined' && (!window.location.hash || window.location.hash === '#')) {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
@@ -207,8 +214,9 @@ onMounted(async () => {
   justify-content: center;
   gap: var(--space-4, 1rem);
   text-align: center;
-  padding: var(--space-6, 1.5rem);
-  max-width: 90vw;
+  padding: var(--space-4, 1rem);
+  width: 100%;
+  max-width: 520px;
   direction: rtl;
 }
 
@@ -232,7 +240,8 @@ onMounted(async () => {
 
 .loading-title {
   font-family: var(--font-display, 'Lalezar', cursive);
-  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-size: clamp(1.35rem, 4.5vw, 2.5rem);
+  white-space: nowrap;
   color: var(--color-ink-primary, #0E0F12);
   line-height: 1.2;
   margin: 0;

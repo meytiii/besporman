@@ -21,6 +21,19 @@
             :speed-reveal="1.3"
           />
         </p>
+
+        <!-- Interactive Tracking Eyes Below Title -->
+        <div class="projects-eye-tracker" aria-hidden="true">
+          <EyeTracking
+            :eye-size="52"
+            :gap="16"
+            variant="comic"
+            sclera-color="#FAF7F0"
+            iris-color="#0E0F12"
+            iris-color-secondary="#27272A"
+            pupil-color="#0E0F12"
+          />
+        </div>
       </div>
 
       <!-- Featured Project Card (Prominent Feature Treatment) -->
@@ -143,6 +156,7 @@ import { projectsData } from '@/data/projects'
 import type { ProjectCategory } from '@/types/project'
 import TextReveal from '@/components/ui/TextReveal.vue'
 import TypingEffect from '@/components/ui/TypingEffect.vue'
+import EyeTracking from '@/components/ui/EyeTracking.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
@@ -204,6 +218,13 @@ const filteredSecondaryProjects = computed(() => {
 .section-subtitle {
   font-size: var(--text-base);
   color: var(--color-ink-muted);
+}
+
+.projects-eye-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--space-5);
 }
 
 /* ==========================================================================

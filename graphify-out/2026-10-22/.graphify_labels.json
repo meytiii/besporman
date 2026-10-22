@@ -20,5 +20,7 @@
   "18": "text-reveal.tsx",
   "19": "AppLoadingScreen.vue",
   "20": "components/TextReveal.vue",
-  "21": "liquid-loader-demo.tsx"
+  "21": "liquid-loader-demo.tsx",
+  "22": "TypingEffect.vue",
+  "23": "typing-effect.tsx"
 }
