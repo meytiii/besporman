@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.5.5] - 2026-10-22
+
+### Changed
+- **Zero-Gap Navbar Button Architecture:** Removed the `var(--space-2)` (8px) gap between desktop navbar buttons (`.nav-list { gap: 0; }`). All five navigation links now abut with zero pixel gap, creating continuous, seamless horizontal hitboxes.
+- **Continuous Hover Intent & Debounced Exit:** Moved mouseleave event handling to the parent `.nav-list` container and introduced a 60ms debounce window. Sweeping the cursor across adjacent links transitions `hoveredTab` directly without dropping to null, preventing mascot animation jitter, glitchy bob/wiggle toggling, or false resets towards the brand title.
+- **Refined Pill Inset Aesthetics:** Applied `inset: 0 2px` to `.nav-pill-active` and `.nav-pill-hover`, maintaining crisp discrete visual separation between active and hovered tabs while preserving edge-to-edge interactive hitboxes.
+
+### Added
+- **Automated Continuous Hover Testing:** Added unit tests in `tests/navigation.spec.ts` asserting uninterrupted hover continuity during adjacent link cursor transfers and graceful debounced container exits.
+
+---
+
 ## [2.5.4] - 2026-10-19
 
 ### Added

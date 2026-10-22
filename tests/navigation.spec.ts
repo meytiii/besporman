@@ -160,4 +160,46 @@ describe('Header & Footer Cross-Route Navigation', () => {
     sectionServices.remove()
     sectionContact.remove()
   })
+
+  it('keeps hover state continuous across adjacent navbar buttons without dropouts', async () => {
+    const router = await setupRouter('/')
+    const wrapper = mount(TheHeader, {
+      attachTo: document.body,
+      global: {
+        plugins: [router],
+      },
+    })
+    await flushPromises()
+
+    const navLinks = wrapper.findAll('.nav-link')
+    expect(navLinks.length).toBe(5)
+
+    // 1. Enter first link (services)
+    await navLinks[0].trigger('mouseenter')
+    await flushPromises()
+    expect(wrapper.find('.anime-mascot-wrapper').classes()).toContain('is-hovered')
+    expect(wrapper.find('.nav-pill-hover').exists()).toBe(true)
+    expect(wrapper.find('.nav-pill-hover').element.parentElement?.textContent).toContain('خدمات')
+
+    // 2. Direct transfer to adjacent link (process) without dropout
+    await navLinks[1].trigger('mouseenter')
+    await flushPromises()
+    expect(wrapper.find('.anime-mascot-wrapper').classes()).toContain('is-hovered')
+    expect(wrapper.find('.nav-pill-hover').exists()).toBe(true)
+    expect(wrapper.find('.nav-pill-hover').element.parentElement?.textContent).toContain('روند همکاری')
+
+    // 3. Trigger leave on nav-list container
+    const navList = wrapper.find('.nav-list')
+    await navList.trigger('mouseleave')
+    // Wait for the 60ms debounce timer
+    await new Promise((r) => setTimeout(r, 80))
+    await flushPromises()
+
+    // Hover state is cleared after debounced exit
+    expect(wrapper.find('.nav-pill-hover').exists()).toBe(false)
+    expect(wrapper.find('.anime-mascot-wrapper').classes()).not.toContain('is-hovered')
+
+    wrapper.unmount()
+  })
 })
+

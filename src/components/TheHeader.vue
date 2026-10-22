@@ -12,7 +12,7 @@
         aria-label="بسپر من - بازگشت به صفحه اصلی"
         @click="handleBrandClick"
         @mouseenter="handleMouseEnter('brand')"
-        @mouseleave="handleMouseLeave"
+        @mouseleave="handleBrandLeave"
       >
         <span class="brand-badge" aria-hidden="true">
           <img src="/favicon.png" alt="" width="28" height="28" class="brand-icon" />
@@ -22,7 +22,11 @@
 
       <!-- Desktop Navigation with Anime Mascot Indicator -->
       <nav class="nav-desktop" aria-label="منوی اصلی وب‌سایت">
-        <ul class="nav-list" ref="navListRef">
+        <ul
+          class="nav-list"
+          ref="navListRef"
+          @mouseleave="handleNavListLeave"
+        >
 
           <!-- Nav Items -->
           <li
@@ -37,7 +41,6 @@
               :class="{ 'is-active': activeTab === item.id }"
               @click="handleNavClick(item.id, $event)"
               @mouseenter="handleMouseEnter(item.id)"
-              @mouseleave="handleMouseLeave"
             >
               <!-- Active Pill Indicator with Shine Sweep -->
               <span
@@ -270,12 +273,42 @@ const updateMascotPosition = () => {
   mascotOpacity.value = 1
 }
 
+let mouseLeaveTimer: ReturnType<typeof setTimeout> | null = null
+
 const handleMouseEnter = (id: string) => {
+  if (mouseLeaveTimer) {
+    clearTimeout(mouseLeaveTimer)
+    mouseLeaveTimer = null
+  }
   hoveredTab.value = id
   updateMascotPosition()
 }
 
+const handleNavListLeave = (event?: MouseEvent) => {
+  // If moving into another element inside navList (e.g. child element), don't leave
+  if (event?.relatedTarget && navListRef.value?.contains(event.relatedTarget as Node)) {
+    return
+  }
+  if (mouseLeaveTimer) clearTimeout(mouseLeaveTimer)
+  mouseLeaveTimer = setTimeout(() => {
+    hoveredTab.value = null
+    updateMascotPosition()
+  }, 60)
+}
+
+const handleBrandLeave = (event?: MouseEvent) => {
+  if (event?.relatedTarget && (event.relatedTarget as HTMLElement).closest?.('.brand-link')) {
+    return
+  }
+  if (mouseLeaveTimer) clearTimeout(mouseLeaveTimer)
+  mouseLeaveTimer = setTimeout(() => {
+    hoveredTab.value = null
+    updateMascotPosition()
+  }, 60)
+}
+
 const handleMouseLeave = () => {
+  if (mouseLeaveTimer) clearTimeout(mouseLeaveTimer)
   hoveredTab.value = null
   updateMascotPosition()
 }
@@ -311,7 +344,7 @@ const handleBrandClick = () => {
   if (route.path === '/') {
     window.scrollTo({ top: 0, behavior: 'smooth' })
     activeTab.value = ''
-    mascotOpacity.value = 0
+    updateMascotPosition()
     if (route.hash) {
       router.replace({ path: '/' }).catch(() => {})
     }
@@ -462,6 +495,10 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
+  if (mouseLeaveTimer) {
+    clearTimeout(mouseLeaveTimer)
+    mouseLeaveTimer = null
+  }
   window.removeEventListener('scroll', handleScroll)
   window.removeEventListener('resize', updateMascotPosition)
   document.removeEventListener('mousedown', handleOutsideClick)
@@ -548,7 +585,7 @@ onUnmounted(() => {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 0;
   list-style: none;
   position: relative;
   padding: 0;
@@ -557,6 +594,8 @@ onUnmounted(() => {
 
 .nav-item {
   position: relative;
+  display: flex;
+  align-items: stretch;
 }
 
 .nav-link {
@@ -575,6 +614,7 @@ onUnmounted(() => {
   cursor: pointer;
   transition: color 0.2s ease, font-weight 0.2s ease;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -594,7 +634,7 @@ onUnmounted(() => {
 /* Hover pill */
 .nav-pill-hover {
   position: absolute;
-  inset: 0;
+  inset: 0 2px;
   border-radius: var(--border-radius-full);
   background-color: rgba(14, 15, 18, 0.06);
   z-index: 1;
@@ -615,7 +655,7 @@ onUnmounted(() => {
 /* Active pill with shine sweep */
 .nav-pill-active {
   position: absolute;
-  inset: 0;
+  inset: 0 2px;
   border-radius: var(--border-radius-full);
   background-color: rgba(201, 42, 29, 0.08);
   border: 1px solid rgba(201, 42, 29, 0.22);
