@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792666943.4573994,
-    "seen": 1792666973.0825741,
-    "ast_hash": "35d190b22325ba179fa2ee35d6fdbe72",
+    "mtime": 1792667400.1167135,
+    "seen": 1792667413.5099792,
+    "ast_hash": "86542b045ae00327052e9e017fe93dd5",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792666960.7225378,
-    "seen": 1792666973.0826344,
-    "ast_hash": "5f0101ba32c9f3c91787e3100381977f",
+    "mtime": 1792667405.4341877,
+    "seen": 1792667413.5100472,
+    "ast_hash": "266ddd805763c535fb90f850736a89f2",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -492,9 +492,9 @@
     "semantic_hash": ""
   },
   "tests/loader.spec.ts": {
-    "mtime": 1792665146.5220187,
-    "seen": 1792665634.2924335,
-    "ast_hash": "7145b03b8b437e41f906b5aae2e22970",
+    "mtime": 1792667297.5399487,
+    "seen": 1792667413.5100336,
+    "ast_hash": "dc902a17db266dc64194080ae9a076e1",
     "semantic_hash": ""
   },
   "pic/besporman_reading.png": {
@@ -624,9 +624,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/ModernLoader.vue": {
-    "mtime": 1792665338.7552533,
-    "seen": 1792665634.2924082,
-    "ast_hash": "39bbb2f3f44867b24c8872a86113a88c",
+    "mtime": 1792667271.3505933,
+    "seen": 1792667413.5100098,
+    "ast_hash": "89007ff29cc2fbfaeaaecb391feb27a4",
     "semantic_hash": ""
   },
   "src/components/ui/eye-tracking.tsx": {

@@ -8,25 +8,12 @@
     <div class="macos-window">
       <!-- macOS Window Top Bar -->
       <div class="window-topbar" dir="ltr">
-        <!-- Left Side: Controls & Besporman App Brand Badge -->
+        <!-- Left Side: Window Controls -->
         <div class="topbar-left">
           <div class="window-controls">
             <span class="control-dot dot-close" aria-hidden="true" />
             <span class="control-dot dot-minimize" aria-hidden="true" />
             <span class="control-dot dot-maximize" aria-hidden="true" />
-          </div>
-
-          <div class="window-app-badge" title="Besporman.app">
-            <img
-              src="/favicon.png"
-              alt="Besporman"
-              class="app-favicon"
-              width="18"
-              height="18"
-              loading="eager"
-              decoding="sync"
-            />
-            <span class="app-name font-mono">Besporman.app</span>
           </div>
         </div>
 
@@ -38,12 +25,19 @@
           </span>
         </div>
 
-        <!-- Right Side: Clean Balanced Indicator -->
+        <!-- Right Side: Besporman Favicon Badge (Clean, No Text Title) -->
         <div class="topbar-right">
-          <span class="status-indicator">
-            <span class="pulse-dot" />
-            <span class="status-label font-mono">LIVE</span>
-          </span>
+          <div class="window-favicon-badge" title="بسپر من">
+            <img
+              src="/favicon.png"
+              alt="بسپر من"
+              class="app-favicon"
+              width="18"
+              height="18"
+              loading="eager"
+              decoding="sync"
+            />
+          </div>
         </div>
       </div>
 
@@ -322,7 +316,7 @@ onUnmounted(() => {
 .topbar-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  min-width: 48px;
   flex-shrink: 0;
 }
 
@@ -354,39 +348,14 @@ onUnmounted(() => {
   background-color: #27C93F;
 }
 
-/* Besporman App Brand Badge */
-.window-app-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background-color: rgba(255, 255, 255, 0.06);
-  padding: 3px 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  flex-shrink: 0;
-}
-
-.app-favicon {
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  object-fit: contain;
-}
-
-.app-name {
-  font-size: 11px;
-  font-weight: 600;
-  color: #E2E8DF;
-  letter-spacing: -0.2px;
-}
-
 /* Center Persian Title (Typewriter) */
 .window-title-container {
+  flex: 1;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding: 0 4px;
+  padding: 0 8px;
 }
 
 .window-typewriter-text {
@@ -408,45 +377,41 @@ onUnmounted(() => {
   opacity: 0 !important;
 }
 
-/* Right Status Indicator */
+/* Right Side: Besporman Favicon Badge (Replaces LIVE badge) */
 .topbar-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  min-width: 48px;
   flex-shrink: 0;
 }
 
-.status-indicator {
+.window-favicon-badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 10px;
-  font-weight: 600;
-  color: #10B981;
-  background: rgba(16, 185, 129, 0.1);
-  padding: 2px 7px;
-  border-radius: 999px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  letter-spacing: 0.5px;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.pulse-dot {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: #10B981;
-  animation: pulse-dot 1.8s ease-in-out infinite;
+.window-favicon-badge:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.04);
 }
 
-@keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.4;
-    transform: scale(0.85);
-  }
+.app-favicon {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  object-fit: contain;
+  display: block;
 }
 
 /* Code Editor Body */
@@ -559,8 +524,29 @@ onUnmounted(() => {
     gap: 8px;
   }
 
-  .app-name {
-    display: none;
+  .topbar-left,
+  .topbar-right {
+    min-width: 40px;
+  }
+
+  .window-controls {
+    gap: 5px;
+  }
+
+  .control-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .window-favicon-badge {
+    width: 23px;
+    height: 23px;
+    border-radius: 6px;
+  }
+
+  .app-favicon {
+    width: 15px;
+    height: 15px;
   }
 
   .window-typewriter-text {

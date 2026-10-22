@@ -22,11 +22,12 @@ describe('ModernLoader & AppLoadingScreen', () => {
     expect(wrapper.find('.dot-minimize').exists()).toBe(true)
     expect(wrapper.find('.dot-maximize').exists()).toBe(true)
 
-    // Besporman app badge with favicon
-    const favicon = wrapper.find('.app-favicon')
+    // Besporman favicon badge on topbar-right with no title text and no live badge
+    const favicon = wrapper.find('.topbar-right .app-favicon')
     expect(favicon.exists()).toBe(true)
     expect(favicon.attributes('src')).toBe('/favicon.png')
-    expect(wrapper.find('.app-name').text()).toBe('Besporman.app')
+    expect(wrapper.find('.app-name').exists()).toBe(false)
+    expect(wrapper.find('.status-indicator').exists()).toBe(false)
 
     // Persian typewriter text container
     expect(wrapper.find('.window-title-container').exists()).toBe(true)

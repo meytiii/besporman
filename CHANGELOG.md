@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.3] - 2026-10-22
+
+### Changed
+- **ModernLoader Topbar Layout Refinement:**
+  - Removed the `LIVE` status pill indicator from the loader top bar.
+  - Positioned the official Besporman mascot favicon badge on the top right corner of the window.
+  - Removed text titles (such as `Besporman.app`) across both desktop and mobile viewports, achieving a minimalist, symmetric, and distraction-free macOS coding window header.
+  - Balanced window control dots on the left (`min-width: 48px`) with the favicon badge on the right (`min-width: 48px`), centering the Persian typewriter status copy on all screen widths down to 320px.
+
+---
+
 ## [2.8.2] - 2026-10-22
 
 ### Added
