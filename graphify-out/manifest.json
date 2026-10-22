@@ -54,10 +54,10 @@
     "semantic_hash": ""
   },
   "src/components/StarRating.vue": {
-    "mtime": 1792248018.7775059,
-    "seen": 1792249022.6551027,
-    "ast_hash": "4e51cd72a31cf67b5305f5b21ca28b05",
-    "semantic_hash": "4e51cd72a31cf67b5305f5b21ca28b05"
+    "mtime": 1792661761.9988766,
+    "seen": 1792661795.7054155,
+    "ast_hash": "b19b215a8069c25629f5738f64fed1e8",
+    "semantic_hash": ""
   },
   "src/components/TheFooter.vue": {
     "mtime": 1792267963.6812594,
@@ -279,30 +279,6 @@
     "mtime": 1792246633.3600304,
     "seen": 1792249326.3188617,
     "ast_hash": "501ea87e1960ae48d72224a0ada5b722",
-    "semantic_hash": ""
-  },
-  "pic/star-empty.svg": {
-    "mtime": 1792247157.3100345,
-    "seen": 1792249326.318863,
-    "ast_hash": "bd6c50fb007b8985b83d7e84b5e56238",
-    "semantic_hash": ""
-  },
-  "pic/star-favorite-svgrepo-com.svg": {
-    "mtime": 1792246543.3662465,
-    "seen": 1792249326.3188636,
-    "ast_hash": "611f45a8366019c24faadb66ad536023",
-    "semantic_hash": ""
-  },
-  "pic/star-full.svg": {
-    "mtime": 1792247143.3102407,
-    "seen": 1792249326.3188646,
-    "ast_hash": "aae811fda94d2a596d2f48f9bfafcbf0",
-    "semantic_hash": ""
-  },
-  "pic/star-half.svg": {
-    "mtime": 1792247177.9262934,
-    "seen": 1792249326.3188658,
-    "ast_hash": "841ad368c981e88c737248b97666cdd4",
     "semantic_hash": ""
   },
   "pic/webp/besporman1.webp": {
@@ -549,6 +525,78 @@
     "mtime": 1792428102.3984685,
     "seen": 1792661098.374432,
     "ast_hash": "dfa774720c714378f651c4468c306aae",
+    "semantic_hash": ""
+  },
+  "pic/svg/star-empty.svg": {
+    "mtime": 1792247157.3100345,
+    "seen": 1792661795.7054713,
+    "ast_hash": "bd6c50fb007b8985b83d7e84b5e56238",
+    "semantic_hash": ""
+  },
+  "pic/svg/star-favorite-svgrepo-com.svg": {
+    "mtime": 1792246543.3662465,
+    "seen": 1792661795.7054722,
+    "ast_hash": "611f45a8366019c24faadb66ad536023",
+    "semantic_hash": ""
+  },
+  "pic/svg/star-full.svg": {
+    "mtime": 1792247143.3102407,
+    "seen": 1792661795.7054732,
+    "ast_hash": "aae811fda94d2a596d2f48f9bfafcbf0",
+    "semantic_hash": ""
+  },
+  "pic/svg/star-half.svg": {
+    "mtime": 1792247177.9262934,
+    "seen": 1792661795.7054744,
+    "ast_hash": "841ad368c981e88c737248b97666cdd4",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-down-square-2-svgrepo-com.svg": {
+    "mtime": 1792661488.7772188,
+    "seen": 1792661845.4464343,
+    "ast_hash": "c49e596e3992a8b727db89fe0c8f8b6a",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-down-square-svgrepo-com.svg": {
+    "mtime": 1792661488.8567657,
+    "seen": 1792661845.4464364,
+    "ast_hash": "d5c25fbd1eb9be95adeec82d12e2c5ab",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-left-sqaure-2-svgrepo-com.svg": {
+    "mtime": 1792661487.8546972,
+    "seen": 1792661845.4464376,
+    "ast_hash": "327d722494e90c799ad2da47e1154398",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-left-sqaure-svgrepo-com.svg": {
+    "mtime": 1792661486.7198164,
+    "seen": 1792661845.446439,
+    "ast_hash": "55da2876bf3cb0950614a446f0d7b6cd",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-right-square-2-svgrepo-com.svg": {
+    "mtime": 1792661484.1447093,
+    "seen": 1792661845.4464402,
+    "ast_hash": "989ff31e97f9404a535b32939a90c22b",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-right-square-svgrepo-com.svg": {
+    "mtime": 1792661485.4769778,
+    "seen": 1792661845.4464412,
+    "ast_hash": "c5c0769196cc22765de09e129279cfcc",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-up-square-2-svgrepo-com.svg": {
+    "mtime": 1792661482.1407127,
+    "seen": 1792661845.4464421,
+    "ast_hash": "b882dc963352185f1d85f0b075b3cc82",
+    "semantic_hash": ""
+  },
+  "pic/svg/curve-arrow-up-square-svgrepo-com.svg": {
+    "mtime": 1792661481.8779023,
+    "seen": 1792661845.4464436,
+    "ast_hash": "8a925c011db07fcb6308911559520a82",
     "semantic_hash": ""
   }
 }

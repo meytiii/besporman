@@ -1,6 +1,7 @@
 <template>
   <div class="star-rating" :aria-label="`امتیاز ${formattedScore} از ۵`" role="img">
     <div class="stars-track" dir="ltr" aria-hidden="true">
+      <!-- Star vector geometry derived from pic/svg/ (star-full.svg, star-half.svg, star-empty.svg) -->
       <svg
         v-for="index in 5"
         :key="'star-' + index"
