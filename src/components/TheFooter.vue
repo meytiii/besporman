@@ -143,8 +143,13 @@ const scrollToTop = () => {
   height: 32px;
   background-color: var(--primitive-amber-100);
   border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-full);
   box-shadow: 2px 2px 0 var(--color-border-bold);
+}
+
+.logo-badge img {
+  border-radius: var(--border-radius-full);
+  object-fit: contain;
 }
 
 .footer-tagline {

@@ -15,7 +15,7 @@
         @mouseleave="handleBrandLeave"
       >
         <span class="brand-badge" aria-hidden="true">
-          <img src="/favicon.png" alt="" width="28" height="28" class="brand-icon" />
+          <img src="/favicon.png" alt="" width="30" height="30" class="brand-icon" />
         </span>
         <span class="brand-text" ref="brandTextRef">بسپر من</span>
       </router-link>
@@ -558,15 +558,16 @@ onUnmounted(() => {
   height: 38px;
   background-color: var(--primitive-amber-100);
   border: var(--border-width-bold) solid var(--color-border-bold);
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius-full);
   box-shadow: 2px 2px 0 var(--color-border-bold);
   flex-shrink: 0;
 }
 
 .brand-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
+  border-radius: var(--border-radius-full);
 }
 
 /* Desktop Navigation */

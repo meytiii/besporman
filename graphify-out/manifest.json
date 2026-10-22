@@ -60,15 +60,15 @@
     "semantic_hash": ""
   },
   "src/components/TheFooter.vue": {
-    "mtime": 1792267963.6812594,
-    "seen": 1792268451.9170508,
-    "ast_hash": "9f7207a73703c9c948f844c97c37632f",
+    "mtime": 1792662319.744439,
+    "seen": 1792662454.454431,
+    "ast_hash": "26bbbca44798982be85a54e82e998a8a",
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792660890.8029156,
-    "seen": 1792661098.3743575,
-    "ast_hash": "a5c49f59e6db14396b8cdf3ee0a8694d",
+    "mtime": 1792662304.415023,
+    "seen": 1792662454.4544325,
+    "ast_hash": "189a4e6e5747f8869efe11d0eb9f14d7",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -222,9 +222,9 @@
     "semantic_hash": ""
   },
   "favicon.png": {
-    "mtime": 1792240142.7377114,
-    "seen": 1792249326.318854,
-    "ast_hash": "de7b7090efb36a88bdcc1b53ef622473",
+    "mtime": 1792661829.8111753,
+    "seen": 1792662454.4544795,
+    "ast_hash": "fd19a97ebdffa690260505e5efd03260",
     "semantic_hash": ""
   },
   "pic/besporman1.png": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792661065.8478365,
-    "seen": 1792661098.374392,
-    "ast_hash": "83d08d4f8433e80a681dae071098f9aa",
+    "mtime": 1792662442.465503,
+    "seen": 1792662454.4544723,
+    "ast_hash": "7dfc8792c1b807ac903e6864e58a94b5",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {

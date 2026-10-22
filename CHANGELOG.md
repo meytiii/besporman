@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Continuous Hover Intent & Debounced Exit:** Moved mouseleave event handling to the parent `.nav-list` container and introduced a 60ms debounce window. Sweeping the cursor across adjacent links transitions `hoveredTab` directly without dropping to null, preventing mascot animation jitter, glitchy bob/wiggle toggling, or false resets towards the brand title.
 - **Refined Pill Inset Aesthetics:** Applied `inset: 0 2px` to `.nav-pill-active` and `.nav-pill-hover`, maintaining crisp discrete visual separation between active and hovered tabs while preserving edge-to-edge interactive hitboxes.
 - **SVG Asset Reorganization:** Relocated all project SVG vector assets (`star-empty.svg`, `star-favorite-svgrepo-com.svg`, `star-full.svg`, `star-half.svg`, and UI arrow icons) into a dedicated `pic/svg/` subdirectory for structured asset organization and documented vector sources in `StarRating.vue`.
+- **Circular Brand Logo Frame Architecture:** Updated header and footer brand logo badges to circular frames (`border-radius: var(--border-radius-full)`), with a calibrated 2px subtle uniform margin between the circular frame's comic border and the circular logo.
 
 ### Added
 - **Automated Continuous Hover Testing:** Added unit tests in `tests/navigation.spec.ts` asserting uninterrupted hover continuity during adjacent link cursor transfers and graceful debounced container exits.

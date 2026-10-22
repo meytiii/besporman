@@ -282,7 +282,7 @@
       "file_type": "code",
       "norm_label": "startype",
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L90"
+      "source_location": "L91"
     },
     {
       "id": "src_components_lazysection_props",
@@ -1116,7 +1116,7 @@
       "file_type": "code",
       "norm_label": "getstartype()",
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L92"
+      "source_location": "L93"
     },
     {
       "id": "src_components_ui_textreveal_ishighlighted",
@@ -2341,7 +2341,7 @@
       "file_type": "code",
       "norm_label": "clipuid",
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L88"
+      "source_location": "L89"
     },
     {
       "id": "src_components_starrating_formattedscore",
@@ -2352,7 +2352,7 @@
       "file_type": "code",
       "norm_label": "formattedscore",
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L102"
+      "source_location": "L103"
     },
     {
       "id": "src_components_starrating_props",
@@ -2363,7 +2363,7 @@
       "file_type": "code",
       "norm_label": "props",
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L76"
+      "source_location": "L77"
     },
     {
       "id": "tests_marquee_spec",
@@ -7018,7 +7018,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L102",
+      "source_location": "L103",
       "weight": 1.0
     },
     {
@@ -7029,7 +7029,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L76",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -7040,7 +7040,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L88",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -7051,7 +7051,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L90",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -7062,7 +7062,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/StarRating.vue",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -8750,5 +8750,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "c9338bfe3ebcc4f51916a1a95193b3dbac9c8edc"
+  "built_at_commit": "48be0f55568992f4ff98c429efe4f5e92d34406c"
 }
