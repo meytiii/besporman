@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.4] - 2026-10-22
+
+### Changed
+- **Section Titles Typing & Fast Backspacing Effect (`TypingEffect.vue`):**
+  - Replaced the sand grain dissolution canvas with a realistic typing and held-Backspace reverse clearing animation across all 6 section headings.
+  - **Cadence & Timings:**
+    - Forward typing character-by-character at `typingSpeed = 65ms`.
+    - 2-second hold period (`holdDelay = 2000ms`) once the full title is typed.
+    - Rapid reverse clearing at `deletingSpeed = 25ms` (~2.6x quicker than forward typing), simulating a held Backspace key.
+    - 1.5-second pause (`clearedDelay = 1500ms`) once cleared before starting to type again.
+  - **Tactile Micro-Interactions:** Cursor stays solid during active typing/deleting and blinks during hold pauses.
+  - **Performance & Zero CLS:** Completely removed the canvas particle simulation, reducing bundle size and GPU overhead while preserving full Zero Cumulative Layout Shift via ghost text geometry and screen-reader accessibility.
+  - **Test Suite:** Added comprehensive unit tests in `tests/typing-effect.spec.ts` covering full cycle timings and reduced motion compliance.
+
+---
+
 ## [2.8.3] - 2026-10-22
 
 ### Changed

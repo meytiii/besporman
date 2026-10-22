@@ -68,14 +68,16 @@
 
       <!-- Foreground Stage Content: Title, Mascot, and Neon Sign -->
       <div class="container hero-stage-container">
-        <!-- Creative Persian Headline Above Mascot with Typing Effect & Sand Dissolution -->
+        <!-- Creative Persian Headline Above Mascot with Typing Effect & Fast Backspacing -->
         <h1 id="hero-title" class="hero-title">
           <TypingEffect
             :text="'خیالت از توسعه نرم‌افزار راحت؛\nکار رو بسپر من!'"
             highlight="بسپر من!"
             highlight-class="title-highlight"
-            :rotation-interval="3000"
+            :hold-delay="2000"
+            :cleared-delay="1500"
             :typing-speed="65"
+            :deleting-speed="25"
           />
         </h1>
 

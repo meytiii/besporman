@@ -8,8 +8,10 @@
         <h2 id="process-title" class="section-title">
           <TypingEffect
             text="چگونه کارها را به ما می‌سپارید؟"
-            :rotation-interval="3000"
+            :hold-delay="2000"
+            :cleared-delay="1500"
             :typing-speed="65"
+            :deleting-speed="25"
           />
         </h2>
         <p class="section-subtitle">

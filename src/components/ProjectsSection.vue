@@ -8,8 +8,10 @@
         <h2 id="projects-title" class="section-title">
           <TypingEffect
             text="نمونه‌کارها و پروژه‌های واقعی"
-            :rotation-interval="3000"
+            :hold-delay="2000"
+            :cleared-delay="1500"
             :typing-speed="65"
+            :deleting-speed="25"
           />
         </h2>
         <p class="section-subtitle">

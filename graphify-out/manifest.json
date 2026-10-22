@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792667400.1167135,
-    "seen": 1792667413.5099792,
-    "ast_hash": "86542b045ae00327052e9e017fe93dd5",
+    "mtime": 1792668215.6587431,
+    "seen": 1792668234.7945237,
+    "ast_hash": "6f9483bb81c9b977dcba9e06705f5a6d",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -18,39 +18,39 @@
     "semantic_hash": ""
   },
   "src/components/ContactSection.vue": {
-    "mtime": 1792664478.1969578,
-    "seen": 1792664692.951532,
-    "ast_hash": "65d39c90287cc507d4d383312e075bbb",
+    "mtime": 1792667758.2649832,
+    "seen": 1792668234.794538,
+    "ast_hash": "0ff738c14f4f28459fd0b7f835a03c90",
     "semantic_hash": ""
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792664310.8170815,
-    "seen": 1792664692.9515343,
-    "ast_hash": "609108d12e255cb20955bc638f9766cd",
+    "mtime": 1792667659.9003365,
+    "seen": 1792668234.7945406,
+    "ast_hash": "1f020d6751a0fc1a8dd96dd5a6af9ef4",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
-    "mtime": 1792664361.8000295,
-    "seen": 1792664692.9515367,
-    "ast_hash": "c1c5c7f7e46cea7b6296fc1439c85717",
+    "mtime": 1792667737.6958804,
+    "seen": 1792668234.7945428,
+    "ast_hash": "62c7ddb1b87e5d62ccf4b3354e23c34f",
     "semantic_hash": ""
   },
   "src/components/ProcessSection.vue": {
-    "mtime": 1792664414.1600606,
-    "seen": 1792664692.9515376,
-    "ast_hash": "c7170c4f3bf6e5916dd4bf001a0945b8",
+    "mtime": 1792667682.8062246,
+    "seen": 1792668234.7945442,
+    "ast_hash": "b908b30024a5b1ca9ec9757b97d00f3d",
     "semantic_hash": ""
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792666620.7736418,
-    "seen": 1792666973.0825925,
-    "ast_hash": "191a4491b789bf1a31f18a5bb4a7596e",
+    "mtime": 1792667703.418247,
+    "seen": 1792668234.7945452,
+    "ast_hash": "80cd1f31b61bda39320d8b8bed192c6a",
     "semantic_hash": ""
   },
   "src/components/ServicesSection.vue": {
-    "mtime": 1792664389.2873802,
-    "seen": 1792664692.9515393,
-    "ast_hash": "a3df65148402de22be9f8c0334657c9b",
+    "mtime": 1792667671.9084237,
+    "seen": 1792668234.7945461,
+    "ast_hash": "a37a03d4dc52e56b37d424f3bed3ca81",
     "semantic_hash": ""
   },
   "src/components/StarRating.vue": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792667405.4341877,
-    "seen": 1792667413.5100472,
-    "ast_hash": "266ddd805763c535fb90f850736a89f2",
+    "mtime": 1792668226.737928,
+    "seen": 1792668234.7945986,
+    "ast_hash": "a85b8dd6ad9f2f721b38b4024688655d",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -606,9 +606,9 @@
     "semantic_hash": ""
   },
   "src/components/ui/TypingEffect.vue": {
-    "mtime": 1792664271.0878966,
-    "seen": 1792664692.9515474,
-    "ast_hash": "afeacfec5347ec638edf7bff33a6ac9c",
+    "mtime": 1792667891.3913262,
+    "seen": 1792668234.7945595,
+    "ast_hash": "b7279e302a5875d904babb89bdc0e855",
     "semantic_hash": ""
   },
   "src/components/ui/typing-effect.tsx": {
@@ -663,6 +663,12 @@
     "mtime": 1792666382.7928286,
     "seen": 1792666973.0826805,
     "ast_hash": "93ddc7c9a6b5842135555b73af679432",
+    "semantic_hash": ""
+  },
+  "tests/typing-effect.spec.ts": {
+    "mtime": 1792667810.3987648,
+    "seen": 1792668234.794588,
+    "ast_hash": "7f581bcd96a57bd9ee2147235cba8dc0",
     "semantic_hash": ""
   }
 }

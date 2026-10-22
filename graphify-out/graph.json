@@ -74,7 +74,7 @@
       "file_type": "code",
       "norm_label": "feedbackstate",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L250"
+      "source_location": "L252"
     },
     {
       "id": "src_components_contactsection_formerrors",
@@ -87,7 +87,7 @@
       "file_type": "code",
       "norm_label": "formerrors",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L244"
+      "source_location": "L246"
     },
     {
       "id": "src_services_contactadapter_contactmessagepayload",
@@ -282,20 +282,7 @@
       "file_type": "code",
       "norm_label": "props",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L51"
-    },
-    {
-      "id": "src_components_ui_typingeffect_sandparticle",
-      "label": "SandParticle",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "TypingEffect.vue",
-      "file_type": "code",
-      "norm_label": "sandparticle",
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L142"
+      "source_location": "L48"
     },
     {
       "id": "src_components_ui_typingeffect_textsegment",
@@ -308,7 +295,20 @@
       "file_type": "code",
       "norm_label": "textsegment",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L101"
+      "source_location": "L109"
+    },
+    {
+      "id": "src_components_ui_typingeffect_typingphase",
+      "label": "TypingPhase",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "typingphase",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L46"
     },
     {
       "id": "src_components_ui_typing_effect_typingeffectprops",
@@ -373,7 +373,7 @@
       "file_type": "code",
       "norm_label": "reviewitem",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L122"
+      "source_location": "L124"
     },
     {
       "id": "src_components_marqueebanner_reviewsource",
@@ -386,7 +386,7 @@
       "file_type": "code",
       "norm_label": "reviewsource",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L117"
+      "source_location": "L119"
     },
     {
       "id": "src_components_starrating_startype",
@@ -415,30 +415,43 @@
       "source_location": "L36"
     },
     {
-      "id": "src_components_lazysection_props",
-      "label": "Props",
+      "id": "src_types_project_projectcategory",
+      "label": "ProjectCategory",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L20"
+      "norm_label": "projectcategory",
+      "source_file": "src/types/project.ts",
+      "source_location": "L3"
     },
     {
-      "id": "src_components_skeletons_sectionskeleton_props",
-      "label": "Props",
+      "id": "src_types_project_projectitem",
+      "label": "ProjectItem",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
       "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
-      "source_location": "L31"
+      "norm_label": "projectitem",
+      "source_file": "src/types/project.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_types_project_projectstatus",
+      "label": "ProjectStatus",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "projectstatus",
+      "source_file": "src/types/project.ts",
+      "source_location": "L5"
     },
     {
       "id": "src_components_ui_flickeringtext_flickeringtextprops",
@@ -465,6 +478,32 @@
       "norm_label": "segmentitem",
       "source_file": "src/components/ui/FlickeringText.vue",
       "source_location": "L76"
+    },
+    {
+      "id": "src_components_lazysection_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
+      "source_location": "L31"
     },
     {
       "id": "src_components_ui_textreveal_props",
@@ -517,45 +556,6 @@
       "norm_label": "scrollrevealoptions",
       "source_file": "src/composables/useScrollReveal.ts",
       "source_location": "L3"
-    },
-    {
-      "id": "src_types_project_projectcategory",
-      "label": "ProjectCategory",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectcategory",
-      "source_file": "src/types/project.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_types_project_projectitem",
-      "label": "ProjectItem",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectitem",
-      "source_file": "src/types/project.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_types_project_projectstatus",
-      "label": "ProjectStatus",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectstatus",
-      "source_file": "src/types/project.ts",
-      "source_location": "L5"
     },
     {
       "id": "src_components_ui_eyetracking_getirisstyle",
@@ -675,7 +675,7 @@
       "file_type": "code",
       "norm_label": "handlesubmit()",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L291"
+      "source_location": "L293"
     },
     {
       "id": "src_components_contactsection_validateform",
@@ -687,7 +687,7 @@
       "file_type": "code",
       "norm_label": "validateform()",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L266"
+      "source_location": "L268"
     },
     {
       "id": "src_services_contactadapter_contactsubmissionadapter_submit",
@@ -1251,31 +1251,19 @@
       "file_type": "code",
       "norm_label": "cleartimers()",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L165"
+      "source_location": "L148"
     },
     {
-      "id": "src_components_ui_typingeffect_steptyping",
-      "label": "stepTyping()",
+      "id": "src_components_ui_typingeffect_runcycle",
+      "label": "runCycle()",
       "_callable": true,
       "_origin": "ast",
       "community": 22,
       "community_name": "TypingEffect.vue",
       "file_type": "code",
-      "norm_label": "steptyping()",
+      "norm_label": "runcycle()",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L295"
-    },
-    {
-      "id": "src_components_ui_typingeffect_triggersanddissolve",
-      "label": "triggerSandDissolve()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "TypingEffect.vue",
-      "file_type": "code",
-      "norm_label": "triggersanddissolve()",
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L181"
+      "source_location": "L156"
     },
     {
       "id": "src_components_ui_typing_effect_cn",
@@ -1359,7 +1347,7 @@
       "file_type": "code",
       "norm_label": "generaterandomreviewlist()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L261"
+      "source_location": "L263"
     },
     {
       "id": "src_components_marqueebanner_getrandomrating",
@@ -1371,7 +1359,7 @@
       "file_type": "code",
       "norm_label": "getrandomrating()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L132"
+      "source_location": "L134"
     },
     {
       "id": "src_components_marqueebanner_handledoubleclick",
@@ -1383,7 +1371,7 @@
       "file_type": "code",
       "norm_label": "handledoubleclick()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L360"
+      "source_location": "L362"
     },
     {
       "id": "src_components_marqueebanner_handlemousedown",
@@ -1395,7 +1383,7 @@
       "file_type": "code",
       "norm_label": "handlemousedown()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L471"
+      "source_location": "L473"
     },
     {
       "id": "src_components_marqueebanner_handlemouseenter",
@@ -1407,7 +1395,7 @@
       "file_type": "code",
       "norm_label": "handlemouseenter()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L340"
+      "source_location": "L342"
     },
     {
       "id": "src_components_marqueebanner_handlemouseleave",
@@ -1419,7 +1407,7 @@
       "file_type": "code",
       "norm_label": "handlemouseleave()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L349"
+      "source_location": "L351"
     },
     {
       "id": "src_components_marqueebanner_handletouchcancel",
@@ -1431,7 +1419,7 @@
       "file_type": "code",
       "norm_label": "handletouchcancel()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L460"
+      "source_location": "L462"
     },
     {
       "id": "src_components_marqueebanner_handletouchend",
@@ -1443,7 +1431,7 @@
       "file_type": "code",
       "norm_label": "handletouchend()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L428"
+      "source_location": "L430"
     },
     {
       "id": "src_components_marqueebanner_handletouchmove",
@@ -1455,7 +1443,7 @@
       "file_type": "code",
       "norm_label": "handletouchmove()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L391"
+      "source_location": "L393"
     },
     {
       "id": "src_components_marqueebanner_handletouchstart",
@@ -1467,7 +1455,7 @@
       "file_type": "code",
       "norm_label": "handletouchstart()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L379"
+      "source_location": "L381"
     },
     {
       "id": "src_components_marqueebanner_handlewindowmousemove",
@@ -1479,7 +1467,7 @@
       "file_type": "code",
       "norm_label": "handlewindowmousemove()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L482"
+      "source_location": "L484"
     },
     {
       "id": "src_components_marqueebanner_handlewindowmouseup",
@@ -1491,7 +1479,7 @@
       "file_type": "code",
       "norm_label": "handlewindowmouseup()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L498"
+      "source_location": "L500"
     },
     {
       "id": "src_components_marqueebanner_measuretile",
@@ -1503,7 +1491,7 @@
       "file_type": "code",
       "norm_label": "measuretile()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L298"
+      "source_location": "L300"
     },
     {
       "id": "src_components_marqueebanner_shufflearray",
@@ -1515,7 +1503,7 @@
       "file_type": "code",
       "norm_label": "shufflearray()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L252"
+      "source_location": "L254"
     },
     {
       "id": "src_components_marqueebanner_toggledoubletappause",
@@ -1527,7 +1515,7 @@
       "file_type": "code",
       "norm_label": "toggledoubletappause()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L356"
+      "source_location": "L358"
     },
     {
       "id": "src_components_marqueebanner_updateloop",
@@ -1539,7 +1527,7 @@
       "file_type": "code",
       "norm_label": "updateloop()",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L307"
+      "source_location": "L309"
     },
     {
       "id": "src_components_starrating_getstartype",
@@ -1602,6 +1590,30 @@
       "source_location": "L62"
     },
     {
+      "id": "src_components_projectssection_getcategorylabel",
+      "label": "getCategoryLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "getcategorylabel()",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L173"
+    },
+    {
+      "id": "tests_project_detail_spec_createtestrouter",
+      "label": "createTestRouter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "createtestrouter()",
+      "source_file": "tests/project-detail.spec.ts",
+      "source_location": "L6"
+    },
+    {
       "id": "src_components_ui_flickeringtext_generateglowshadow",
       "label": "generateGlowShadow()",
       "_callable": true,
@@ -1662,18 +1674,6 @@
       "source_location": "L130"
     },
     {
-      "id": "src_components_projectssection_getcategorylabel",
-      "label": "getCategoryLabel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "getcategorylabel()",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L171"
-    },
-    {
       "id": "src_components_ui_textreveal_ishighlighted",
       "label": "isHighlighted()",
       "_callable": true,
@@ -1696,18 +1696,6 @@
       "norm_label": "usescrollreveal()",
       "source_file": "src/composables/useScrollReveal.ts",
       "source_location": "L10"
-    },
-    {
-      "id": "tests_project_detail_spec_createtestrouter",
-      "label": "createTestRouter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "createtestrouter()",
-      "source_file": "tests/project-detail.spec.ts",
-      "source_location": "L6"
     },
     {
       "id": "src_components_ui_eyetracking",
@@ -1839,7 +1827,7 @@
       "file_type": "code",
       "norm_label": "errors",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L262"
+      "source_location": "L264"
     },
     {
       "id": "src_components_contactsection_form",
@@ -1850,7 +1838,7 @@
       "file_type": "code",
       "norm_label": "form",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L255"
+      "source_location": "L257"
     },
     {
       "id": "src_components_contactsection_isloading",
@@ -1861,7 +1849,7 @@
       "file_type": "code",
       "norm_label": "isloading",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L263"
+      "source_location": "L265"
     },
     {
       "id": "src_components_contactsection_submissionfeedback",
@@ -1872,7 +1860,7 @@
       "file_type": "code",
       "norm_label": "submissionfeedback",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L264"
+      "source_location": "L266"
     },
     {
       "id": "src_services_contactadapter",
@@ -2204,6 +2192,17 @@
       "file_type": "code",
       "norm_label": "app.vue",
       "source_file": "src/App.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_appbuttonarrow",
+      "label": "AppButtonArrow.vue",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "App.vue",
+      "file_type": "code",
+      "norm_label": "appbuttonarrow.vue",
+      "source_file": "src/components/AppButtonArrow.vue",
       "source_location": "L1"
     },
     {
@@ -2867,17 +2866,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_typingeffect_canvasref",
-      "label": "canvasRef",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "TypingEffect.vue",
-      "file_type": "code",
-      "norm_label": "canvasref",
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L90"
-    },
-    {
       "id": "src_components_ui_typingeffect_charindex",
       "label": "charIndex",
       "_origin": "ast",
@@ -2886,7 +2874,7 @@
       "file_type": "code",
       "norm_label": "charindex",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L84"
+      "source_location": "L89"
     },
     {
       "id": "src_components_ui_typingeffect_currenttext",
@@ -2897,7 +2885,7 @@
       "file_type": "code",
       "norm_label": "currenttext",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L92"
+      "source_location": "L96"
     },
     {
       "id": "src_components_ui_typingeffect_currenttextindex",
@@ -2908,7 +2896,7 @@
       "file_type": "code",
       "norm_label": "currenttextindex",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L83"
+      "source_location": "L88"
     },
     {
       "id": "src_components_ui_typingeffect_displayedtext",
@@ -2919,18 +2907,29 @@
       "file_type": "code",
       "norm_label": "displayedtext",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L96"
+      "source_location": "L100"
     },
     {
-      "id": "src_components_ui_typingeffect_isdissolving",
-      "label": "isDissolving",
+      "id": "src_components_ui_typingeffect_effectiveholddelay",
+      "label": "effectiveHoldDelay",
       "_origin": "ast",
       "community": 22,
       "community_name": "TypingEffect.vue",
       "file_type": "code",
-      "norm_label": "isdissolving",
+      "norm_label": "effectiveholddelay",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L85"
+      "source_location": "L84"
+    },
+    {
+      "id": "src_components_ui_typingeffect_isblinkingcursor",
+      "label": "isBlinkingCursor",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "isblinkingcursor",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L104"
     },
     {
       "id": "src_components_ui_typingeffect_isinview",
@@ -2941,7 +2940,18 @@
       "file_type": "code",
       "norm_label": "isinview",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L86"
+      "source_location": "L91"
+    },
+    {
+      "id": "src_components_ui_typingeffect_phase",
+      "label": "phase",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "phase",
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L90"
     },
     {
       "id": "src_components_ui_typingeffect_renderedsegments",
@@ -2952,7 +2962,7 @@
       "file_type": "code",
       "norm_label": "renderedsegments",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L106"
+      "source_location": "L114"
     },
     {
       "id": "src_components_ui_typingeffect_rootref",
@@ -2963,18 +2973,7 @@
       "file_type": "code",
       "norm_label": "rootref",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L88"
-    },
-    {
-      "id": "src_components_ui_typingeffect_sandpalette",
-      "label": "sandPalette",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "TypingEffect.vue",
-      "file_type": "code",
-      "norm_label": "sandpalette",
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L155"
+      "source_location": "L93"
     },
     {
       "id": "src_components_ui_typingeffect_textlist",
@@ -2985,7 +2984,7 @@
       "file_type": "code",
       "norm_label": "textlist",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L77"
+      "source_location": "L78"
     },
     {
       "id": "src_components_ui_typingeffect_textwrapperref",
@@ -2996,7 +2995,18 @@
       "file_type": "code",
       "norm_label": "textwrapperref",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L89"
+      "source_location": "L94"
+    },
+    {
+      "id": "tests_typing_effect_spec",
+      "label": "typing-effect.spec.ts",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "TypingEffect.vue",
+      "file_type": "code",
+      "norm_label": "typing-effect.spec.ts",
+      "source_file": "tests/typing-effect.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "src_components_ui_typing_effect",
@@ -3041,10 +3051,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L261"
+      "source_location": "L277"
     },
     {
-      "id": "changelog_added_263",
+      "id": "changelog_added_279",
       "label": "Added",
       "_origin": "ast",
       "community": 25,
@@ -3053,10 +3063,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L263"
+      "source_location": "L279"
     },
     {
-      "id": "changelog_changed_268",
+      "id": "changelog_changed_284",
       "label": "Changed",
       "_origin": "ast",
       "community": 25,
@@ -3065,10 +3075,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L268"
+      "source_location": "L284"
     },
     {
-      "id": "changelog_fixed_271",
+      "id": "changelog_fixed_287",
       "label": "Fixed",
       "_origin": "ast",
       "community": 25,
@@ -3077,7 +3087,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L271"
+      "source_location": "L287"
     },
     {
       "id": "src_components_ui_modern_loader",
@@ -3100,10 +3110,10 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L276"
+      "source_location": "L292"
     },
     {
-      "id": "changelog_added_278",
+      "id": "changelog_added_294",
       "label": "Added",
       "_origin": "ast",
       "community": 27,
@@ -3112,10 +3122,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L278"
+      "source_location": "L294"
     },
     {
-      "id": "changelog_changed_288",
+      "id": "changelog_changed_304",
       "label": "Changed",
       "_origin": "ast",
       "community": 27,
@@ -3124,7 +3134,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L288"
+      "source_location": "L304"
     },
     {
       "id": "changelog_2_5_4_2026_10_19",
@@ -3136,10 +3146,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.4] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L108"
+      "source_location": "L124"
     },
     {
-      "id": "changelog_added_110",
+      "id": "changelog_added_126",
       "label": "Added",
       "_origin": "ast",
       "community": 28,
@@ -3148,7 +3158,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L110"
+      "source_location": "L126"
     },
     {
       "id": "changelog_removed",
@@ -3160,7 +3170,7 @@
       "node_kind": "heading",
       "norm_label": "removed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L116"
+      "source_location": "L132"
     },
     {
       "id": "changelog_2_5_5_2026_10_22",
@@ -3172,10 +3182,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.5] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L94"
+      "source_location": "L110"
     },
     {
-      "id": "changelog_added_103",
+      "id": "changelog_added_119",
       "label": "Added",
       "_origin": "ast",
       "community": 29,
@@ -3184,10 +3194,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L103"
+      "source_location": "L119"
     },
     {
-      "id": "changelog_changed_96",
+      "id": "changelog_changed_112",
       "label": "Changed",
       "_origin": "ast",
       "community": 29,
@@ -3196,7 +3206,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L96"
+      "source_location": "L112"
     },
     {
       "id": "src_components_marqueebanner",
@@ -3218,7 +3228,7 @@
       "file_type": "code",
       "norm_label": "all_reviews",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L137"
+      "source_location": "L139"
     },
     {
       "id": "src_components_marqueebanner_bubble_themes",
@@ -3229,7 +3239,7 @@
       "file_type": "code",
       "norm_label": "bubble_themes",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L129"
+      "source_location": "L131"
     },
     {
       "id": "src_components_marqueebanner_isdoubletappaused",
@@ -3240,7 +3250,7 @@
       "file_type": "code",
       "norm_label": "isdoubletappaused",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L279"
+      "source_location": "L281"
     },
     {
       "id": "src_components_marqueebanner_isdragging",
@@ -3251,7 +3261,7 @@
       "file_type": "code",
       "norm_label": "isdragging",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L280"
+      "source_location": "L282"
     },
     {
       "id": "src_components_marqueebanner_ishovered",
@@ -3262,7 +3272,7 @@
       "file_type": "code",
       "norm_label": "ishovered",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L278"
+      "source_location": "L280"
     },
     {
       "id": "src_components_marqueebanner_ispaused",
@@ -3273,7 +3283,7 @@
       "file_type": "code",
       "norm_label": "ispaused",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L283"
+      "source_location": "L285"
     },
     {
       "id": "src_components_marqueebanner_reviewlist",
@@ -3284,7 +3294,7 @@
       "file_type": "code",
       "norm_label": "reviewlist",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L272"
+      "source_location": "L274"
     },
     {
       "id": "src_components_marqueebanner_tilerefa",
@@ -3295,7 +3305,7 @@
       "file_type": "code",
       "norm_label": "tilerefa",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L275"
+      "source_location": "L277"
     },
     {
       "id": "src_components_marqueebanner_trackref",
@@ -3306,7 +3316,7 @@
       "file_type": "code",
       "norm_label": "trackref",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L274"
+      "source_location": "L276"
     },
     {
       "id": "src_components_marqueebanner_viewportref",
@@ -3317,7 +3327,7 @@
       "file_type": "code",
       "norm_label": "viewportref",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L276"
+      "source_location": "L278"
     },
     {
       "id": "src_components_starrating",
@@ -3384,10 +3394,10 @@
       "node_kind": "heading",
       "norm_label": "[2.6.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L78"
+      "source_location": "L94"
     },
     {
-      "id": "changelog_added_80",
+      "id": "changelog_added_96",
       "label": "Added",
       "_origin": "ast",
       "community": 30,
@@ -3396,10 +3406,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L80"
+      "source_location": "L96"
     },
     {
-      "id": "changelog_changed_88",
+      "id": "changelog_changed_104",
       "label": "Changed",
       "_origin": "ast",
       "community": 30,
@@ -3408,7 +3418,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L88"
+      "source_location": "L104"
     },
     {
       "id": "changelog_2_8_0_2026_10_22",
@@ -3420,10 +3430,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42"
+      "source_location": "L58"
     },
     {
-      "id": "changelog_added_44",
+      "id": "changelog_added_60",
       "label": "Added",
       "_origin": "ast",
       "community": 31,
@@ -3432,10 +3442,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L44"
+      "source_location": "L60"
     },
     {
-      "id": "changelog_changed_55",
+      "id": "changelog_changed_71",
       "label": "Changed",
       "_origin": "ast",
       "community": 31,
@@ -3444,7 +3454,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L55"
+      "source_location": "L71"
     },
     {
       "id": "src_components_ui_flickering_text",
@@ -3489,10 +3499,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L251"
+      "source_location": "L267"
     },
     {
-      "id": "changelog_fixed_253",
+      "id": "changelog_fixed_269",
       "label": "Fixed",
       "_origin": "ast",
       "community": 33,
@@ -3501,7 +3511,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L253"
+      "source_location": "L269"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3513,10 +3523,10 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L233"
+      "source_location": "L249"
     },
     {
-      "id": "changelog_added_235",
+      "id": "changelog_added_251",
       "label": "Added",
       "_origin": "ast",
       "community": 34,
@@ -3525,31 +3535,172 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L235"
+      "source_location": "L251"
     },
     {
-      "id": "changelog_2_3_0_2026_10_17",
-      "label": "[2.3.0] - 2026-10-17",
+      "id": "src_components_projectssection",
+      "label": "ProjectsSection.vue",
       "_origin": "ast",
       "community": 35,
-      "community_name": "[2.3.0] - 2026-10-17",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.3.0] - 2026-10-17",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L221"
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "projectssection.vue",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L1"
     },
     {
-      "id": "changelog_added_223",
-      "label": "Added",
+      "id": "src_components_projectssection_featuredproject",
+      "label": "featuredProject",
       "_origin": "ast",
       "community": 35,
-      "community_name": "[2.3.0] - 2026-10-17",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "added",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L223"
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "featuredproject",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L185"
+    },
+    {
+      "id": "src_components_projectssection_filteredsecondaryprojects",
+      "label": "filteredSecondaryProjects",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "filteredsecondaryprojects",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L190"
+    },
+    {
+      "id": "src_data_projects",
+      "label": "projects.ts",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "projects.ts",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_data_projects_projectsdata",
+      "label": "projectsData",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "projectsdata",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_types_project",
+      "label": "project.ts",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "project.ts",
+      "source_file": "src/types/project.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_views_projectdetailview",
+      "label": "ProjectDetailView.vue",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "projectdetailview.vue",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_views_projectdetailview_categorylabel",
+      "label": "categoryLabel",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "categorylabel",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L178"
+    },
+    {
+      "id": "src_views_projectdetailview_currentindex",
+      "label": "currentIndex",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "currentindex",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L159"
+    },
+    {
+      "id": "src_views_projectdetailview_formattedparagraphs",
+      "label": "formattedParagraphs",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "formattedparagraphs",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L188"
+    },
+    {
+      "id": "src_views_projectdetailview_nextproject",
+      "label": "nextProject",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "nextproject",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L171"
+    },
+    {
+      "id": "src_views_projectdetailview_prevproject",
+      "label": "prevProject",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "prevproject",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L164"
+    },
+    {
+      "id": "src_views_projectdetailview_project",
+      "label": "project",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "project",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L154"
+    },
+    {
+      "id": "src_views_projectdetailview_route",
+      "label": "route",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L152"
+    },
+    {
+      "id": "tests_project_detail_spec",
+      "label": "project-detail.spec.ts",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
+      "file_type": "code",
+      "norm_label": "project-detail.spec.ts",
+      "source_file": "tests/project-detail.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "changelog_2_3_1_2026_10_18",
@@ -3561,10 +3712,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L209"
+      "source_location": "L225"
     },
     {
-      "id": "changelog_fixed_211",
+      "id": "changelog_fixed_227",
       "label": "Fixed",
       "_origin": "ast",
       "community": 36,
@@ -3573,73 +3724,31 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L211"
+      "source_location": "L227"
     },
     {
-      "id": "src_components_lazysection",
-      "label": "LazySection.vue",
+      "id": "changelog_2_4_1_2026_10_18",
+      "label": "[2.4.1] - 2026-10-18",
       "_origin": "ast",
       "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "lazysection.vue",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L1"
+      "community_name": "[2.4.1] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.4.1] - 2026-10-18",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L186"
     },
     {
-      "id": "src_components_lazysection_route",
-      "label": "route",
+      "id": "changelog_fixed_188",
+      "label": "Fixed",
       "_origin": "ast",
       "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "route",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L36"
-    },
-    {
-      "id": "src_components_lazysection_shouldrender",
-      "label": "shouldRender",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "shouldrender",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L39"
-    },
-    {
-      "id": "src_components_lazysection_wrapperref",
-      "label": "wrapperRef",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "wrapperref",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L38"
-    },
-    {
-      "id": "src_components_skeletons_sectionskeleton",
-      "label": "SectionSkeleton.vue",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "sectionskeleton.vue",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "tests_reveal_lazy_spec",
-      "label": "reveal-lazy.spec.ts",
-      "_origin": "ast",
-      "community": 37,
-      "community_name": "LazySection.vue",
-      "file_type": "code",
-      "norm_label": "reveal-lazy.spec.ts",
-      "source_file": "tests/reveal-lazy.spec.ts",
-      "source_location": "L1"
+      "community_name": "[2.4.1] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L188"
     },
     {
       "id": "changelog_2_3_2_2026_10_18",
@@ -3651,10 +3760,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L200"
+      "source_location": "L216"
     },
     {
-      "id": "changelog_fixed_202",
+      "id": "changelog_fixed_218",
       "label": "Fixed",
       "_origin": "ast",
       "community": 38,
@@ -3663,7 +3772,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L202"
+      "source_location": "L218"
     },
     {
       "id": "changelog_2_4_0_2026_10_18",
@@ -3675,10 +3784,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L180"
+      "source_location": "L196"
     },
     {
-      "id": "changelog_added_182",
+      "id": "changelog_added_198",
       "label": "Added",
       "_origin": "ast",
       "community": 39,
@@ -3687,7 +3796,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L182"
+      "source_location": "L198"
     },
     {
       "id": "tsconfig",
@@ -3996,10 +4105,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L189"
+      "source_location": "L205"
     },
     {
-      "id": "changelog_changed_191",
+      "id": "changelog_changed_207",
       "label": "Changed",
       "_origin": "ast",
       "community": 40,
@@ -4008,7 +4117,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L191"
+      "source_location": "L207"
     },
     {
       "id": "changelog_2_5_3_2026_10_19",
@@ -4020,7 +4129,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L121"
+      "source_location": "L137"
     },
     {
       "id": "changelog_fixed",
@@ -4032,7 +4141,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L123"
+      "source_location": "L139"
     },
     {
       "id": "changelog_2_5_1_2026_10_19",
@@ -4044,10 +4153,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L141"
+      "source_location": "L157"
     },
     {
-      "id": "changelog_changed_143",
+      "id": "changelog_changed_159",
       "label": "Changed",
       "_origin": "ast",
       "community": 42,
@@ -4056,7 +4165,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L143"
+      "source_location": "L159"
     },
     {
       "id": "changelog_2_7_0_2026_10_22",
@@ -4068,10 +4177,10 @@
       "node_kind": "heading",
       "norm_label": "[2.7.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61"
+      "source_location": "L77"
     },
     {
-      "id": "changelog_added_63",
+      "id": "changelog_added_79",
       "label": "Added",
       "_origin": "ast",
       "community": 43,
@@ -4080,7 +4189,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L63"
+      "source_location": "L79"
     },
     {
       "id": "changelog_2_8_1_2026_10_22",
@@ -4092,10 +4201,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.1] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L29"
+      "source_location": "L45"
     },
     {
-      "id": "changelog_added_31",
+      "id": "changelog_added_47",
       "label": "Added",
       "_origin": "ast",
       "community": 44,
@@ -4104,7 +4213,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L31"
+      "source_location": "L47"
     },
     {
       "id": "changelog_2_4_2_2026_10_18",
@@ -4116,10 +4225,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L161"
+      "source_location": "L177"
     },
     {
-      "id": "changelog_changed_163",
+      "id": "changelog_changed_179",
       "label": "Changed",
       "_origin": "ast",
       "community": 45,
@@ -4128,55 +4237,79 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L163"
+      "source_location": "L179"
     },
     {
-      "id": "changelog_2_8_2_2026_10_22",
-      "label": "[2.8.2] - 2026-10-22",
+      "id": "changelog_2_5_0_2026_10_18",
+      "label": "[2.5.0] - 2026-10-18",
       "_origin": "ast",
       "community": 46,
-      "community_name": "[2.8.2] - 2026-10-22",
+      "community_name": "[2.5.0] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.8.2] - 2026-10-22",
+      "norm_label": "[2.5.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L21"
+      "source_location": "L165"
     },
     {
-      "id": "changelog_added",
+      "id": "changelog_added_167",
       "label": "Added",
       "_origin": "ast",
       "community": 46,
-      "community_name": "[2.8.2] - 2026-10-22",
+      "community_name": "[2.5.0] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L23"
+      "source_location": "L167"
     },
     {
-      "id": "changelog_2_5_2_2026_10_19",
-      "label": "[2.5.2] - 2026-10-19",
+      "id": "changelog_2_8_3_2026_10_22",
+      "label": "[2.8.3] - 2026-10-22",
       "_origin": "ast",
       "community": 47,
-      "community_name": "[2.5.2] - 2026-10-19",
+      "community_name": "[2.8.3] - 2026-10-22",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.2] - 2026-10-19",
+      "norm_label": "[2.8.3] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L133"
+      "source_location": "L26"
     },
     {
-      "id": "changelog_changed_135",
+      "id": "changelog_changed_28",
       "label": "Changed",
       "_origin": "ast",
       "community": 47,
-      "community_name": "[2.5.2] - 2026-10-19",
+      "community_name": "[2.8.3] - 2026-10-22",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L135"
+      "source_location": "L28"
+    },
+    {
+      "id": "changelog_2_8_4_2026_10_22",
+      "label": "[2.8.4] - 2026-10-22",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "[2.8.4] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.8.4] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L10"
+    },
+    {
+      "id": "changelog_changed",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "[2.8.4] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12"
     },
     {
       "id": "package",
@@ -4596,46 +4729,46 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L294"
+      "source_location": "L310"
     },
     {
-      "id": "changelog_2_4_1_2026_10_18",
-      "label": "[2.4.1] - 2026-10-18",
+      "id": "changelog_2_3_0_2026_10_17",
+      "label": "[2.3.0] - 2026-10-17",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.4.1] - 2026-10-18",
+      "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L170"
+      "source_location": "L237"
     },
     {
-      "id": "changelog_2_5_0_2026_10_18",
-      "label": "[2.5.0] - 2026-10-18",
+      "id": "changelog_2_5_2_2026_10_19",
+      "label": "[2.5.2] - 2026-10-19",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.0] - 2026-10-18",
+      "norm_label": "[2.5.2] - 2026-10-19",
       "source_file": "CHANGELOG.md",
       "source_location": "L149"
     },
     {
-      "id": "changelog_2_8_3_2026_10_22",
-      "label": "[2.8.3] - 2026-10-22",
+      "id": "changelog_2_8_2_2026_10_22",
+      "label": "[2.8.2] - 2026-10-22",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.8.3] - 2026-10-22",
+      "norm_label": "[2.8.2] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L10"
+      "source_location": "L37"
     },
     {
-      "id": "changelog_added_151",
+      "id": "changelog_added",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -4644,10 +4777,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L151"
+      "source_location": "L39"
     },
     {
-      "id": "changelog_added_296",
+      "id": "changelog_added_239",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -4656,10 +4789,22 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L296"
+      "source_location": "L239"
     },
     {
-      "id": "changelog_changed",
+      "id": "changelog_added_312",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L312"
+    },
+    {
+      "id": "changelog_changed_151",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -4668,7 +4813,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12"
+      "source_location": "L151"
     },
     {
       "id": "changelog_changelog",
@@ -4681,18 +4826,6 @@
       "norm_label": "changelog",
       "source_file": "CHANGELOG.md",
       "source_location": "L1"
-    },
-    {
-      "id": "changelog_fixed_172",
-      "label": "Fixed",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "fixed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L172"
     },
     {
       "id": "tsconfig_node",
@@ -4827,17 +4960,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_appbuttonarrow",
-      "label": "AppButtonArrow.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "appbuttonarrow.vue",
-      "source_file": "src/components/AppButtonArrow.vue",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_herosection",
       "label": "HeroSection.vue",
       "_origin": "ast",
@@ -4857,7 +4979,51 @@
       "file_type": "code",
       "norm_label": "currentpose",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L182"
+      "source_location": "L184"
+    },
+    {
+      "id": "src_components_lazysection",
+      "label": "LazySection.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "lazysection.vue",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_lazysection_route",
+      "label": "route",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L36"
+    },
+    {
+      "id": "src_components_lazysection_shouldrender",
+      "label": "shouldRender",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "shouldrender",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L39"
+    },
+    {
+      "id": "src_components_lazysection_wrapperref",
+      "label": "wrapperRef",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "wrapperref",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L38"
     },
     {
       "id": "src_components_processsection",
@@ -4871,39 +5037,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_projectssection",
-      "label": "ProjectsSection.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectssection.vue",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_projectssection_featuredproject",
-      "label": "featuredProject",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "featuredproject",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L183"
-    },
-    {
-      "id": "src_components_projectssection_filteredsecondaryprojects",
-      "label": "filteredSecondaryProjects",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "filteredsecondaryprojects",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L188"
-    },
-    {
       "id": "src_components_servicessection",
       "label": "ServicesSection.vue",
       "_origin": "ast",
@@ -4912,6 +5045,17 @@
       "file_type": "code",
       "norm_label": "servicessection.vue",
       "source_file": "src/components/ServicesSection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton",
+      "label": "SectionSkeleton.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "sectionskeleton.vue",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
       "source_location": "L1"
     },
     {
@@ -5003,39 +5147,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_data_projects",
-      "label": "projects.ts",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projects.ts",
-      "source_file": "src/data/projects.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_data_projects_projectsdata",
-      "label": "projectsData",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectsdata",
-      "source_file": "src/data/projects.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_types_project",
-      "label": "project.ts",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "project.ts",
-      "source_file": "src/types/project.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "src_views_homeview",
       "label": "HomeView.vue",
       "_origin": "ast",
@@ -5045,94 +5156,6 @@
       "norm_label": "homeview.vue",
       "source_file": "src/views/HomeView.vue",
       "source_location": "L1"
-    },
-    {
-      "id": "src_views_projectdetailview",
-      "label": "ProjectDetailView.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "projectdetailview.vue",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_views_projectdetailview_categorylabel",
-      "label": "categoryLabel",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "categorylabel",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L178"
-    },
-    {
-      "id": "src_views_projectdetailview_currentindex",
-      "label": "currentIndex",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "currentindex",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L159"
-    },
-    {
-      "id": "src_views_projectdetailview_formattedparagraphs",
-      "label": "formattedParagraphs",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "formattedparagraphs",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L188"
-    },
-    {
-      "id": "src_views_projectdetailview_nextproject",
-      "label": "nextProject",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "nextproject",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L171"
-    },
-    {
-      "id": "src_views_projectdetailview_prevproject",
-      "label": "prevProject",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "prevproject",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L164"
-    },
-    {
-      "id": "src_views_projectdetailview_project",
-      "label": "project",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "project",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L154"
-    },
-    {
-      "id": "src_views_projectdetailview_route",
-      "label": "route",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "route",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L152"
     },
     {
       "id": "tests_homepage_spec",
@@ -5157,14 +5180,14 @@
       "source_location": "L6"
     },
     {
-      "id": "tests_project_detail_spec",
-      "label": "project-detail.spec.ts",
+      "id": "tests_reveal_lazy_spec",
+      "label": "reveal-lazy.spec.ts",
       "_origin": "ast",
       "community": 9,
       "community_name": "ui/TextReveal.vue",
       "file_type": "code",
-      "norm_label": "project-detail.spec.ts",
-      "source_file": "tests/project-detail.spec.ts",
+      "norm_label": "reveal-lazy.spec.ts",
+      "source_file": "tests/reveal-lazy.spec.ts",
       "source_location": "L1"
     },
     {
@@ -5338,8 +5361,8 @@
       "_origin": "semantic",
       "author": "Besporman",
       "captured_at": null,
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
+      "community": 35,
+      "community_name": "ProjectDetailView.vue",
       "contributor": null,
       "file_type": "document",
       "norm_label": "besporman portfolio & services overview",
@@ -5397,7 +5420,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L292",
+      "source_location": "L294",
       "weight": 1.0
     },
     {
@@ -5421,7 +5444,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L262",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -5433,7 +5456,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L268",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -5445,7 +5468,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L365",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -5457,7 +5480,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L450",
+      "source_location": "L452",
       "weight": 1.0
     },
     {
@@ -5469,7 +5492,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L415",
+      "source_location": "L417",
       "weight": 1.0
     },
     {
@@ -5481,7 +5504,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L487",
+      "source_location": "L489",
       "weight": 1.0
     },
     {
@@ -5493,7 +5516,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L326",
+      "source_location": "L328",
       "weight": 1.0
     },
     {
@@ -5749,7 +5772,7 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_ui_typingeffect_steptyping",
+      "source": "src_components_ui_typingeffect_runcycle",
       "target": "src_components_ui_typingeffect_cleartimers",
       "relation": "calls",
       "_origin": "ast",
@@ -5757,19 +5780,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L296",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect_steptyping",
-      "target": "src_components_ui_typingeffect_triggersanddissolve",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L308",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -6047,7 +6058,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L236",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
@@ -6059,7 +6070,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L236",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
@@ -6071,7 +6082,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L240",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -6083,7 +6094,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L177",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -6095,7 +6106,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L112",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -6107,7 +6118,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L70",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -6119,7 +6130,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L160",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -6131,7 +6142,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L161",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -6143,7 +6154,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L167",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -6155,7 +6166,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L151",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -6335,36 +6346,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L236",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_contactsection",
-      "target": "src_components_ui_textreveal",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/ContactSection.vue",
-      "source_location": "L237",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_contactsection",
-      "target": "src_components_ui_typingeffect",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/ContactSection.vue",
       "source_location": "L238",
       "weight": 1.0
     },
     {
       "source": "src_components_contactsection",
-      "target": "src_components_appbuttonarrow",
+      "target": "src_components_ui_textreveal",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6376,7 +6363,7 @@
     },
     {
       "source": "src_components_contactsection",
-      "target": "src_composables_usescrollreveal",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6384,6 +6371,30 @@
       "context": "import",
       "source_file": "src/components/ContactSection.vue",
       "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_contactsection",
+      "target": "src_components_appbuttonarrow",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ContactSection.vue",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_contactsection",
+      "target": "src_composables_usescrollreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ContactSection.vue",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -6395,7 +6406,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L174",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -6407,7 +6418,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L175",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -6419,7 +6430,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L176",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -6431,7 +6442,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L177",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -6455,36 +6466,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L109",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_marqueebanner",
-      "target": "src_components_ui_textreveal",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L110",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_marqueebanner",
-      "target": "src_components_ui_typingeffect",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/MarqueeBanner.vue",
       "source_location": "L111",
       "weight": 1.0
     },
     {
       "source": "src_components_marqueebanner",
-      "target": "src_composables_usescrollreveal",
+      "target": "src_components_ui_textreveal",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6495,6 +6482,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_marqueebanner",
+      "target": "src_components_ui_typingeffect",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/MarqueeBanner.vue",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_marqueebanner",
+      "target": "src_composables_usescrollreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/MarqueeBanner.vue",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_processsection",
       "target": "src_components_ui_textreveal",
       "relation": "imports_from",
@@ -6503,7 +6514,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L68",
+      "source_location": "L70",
       "weight": 1.0
     },
     {
@@ -6515,7 +6526,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L69",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -6527,7 +6538,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L70",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -6539,7 +6550,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L160",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -6551,36 +6562,12 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L161",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_projectssection",
-      "target": "src_components_ui_textreveal",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L162",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_projectssection",
-      "target": "src_components_ui_typingeffect",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/ProjectsSection.vue",
       "source_location": "L163",
       "weight": 1.0
     },
     {
       "source": "src_components_projectssection",
-      "target": "src_components_ui_eyetracking",
+      "target": "src_components_ui_textreveal",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6592,7 +6579,7 @@
     },
     {
       "source": "src_components_projectssection",
-      "target": "src_components_appbuttonarrow",
+      "target": "src_components_ui_typingeffect",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6604,7 +6591,19 @@
     },
     {
       "source": "src_components_projectssection",
-      "target": "src_composables_usescrollreveal",
+      "target": "src_components_ui_eyetracking",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_projectssection",
+      "target": "src_components_appbuttonarrow",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6612,6 +6611,18 @@
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
       "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_projectssection",
+      "target": "src_composables_usescrollreveal",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -6623,7 +6634,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L149",
+      "source_location": "L151",
       "weight": 1.0
     },
     {
@@ -6635,7 +6646,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L150",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -6647,7 +6658,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L151",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -7035,6 +7046,18 @@
       "weight": 1.0
     },
     {
+      "source": "tests_typing_effect_spec",
+      "target": "src_components_ui_typingeffect",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/typing-effect.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_services_contactadapter_developmentcontactadapter",
       "target": "src_services_contactadapter_contactsubmissionadapter",
       "relation": "implements",
@@ -7103,200 +7126,200 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_296",
+      "target": "changelog_added_312",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L296",
+      "source_location": "L312",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_278",
+      "target": "changelog_added_294",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L278",
+      "source_location": "L294",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_288",
+      "target": "changelog_changed_304",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L288",
+      "source_location": "L304",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_263",
+      "target": "changelog_added_279",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L263",
+      "source_location": "L279",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_268",
+      "target": "changelog_changed_284",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L268",
+      "source_location": "L284",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_271",
+      "target": "changelog_fixed_287",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L271",
+      "source_location": "L287",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_253",
+      "target": "changelog_fixed_269",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L253",
+      "source_location": "L269",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
-      "target": "changelog_added_235",
+      "target": "changelog_added_251",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L235",
+      "source_location": "L251",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_223",
+      "target": "changelog_added_239",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L223",
+      "source_location": "L239",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_211",
+      "target": "changelog_fixed_227",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L211",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_202",
+      "target": "changelog_fixed_218",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L202",
+      "source_location": "L218",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_191",
+      "target": "changelog_changed_207",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L191",
+      "source_location": "L207",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_182",
+      "target": "changelog_added_198",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L182",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed_172",
+      "target": "changelog_fixed_188",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L172",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_163",
+      "target": "changelog_changed_179",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L163",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_0_2026_10_18",
-      "target": "changelog_added_151",
+      "target": "changelog_added_167",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_1_2026_10_19",
+      "target": "changelog_changed_159",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L159",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_2_2026_10_19",
+      "target": "changelog_changed_151",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
       "source_location": "L151",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_5_1_2026_10_19",
-      "target": "changelog_changed_143",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L143",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_5_2_2026_10_19",
-      "target": "changelog_changed_135",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -7307,18 +7330,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L123",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_4_2026_10_19",
-      "target": "changelog_added_110",
+      "target": "changelog_added_126",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L110",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -7329,23 +7352,45 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L116",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_added_103",
+      "target": "changelog_changed_112",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L103",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_changed_96",
+      "target": "changelog_added_119",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L119",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_changed_104",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_added_96",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7355,69 +7400,47 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_added_80",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L80",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_changed_88",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L88",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_7_0_2026_10_22",
-      "target": "changelog_added_63",
+      "target": "changelog_added_79",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L63",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_added_44",
+      "target": "changelog_added_60",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L44",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_changed_55",
+      "target": "changelog_changed_71",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L55",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_1_2026_10_22",
-      "target": "changelog_added_31",
+      "target": "changelog_added_47",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L31",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -7428,11 +7451,22 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L23",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_3_2026_10_22",
+      "target": "changelog_changed_28",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_8_4_2026_10_22",
       "target": "changelog_changed",
       "relation": "contains",
       "_origin": "ast",
@@ -7444,7 +7478,7 @@
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_8_3_2026_10_22",
+      "target": "changelog_2_8_4_2026_10_22",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7455,13 +7489,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_5_5_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_5_4_2026_10_19",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L108",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
@@ -7472,7 +7517,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L121",
+      "source_location": "L137",
       "weight": 1.0
     },
     {
@@ -7483,7 +7528,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L133",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -7494,7 +7539,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L141",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -7505,7 +7550,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L149",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -7516,7 +7561,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L161",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -7527,7 +7572,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L170",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -7538,7 +7583,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L180",
+      "source_location": "L196",
       "weight": 1.0
     },
     {
@@ -7549,7 +7594,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L189",
+      "source_location": "L205",
       "weight": 1.0
     },
     {
@@ -7560,7 +7605,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L200",
+      "source_location": "L216",
       "weight": 1.0
     },
     {
@@ -7571,18 +7616,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L209",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_8_2_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L21",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -7593,7 +7627,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L221",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -7604,7 +7638,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L233",
+      "source_location": "L249",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_3_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -7615,7 +7660,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L251",
+      "source_location": "L267",
       "weight": 1.0
     },
     {
@@ -7626,7 +7671,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L261",
+      "source_location": "L277",
       "weight": 1.0
     },
     {
@@ -7637,18 +7682,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L276",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_8_1_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L29",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
@@ -7659,7 +7693,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L294",
+      "source_location": "L310",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_2_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_1_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -7670,7 +7726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -7681,23 +7737,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L61",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
       "target": "changelog_2_6_0_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L78",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_5_5_2026_10_22",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8099,7 +8144,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L244",
+      "source_location": "L246",
       "weight": 1.0
     },
     {
@@ -8110,7 +8155,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L250",
+      "source_location": "L252",
       "weight": 1.0
     },
     {
@@ -8121,7 +8166,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L255",
+      "source_location": "L257",
       "weight": 1.0
     },
     {
@@ -8132,7 +8177,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L262",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -8143,7 +8188,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L263",
+      "source_location": "L265",
       "weight": 1.0
     },
     {
@@ -8154,7 +8199,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L264",
+      "source_location": "L266",
       "weight": 1.0
     },
     {
@@ -8165,7 +8210,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L266",
+      "source_location": "L268",
       "weight": 1.0
     },
     {
@@ -8176,7 +8221,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ContactSection.vue",
-      "source_location": "L291",
+      "source_location": "L293",
       "weight": 1.0
     },
     {
@@ -8374,7 +8419,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/HeroSection.vue",
-      "source_location": "L182",
+      "source_location": "L184",
       "weight": 1.0
     },
     {
@@ -8429,7 +8474,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L117",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -8440,7 +8485,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L122",
+      "source_location": "L124",
       "weight": 1.0
     },
     {
@@ -8451,7 +8496,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L129",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -8462,7 +8507,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L132",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -8473,7 +8518,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L137",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -8484,7 +8529,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L252",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -8495,7 +8540,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L261",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -8506,7 +8551,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L272",
+      "source_location": "L274",
       "weight": 1.0
     },
     {
@@ -8517,7 +8562,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L274",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
@@ -8528,7 +8573,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L275",
+      "source_location": "L277",
       "weight": 1.0
     },
     {
@@ -8539,7 +8584,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L276",
+      "source_location": "L278",
       "weight": 1.0
     },
     {
@@ -8550,7 +8595,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L278",
+      "source_location": "L280",
       "weight": 1.0
     },
     {
@@ -8561,7 +8606,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L279",
+      "source_location": "L281",
       "weight": 1.0
     },
     {
@@ -8572,7 +8617,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L280",
+      "source_location": "L282",
       "weight": 1.0
     },
     {
@@ -8583,7 +8628,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L283",
+      "source_location": "L285",
       "weight": 1.0
     },
     {
@@ -8594,7 +8639,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L298",
+      "source_location": "L300",
       "weight": 1.0
     },
     {
@@ -8605,7 +8650,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L307",
+      "source_location": "L309",
       "weight": 1.0
     },
     {
@@ -8616,7 +8661,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L340",
+      "source_location": "L342",
       "weight": 1.0
     },
     {
@@ -8627,7 +8672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L349",
+      "source_location": "L351",
       "weight": 1.0
     },
     {
@@ -8638,7 +8683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L356",
+      "source_location": "L358",
       "weight": 1.0
     },
     {
@@ -8649,7 +8694,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L360",
+      "source_location": "L362",
       "weight": 1.0
     },
     {
@@ -8660,7 +8705,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L379",
+      "source_location": "L381",
       "weight": 1.0
     },
     {
@@ -8671,7 +8716,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L391",
+      "source_location": "L393",
       "weight": 1.0
     },
     {
@@ -8682,7 +8727,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L428",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -8693,7 +8738,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L460",
+      "source_location": "L462",
       "weight": 1.0
     },
     {
@@ -8704,7 +8749,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L471",
+      "source_location": "L473",
       "weight": 1.0
     },
     {
@@ -8715,7 +8760,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L482",
+      "source_location": "L484",
       "weight": 1.0
     },
     {
@@ -8726,7 +8771,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L498",
+      "source_location": "L500",
       "weight": 1.0
     },
     {
@@ -8737,7 +8782,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L171",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -8748,7 +8793,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L183",
+      "source_location": "L185",
       "weight": 1.0
     },
     {
@@ -8759,7 +8804,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L188",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -10326,13 +10371,35 @@
     },
     {
       "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_displayedtext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_isblinkingcursor",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
       "target": "src_components_ui_typingeffect_textsegment",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L101",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -10343,29 +10410,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L106",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_sandparticle",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L142",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_sandpalette",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L155",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -10376,29 +10421,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L165",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_triggersanddissolve",
+      "target": "src_components_ui_typingeffect_runcycle",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L181",
+      "source_location": "L156",
       "weight": 1.0
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_steptyping",
+      "target": "src_components_ui_typingeffect_typingphase",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L295",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -10409,7 +10454,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L64",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -10420,23 +10465,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L77",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_currenttextindex",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L83",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_charindex",
+      "target": "src_components_ui_typingeffect_effectiveholddelay",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10447,29 +10481,7 @@
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_isdissolving",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L85",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_isinview",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L86",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_rootref",
+      "target": "src_components_ui_typingeffect_currenttextindex",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10480,7 +10492,7 @@
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_textwrapperref",
+      "target": "src_components_ui_typingeffect_charindex",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10491,7 +10503,7 @@
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_canvasref",
+      "target": "src_components_ui_typingeffect_phase",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10502,18 +10514,40 @@
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_currenttext",
+      "target": "src_components_ui_typingeffect_isinview",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/TypingEffect.vue",
-      "source_location": "L92",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
       "source": "src_components_ui_typingeffect",
-      "target": "src_components_ui_typingeffect_displayedtext",
+      "target": "src_components_ui_typingeffect_rootref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_textwrapperref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/TypingEffect.vue",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_typingeffect",
+      "target": "src_components_ui_typingeffect_currenttext",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -11156,7 +11190,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L477",
+      "source_location": "L479",
       "weight": 1.0
     },
     {
@@ -11168,7 +11202,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L478",
+      "source_location": "L480",
       "weight": 1.0
     },
     {
@@ -11180,7 +11214,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/MarqueeBanner.vue",
-      "source_location": "L502",
+      "source_location": "L504",
       "weight": 1.0
     },
     {
@@ -11470,5 +11504,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "ae7f71a6d675a41328ee0693a665f08eb7a87bea"
+  "built_at_commit": "530b35fb6fd92e7c0844096266ccec3372c0c11c"
 }
