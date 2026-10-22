@@ -61,6 +61,7 @@ If instructions conflict, identify the conflict and follow the repository's esta
 - ❌ **No Invented Metrics:** Do not fabricate conversion numbers or vanity statistics.
 - ❌ **No Re-Drawn Fake UI Chrome:** Do not wrap images in fake browser bars or fake window controls.
 - ❌ **No Emojis as UI Icons:** Use deliberate, consistent SVG glyphs (Phosphor or Tabler Icons).
+- ❌ **No Non-WebP Raster Images:** All images across the site must strictly use the WebP format (`.webp`). PNG/JPEG/GIF raster formats in UI code are barred (with the sole exception of `/favicon.png` for browser favicon and SVGs for icons).
 - ❌ **No Horizontal Scroll Bugs:** Root elements must have `overflow-x: clip`. Verify responsiveness down to 320px viewport width.
 - ❌ **All 8 States Required:** Every interactive element must define: default, hover, focus-visible, active, disabled, loading, error, and success states.
 
@@ -115,6 +116,14 @@ If instructions conflict, identify the conflict and follow the repository's esta
 
 ## 7. Asset and Content Integrity
 
+- **Strict WebP Format Requirement for All Images (Banned: PNG, JPEG, JPG, GIF):**
+  - **All images utilized, imported, or referenced in the application MUST use the WebP format (`.webp`) exclusively.**
+  - **No raster formats other than WebP are permitted in UI code, showcase cards, headers, or backgrounds.**
+  - The ONLY permitted exceptions are:
+    1. SVG files for vector UI icons (stored in `pic/svg/`).
+    2. `/favicon.png` exclusively for the browser tab favicon.
+  - Authentic mascot source files in `pic/` (`besporman1.png`, `besporman2.png`) are preserved as raw archive assets, but their runtime references across all components must strictly be `.webp` (`pic/webp/besporman1.webp`, `pic/webp/besporman2.webp`).
+  - Any newly provided images (e.g. screenshots, showcases, mockups) must immediately be converted to `.webp` prior to referencing or importing in code.
 - Prefer approved brand assets and authentic project screenshots.
 - Do not invent clients, project results, statistics, testimonials, awards, or business claims.
 - Do not use generated placeholder artwork as if it were a genuine completed project.

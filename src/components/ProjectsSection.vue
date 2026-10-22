@@ -90,13 +90,18 @@
             </div>
           </div>
 
-          <!-- Stylized Graphic Plate -->
-          <div class="featured-plate" aria-hidden="true">
-            <div class="plate-box">
-              <svg class="plate-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-              <span class="plate-label">Besporman Core</span>
+          <!-- Featured Project Showcase Image Frame -->
+          <div class="featured-plate">
+            <div class="showcase-frame">
+              <img
+                :src="websiteShowcaseImg"
+                alt="نمای وب‌سایت استودیو بسپر من"
+                class="showcase-image"
+                loading="lazy"
+                decoding="async"
+                width="840"
+                height="568"
+              />
             </div>
           </div>
         </article>
@@ -158,6 +163,7 @@ import TextReveal from '@/components/ui/TextReveal.vue'
 import TypingEffect from '@/components/ui/TypingEffect.vue'
 import EyeTracking from '@/components/ui/EyeTracking.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
+import websiteShowcaseImg from '../../pic/webp/besporman_website_showcase.webp'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
@@ -339,30 +345,45 @@ const filteredSecondaryProjects = computed(() => {
   align-items: center;
   justify-content: center;
   background-color: var(--primitive-amber-100);
-  border-inline-start: var(--border-width-bold) solid var(--color-border-bold);
-  padding: var(--space-8);
+  border-top: var(--border-width-bold) solid var(--color-border-bold);
+  padding: var(--space-6);
+  overflow: hidden;
 }
 
-.plate-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-6) var(--space-8);
+@media (min-width: 900px) {
+  .featured-plate {
+    border-top: none;
+    border-inline-start: var(--border-width-bold) solid var(--color-border-bold);
+    padding: var(--space-8);
+  }
+}
+
+.showcase-frame {
+  width: 100%;
+  max-width: 480px;
   background-color: var(--color-canvas);
   border: var(--border-width-bold) solid var(--color-border-bold);
   border-radius: var(--border-radius-md);
   box-shadow: 4px 4px 0 var(--color-border-bold);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.plate-icon {
-  font-size: 40px;
+.featured-card:hover .showcase-frame {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-border-bold);
 }
 
-.plate-label {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  color: var(--color-ink-primary);
+.showcase-image {
+  width: 100%;
+  height: 100%;
+  max-height: 290px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
 }
 
 /* ==========================================================================

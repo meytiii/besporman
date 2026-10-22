@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-10-22)
 
 ## Corpus Check
-- 61 files · ~835,214 words
+- 61 files · ~857,579 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 453 nodes · 535 edges · 45 communities (28 shown, 17 thin omitted)
+- 455 nodes · 537 edges · 47 communities (29 shown, 18 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `325c5341`
+- Built from commit: `c829e8ec`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -49,17 +49,19 @@
 - [2.2.0] - 2026-10-17
 - [2.3.0] - 2026-10-17
 - [2.3.1] - 2026-10-18
-- [2.5.2] - 2026-10-19
-- [2.4.0] - 2026-10-18
+- TheFooter.vue
+- [2.3.2] - 2026-10-18
 - [2.4.1] - 2026-10-18
-- [2.4.2] - 2026-10-18
+- [2.3.3] - 2026-10-18
 - [2.5.3] - 2026-10-19
 - [2.5.1] - 2026-10-19
 - [2.7.0] - 2026-10-22
 - [2.8.1] - 2026-10-22
+- [2.5.0] - 2026-10-18
+- [2.8.2] - 2026-10-22
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog` - 23 edges
+1. `Changelog` - 24 edges
 2. `compilerOptions` - 15 edges
 3. `updateMascotPosition()` - 8 edges
 4. `useScrollReveal()` - 8 edges
@@ -89,7 +91,7 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (45 total, 17 thin omitted)
+## Communities (47 total, 18 thin omitted)
 
 ### Community 0 - "EyeTracking.vue"
 Cohesion: 0.10
@@ -121,7 +123,7 @@ Nodes (11): charElements, FlickeringTextProps, generateGlowShadow(), GLOW_LAYERS
 
 ### Community 7 - "Changelog"
 Cohesion: 0.20
-Nodes (9): [1.0.0] - 2026-10-17, [2.3.2] - 2026-10-18, [2.3.3] - 2026-10-18, [2.5.0] - 2026-10-18, Added, Added, Changed, Changelog (+1 more)
+Nodes (9): [1.0.0] - 2026-10-17, [2.4.0] - 2026-10-18, [2.4.2] - 2026-10-18, [2.5.2] - 2026-10-19, Added, Added, Changed, Changed (+1 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -144,8 +146,8 @@ Cohesion: 0.12
 Nodes (11): bursts, checkTargetState(), ComicBurst, cursorContainerRef, handlePointerMove(), isInteractive, isPressed, isSupported (+3 more)
 
 ### Community 17 - "ProjectDetailView.vue"
-Cohesion: 0.07
-Nodes (23): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, Parchment & Iron Charcoal Design Palette, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, Besporman Portfolio & Services Overview, footerNavItems (+15 more)
+Cohesion: 0.09
+Nodes (20): Vue 3 Composition API & Strict TypeScript Standards, Persian RTL First-Class & CSS Logical Properties, 10 Mandatory Active Engineering Skills, Parchment & Iron Charcoal Design Palette, Persian Vazirmatn & Lalezar Typography Rules, HTML5 RTL Document Entrypoint & SEO Meta, Besporman Portfolio & Services Overview, projectsData (+12 more)
 
 ### Community 18 - "text-reveal.tsx"
 Cohesion: 0.18
@@ -191,10 +193,14 @@ Nodes (3): [2.8.0] - 2026-10-22, Added, Changed
 Cohesion: 0.36
 Nodes (7): DEFAULT_LINES, FlickeringText(), FlickeringTextProps, GLOW_LAYERS, glowShadow(), noiseAt(), randomAt()
 
+### Community 37 - "TheFooter.vue"
+Cohesion: 0.25
+Nodes (3): footerNavItems, route, router
+
 ## Knowledge Gaps
-- **238 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+233 more)
+- **239 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+234 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -206,7 +212,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `useScrollReveal()` connect `ui/TextReveal.vue` to `ContactSection.vue`, `MarqueeBanner.vue`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _238 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _239 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `EyeTracking.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**

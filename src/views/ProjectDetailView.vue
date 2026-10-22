@@ -69,6 +69,19 @@
           </div>
         </header>
 
+        <!-- Showcase Image if available -->
+        <div v-if="project.featuredImage" class="detail-showcase-frame">
+          <img
+            :src="project.featuredImage"
+            :alt="'نمای پروژه ' + project.titleFa"
+            class="detail-showcase-image"
+            loading="lazy"
+            decoding="async"
+            width="1200"
+            height="812"
+          />
+        </div>
+
         <!-- Key Highlights -->
         <section v-if="project.keyHighlightsFa?.length" class="highlights-section">
           <h2 class="section-subheading">دستاوردها و ویژگی‌های کلیدی</h2>
@@ -253,6 +266,30 @@ const formattedParagraphs = computed(() => {
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-lg);
   padding: var(--space-8);
+}
+
+.detail-showcase-frame {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-8);
+  background-color: var(--primitive-amber-100);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  border-radius: var(--border-radius-md);
+  box-shadow: 4px 4px 0 var(--color-border-bold);
+  overflow: hidden;
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-showcase-image {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--color-border-bold);
+  border-radius: var(--border-radius-sm);
+  display: block;
 }
 
 @media (min-width: 768px) {

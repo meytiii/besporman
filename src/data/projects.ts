@@ -11,6 +11,7 @@ export const projectsData: ProjectItem[] = [
     completedYearFa: '۱۴۰۵',
     technologies: ['Vue 3', 'Vite', 'TypeScript', 'CSS Custom Properties'],
     externalUrl: 'https://github.com/meytiii/besporman',
+    featuredImage: '/pic/webp/besporman_website_showcase.webp',
     keyHighlightsFa: [
       'پیاده‌سازی سیستم تایپوگرافی سلف‌هاست وزیرمتن و لاله‌زار',
       'انیمیشن روان و نامحدود مارکی بدون افت فریم',

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.2] - 2026-10-22
+
+### Added
+- **Featured Website Showcase Image (`besporman_website_showcase.webp`):** Converted raw `pic/website_showcase.png` to high-performance WebP (303KB, 90% compression quality) and integrated it into the featured project card in `ProjectsSection.vue` and `ProjectDetailView.vue`, replacing the legacy "Besporman Core" placeholder box.
+- **Strict WebP Format Enforcement:** Mandated WebP (`.webp`) as the exclusive raster image format across the entire repository in `AGENTS.md`, `GEMINI.md`, and `DESIGN_SYSTEM.md`. Banned PNG, JPEG, JPG, and GIF from production UI and components (with sole exceptions for `/favicon.png` and vector SVGs in `pic/svg/`).
+
+---
+
 ## [2.8.1] - 2026-10-22
 
 ### Added

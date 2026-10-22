@@ -26,6 +26,7 @@ The following 10 project-local skills in `.agents/skills/` are installed and per
 - **Routing:** Vue Router 4 (HTML5 History Mode) with single-page scrolling homepage (`#contact`) and dedicated `/projects/:slug` routes.
 - **Direction:** Persian-first (`<html lang="fa" dir="rtl">`), Vazirmatn typography, zero `letter-spacing` on Persian.
 - **Styling:** Vanilla CSS Custom Properties (`assets/css/tokens.css`) adhering strictly to [DESIGN_SYSTEM.md](file:///c:/Users/Mahdi/Desktop/Stuf/Github/besporman/DESIGN_SYSTEM.md).
+- **Image Formats (Strict WebP Only):** All images across UI code, cards, showcases, headers, and backgrounds MUST use `.webp` exclusively. Banned: PNG, JPEG, JPG, GIF (sole exceptions: SVGs in `pic/svg/` for icons and `/favicon.png` for tab favicon). All new images must be converted to WebP before code integration.
 
 ## Version Management Protocol (SemVer)
 - **Version Bumping on Major Changes:** Whenever major architectural changes, substantial new features, or comprehensive redesigns are introduced, upgrade the version in `package.json` (and `package-lock.json`) following Semantic Versioning (`MAJOR.MINOR.PATCH`).

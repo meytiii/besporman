@@ -31,6 +31,7 @@ describe('Project Detail Page Routing & Graceful Degradation', () => {
     expect(wrapper.text()).toContain('Vue 3')
     expect(wrapper.text()).toContain('درباره پروژه')
     expect(wrapper.find('.detail-actions').exists()).toBe(true)
+    expect(wrapper.find('.detail-showcase-frame').exists()).toBe(true)
   })
 
   it('renders friendly not-found banner for non-existent project slug', async () => {

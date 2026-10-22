@@ -834,42 +834,6 @@
       "source_location": "L163"
     },
     {
-      "id": "src_components_thefooter_handlefooternav",
-      "label": "handleFooterNav()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "handlefooternav()",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L76"
-    },
-    {
-      "id": "src_components_thefooter_scrolltotop",
-      "label": "scrollToTop()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "scrolltotop()",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L95"
-    },
-    {
-      "id": "tests_navigation_spec_setuprouter",
-      "label": "setupRouter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "setuprouter()",
-      "source_file": "tests/navigation.spec.ts",
-      "source_location": "L7"
-    },
-    {
       "id": "tests_project_detail_spec_createtestrouter",
       "label": "createTestRouter()",
       "_callable": true,
@@ -1614,6 +1578,42 @@
       "source_location": "L62"
     },
     {
+      "id": "src_components_thefooter_handlefooternav",
+      "label": "handleFooterNav()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "handlefooternav()",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L76"
+    },
+    {
+      "id": "src_components_thefooter_scrolltotop",
+      "label": "scrollToTop()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "scrolltotop()",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L95"
+    },
+    {
+      "id": "tests_navigation_spec_setuprouter",
+      "label": "setupRouter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "setuprouter()",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L7"
+    },
+    {
       "id": "src_components_ui_flickeringtext_generateglowshadow",
       "label": "generateGlowShadow()",
       "_callable": true,
@@ -1683,7 +1683,7 @@
       "file_type": "code",
       "norm_label": "getcategorylabel()",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L165"
+      "source_location": "L171"
     },
     {
       "id": "src_components_ui_textreveal_ishighlighted",
@@ -2009,7 +2009,7 @@
       "node_kind": "heading",
       "norm_label": "git push & branch governance",
       "source_file": "GEMINI.md",
-      "source_location": "L34"
+      "source_location": "L35"
     },
     {
       "id": "gemini_graphify",
@@ -2021,7 +2021,7 @@
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "GEMINI.md",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "gemini_knowledge_graph_token_conservation_graphify",
@@ -2045,7 +2045,7 @@
       "node_kind": "heading",
       "norm_label": "version management protocol (semver)",
       "source_file": "GEMINI.md",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "agent",
@@ -2207,61 +2207,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_appbuttonarrow",
-      "label": "AppButtonArrow.vue",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "appbuttonarrow.vue",
-      "source_file": "src/components/AppButtonArrow.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_thefooter",
-      "label": "TheFooter.vue",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "thefooter.vue",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_thefooter_footernavitems",
-      "label": "footerNavItems",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "footernavitems",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L68"
-    },
-    {
-      "id": "src_components_thefooter_route",
-      "label": "route",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "route",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L64"
-    },
-    {
-      "id": "src_components_thefooter_router",
-      "label": "router",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "router",
-      "source_file": "src/components/TheFooter.vue",
-      "source_location": "L63"
-    },
-    {
       "id": "src_data_projects",
       "label": "projects.ts",
       "_origin": "ast",
@@ -2369,7 +2314,7 @@
       "file_type": "code",
       "norm_label": "categorylabel",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L165"
+      "source_location": "L178"
     },
     {
       "id": "src_views_projectdetailview_currentindex",
@@ -2380,7 +2325,7 @@
       "file_type": "code",
       "norm_label": "currentindex",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L146"
+      "source_location": "L159"
     },
     {
       "id": "src_views_projectdetailview_formattedparagraphs",
@@ -2391,7 +2336,7 @@
       "file_type": "code",
       "norm_label": "formattedparagraphs",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L175"
+      "source_location": "L188"
     },
     {
       "id": "src_views_projectdetailview_nextproject",
@@ -2402,7 +2347,7 @@
       "file_type": "code",
       "norm_label": "nextproject",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L158"
+      "source_location": "L171"
     },
     {
       "id": "src_views_projectdetailview_prevproject",
@@ -2413,7 +2358,7 @@
       "file_type": "code",
       "norm_label": "prevproject",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L151"
+      "source_location": "L164"
     },
     {
       "id": "src_views_projectdetailview_project",
@@ -2424,7 +2369,7 @@
       "file_type": "code",
       "norm_label": "project",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L141"
+      "source_location": "L154"
     },
     {
       "id": "src_views_projectdetailview_route",
@@ -2435,18 +2380,7 @@
       "file_type": "code",
       "norm_label": "route",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L139"
-    },
-    {
-      "id": "tests_navigation_spec",
-      "label": "navigation.spec.ts",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "navigation.spec.ts",
-      "source_file": "tests/navigation.spec.ts",
-      "source_location": "L1"
+      "source_location": "L152"
     },
     {
       "id": "tests_project_detail_spec",
@@ -3184,10 +3118,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L242"
+      "source_location": "L250"
     },
     {
-      "id": "changelog_added_244",
+      "id": "changelog_added_252",
       "label": "Added",
       "_origin": "ast",
       "community": 25,
@@ -3196,10 +3130,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L244"
+      "source_location": "L252"
     },
     {
-      "id": "changelog_changed_249",
+      "id": "changelog_changed_257",
       "label": "Changed",
       "_origin": "ast",
       "community": 25,
@@ -3208,10 +3142,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L249"
+      "source_location": "L257"
     },
     {
-      "id": "changelog_fixed_252",
+      "id": "changelog_fixed_260",
       "label": "Fixed",
       "_origin": "ast",
       "community": 25,
@@ -3220,7 +3154,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L252"
+      "source_location": "L260"
     },
     {
       "id": "src_components_ui_modern_loader",
@@ -3243,10 +3177,10 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L257"
+      "source_location": "L265"
     },
     {
-      "id": "changelog_added_259",
+      "id": "changelog_added_267",
       "label": "Added",
       "_origin": "ast",
       "community": 27,
@@ -3255,10 +3189,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L259"
+      "source_location": "L267"
     },
     {
-      "id": "changelog_changed_269",
+      "id": "changelog_changed_277",
       "label": "Changed",
       "_origin": "ast",
       "community": 27,
@@ -3267,7 +3201,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L269"
+      "source_location": "L277"
     },
     {
       "id": "changelog_2_5_4_2026_10_19",
@@ -3279,10 +3213,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.4] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L89"
+      "source_location": "L97"
     },
     {
-      "id": "changelog_added_91",
+      "id": "changelog_added_99",
       "label": "Added",
       "_origin": "ast",
       "community": 28,
@@ -3291,7 +3225,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L91"
+      "source_location": "L99"
     },
     {
       "id": "changelog_removed",
@@ -3303,7 +3237,7 @@
       "node_kind": "heading",
       "norm_label": "removed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L97"
+      "source_location": "L105"
     },
     {
       "id": "changelog_2_5_5_2026_10_22",
@@ -3315,10 +3249,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.5] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L75"
+      "source_location": "L83"
     },
     {
-      "id": "changelog_added_84",
+      "id": "changelog_added_92",
       "label": "Added",
       "_origin": "ast",
       "community": 29,
@@ -3327,10 +3261,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L84"
+      "source_location": "L92"
     },
     {
-      "id": "changelog_changed_77",
+      "id": "changelog_changed_85",
       "label": "Changed",
       "_origin": "ast",
       "community": 29,
@@ -3339,7 +3273,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L77"
+      "source_location": "L85"
     },
     {
       "id": "src_components_marqueebanner",
@@ -3527,10 +3461,10 @@
       "node_kind": "heading",
       "norm_label": "[2.6.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L59"
+      "source_location": "L67"
     },
     {
-      "id": "changelog_added_61",
+      "id": "changelog_added_69",
       "label": "Added",
       "_origin": "ast",
       "community": 30,
@@ -3539,10 +3473,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L61"
+      "source_location": "L69"
     },
     {
-      "id": "changelog_changed_69",
+      "id": "changelog_changed_77",
       "label": "Changed",
       "_origin": "ast",
       "community": 30,
@@ -3551,7 +3485,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L69"
+      "source_location": "L77"
     },
     {
       "id": "changelog_2_8_0_2026_10_22",
@@ -3563,10 +3497,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L23"
+      "source_location": "L31"
     },
     {
-      "id": "changelog_added_25",
+      "id": "changelog_added_33",
       "label": "Added",
       "_origin": "ast",
       "community": 31,
@@ -3575,7 +3509,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L25"
+      "source_location": "L33"
     },
     {
       "id": "changelog_changed",
@@ -3587,7 +3521,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L36"
+      "source_location": "L44"
     },
     {
       "id": "src_components_ui_flickering_text",
@@ -3632,10 +3566,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L232"
+      "source_location": "L240"
     },
     {
-      "id": "changelog_fixed_234",
+      "id": "changelog_fixed_242",
       "label": "Fixed",
       "_origin": "ast",
       "community": 33,
@@ -3644,7 +3578,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L234"
+      "source_location": "L242"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3656,10 +3590,10 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L214"
+      "source_location": "L222"
     },
     {
-      "id": "changelog_added_216",
+      "id": "changelog_added_224",
       "label": "Added",
       "_origin": "ast",
       "community": 34,
@@ -3668,7 +3602,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L216"
+      "source_location": "L224"
     },
     {
       "id": "changelog_2_3_0_2026_10_17",
@@ -3680,10 +3614,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L202"
+      "source_location": "L210"
     },
     {
-      "id": "changelog_added_204",
+      "id": "changelog_added_212",
       "label": "Added",
       "_origin": "ast",
       "community": 35,
@@ -3692,7 +3626,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L204"
+      "source_location": "L212"
     },
     {
       "id": "changelog_2_3_1_2026_10_18",
@@ -3704,10 +3638,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L190"
+      "source_location": "L198"
     },
     {
-      "id": "changelog_fixed_192",
+      "id": "changelog_fixed_200",
       "label": "Fixed",
       "_origin": "ast",
       "community": 36,
@@ -3716,55 +3650,86 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L192"
+      "source_location": "L200"
     },
     {
-      "id": "changelog_2_5_2_2026_10_19",
-      "label": "[2.5.2] - 2026-10-19",
+      "id": "src_components_thefooter",
+      "label": "TheFooter.vue",
       "_origin": "ast",
       "community": 37,
-      "community_name": "[2.5.2] - 2026-10-19",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.5.2] - 2026-10-19",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L114"
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "thefooter.vue",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L1"
     },
     {
-      "id": "changelog_changed_116",
-      "label": "Changed",
+      "id": "src_components_thefooter_footernavitems",
+      "label": "footerNavItems",
       "_origin": "ast",
       "community": 37,
-      "community_name": "[2.5.2] - 2026-10-19",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "changed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L116"
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "footernavitems",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L68"
     },
     {
-      "id": "changelog_2_4_0_2026_10_18",
-      "label": "[2.4.0] - 2026-10-18",
+      "id": "src_components_thefooter_route",
+      "label": "route",
       "_origin": "ast",
-      "community": 38,
-      "community_name": "[2.4.0] - 2026-10-18",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.4.0] - 2026-10-18",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L161"
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L64"
     },
     {
-      "id": "changelog_added_163",
-      "label": "Added",
+      "id": "src_components_thefooter_router",
+      "label": "router",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "router",
+      "source_file": "src/components/TheFooter.vue",
+      "source_location": "L63"
+    },
+    {
+      "id": "tests_navigation_spec",
+      "label": "navigation.spec.ts",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "TheFooter.vue",
+      "file_type": "code",
+      "norm_label": "navigation.spec.ts",
+      "source_file": "tests/navigation.spec.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "changelog_2_3_2_2026_10_18",
+      "label": "[2.3.2] - 2026-10-18",
       "_origin": "ast",
       "community": 38,
-      "community_name": "[2.4.0] - 2026-10-18",
+      "community_name": "[2.3.2] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "added",
+      "norm_label": "[2.3.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L163"
+      "source_location": "L189"
+    },
+    {
+      "id": "changelog_fixed_191",
+      "label": "Fixed",
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "[2.3.2] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L191"
     },
     {
       "id": "changelog_2_4_1_2026_10_18",
@@ -3776,10 +3741,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L151"
+      "source_location": "L159"
     },
     {
-      "id": "changelog_fixed_153",
+      "id": "changelog_fixed_161",
       "label": "Fixed",
       "_origin": "ast",
       "community": 39,
@@ -3788,7 +3753,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L153"
+      "source_location": "L161"
     },
     {
       "id": "tsconfig",
@@ -4088,28 +4053,28 @@
       "source_location": "L20"
     },
     {
-      "id": "changelog_2_4_2_2026_10_18",
-      "label": "[2.4.2] - 2026-10-18",
+      "id": "changelog_2_3_3_2026_10_18",
+      "label": "[2.3.3] - 2026-10-18",
       "_origin": "ast",
       "community": 40,
-      "community_name": "[2.4.2] - 2026-10-18",
+      "community_name": "[2.3.3] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.4.2] - 2026-10-18",
+      "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L142"
+      "source_location": "L178"
     },
     {
-      "id": "changelog_changed_144",
+      "id": "changelog_changed_180",
       "label": "Changed",
       "_origin": "ast",
       "community": 40,
-      "community_name": "[2.4.2] - 2026-10-18",
+      "community_name": "[2.3.3] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L144"
+      "source_location": "L180"
     },
     {
       "id": "changelog_2_5_3_2026_10_19",
@@ -4121,7 +4086,7 @@
       "node_kind": "heading",
       "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L102"
+      "source_location": "L110"
     },
     {
       "id": "changelog_fixed",
@@ -4133,7 +4098,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L104"
+      "source_location": "L112"
     },
     {
       "id": "changelog_2_5_1_2026_10_19",
@@ -4145,10 +4110,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L122"
+      "source_location": "L130"
     },
     {
-      "id": "changelog_changed_124",
+      "id": "changelog_changed_132",
       "label": "Changed",
       "_origin": "ast",
       "community": 42,
@@ -4157,7 +4122,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L124"
+      "source_location": "L132"
     },
     {
       "id": "changelog_2_7_0_2026_10_22",
@@ -4169,10 +4134,10 @@
       "node_kind": "heading",
       "norm_label": "[2.7.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42"
+      "source_location": "L50"
     },
     {
-      "id": "changelog_added_44",
+      "id": "changelog_added_52",
       "label": "Added",
       "_origin": "ast",
       "community": 43,
@@ -4181,7 +4146,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L44"
+      "source_location": "L52"
     },
     {
       "id": "changelog_2_8_1_2026_10_22",
@@ -4193,14 +4158,62 @@
       "node_kind": "heading",
       "norm_label": "[2.8.1] - 2026-10-22",
       "source_file": "CHANGELOG.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "changelog_added_20",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "[2.8.1] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L20"
+    },
+    {
+      "id": "changelog_2_5_0_2026_10_18",
+      "label": "[2.5.0] - 2026-10-18",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "[2.5.0] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.5.0] - 2026-10-18",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L138"
+    },
+    {
+      "id": "changelog_added_140",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "[2.5.0] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L140"
+    },
+    {
+      "id": "changelog_2_8_2_2026_10_22",
+      "label": "[2.8.2] - 2026-10-22",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "[2.8.2] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.8.2] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
       "source_location": "L10"
     },
     {
       "id": "changelog_added",
       "label": "Added",
       "_origin": "ast",
-      "community": 44,
-      "community_name": "[2.8.1] - 2026-10-22",
+      "community": 46,
+      "community_name": "[2.8.2] - 2026-10-22",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
@@ -4625,46 +4638,46 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L275"
+      "source_location": "L283"
     },
     {
-      "id": "changelog_2_3_2_2026_10_18",
-      "label": "[2.3.2] - 2026-10-18",
+      "id": "changelog_2_4_0_2026_10_18",
+      "label": "[2.4.0] - 2026-10-18",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.3.2] - 2026-10-18",
+      "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L181"
+      "source_location": "L169"
     },
     {
-      "id": "changelog_2_3_3_2026_10_18",
-      "label": "[2.3.3] - 2026-10-18",
+      "id": "changelog_2_4_2_2026_10_18",
+      "label": "[2.4.2] - 2026-10-18",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.3.3] - 2026-10-18",
+      "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L170"
+      "source_location": "L150"
     },
     {
-      "id": "changelog_2_5_0_2026_10_18",
-      "label": "[2.5.0] - 2026-10-18",
+      "id": "changelog_2_5_2_2026_10_19",
+      "label": "[2.5.2] - 2026-10-19",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.0] - 2026-10-18",
+      "norm_label": "[2.5.2] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L130"
+      "source_location": "L122"
     },
     {
-      "id": "changelog_added_132",
+      "id": "changelog_added_171",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -4673,10 +4686,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L132"
+      "source_location": "L171"
     },
     {
-      "id": "changelog_added_277",
+      "id": "changelog_added_285",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -4685,10 +4698,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L277"
+      "source_location": "L285"
     },
     {
-      "id": "changelog_changed_172",
+      "id": "changelog_changed_124",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -4697,7 +4710,19 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L172"
+      "source_location": "L124"
+    },
+    {
+      "id": "changelog_changed_152",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L152"
     },
     {
       "id": "changelog_changelog",
@@ -4710,18 +4735,6 @@
       "norm_label": "changelog",
       "source_file": "CHANGELOG.md",
       "source_location": "L1"
-    },
-    {
-      "id": "changelog_fixed_183",
-      "label": "Fixed",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "fixed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L183"
     },
     {
       "id": "tsconfig_node",
@@ -4856,6 +4869,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_appbuttonarrow",
+      "label": "AppButtonArrow.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "appbuttonarrow.vue",
+      "source_file": "src/components/AppButtonArrow.vue",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_herosection",
       "label": "HeroSection.vue",
       "_origin": "ast",
@@ -4952,7 +4976,7 @@
       "file_type": "code",
       "norm_label": "featuredproject",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L177"
+      "source_location": "L183"
     },
     {
       "id": "src_components_projectssection_filteredsecondaryprojects",
@@ -4963,7 +4987,7 @@
       "file_type": "code",
       "norm_label": "filteredsecondaryprojects",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L182"
+      "source_location": "L188"
     },
     {
       "id": "src_components_servicessection",
@@ -6071,7 +6095,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L155",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -6083,7 +6107,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L156",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -6095,7 +6119,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L161",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -6167,7 +6191,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L135",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -6179,7 +6203,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -6191,7 +6215,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -6491,7 +6515,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L155",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -6503,7 +6527,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L156",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -6515,7 +6539,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L157",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -6527,7 +6551,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L158",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -6539,7 +6563,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L159",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -6551,7 +6575,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L160",
+      "source_location": "L165",
       "weight": 1.0
     },
     {
@@ -6563,7 +6587,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L161",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -6827,7 +6851,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L135",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -6839,7 +6863,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L136",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -6851,7 +6875,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -7055,7 +7079,29 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_277",
+      "target": "changelog_added_285",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L285",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_added_267",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_changed_277",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7065,52 +7111,8 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_259",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L259",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_269",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L269",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_244",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L244",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_249",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L249",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_252",
+      "target": "changelog_added_252",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7120,107 +7122,140 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_234",
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_changed_257",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L234",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_fixed_260",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L260",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_1_2026_10_17",
+      "target": "changelog_fixed_242",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
-      "target": "changelog_added_216",
+      "target": "changelog_added_224",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L216",
+      "source_location": "L224",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_204",
+      "target": "changelog_added_212",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L204",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_192",
+      "target": "changelog_fixed_200",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L192",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_183",
+      "target": "changelog_fixed_191",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L183",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_172",
+      "target": "changelog_changed_180",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L172",
+      "source_location": "L180",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_163",
+      "target": "changelog_added_171",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L163",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed_153",
+      "target": "changelog_fixed_161",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L153",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_144",
+      "target": "changelog_changed_152",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L144",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_0_2026_10_18",
-      "target": "changelog_added_132",
+      "target": "changelog_added_140",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_1_2026_10_19",
+      "target": "changelog_changed_132",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7230,7 +7265,7 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_5_1_2026_10_19",
+      "source": "changelog_2_5_2_2026_10_19",
       "target": "changelog_changed_124",
       "relation": "contains",
       "_origin": "ast",
@@ -7241,17 +7276,6 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_5_2_2026_10_19",
-      "target": "changelog_changed_116",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L116",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_5_3_2026_10_19",
       "target": "changelog_fixed",
       "relation": "contains",
@@ -7259,18 +7283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L104",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_5_4_2026_10_19",
-      "target": "changelog_added_91",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L91",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -7281,11 +7294,55 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L97",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_4_2026_10_19",
+      "target": "changelog_added_99",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
+      "target": "changelog_changed_85",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_5_5_2026_10_22",
+      "target": "changelog_added_92",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L92",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_added_69",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
       "target": "changelog_changed_77",
       "relation": "contains",
       "_origin": "ast",
@@ -7296,58 +7353,25 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_added_84",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L84",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_added_61",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L61",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_changed_69",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L69",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_7_0_2026_10_22",
-      "target": "changelog_added_44",
+      "target": "changelog_added_52",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L44",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_added_25",
+      "target": "changelog_added_33",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L25",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -7358,11 +7382,22 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L36",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_1_2026_10_22",
+      "target": "changelog_added_20",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_8_2_2026_10_22",
       "target": "changelog_added",
       "relation": "contains",
       "_origin": "ast",
@@ -7374,7 +7409,7 @@
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_8_1_2026_10_22",
+      "target": "changelog_2_8_2_2026_10_22",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7391,7 +7426,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L102",
+      "source_location": "L110",
       "weight": 1.0
     },
     {
@@ -7402,7 +7437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L114",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -7413,7 +7448,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L122",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -7424,7 +7459,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L130",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -7435,7 +7470,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L142",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -7446,7 +7481,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L151",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -7457,7 +7492,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L161",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -7468,7 +7503,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L170",
+      "source_location": "L178",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_1_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -7479,7 +7525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L181",
+      "source_location": "L189",
       "weight": 1.0
     },
     {
@@ -7490,7 +7536,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L190",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
@@ -7501,7 +7547,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L202",
+      "source_location": "L210",
       "weight": 1.0
     },
     {
@@ -7512,18 +7558,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L214",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_8_0_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L23",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -7534,7 +7569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L232",
+      "source_location": "L240",
       "weight": 1.0
     },
     {
@@ -7545,7 +7580,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L242",
+      "source_location": "L250",
       "weight": 1.0
     },
     {
@@ -7556,7 +7591,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L257",
+      "source_location": "L265",
       "weight": 1.0
     },
     {
@@ -7567,7 +7602,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L275",
+      "source_location": "L283",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_0_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -7578,7 +7624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -7589,7 +7635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L59",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -7600,7 +7646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L75",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -7611,7 +7657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L89",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -7655,7 +7701,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "GEMINI.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -7666,7 +7712,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "GEMINI.md",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -7677,7 +7723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "GEMINI.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -8645,7 +8691,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L165",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -8656,7 +8702,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L177",
+      "source_location": "L183",
       "weight": 1.0
     },
     {
@@ -8667,7 +8713,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L182",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -10581,7 +10627,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L139",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -10592,7 +10638,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L141",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -10603,7 +10649,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L146",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -10614,7 +10660,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L151",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -10625,7 +10671,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L158",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -10636,7 +10682,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L165",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -10647,7 +10693,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L175",
+      "source_location": "L188",
       "weight": 1.0
     },
     {
@@ -11378,5 +11424,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "325c534168caa7d4bc0c2e2c145cf6ea988fa497"
+  "built_at_commit": "c829e8ec27470623248d569309c2e19a4a91ea28"
 }

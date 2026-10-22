@@ -40,6 +40,7 @@ In adherence to `/hallmark`, `/high-end-visual-design`, and repository rules:
 * ❌ **No Fake UI Chrome:** No decorative faux-browser bars, fake traffic-light window dots, or synthetic code windows.
 * ❌ **No Fabricated Metrics or Testimonials:** Zero synthetic conversion stats ("500k+ users", "99.9% happiness") or invented client logos.
 * ❌ **No Emojis as UI Icons:** Use purposeful, monochrome SVG glyphs (Phosphor or Tabler icons) sized consistently.
+* ❌ **No Non-WebP Raster Images:** All images across UI code, cards, showcases, headers, and backgrounds MUST use `.webp` exclusively. Banned: PNG, JPEG, JPG, GIF (sole exceptions: SVGs in `pic/svg/` for icons and `/favicon.png` for tab favicon). All new images must be converted to WebP before code integration.
 * ❌ **No Horizontal Scroll Bugs:** Root elements must have `overflow-x: clip`. Responsive behavior must be verified down to $320\text{px}$ viewport width.
 * ❌ **No Faux-Bolding:** Display faces like Lalezar must never be synthetically bolded (`font-synthesis: none;`).
 
