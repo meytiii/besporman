@@ -18,11 +18,10 @@
             />
           </div>
           <h2 id="services-title" class="section-title">
-            <TextReveal
-              as="span"
+            <TypingEffect
               text="خدمات تخصصی و زمینه کاری ما"
-              preset="fade-in-blur"
-              :speed-reveal="1.2"
+              :rotation-interval="3000"
+              :typing-speed="65"
             />
           </h2>
         </div>
@@ -148,6 +147,7 @@
 
 <script setup lang="ts">
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 import specialtiesImg from '../../pic/webp/specialties.webp'
 

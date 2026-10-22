@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.7.0] - 2026-10-22
+
+### Added
+- **Typing Effect with Sand Dissolution Particle Physics (`TypingEffect.vue`):** Implemented an animated Persian-first typing component in `src/components/ui/TypingEffect.vue`. Features character-by-character cadence, a pulsing accent-red comic ink cursor, a 3-second hold period (`rotationInterval = 3000ms`), and a custom HTML5 canvas sand grain dissolution simulation where the text breaks apart into warm amber, tan, and ink particles floating upward and drifting away into the air.
+- **Zero-CLS Ghost Layout Preservation:** Employs an invisible ghost text layer that locks the exact line wrap, width, and height of the full title, preventing any layout shifts (Cumulative Layout Shift = 0.00) during typing or dissolution.
+- **Full Title Integration Across All 6 Sections:** Replaced static reveal headings with `TypingEffect` across:
+  1. Hero: «خیالت از توسعه نرم‌افزار راحت؛ کار رو بسپر من!» (with «بسپر من!» highlighted in comic accent red).
+  2. Reviews: «نظرات مشتریای عزیزمون».
+  3. Services: «خدمات تخصصی و زمینه کاری ما».
+  4. Process: «چگونه کارها را به ما می‌سپارید؟».
+  5. Projects: «نمونه‌کارها و پروژه‌های واقعی».
+  6. Contact: «ثبت سفارش و آغاز گفتگو».
+- **Accessibility & Motion Floors:** Added `.sr-only` screen-reader titles for SEO and WCAG AA compliance, and `prefers-reduced-motion` detection that provides static rendering without infinite loops or particle animations.
+- **Reference UI Component:** Added `src/components/ui/typing-effect.tsx` as reference matching the project UI component structure.
+
+---
+
 ## [2.6.0] - 2026-10-22
 
 ### Added

@@ -68,24 +68,14 @@
 
       <!-- Foreground Stage Content: Title, Mascot, and Neon Sign -->
       <div class="container hero-stage-container">
-        <!-- Creative Persian Headline Above Mascot with Fade-in-Blur Reveal -->
+        <!-- Creative Persian Headline Above Mascot with Typing Effect & Sand Dissolution -->
         <h1 id="hero-title" class="hero-title">
-          <TextReveal
-            as="span"
-            text="خیالت از توسعه نرم‌افزار راحت؛"
-            preset="fade-in-blur"
-            :delay="0.1"
-            :speed-reveal="1.2"
-          />
-          <br />
-          <TextReveal
-            as="span"
-            text="کار رو بسپر من!"
-            preset="fade-in-blur"
-            :delay="0.32"
-            :speed-reveal="1.2"
+          <TypingEffect
+            :text="'خیالت از توسعه نرم‌افزار راحت؛\nکار رو بسپر من!'"
             highlight="بسپر من!"
             highlight-class="title-highlight"
+            :rotation-interval="3000"
+            :typing-speed="65"
           />
         </h1>
 
@@ -182,6 +172,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 

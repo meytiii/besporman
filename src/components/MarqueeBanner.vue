@@ -14,11 +14,10 @@
           />
         </div>
         <h2 id="marquee-heading" class="marquee-section-title">
-          <TextReveal
-            as="span"
+          <TypingEffect
             text="نظرات مشتریای عزیزمون"
-            preset="fade-in-blur"
-            :speed-reveal="1.2"
+            :rotation-interval="3000"
+            :typing-speed="65"
           />
         </h2>
       </div>
@@ -109,6 +108,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import StarRating from './StarRating.vue'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 import mascotLikeImg from '../../pic/webp/besporman_like.webp'
 

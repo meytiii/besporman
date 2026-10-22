@@ -6,11 +6,10 @@
       <div class="section-header">
         <span class="section-badge reveal-badge comic-pop">پورتفولیو و نتایج</span>
         <h2 id="projects-title" class="section-title">
-          <TextReveal
-            as="span"
+          <TypingEffect
             text="نمونه‌کارها و پروژه‌های واقعی"
-            preset="fade-in-blur"
-            :speed-reveal="1.2"
+            :rotation-interval="3000"
+            :typing-speed="65"
           />
         </h2>
         <p class="section-subtitle">
@@ -143,6 +142,7 @@ import { computed } from 'vue'
 import { projectsData } from '@/data/projects'
 import type { ProjectCategory } from '@/types/project'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 

@@ -6,11 +6,10 @@
       <div class="section-header">
         <span class="section-badge reveal-badge comic-pop">ارتباط با استودیو</span>
         <h2 id="contact-title" class="section-title">
-          <TextReveal
-            as="span"
+          <TypingEffect
             text="ثبت سفارش و آغاز گفتگو"
-            preset="fade-in-blur"
-            :speed-reveal="1.2"
+            :rotation-interval="3000"
+            :typing-speed="65"
           />
         </h2>
         <p class="section-subtitle">
@@ -236,6 +235,7 @@
 import { reactive, ref } from 'vue'
 import { defaultContactAdapter, type ContactMessagePayload } from '@/services/contactAdapter'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 

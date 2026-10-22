@@ -6,11 +6,10 @@
       <div class="section-header">
         <span class="section-badge reveal-badge comic-pop">مراحل کار</span>
         <h2 id="process-title" class="section-title">
-          <TextReveal
-            as="span"
+          <TypingEffect
             text="چگونه کارها را به ما می‌سپارید؟"
-            preset="fade-in-blur"
-            :speed-reveal="1.2"
+            :rotation-interval="3000"
+            :typing-speed="65"
           />
         </h2>
         <p class="section-subtitle">
@@ -67,6 +66,7 @@
 
 <script setup lang="ts">
 import TextReveal from '@/components/ui/TextReveal.vue'
+import TypingEffect from '@/components/ui/TypingEffect.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
