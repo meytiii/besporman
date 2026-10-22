@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792661052.133638,
-    "seen": 1792661098.3743324,
-    "ast_hash": "c93805b0180099e401cada6afda297d5",
+    "mtime": 1792663879.4740138,
+    "seen": 1792663912.8874984,
+    "ast_hash": "6e60c1a5bdd4b4bab71e7b6e552e802f",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -18,15 +18,15 @@
     "semantic_hash": ""
   },
   "src/components/ContactSection.vue": {
-    "mtime": 1792428102.4154732,
-    "seen": 1792661098.3743436,
-    "ast_hash": "d4c0607cfe853498860187d17e4f8c4e",
+    "mtime": 1792663650.2967074,
+    "seen": 1792663912.8875103,
+    "ast_hash": "209f7e21291de2c6bdffdab24f7cc16f",
     "semantic_hash": ""
   },
   "src/components/HeroSection.vue": {
-    "mtime": 1792270707.380866,
-    "seen": 1792271549.8196342,
-    "ast_hash": "638183bcc6b46a729c47f9583ecd684b",
+    "mtime": 1792663736.513247,
+    "seen": 1792663912.8875122,
+    "ast_hash": "7e64bfedf50f8249cac291c20161d903",
     "semantic_hash": ""
   },
   "src/components/MarqueeBanner.vue": {
@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/components/ProjectsSection.vue": {
-    "mtime": 1792428102.4324944,
-    "seen": 1792661098.3743513,
-    "ast_hash": "b62d4d50f30f5394af2772596d33cf27",
+    "mtime": 1792663621.2022016,
+    "seen": 1792663912.8875175,
+    "ast_hash": "a3ab250956be7509114bee3c3eb580cf",
     "semantic_hash": ""
   },
   "src/components/ServicesSection.vue": {
@@ -60,15 +60,15 @@
     "semantic_hash": ""
   },
   "src/components/TheFooter.vue": {
-    "mtime": 1792662319.744439,
-    "seen": 1792662454.454431,
-    "ast_hash": "26bbbca44798982be85a54e82e998a8a",
+    "mtime": 1792663666.9641926,
+    "seen": 1792663912.8875213,
+    "ast_hash": "cd4ee35b4b0ce947475a8eacc0cdeaa4",
     "semantic_hash": ""
   },
   "src/components/TheHeader.vue": {
-    "mtime": 1792662304.415023,
-    "seen": 1792662454.4544325,
-    "ast_hash": "189a4e6e5747f8869efe11d0eb9f14d7",
+    "mtime": 1792663525.5760255,
+    "seen": 1792663912.8875222,
+    "ast_hash": "7585e6c4c9c32b541bcb6056c55adc17",
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "src/views/NotFoundView.vue": {
-    "mtime": 1792265456.022679,
-    "seen": 1792265644.3007872,
-    "ast_hash": "5dc2158422b856ce0678a9335a8691e1",
+    "mtime": 1792663717.5521612,
+    "seen": 1792663912.8875375,
+    "ast_hash": "9da600c184c2ad1d243432f4b08b64c8",
     "semantic_hash": ""
   },
   "src/views/ProjectDetailView.vue": {
-    "mtime": 1792265456.023678,
-    "seen": 1792265644.300788,
-    "ast_hash": "55bcca8afce2d651df04c8cb07edba7f",
+    "mtime": 1792663701.9168303,
+    "seen": 1792663912.8875382,
+    "ast_hash": "6d6daa31e662e1a3b4849fdb134fad94",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792662442.465503,
-    "seen": 1792662454.4544723,
-    "ast_hash": "7dfc8792c1b807ac903e6864e58a94b5",
+    "mtime": 1792663889.172405,
+    "seen": 1792663912.8875551,
+    "ast_hash": "94f8efd3a6f0469bcf9f753b4adbba50",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -552,51 +552,57 @@
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-down-square-2-svgrepo-com.svg": {
-    "mtime": 1792661488.7772188,
-    "seen": 1792661845.4464343,
-    "ast_hash": "c49e596e3992a8b727db89fe0c8f8b6a",
+    "mtime": 1792662972.8951633,
+    "seen": 1792663912.8875775,
+    "ast_hash": "2bbcc09e28c5a49805d4041f0022416b",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-down-square-svgrepo-com.svg": {
-    "mtime": 1792661488.8567657,
-    "seen": 1792661845.4464364,
-    "ast_hash": "d5c25fbd1eb9be95adeec82d12e2c5ab",
+    "mtime": 1792662972.897731,
+    "seen": 1792663912.8875787,
+    "ast_hash": "b37fb4bfc6d99fd755333e8e703f730a",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-left-sqaure-2-svgrepo-com.svg": {
-    "mtime": 1792661487.8546972,
-    "seen": 1792661845.4464376,
-    "ast_hash": "327d722494e90c799ad2da47e1154398",
+    "mtime": 1792662972.8982334,
+    "seen": 1792663912.8875794,
+    "ast_hash": "e7810d15f33636b4d565adbf69c38268",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-left-sqaure-svgrepo-com.svg": {
-    "mtime": 1792661486.7198164,
-    "seen": 1792661845.446439,
-    "ast_hash": "55da2876bf3cb0950614a446f0d7b6cd",
+    "mtime": 1792662972.8987515,
+    "seen": 1792663912.8875806,
+    "ast_hash": "e4ca698ae754cc860a665b83316799ad",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-right-square-2-svgrepo-com.svg": {
-    "mtime": 1792661484.1447093,
-    "seen": 1792661845.4464402,
-    "ast_hash": "989ff31e97f9404a535b32939a90c22b",
+    "mtime": 1792662972.899273,
+    "seen": 1792663912.8875816,
+    "ast_hash": "c101f4329566a933407fcd8c41255df4",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-right-square-svgrepo-com.svg": {
-    "mtime": 1792661485.4769778,
-    "seen": 1792661845.4464412,
-    "ast_hash": "c5c0769196cc22765de09e129279cfcc",
+    "mtime": 1792662972.899273,
+    "seen": 1792663912.8875825,
+    "ast_hash": "814bd6e41bd297b676459e36bb6e4c90",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-up-square-2-svgrepo-com.svg": {
-    "mtime": 1792661482.1407127,
-    "seen": 1792661845.4464421,
-    "ast_hash": "b882dc963352185f1d85f0b075b3cc82",
+    "mtime": 1792662972.8997898,
+    "seen": 1792663912.8875835,
+    "ast_hash": "2fb958aa5b5066bcf13192acf6b3a37b",
     "semantic_hash": ""
   },
   "pic/svg/curve-arrow-up-square-svgrepo-com.svg": {
-    "mtime": 1792661481.8779023,
-    "seen": 1792661845.4464436,
-    "ast_hash": "8a925c011db07fcb6308911559520a82",
+    "mtime": 1792662972.9003074,
+    "seen": 1792663912.8875844,
+    "ast_hash": "9440322870c42ab47d80a433de0e4f7a",
+    "semantic_hash": ""
+  },
+  "src/components/AppButtonArrow.vue": {
+    "mtime": 1792663424.5054824,
+    "seen": 1792663912.887507,
+    "ast_hash": "455f52405cb99cb134fb8c4c60b17552",
     "semantic_hash": ""
   }
 }

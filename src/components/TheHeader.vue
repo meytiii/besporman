@@ -73,7 +73,7 @@
           @click="handleNavClick('contact', $event)"
         >
           <span class="btn-text">سفارش پروژه</span>
-          <span class="btn-arrow" aria-hidden="true">←</span>
+          <AppButtonArrow direction="left" />
         </a>
 
         <!-- Mobile Liquid Morph Floating Navigation Menu (Single Button -> Morphing Dropdown) -->
@@ -196,6 +196,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, nextTick, watch } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
+import AppButtonArrow from './AppButtonArrow.vue'
 
 interface NavItem {
   id: string
@@ -949,35 +950,6 @@ onUnmounted(() => {
   position: relative;
   z-index: 2;
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-cta .btn-arrow {
-  position: absolute;
-  inset-inline-end: 8px;
-  top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  width: 24px;
-  height: 24px;
-  border-radius: var(--border-radius-full);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: var(--primitive-white);
-  font-size: 14px;
-  line-height: 1;
-  z-index: 3;
-  margin: 0;
-  transition:
-    inset-inline-end 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.2s ease;
-}
-
-.header-cta:hover .btn-arrow {
-  inset-inline-end: calc(100% - 32px);
-  transform: translateY(-50%) rotate(-45deg);
-  background-color: rgba(255, 255, 255, 0.38);
 }
 
 @media (max-width: 480px) {

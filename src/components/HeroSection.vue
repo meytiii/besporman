@@ -153,11 +153,11 @@
       <div class="hero-actions comic-pop delay-1">
         <a href="#contact" class="btn btn-primary hero-btn-primary">
           <span class="btn-text">شروع پروژه و ثبت سفارش</span>
-          <span class="btn-arrow" aria-hidden="true">←</span>
+          <AppButtonArrow direction="left" />
         </a>
         <a href="#projects" class="btn btn-secondary hero-btn-secondary">
           <span class="btn-text">بررسی نمونه‌کارها</span>
-          <span class="btn-arrow" aria-hidden="true">←</span>
+          <AppButtonArrow direction="left" />
         </a>
       </div>
 
@@ -182,6 +182,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
@@ -476,50 +477,6 @@ onUnmounted(() => {
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-arrow {
-  position: absolute;
-  inset-inline-end: 10px;
-  top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  width: 30px;
-  height: 30px;
-  border-radius: var(--border-radius-full);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 1;
-  z-index: 3;
-  margin: 0;
-  transition:
-    inset-inline-end 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.2s ease;
-}
-
-.hero-btn-primary .btn-arrow {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: var(--primitive-white);
-}
-
-.hero-btn-primary:hover .btn-arrow {
-  background-color: rgba(255, 255, 255, 0.38);
-}
-
-.hero-btn-secondary .btn-arrow {
-  background-color: rgba(14, 15, 18, 0.08);
-  color: var(--color-ink-primary);
-}
-
-.hero-btn-secondary:hover .btn-arrow {
-  background-color: rgba(14, 15, 18, 0.16);
-}
-
-.hero-actions .btn:hover .btn-arrow {
-  inset-inline-end: calc(100% - 40px);
-  transform: translateY(-50%) rotate(-45deg);
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hero-actions .btn,
   .btn-text,
@@ -532,7 +489,7 @@ onUnmounted(() => {
   }
   .hero-actions .btn:hover .btn-arrow {
     inset-inline-end: 10px !important;
-    transform: translateY(-50%) rotate(0deg) !important;
+    transform: translateY(-50%) !important;
   }
 }
 

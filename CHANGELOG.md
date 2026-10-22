@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.6.0] - 2026-10-22
+
+### Added
+- **Curved SVG Arrow Badge & Morphing Animation Component (`AppButtonArrow.vue`):** Replaced legacy unicode text glyph arrows across all buttons with tactile curved SVG square badges. Implemented hardware-accelerated dual-vector crossfade morphing (`.arrow-idle` / `.arrow-hover`) where the curved arrow glides across the button to the opposite edge and smoothly morphs into its paired curve direction on hover.
+- **Directional Curve Pairings:** Calibrated exact SVG pairings across all 4 interaction dimensions:
+  - `left` (forward action in Persian RTL): Idle curves down-left (`curve-arrow-left-sqaure`) → Hover curves up-left (`curve-arrow-left-sqaure-2`).
+  - `external` / `right` (outbound/external actions): Idle curves up-right (`curve-arrow-right-square`) → Hover curves down-right (`curve-arrow-right-square-2`).
+  - `up` (back to top action): Idle curves up-left (`curve-arrow-up-square`) → Hover curves up-right (`curve-arrow-up-square-2`).
+  - `down`: Idle curves down-right (`curve-arrow-down-square`) → Hover curves down-left (`curve-arrow-down-square-2`).
+
+### Changed
+- **Design System Color Alignment on Button Badges:** Matched all 8 curved SVG icons in `pic/svg/` and `AppButtonArrow.vue` to the design system palette (`#FEF3C7` Warm Amber for background chips, `#0E0F12` Iron Charcoal for ink strokes and borders).
+- **Button Badge Architecture & CSS Modernization:** Replaced obsolete circular background styles and text-glyph `rotate(-45deg)` declarations in `base.css`, `TheHeader.vue`, `HeroSection.vue`, and `NotFoundView.vue` with centralized `.btn-arrow` morphing and gliding trajectory rules.
+
+---
+
 ## [2.5.5] - 2026-10-22
 
 ### Changed

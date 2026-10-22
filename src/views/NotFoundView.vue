@@ -9,12 +9,16 @@
         </p>
         <router-link to="/" class="btn btn-primary">
           <span class="btn-text">بازگشت به صفحه اصلی</span>
-          <span class="btn-arrow" aria-hidden="true">←</span>
+          <AppButtonArrow direction="left" />
         </router-link>
       </div>
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+import AppButtonArrow from '@/components/AppButtonArrow.vue'
+</script>
 
 <style scoped>
 .not-found-view {
@@ -59,16 +63,5 @@
   color: var(--color-ink-muted);
   line-height: var(--leading-normal);
   margin-bottom: var(--space-8);
-}
-
-.btn-arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: var(--border-radius-full);
-  background-color: rgba(255, 255, 255, 0.25);
-  margin-inline-start: var(--space-1);
 }
 </style>

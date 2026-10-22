@@ -45,7 +45,7 @@
               aria-label="گفتگو در تلگرام (باز شدن در تب جدید)"
             >
               <span class="btn-text">پیام در تلگرام</span>
-              <span class="btn-arrow" aria-hidden="true">↗</span>
+              <AppButtonArrow direction="external" />
             </a>
           </div>
 
@@ -216,7 +216,7 @@
             >
               <template v-if="!isLoading">
                 <span class="btn-text">ارسال درخواست برای بررسی</span>
-                <span class="btn-arrow" aria-hidden="true">←</span>
+                <AppButtonArrow direction="left" />
               </template>
               <span v-else class="loading-state">
                 <span class="loading-spinner" aria-hidden="true"></span>
@@ -236,6 +236,7 @@
 import { reactive, ref } from 'vue'
 import { defaultContactAdapter, type ContactMessagePayload } from '@/services/contactAdapter'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()

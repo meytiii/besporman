@@ -218,40 +218,71 @@ section[id],
   position: absolute;
   inset-inline-end: 10px;
   top: 50%;
-  transform: translateY(-50%) rotate(0deg);
-  width: 30px;
-  height: 30px;
-  border-radius: var(--border-radius-full);
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 1;
   z-index: 3;
   margin: 0;
+  pointer-events: none;
   transition:
     inset-inline-end 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.2s ease,
-    color 0.2s ease;
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-arrow .arrow-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-arrow .arrow-idle {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.btn-arrow .arrow-hover {
+  opacity: 0;
+  transform: scale(0.75) rotate(-15deg);
+}
+
+.btn-arrow .arrow-bg {
+  transition: fill 0.25s ease;
 }
 
 .btn-sm .btn-arrow {
   inset-inline-end: 8px;
   width: 24px;
   height: 24px;
-  font-size: 14px;
 }
 
-/* Hover Gliding Trajectory & Dynamic 45-degree Rotational Tilt */
+/* Hover Gliding Trajectory & Dynamic Direction Morphing */
 .btn:hover .btn-arrow {
-  inset-inline-end: calc(100% - 40px);
-  transform: translateY(-50%) rotate(-45deg);
+  inset-inline-end: calc(100% - 38px);
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-arrow .arrow-idle {
+  opacity: 0;
+  transform: scale(0.75) rotate(15deg);
+}
+
+.btn:hover .btn-arrow .arrow-hover {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
 }
 
 .btn-sm:hover .btn-arrow {
   inset-inline-end: calc(100% - 32px);
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%);
 }
 
 /* Primary Button (Vibrant Comic Red with White Text) */
@@ -261,19 +292,14 @@ section[id],
   box-shadow: var(--shadow-md);
 }
 
-.btn-primary .btn-arrow {
-  background-color: rgba(255, 255, 255, 0.25);
-  color: var(--primitive-white);
-}
-
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
   transform: translate(-1px, -1px);
   box-shadow: var(--shadow-hover);
 }
 
-.btn-primary:hover .btn-arrow {
-  background-color: rgba(255, 255, 255, 0.38);
+.btn-primary:hover .btn-arrow .arrow-bg {
+  fill: #FFFBEB;
 }
 
 .btn-primary:active {
@@ -289,19 +315,14 @@ section[id],
   box-shadow: var(--shadow-md);
 }
 
-.btn-secondary .btn-arrow {
-  background-color: rgba(14, 15, 18, 0.08);
-  color: var(--color-ink-primary);
-}
-
 .btn-secondary:hover {
   background-color: var(--primitive-cream-200);
   transform: translate(-1px, -1px);
   box-shadow: var(--shadow-hover);
 }
 
-.btn-secondary:hover .btn-arrow {
-  background-color: rgba(14, 15, 18, 0.16);
+.btn-secondary:hover .btn-arrow .arrow-bg {
+  fill: #FAF7F0;
 }
 
 .btn-secondary:active {

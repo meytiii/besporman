@@ -53,7 +53,7 @@
               class="btn btn-primary"
             >
               <span class="btn-text">مشاهده سورس‌کد / ریپازیتوری</span>
-              <span class="btn-arrow" aria-hidden="true">↗</span>
+              <AppButtonArrow direction="external" />
             </a>
 
             <a
@@ -64,7 +64,7 @@
               class="btn btn-secondary"
             >
               <span class="btn-text">مشاهده در تلگرام</span>
-              <span class="btn-arrow" aria-hidden="true">↗</span>
+              <AppButtonArrow direction="external" />
             </a>
           </div>
         </header>
@@ -121,7 +121,7 @@
         </p>
         <router-link to="/#projects" class="btn btn-primary">
           <span class="btn-text">بازگشت به فهرست پروژه‌ها</span>
-          <span class="btn-arrow" aria-hidden="true">←</span>
+          <AppButtonArrow direction="left" />
         </router-link>
       </div>
 
@@ -133,6 +133,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { projectsData } from '@/data/projects'
+import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import type { ProjectItem, ProjectCategory } from '@/types/project'
 
 const route = useRoute()

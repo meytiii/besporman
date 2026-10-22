@@ -61,7 +61,7 @@
                 class="btn btn-primary btn-sm"
               >
                 <span class="btn-text">مشاهده بررسی تخصصی پروژه</span>
-                <span class="btn-arrow" aria-hidden="true">←</span>
+                <AppButtonArrow direction="left" />
               </router-link>
 
               <a
@@ -73,7 +73,7 @@
                 aria-label="مشاهده سورس‌کد در گیت‌هاب (باز شدن در تب جدید)"
               >
                 <span class="btn-text">سورس‌کد پروژه</span>
-                <span class="btn-arrow" aria-hidden="true">↗</span>
+                <AppButtonArrow direction="external" />
               </a>
             </div>
           </div>
@@ -127,7 +127,7 @@
               class="btn btn-primary btn-sm"
             >
               <span class="btn-text">مشاهده بررسی تخصصی پروژه</span>
-              <span class="btn-arrow" aria-hidden="true">←</span>
+              <AppButtonArrow direction="left" />
             </router-link>
           </div>
         </article>
@@ -143,6 +143,7 @@ import { computed } from 'vue'
 import { projectsData } from '@/data/projects'
 import type { ProjectCategory } from '@/types/project'
 import TextReveal from '@/components/ui/TextReveal.vue'
+import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
