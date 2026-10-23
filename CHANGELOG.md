@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.1] - 2026-10-23
+
+### Changed
+- **Official Telegram Brand Icon Integration (`ContactSection.vue`):**
+  - Replaced the generic paper airplane line/polygon SVG with the authentic Telegram brand icon (official blue circular badge with brutalist border and signature white cutout airplane in direct contact card, and official Telegram logo in the contact method switcher).
+- **Simplified Telegram Contact Placeholder (`ContactSection.vue`):**
+  - Updated placeholder for Telegram input to strictly display `مثال: @telegram`, removing redundant `یا شماره همراه` text.
+  - Refined validation message to `لطفاً آیدی تلگرام خود را وارد کنید (مثال: @telegram).` with updated test assertion in `tests/contact.spec.ts`.
+
+---
+
 ## [2.9.0] - 2026-10-23
 
 ### Added

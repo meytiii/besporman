@@ -30,9 +30,10 @@
         <!-- Left Column: Direct Telegram & Guidelines -->
         <div class="contact-info-card comic-pop delay-1">
           <div class="direct-telegram-box">
-            <svg class="telegram-icon" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            <!-- Authentic Telegram Brand Logo SVG -->
+            <svg class="telegram-icon" width="42" height="42" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="11" fill="#24A1DE" stroke="var(--color-ink-primary, #0E0F12)" stroke-width="1.8"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.926z" fill="#FAF7F0"/>
             </svg>
             <h3 class="telegram-title">گفتگوی مستقیم و سریع در تلگرام</h3>
             <p class="telegram-desc">
@@ -210,9 +211,8 @@
                     :class="{ 'is-active': form.contactMethod === 'telegram' }"
                     @click="form.contactMethod = 'telegram'"
                   >
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="22" y1="2" x2="11" y2="13"></line>
-                      <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.926z"/>
                     </svg>
                     <span>تلگرام</span>
                   </button>
@@ -239,7 +239,7 @@
                   v-model="form.contactInfo"
                   class="form-input"
                   :class="{ 'is-invalid': errors.contactInfo }"
-                  :placeholder="form.contactMethod === 'telegram' ? 'مثال: @telegram_id یا شماره همراه' : 'مثال: 09123456789'"
+                  :placeholder="form.contactMethod === 'telegram' ? 'مثال: @telegram' : 'مثال: 09123456789'"
                   :aria-invalid="Boolean(errors.contactInfo)"
                   :aria-describedby="errors.contactInfo ? 'contact-error' : undefined"
                   dir="ltr"
@@ -494,7 +494,7 @@ const validateForm = (): boolean => {
 
   if (!form.contactInfo.trim() || form.contactInfo.trim().length < 4) {
     errors.contactInfo = form.contactMethod === 'telegram'
-      ? 'لطفاً آیدی تلگرام یا شماره در دسترس خود را وارد کنید.'
+      ? 'لطفاً آیدی تلگرام خود را وارد کنید (مثال: @telegram).'
       : 'لطفاً شماره تماس معتبر خود را وارد کنید.'
     isValid = false
   }

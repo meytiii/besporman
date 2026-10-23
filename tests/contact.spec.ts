@@ -12,7 +12,7 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
 
     // Should show validation errors
     expect(wrapper.text()).toContain('لطفاً نام خود را به صورت معتبر وارد کنید')
-    expect(wrapper.text()).toContain('لطفاً آیدی تلگرام یا شماره در دسترس خود را وارد کنید')
+    expect(wrapper.text()).toContain('لطفاً آیدی تلگرام خود را وارد کنید')
     expect(wrapper.text()).toContain('لطفاً شرح ایده را با حداقل ۳۰ کاراکتر تکمیل کنید')
   })
 
