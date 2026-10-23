@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.8.5] - 2026-10-23
+
+### Fixed
+- **Loading Screen Image Asset Readiness Barrier (`AppLoadingScreen.vue`):**
+  - Resolved issue where loading screen dismissed before critical visual assets and header were loaded.
+  - Implemented explicit preloading and GPU bitmap decoding (`img.decode()`) for all critical assets (`header_1.webp`, `header_2.webp`, `header_3.webp`, `besporman1.webp`, `besporman2.webp`, `neon_sign_off.webp`, `neon_sign_on.webp`, `favicon.png`, `cursor.png`).
+  - Added full document image verification (`waitForDomImages`) and window `load` event listener to ensure that the loading curtain never lifts while assets are still pending.
+  - Added above-the-fold `<link rel="preload">` resource hints in `index.html` for instant parallel browser fetching.
+- **Removed Raw Formatting Asterisks from Project Showcase (`ProjectDetailView.vue`, `projects.ts`):**
+  - Removed raw markdown `**` formatting asterisks from `caseStudyMarkdownFa` in `src/data/projects.ts`.
+  - Upgraded case study parsing in `src/views/ProjectDetailView.vue` to strip all markdown asterisks and properly render subheadings (`<h3>`) and clean paragraphs (`<p>`).
+  - Added unit test assertion in `tests/project-detail.spec.ts` guaranteeing no formatting asterisks appear in case study output.
+
+---
+
 ## [2.8.4] - 2026-10-22
 
 ### Changed

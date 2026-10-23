@@ -96,9 +96,14 @@
         <section class="case-study-section">
           <h2 class="section-subheading">بررسی تخصصی و معماری پیاده‌سازی</h2>
           <div class="case-study-body">
-            <p v-for="(paragraph, pIdx) in formattedParagraphs" :key="pIdx">
-              {{ paragraph }}
-            </p>
+            <template v-for="(block, bIdx) in formattedBlocks" :key="bIdx">
+              <h3 v-if="block.isHeading" class="case-study-subheading">
+                {{ block.text }}
+              </h3>
+              <p v-else class="case-study-paragraph">
+                {{ block.text }}
+              </p>
+            </template>
           </div>
         </section>
 
@@ -185,15 +190,36 @@ const categoryLabel = computed(() => {
   return catMap[project.value.category]
 })
 
-const formattedParagraphs = computed(() => {
+interface ContentBlock {
+  isHeading: boolean
+  text: string
+}
+
+const formattedBlocks = computed<ContentBlock[]>(() => {
   if (!project.value?.caseStudyMarkdownFa) {
-    return [project.value?.summaryFa || '']
+    return [{ isHeading: false, text: project.value?.summaryFa || '' }]
   }
   return project.value.caseStudyMarkdownFa
     .split('\n')
     .map((line) => line.trim())
     .filter((line) => line.length > 0)
-    .map((line) => line.replace(/^#+\s*/, ''))
+    .map((line) => {
+      const isHeading = line.startsWith('#')
+      // Strip markdown header hashes and strip any formatting asterisks
+      const cleaned = line
+        .replace(/^#+\s*/, '')
+        .replace(/\*\*/g, '')
+        .replace(/\*/g, '')
+        .trim()
+      return {
+        isHeading,
+        text: cleaned,
+      }
+    })
+})
+
+const formattedParagraphs = computed(() => {
+  return formattedBlocks.value.map((b) => b.text)
 })
 </script>
 
@@ -410,6 +436,14 @@ const formattedParagraphs = computed(() => {
   color: var(--color-ink-muted);
   line-height: var(--leading-loose);
   margin-bottom: var(--space-4);
+}
+
+.case-study-subheading {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-ink-primary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-2);
 }
 
 /* Detail Navigation Footer */

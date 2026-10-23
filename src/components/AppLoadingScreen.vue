@@ -77,36 +77,99 @@ if (!isFontReady.value && typeof window !== 'undefined') {
   ensureFontsLoaded()
 }
 
-const MINIMUM_DISPLAY_TIME_MS = 2000 // 2 seconds minimum display rule
-const MAX_FALLBACK_TIMEOUT_MS = 6000 // Safety fallback in case slow network blocks an image
+const CRITICAL_IMAGE_URLS = [
+  '/pic/webp/header_1.webp',
+  '/pic/webp/header_2.webp',
+  '/pic/webp/header_3.webp',
+  '/pic/webp/besporman1.webp',
+  '/pic/webp/besporman2.webp',
+  '/pic/webp/neon_sign_off.webp',
+  '/pic/webp/neon_sign_on.webp',
+  '/favicon.png',
+  '/pic/cursor.png',
+]
 
-// Helper to verify that an image is fully decoded and ready
-const isImageLoaded = (img: HTMLImageElement): boolean => {
-  return img.complete && img.naturalHeight > 0
+const preloadImage = (src: string): Promise<void> => {
+  return new Promise((resolve) => {
+    if (typeof window === 'undefined') return resolve()
+    const img = new Image()
+    img.src = src
+    if (img.complete && img.naturalHeight > 0) {
+      if ('decode' in img) {
+        return img.decode().then(resolve).catch(resolve)
+      }
+      return resolve()
+    }
+    img.onload = () => {
+      if ('decode' in img) {
+        img.decode().then(resolve).catch(resolve)
+      } else {
+        resolve()
+      }
+    }
+    img.onerror = () => resolve() // Don't block page if a secondary asset is missing
+  })
 }
 
-// Check top elements (navbar, header marquee, mascot, hero images)
-const areTopElementsLoaded = (): boolean => {
-  if (typeof document === 'undefined') return true
+const preloadAllCriticalImages = (): Promise<void> => {
+  if (typeof window === 'undefined') return Promise.resolve()
+  return Promise.allSettled(CRITICAL_IMAGE_URLS.map(preloadImage)).then(() => {})
+}
 
-  // 1. Header / Navbar DOM existence
-  const header = document.querySelector('.site-header') || document.querySelector('#navbar')
-  if (!header) return false
+// Wait for all currently mounted DOM <img> elements to be complete and decoded
+const waitForDomImages = async (): Promise<void> => {
+  if (typeof document === 'undefined') return
 
-  // 2. Mascot & Header Images check
-  const topImages = Array.from(
-    document.querySelectorAll<HTMLImageElement>(
-      '.site-header img, .hero-section img, .mascot-stage img, .comic-sign-plate img'
-    )
-  )
+  const checkDomImages = (): Promise<void> => {
+    const images = Array.from(document.querySelectorAll<HTMLImageElement>('img'))
+    const pending = images.filter((img) => !img.complete || img.naturalHeight === 0)
+    if (pending.length === 0) return Promise.resolve()
 
-  if (topImages.length > 0) {
-    const allImagesLoaded = topImages.every(isImageLoaded)
-    if (!allImagesLoaded) return false
+    return Promise.allSettled(
+      pending.map((img) => {
+        return new Promise<void>((resolve) => {
+          if (img.complete && img.naturalHeight > 0) {
+            if ('decode' in img) {
+              return img.decode().then(resolve).catch(resolve)
+            }
+            return resolve()
+          }
+          img.addEventListener(
+            'load',
+            () => {
+              if ('decode' in img) {
+                img.decode().then(resolve).catch(resolve)
+              } else {
+                resolve()
+              }
+            },
+            { once: true }
+          )
+          img.addEventListener('error', () => resolve(), { once: true })
+        })
+      })
+    ).then(() => {})
   }
 
-  return true
+  // Check immediately and also after animation frame to capture child component renders
+  await checkDomImages()
+  await new Promise((r) => requestAnimationFrame(r))
+  await checkDomImages()
 }
+
+// Wait for window load event (all document resources loaded)
+const waitForWindowLoad = (): Promise<void> => {
+  if (typeof document === 'undefined') return Promise.resolve()
+  if (document.readyState === 'complete') {
+    return Promise.resolve()
+  }
+  return new Promise<void>((resolve) => {
+    window.addEventListener('load', () => resolve(), { once: true })
+  })
+}
+
+const MINIMUM_DISPLAY_TIME_MS = 2000 // 2 seconds minimum display rule
+const MAX_FALLBACK_TIMEOUT_MS = 8000 // Safety ceiling in case network stall occurs
 
 const waitForReadiness = async (): Promise<void> => {
   if (isTestEnv || typeof window === 'undefined') {
@@ -116,32 +179,22 @@ const waitForReadiness = async (): Promise<void> => {
   // 1. Minimum 2 seconds timer promise
   const timerPromise = new Promise((resolve) => setTimeout(resolve, MINIMUM_DISPLAY_TIME_MS))
 
-  // 2. Fonts readiness promise
-  const fontsPromise = ensureFontsLoaded()
+  // 2. Comprehensive asset readiness: Fonts + Preload Critical Images + Window Load + DOM Images
+  const assetsAndFontsPromise = Promise.all([
+    ensureFontsLoaded(),
+    preloadAllCriticalImages(),
+    waitForWindowLoad(),
+    waitForDomImages(),
+  ])
 
-  // 3. Top elements polling promise
-  const elementsPromise = new Promise<void>((resolve) => {
-    const startTime = Date.now()
+  // 3. Fallback timeout to prevent trapping the user on broken connections
+  const fallbackPromise = new Promise((resolve) => setTimeout(resolve, MAX_FALLBACK_TIMEOUT_MS))
 
-    const check = () => {
-      if (areTopElementsLoaded() || Date.now() - startTime > MAX_FALLBACK_TIMEOUT_MS) {
-        resolve()
-      } else {
-        requestAnimationFrame(check)
-      }
-    }
+  // Hold until all image assets and typography are loaded and decoded
+  await Promise.race([assetsAndFontsPromise, fallbackPromise])
 
-    if (document.readyState === 'complete') {
-      check()
-    } else {
-      window.addEventListener('load', check, { once: true })
-      // Also poll via RAF
-      requestAnimationFrame(check)
-    }
-  })
-
-  // Await both the minimum 2 seconds AND asset/header readiness
-  await Promise.all([timerPromise, fontsPromise, elementsPromise])
+  // Also honor the minimum 2-second visual presentation
+  await timerPromise
 }
 
 const dismissLoadingScreen = () => {

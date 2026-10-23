@@ -32,6 +32,11 @@ describe('Project Detail Page Routing & Graceful Degradation', () => {
     expect(wrapper.text()).toContain('درباره پروژه')
     expect(wrapper.find('.detail-actions').exists()).toBe(true)
     expect(wrapper.find('.detail-showcase-frame').exists()).toBe(true)
+
+    // Verify case study renders cleanly with no formatting asterisks
+    const caseStudyText = wrapper.find('.case-study-body').text()
+    expect(caseStudyText).toContain('تایپوگرافی فارسی مستقل از CDN:')
+    expect(caseStudyText).not.toContain('*')
   })
 
   it('renders friendly not-found banner for non-existent project slug', async () => {
