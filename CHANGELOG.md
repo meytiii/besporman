@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.6] - 2026-10-23
+
+### Added
+- **Atmospheric Cloud Backdrop 404 Page (`Error404Page.vue`, `NotFoundView.vue`, `tests/not-found.spec.ts`):**
+  - Integrated the layered SVG cloud and sky backdrop (`#1e3266` deep twilight blue sky, `#356cb1` mid-layer cloud ridge, and `#FAF7F0` billowing foreground cloud wave) into a dedicated reusable component `src/components/ui/Error404Page.vue`.
+  - Added subtle floating cloud drift animations (`cloudDriftSlow`, `cloudDriftFast`) and floating 404 title animation (`floatTitle`) with `prefers-reduced-motion` compliance.
+  - Fully translated copy to natural, warm Persian:
+    - Giant display title `۴۰۴` in Lalezar typography.
+    - Headline: `«اوپس! به نظر می‌رسد صفحه‌ای که به دنبال آن بودید میان ابرها گم شده است.»`.
+    - Reassuring subtext: `«آدرسی که وارد کرده‌اید وجود ندارد یا ممکن است تغییر کرده باشد. نگران نباشید، همه چیز سر جایش است!»`.
+    - Tactile return home button: `«بازگشت به صفحه اصلی»` linking to `/` via Vue Router with neo-brutalist pill button styling and `AppButtonArrow`.
+  - Added comprehensive unit test suite in `tests/not-found.spec.ts` verifying SVG layers, Persian translations, and navigation target.
+
+---
+
 ## [2.9.5] - 2026-10-23
 
 ### Added
