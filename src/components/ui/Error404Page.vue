@@ -45,16 +45,16 @@
 
       <!-- Persian Translated Description -->
       <p class="error-description">
-        اوپس! به نظر می‌رسد صفحه‌ای که به دنبال آن بودید میان ابرها گم شده است.
+        به نظر میاد صفحه‌ای که دنبالشی توی آسمونا گم شده!
       </p>
 
       <p class="error-hint">
-        آدرسی که وارد کرده‌اید وجود ندارد یا ممکن است تغییر کرده باشد. نگران نباشید، همه چیز سر جایش است!
+        میخوای خیلی آروم به صفحه اصلی برگردیم؟
       </p>
 
       <!-- Return Home Button with tactile arrow -->
-      <router-link to="/" class="btn-return-home" aria-label="بازگشت به صفحه اصلی سایت بسپر من">
-        <span class="btn-text">بازگشت به صفحه اصلی</span>
+      <router-link to="/" class="btn-return-home" aria-label="برگرد به خونه">
+        <span class="btn-text">برگرد به خونه</span>
         <AppButtonArrow direction="left" />
       </router-link>
     </div>

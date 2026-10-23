@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.7] - 2026-10-23
+
+### Changed
+- **404 Page Copy Refinement (`Error404Page.vue`, `tests/not-found.spec.ts`):**
+  - Updated headline to warm conversational Persian: `«به نظر میاد صفحه‌ای که دنبالشی توی آسمونا گم شده!»`.
+  - Updated subtext to gentle prompt: `«میخوای خیلی آروم به صفحه اصلی برگردیم؟»`.
+  - Updated return button call to action to: `«برگرد به خونه»`.
+  - Synchronized unit test assertions in `tests/not-found.spec.ts`.
+
+---
+
 ## [2.9.6] - 2026-10-23
 
 ### Added

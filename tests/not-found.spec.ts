@@ -34,8 +34,9 @@ describe('Error 404 Not Found Page', () => {
       },
     })
 
-    expect(wrapper.text()).toContain('اوپس! به نظر می‌رسد صفحه‌ای که به دنبال آن بودید میان ابرها گم شده است.')
-    expect(wrapper.text()).toContain('بازگشت به صفحه اصلی')
+    expect(wrapper.text()).toContain('به نظر میاد صفحه‌ای که دنبالشی توی آسمونا گم شده!')
+    expect(wrapper.text()).toContain('میخوای خیلی آروم به صفحه اصلی برگردیم؟')
+    expect(wrapper.text()).toContain('برگرد به خونه')
   })
 
   it('includes accessible return home link targeting root "/"', () => {
