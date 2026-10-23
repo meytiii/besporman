@@ -48,10 +48,12 @@
               href="https://t.me/besporman_bot"
               target="_blank"
               rel="noopener noreferrer"
-              class="btn btn-primary telegram-btn"
+              class="btn btn-primary telegram-btn neo-telegram-btn"
               aria-label="گفتگو در تلگرام (باز شدن در تب جدید)"
             >
-              <span class="btn-text">پیام در تلگرام</span>
+              <div class="btn-content-wrap">
+                <span class="btn-main-text">پیام در تلگرام</span>
+              </div>
               <AppButtonArrow direction="external" />
             </a>
           </div>
@@ -970,9 +972,6 @@ const handleSubmit = async () => {
   margin-bottom: var(--space-6);
 }
 
-.telegram-btn {
-  width: 100%;
-}
 
 .info-guidelines {
   background-color: var(--primitive-cream-100);
@@ -1293,11 +1292,11 @@ const handleSubmit = async () => {
   margin-top: 2px;
 }
 
-/* Neo-Brutalist Submit Button: Keyframed Smooth Tactile Animations */
-.neo-submit-btn {
+/* Neo-Brutalist Action Buttons: Keyframed Smooth Tactile Animations */
+.neo-submit-btn,
+.telegram-btn {
   position: relative;
   width: 100%;
-  margin-top: var(--space-3);
   padding: 12px 20px;
   min-height: 54px;
   display: flex;
@@ -1309,6 +1308,7 @@ const handleSubmit = async () => {
   color: var(--primitive-white);
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
   transform: translateZ(0);
   transition:
     transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
@@ -1316,8 +1316,13 @@ const handleSubmit = async () => {
     background-color 0.25s ease;
 }
 
+.neo-submit-btn {
+  margin-top: var(--space-3);
+}
+
 /* Subtle Shimmer Sheen Glide */
-.neo-submit-btn::before {
+.neo-submit-btn::before,
+.telegram-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1339,11 +1344,14 @@ const handleSubmit = async () => {
 }
 
 /* Multi-phase Keyframed Hover Lift & Spring */
-.neo-submit-btn:hover:not(:disabled) {
+.neo-submit-btn:hover:not(:disabled),
+.telegram-btn:hover {
   animation: btn-hover-keyframe 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  padding: 12px 20px !important;
 }
 
-.neo-submit-btn:hover:not(:disabled)::before {
+.neo-submit-btn:hover:not(:disabled)::before,
+.telegram-btn:hover::before {
   animation: btn-sheen-sweep 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards;
 }
 
@@ -1384,7 +1392,8 @@ const handleSubmit = async () => {
 }
 
 /* Keyframed Arrow Badge Animation on Hover */
-.neo-submit-btn .btn-arrow {
+.neo-submit-btn .btn-arrow,
+.telegram-btn .btn-arrow {
   position: relative !important;
   inset-inline-end: auto !important;
   top: auto !important;
@@ -1394,7 +1403,8 @@ const handleSubmit = async () => {
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.neo-submit-btn:hover:not(:disabled) .btn-arrow {
+.neo-submit-btn:hover:not(:disabled) .btn-arrow,
+.telegram-btn:hover .btn-arrow {
   animation: btn-arrow-spring 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
@@ -1414,14 +1424,16 @@ const handleSubmit = async () => {
 }
 
 /* Active Press State */
-.neo-submit-btn:active:not(:disabled) {
+.neo-submit-btn:active:not(:disabled),
+.telegram-btn:active {
   transform: translate(2px, 2px) !important;
   box-shadow: 2px 2px 0 var(--color-border-bold) !important;
   animation: none !important;
   transition: transform 0.08s ease, box-shadow 0.08s ease;
 }
 
-.neo-submit-btn:active:not(:disabled) .btn-arrow {
+.neo-submit-btn:active:not(:disabled) .btn-arrow,
+.telegram-btn:active .btn-arrow {
   transform: translateX(1px) scale(0.95) !important;
   animation: none !important;
 }
@@ -1436,8 +1448,27 @@ const handleSubmit = async () => {
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.neo-submit-btn:hover:not(:disabled) .btn-content-wrap {
+.neo-submit-btn:hover:not(:disabled) .btn-content-wrap,
+.telegram-btn:hover .btn-content-wrap {
   transform: translateX(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .neo-submit-btn,
+  .telegram-btn,
+  .neo-submit-btn::before,
+  .telegram-btn::before,
+  .neo-submit-btn .btn-arrow,
+  .telegram-btn .btn-arrow,
+  .btn-content-wrap {
+    animation: none !important;
+    transition: none !important;
+  }
+  .neo-submit-btn:hover,
+  .telegram-btn:hover {
+    transform: none !important;
+    box-shadow: 4px 4px 0 var(--color-border-bold) !important;
+  }
 }
 
 .btn-main-text {

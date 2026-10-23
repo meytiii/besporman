@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.9] - 2026-10-23
+
+### Changed
+- **Unified Keyframed Tactile Animations for Telegram Direct Button (`ContactSection.vue`):**
+  - Upgraded the Telegram direct button (`.telegram-btn`, `.neo-telegram-btn`) to match the submit button's tactile neo-brutalist interaction suite:
+    - Multi-phase keyframed spring hover lift (`btn-hover-keyframe`) with 6px tactile drop shadow.
+    - Luminous sheen glide sweep across the button surface (`btn-sheen-sweep`).
+    - Fixed docked arrow badge architecture with elastic forward spring nudge (`btn-arrow-spring`), eliminating cross-button jumping.
+    - Tactile active press state (`translate(2px, 2px)` with shadow contraction) and smooth cubic-bezier return transition.
+    - Subtle label nudge (`translateX(-2px)`) on hover and `prefers-reduced-motion` compliance.
+
+---
+
 ## [2.9.8] - 2026-10-23
 
 ### Changed
