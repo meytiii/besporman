@@ -949,8 +949,9 @@ const handleSubmit = async () => {
   margin-top: 2px;
 }
 
-/* Neo-Brutalist Submit Button */
+/* Neo-Brutalist Submit Button: Keyframed Smooth Tactile Animations */
 .neo-submit-btn {
+  position: relative;
   width: 100%;
   margin-top: var(--space-3);
   padding: 12px 20px;
@@ -960,17 +961,125 @@ const handleSubmit = async () => {
   justify-content: space-between;
   border: 3px solid var(--color-border-bold);
   box-shadow: 4px 4px 0 var(--color-border-bold);
-  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease;
+  background-color: var(--color-accent);
+  color: var(--primitive-white);
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateZ(0);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease;
 }
 
+/* Subtle Shimmer Sheen Glide */
+.neo-submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: -100%;
+  width: 60%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 40%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(255, 255, 255, 0.12) 60%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+}
+
+/* Multi-phase Keyframed Hover Lift & Spring */
 .neo-submit-btn:hover:not(:disabled) {
-  transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--color-border-bold);
+  animation: btn-hover-keyframe 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+.neo-submit-btn:hover:not(:disabled)::before {
+  animation: btn-sheen-sweep 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards;
+}
+
+@keyframes btn-hover-keyframe {
+  0% {
+    transform: translate(0, 0);
+    box-shadow: 4px 4px 0 var(--color-border-bold);
+  }
+  38% {
+    transform: translate(-3.5px, -3.5px);
+    box-shadow: 7.5px 7.5px 0 var(--color-border-bold);
+  }
+  72% {
+    transform: translate(-1.8px, -1.8px);
+    box-shadow: 5px 5px 0 var(--color-border-bold);
+  }
+  100% {
+    transform: translate(-2.5px, -2.5px);
+    box-shadow: 6px 6px 0 var(--color-border-bold);
+  }
+}
+
+@keyframes btn-sheen-sweep {
+  0% {
+    inset-inline-start: -70%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    inset-inline-start: 140%;
+    opacity: 0;
+  }
+}
+
+/* Keyframed Arrow Badge Animation on Hover */
+.neo-submit-btn .btn-arrow {
+  position: relative !important;
+  inset-inline-end: auto !important;
+  top: auto !important;
+  transform: none !important;
+  flex-shrink: 0;
+  z-index: 3;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neo-submit-btn:hover:not(:disabled) .btn-arrow {
+  animation: btn-arrow-spring 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes btn-arrow-spring {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  35% {
+    transform: translateX(-6px) scale(1.1);
+  }
+  65% {
+    transform: translateX(-2px) scale(0.98);
+  }
+  100% {
+    transform: translateX(-4px) scale(1.04);
+  }
+}
+
+/* Active Press State */
 .neo-submit-btn:active:not(:disabled) {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--color-border-bold);
+  transform: translate(2px, 2px) !important;
+  box-shadow: 2px 2px 0 var(--color-border-bold) !important;
+  animation: none !important;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.neo-submit-btn:active:not(:disabled) .btn-arrow {
+  transform: translateX(1px) scale(0.95) !important;
+  animation: none !important;
 }
 
 .btn-content-wrap {
@@ -979,6 +1088,12 @@ const handleSubmit = async () => {
   align-items: flex-start;
   gap: 2px;
   text-align: start;
+  z-index: 3;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.neo-submit-btn:hover:not(:disabled) .btn-content-wrap {
+  transform: translateX(-2px);
 }
 
 .btn-main-text {

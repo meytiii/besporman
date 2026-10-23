@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.3] - 2026-10-23
+
+### Changed
+- **Smooth Keyframed Tactile Submit Button Animations (`ContactSection.vue`):**
+  - Replaced the abrupt 120ms transition on `.neo-submit-btn` with a fluid, multi-phase keyframed spring hover animation (`btn-hover-keyframe`).
+  - Added an elegant luminous sheen glide sweep across the button surface (`btn-sheen-sweep`) on hover.
+  - Docked the nested arrow badge cleanly within the flex layout, preventing it from jumping across long button widths, and added an elastic keyframed nudge animation (`btn-arrow-spring`) in the direction of Persian reading flow.
+  - Implemented tactile active press feedback and smooth spring settling upon cursor release (`cubic-bezier(0.16, 1, 0.3, 1)`).
+
+---
+
 ## [2.9.2] - 2026-10-23
 
 ### Changed
