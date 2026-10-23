@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792749933.4405344,
-    "seen": 1792749967.7297413,
-    "ast_hash": "72e5e7508b8582d8af09904983a53e17",
+    "mtime": 1792752441.8722236,
+    "seen": 1792752494.5984597,
+    "ast_hash": "24abefaf197ed02309751144c63126d5",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -12,15 +12,15 @@
     "semantic_hash": ""
   },
   "src/components/AboutSection.vue": {
-    "mtime": 1792428102.4064746,
-    "seen": 1792661098.3743405,
-    "ast_hash": "b951498a25f9b6480129014427201520",
+    "mtime": 1792751851.051257,
+    "seen": 1792752494.5984669,
+    "ast_hash": "e387439a31cff85e3d6b0c4fe0bc0021",
     "semantic_hash": ""
   },
   "src/components/ContactSection.vue": {
-    "mtime": 1792668337.4712498,
-    "seen": 1792749967.7297564,
-    "ast_hash": "0ff738c14f4f28459fd0b7f835a03c90",
+    "mtime": 1792752370.90653,
+    "seen": 1792752494.5984719,
+    "ast_hash": "35728624b0d5ef72df3847e083436115",
     "semantic_hash": ""
   },
   "src/components/HeroSection.vue": {
@@ -90,10 +90,10 @@
     "semantic_hash": ""
   },
   "src/services/contactAdapter.ts": {
-    "mtime": 1792243228.693341,
-    "seen": 1792249022.655107,
-    "ast_hash": "381d3e403c79f83c7922e4c0a7c8493d",
-    "semantic_hash": "381d3e403c79f83c7922e4c0a7c8493d"
+    "mtime": 1792751333.6150823,
+    "seen": 1792752494.5985072,
+    "ast_hash": "29157a3954d10eb483761598d086d0cb",
+    "semantic_hash": ""
   },
   "src/types/project.ts": {
     "mtime": 1792243194.4810371,
@@ -126,10 +126,10 @@
     "semantic_hash": "8cbfd5476645cbcda423992b553a2b0c"
   },
   "tests/contact.spec.ts": {
-    "mtime": 1792243513.763975,
-    "seen": 1792249022.6551104,
-    "ast_hash": "512ae015b1643e4a655d192b1047fa70",
-    "semantic_hash": "512ae015b1643e4a655d192b1047fa70"
+    "mtime": 1792751889.356263,
+    "seen": 1792752494.5985131,
+    "ast_hash": "e4c8ecceaf572b7a9074ae7ef2860f1b",
+    "semantic_hash": ""
   },
   "tests/homepage.spec.ts": {
     "mtime": 1792243495.633515,
@@ -408,9 +408,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792749950.3262327,
-    "seen": 1792749967.7298176,
-    "ast_hash": "f8c66a6492a6fadd77486865d12a8439",
+    "mtime": 1792752464.7495947,
+    "seen": 1792752494.5985289,
+    "ast_hash": "4ec9c4e7fb4bdf7aadc8fc120f9f6edf",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -669,6 +669,42 @@
     "mtime": 1792668337.5355713,
     "seen": 1792749967.7298083,
     "ast_hash": "325e869b67342d7fbf970aaaf471ae52",
+    "semantic_hash": ""
+  },
+  "src/components/ui/AnimatedCircularProgressBar.vue": {
+    "mtime": 1792751209.7379012,
+    "seen": 1792752494.5984857,
+    "ast_hash": "4b89b8540b1f7069d9e7e0c87b6940c6",
+    "semantic_hash": ""
+  },
+  "src/components/ui/SmoothDropdown.vue": {
+    "mtime": 1792752389.9375384,
+    "seen": 1792752494.598492,
+    "ast_hash": "6d98770af69ee8990a034d787012585f",
+    "semantic_hash": ""
+  },
+  "src/components/ui/animated-circular-progress-bar.tsx": {
+    "mtime": 1792751166.2978435,
+    "seen": 1792752494.5984948,
+    "ast_hash": "cc168a7489b437f9c9e8c752a9cb4b39",
+    "semantic_hash": ""
+  },
+  "src/components/ui/smooth-dropdown.tsx": {
+    "mtime": 1792751189.1399858,
+    "seen": 1792752494.5985014,
+    "ast_hash": "08a765b3a26103a4b4f75f9558f545cf",
+    "semantic_hash": ""
+  },
+  "pic/besporman_introduction.png": {
+    "mtime": 1792751137.7497458,
+    "seen": 1792752494.5985372,
+    "ast_hash": "cfe9f3a27ee9c1b7c5bdd64741b2e552",
+    "semantic_hash": ""
+  },
+  "pic/webp/besporman_introduction.webp": {
+    "mtime": 1792751380.4930766,
+    "seen": 1792752494.5985634,
+    "ast_hash": "7bcff6da4e65077c9e978e7548010965",
     "semantic_hash": ""
   }
 }

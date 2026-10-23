@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.0] - 2026-10-23
+
+### Added
+- **Animated Circular Progress Bar (`AnimatedCircularProgressBar.vue`, `animated-circular-progress-bar.tsx`):**
+  - Integrated a dynamic circular progress gauge at the head of the project inquiry card.
+  - Smoothly completes in real-time as fields are filled: Project Stage (15%), Name (15%), Contact Info (20%), Estimated Budget (15%), Timeline (15%), and Description (20% proportional up to 30 characters).
+  - Persian numeral counter with Vazirmatn typography, responsive SVG stroke calculations, and full `role="progressbar"` accessibility.
+- **Smooth Dropdown Component (`SmoothDropdown.vue`, `smooth-dropdown.tsx`):**
+  - Built custom accessible neo-brutalist dropdown menu featuring kinetic left-bar indicator, spring transition flyouts, checkmark indicators, keyboard navigation, and outside-click handling.
+  - Follows dynamic trigger label format: `{Title}: ...` which morphs to `{Title}: [Selected Option]` upon selection.
+- **High-Leverage Inquiries Filtering Fields:**
+  - **Estimated Budget Range (`budgetRange`):** Standardized tiers (`< 10M`, `10M-30M MVP`, `30M-70M Full Production`, `70M+ Enterprise`, `Need Estimate`) to align client expectations and filter low-intent inquiries.
+  - **Target Timeline / Urgency (`timeline`):** Defined urgency intervals (`Immediate < 2 weeks`, `1-2 months`, `Flexible / Planning stage`).
+  - **Reference Link Input (`referenceLink`):** Optional dedicated single-line field with LTR enclave for Figma, GitHub, or documentation URLs.
+- **Preferred Contact Method Toggle (`contactMethod`):**
+  - Added dedicated toggle switcher for `[تلگرام]` vs `[تماس / پیامک]` with dynamic placeholder and input mode adjustments to prevent broken usernames or omitted dial codes.
+- **Guided Description Field with Mini-Prompt & Character Counter:**
+  - Upgraded textarea placeholder to act as a structured mini-prompt: `«۱. هدف اصلی پروژه چیست؟ ۲. مخاطبان آن چه کسانی هستند؟ ۳. آیا دیزاین یا سیستم قبلی دارید؟»`.
+  - Added a live character counter requiring **minimum 30 characters** with dynamic color feedback to prevent one-sentence low-intent submissions.
+
+### Changed
+- **Removed Legacy Service Category Selector:**
+  - Removed old 3 category buttons (web, bot, windows) in favor of 3 Project Stage pills: `ایده جدید` (New idea), `ارتقا یا توسعه پروژه فعلی` (Upgrading existing system), and `مشاوره فنی` (Technical consultation).
+- **Neo-Brutalist Focus States & Action-Driven CTA:**
+  - Replaced submit button text with action-driven copy: `دریافت مشاوره و برآورد هزینه` (with subtext `ثبت و ارسال پیام`).
+  - Added response time badge directly below submit button: `«پاسخگویی معمولاً در کمتر از ۲۴ ساعت در تلگرام»`.
+  - Upgraded focus states across all inputs to switch to accent red (`#D93829`) with 3px brutalist borders and offset box-shadows.
+- **Backend Boundary & Validation Adapter (`contactAdapter.ts`):**
+  - Updated `ContactMessagePayload` interface with new structured inquiry fields.
+  - Updated `DevelopmentContactAdapter` to enforce 30-character message minimum while continuing to return honest `NOT_CONFIGURED` status.
+- **Test Suite Updates (`tests/contact.spec.ts`):**
+  - Added test coverage for real-time progress bar calculation, stage selection, contact info validation, and 30-char description threshold.
+
+---
+
 ## [2.8.5] - 2026-10-23
 
 ### Fixed

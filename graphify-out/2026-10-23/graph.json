@@ -194,32 +194,6 @@
       "source_location": "L20"
     },
     {
-      "id": "src_components_ui_liquidloader_columnstate",
-      "label": "ColumnState",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "columnstate",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L66"
-    },
-    {
-      "id": "src_components_ui_liquidloader_liquidloaderprops",
-      "label": "LiquidLoaderProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "liquidloaderprops",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L58"
-    },
-    {
       "id": "src_components_ui_modernloader_codeline",
       "label": "CodeLine",
       "_callable": true,
@@ -415,43 +389,56 @@
       "source_location": "L36"
     },
     {
-      "id": "src_types_project_projectcategory",
-      "label": "ProjectCategory",
+      "id": "src_components_ui_liquidloader_columnstate",
+      "label": "ColumnState",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "projectcategory",
-      "source_file": "src/types/project.ts",
-      "source_location": "L3"
+      "norm_label": "columnstate",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L66"
     },
     {
-      "id": "src_types_project_projectitem",
-      "label": "ProjectItem",
+      "id": "src_components_ui_liquidloader_liquidloaderprops",
+      "label": "LiquidLoaderProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "projectitem",
-      "source_file": "src/types/project.ts",
-      "source_location": "L7"
+      "norm_label": "liquidloaderprops",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L58"
     },
     {
-      "id": "src_types_project_projectstatus",
-      "label": "ProjectStatus",
+      "id": "src_components_lazysection_props",
+      "label": "Props",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community": 36,
+      "community_name": "LazySection.vue",
       "file_type": "code",
-      "norm_label": "projectstatus",
-      "source_file": "src/types/project.ts",
-      "source_location": "L5"
+      "norm_label": "props",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "LazySection.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
+      "source_location": "L31"
     },
     {
       "id": "src_components_ui_flickeringtext_flickeringtextprops",
@@ -478,32 +465,6 @@
       "norm_label": "segmentitem",
       "source_file": "src/components/ui/FlickeringText.vue",
       "source_location": "L76"
-    },
-    {
-      "id": "src_components_lazysection_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L20"
-    },
-    {
-      "id": "src_components_skeletons_sectionskeleton_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
-      "source_location": "L31"
     },
     {
       "id": "src_components_ui_textreveal_props",
@@ -556,6 +517,58 @@
       "norm_label": "scrollrevealoptions",
       "source_file": "src/composables/useScrollReveal.ts",
       "source_location": "L3"
+    },
+    {
+      "id": "src_types_project_projectcategory",
+      "label": "ProjectCategory",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectcategory",
+      "source_file": "src/types/project.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_types_project_projectitem",
+      "label": "ProjectItem",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectitem",
+      "source_file": "src/types/project.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_types_project_projectstatus",
+      "label": "ProjectStatus",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectstatus",
+      "source_file": "src/types/project.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_views_projectdetailview_contentblock",
+      "label": "ContentBlock",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "contentblock",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L193"
     },
     {
       "id": "src_components_ui_eyetracking_getirisstyle",
@@ -916,78 +929,6 @@
       "norm_label": "textreveal()",
       "source_file": "src/components/ui/text-reveal.tsx",
       "source_location": "L165"
-    },
-    {
-      "id": "src_components_apploadingscreen_aretopelementsloaded",
-      "label": "areTopElementsLoaded()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "aretopelementsloaded()",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L89"
-    },
-    {
-      "id": "src_components_apploadingscreen_dismissloadingscreen",
-      "label": "dismissLoadingScreen()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "dismissloadingscreen()",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L147"
-    },
-    {
-      "id": "src_components_apploadingscreen_ensurefontsloaded",
-      "label": "ensureFontsLoaded()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "ensurefontsloaded()",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L52"
-    },
-    {
-      "id": "src_components_apploadingscreen_isimageloaded",
-      "label": "isImageLoaded()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "isimageloaded()",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L84"
-    },
-    {
-      "id": "src_components_apploadingscreen_waitforreadiness",
-      "label": "waitForReadiness()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "waitforreadiness()",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L111"
-    },
-    {
-      "id": "src_components_ui_liquidloader_updatephysics",
-      "label": "updatePhysics()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "updatephysics()",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L130"
     },
     {
       "id": "src_components_ui_modernloader_advancetypewriter",
@@ -1590,28 +1531,100 @@
       "source_location": "L62"
     },
     {
-      "id": "src_components_projectssection_getcategorylabel",
-      "label": "getCategoryLabel()",
+      "id": "src_components_apploadingscreen_dismissloadingscreen",
+      "label": "dismissLoadingScreen()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "getcategorylabel()",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L173"
+      "norm_label": "dismissloadingscreen()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L200"
     },
     {
-      "id": "tests_project_detail_spec_createtestrouter",
-      "label": "createTestRouter()",
+      "id": "src_components_apploadingscreen_ensurefontsloaded",
+      "label": "ensureFontsLoaded()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "createtestrouter()",
-      "source_file": "tests/project-detail.spec.ts",
-      "source_location": "L6"
+      "norm_label": "ensurefontsloaded()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L52"
+    },
+    {
+      "id": "src_components_apploadingscreen_preloadallcriticalimages",
+      "label": "preloadAllCriticalImages()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "preloadallcriticalimages()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L114"
+    },
+    {
+      "id": "src_components_apploadingscreen_preloadimage",
+      "label": "preloadImage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "preloadimage()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L92"
+    },
+    {
+      "id": "src_components_apploadingscreen_waitfordomimages",
+      "label": "waitForDomImages()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "waitfordomimages()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L120"
+    },
+    {
+      "id": "src_components_apploadingscreen_waitforreadiness",
+      "label": "waitForReadiness()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "waitforreadiness()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L174"
+    },
+    {
+      "id": "src_components_apploadingscreen_waitforwindowload",
+      "label": "waitForWindowLoad()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "waitforwindowload()",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L161"
+    },
+    {
+      "id": "src_components_ui_liquidloader_updatephysics",
+      "label": "updatePhysics()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "updatephysics()",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L130"
     },
     {
       "id": "src_components_ui_flickeringtext_generateglowshadow",
@@ -1674,6 +1687,18 @@
       "source_location": "L130"
     },
     {
+      "id": "src_components_projectssection_getcategorylabel",
+      "label": "getCategoryLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "getcategorylabel()",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L173"
+    },
+    {
       "id": "src_components_ui_textreveal_ishighlighted",
       "label": "isHighlighted()",
       "_callable": true,
@@ -1696,6 +1721,18 @@
       "norm_label": "usescrollreveal()",
       "source_file": "src/composables/useScrollReveal.ts",
       "source_location": "L10"
+    },
+    {
+      "id": "tests_project_detail_spec_createtestrouter",
+      "label": "createTestRouter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "createtestrouter()",
+      "source_file": "tests/project-detail.spec.ts",
+      "source_location": "L6"
     },
     {
       "id": "src_components_ui_eyetracking",
@@ -2195,17 +2232,6 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_appbuttonarrow",
-      "label": "AppButtonArrow.vue",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "App.vue",
-      "file_type": "code",
-      "norm_label": "appbuttonarrow.vue",
-      "source_file": "src/components/AppButtonArrow.vue",
-      "source_location": "L1"
-    },
-    {
       "id": "src_components_thefooter",
       "label": "TheFooter.vue",
       "_origin": "ast",
@@ -2382,105 +2408,6 @@
       "source_location": "L62"
     },
     {
-      "id": "src_components_apploadingscreen",
-      "label": "AppLoadingScreen.vue",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "apploadingscreen.vue",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_apploadingscreen_isexiting",
-      "label": "isExiting",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "isexiting",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L44"
-    },
-    {
-      "id": "src_components_apploadingscreen_isfontready",
-      "label": "isFontReady",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "isfontready",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L47"
-    },
-    {
-      "id": "src_components_apploadingscreen_isvisible",
-      "label": "isVisible",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "isvisible",
-      "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L43"
-    },
-    {
-      "id": "src_components_ui_liquidloader",
-      "label": "LiquidLoader.vue",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "liquidloader.vue",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_ui_liquidloader_brandpalettes",
-      "label": "brandPalettes",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "brandpalettes",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L85"
-    },
-    {
-      "id": "src_components_ui_liquidloader_columns",
-      "label": "columns",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "columns",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L107"
-    },
-    {
-      "id": "src_components_ui_liquidloader_props",
-      "label": "props",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L62"
-    },
-    {
-      "id": "src_components_ui_liquidloader_rainbowpalettes",
-      "label": "rainbowPalettes",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "rainbowpalettes",
-      "source_file": "src/components/ui/LiquidLoader.vue",
-      "source_location": "L95"
-    },
-    {
       "id": "src_components_ui_modernloader",
       "label": "ModernLoader.vue",
       "_origin": "ast",
@@ -2622,17 +2549,6 @@
       "norm_label": "visiblestart",
       "source_file": "src/components/ui/ModernLoader.vue",
       "source_location": "L177"
-    },
-    {
-      "id": "tests_loader_spec",
-      "label": "loader.spec.ts",
-      "_origin": "ast",
-      "community": 19,
-      "community_name": "ModernLoader.vue",
-      "file_type": "code",
-      "norm_label": "loader.spec.ts",
-      "source_file": "tests/loader.spec.ts",
-      "source_location": "L1"
     },
     {
       "id": "src_components_theheader",
@@ -3051,10 +2967,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L277"
+      "source_location": "L292"
     },
     {
-      "id": "changelog_added_279",
+      "id": "changelog_added_294",
       "label": "Added",
       "_origin": "ast",
       "community": 25,
@@ -3063,10 +2979,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L279"
+      "source_location": "L294"
     },
     {
-      "id": "changelog_changed_284",
+      "id": "changelog_changed_299",
       "label": "Changed",
       "_origin": "ast",
       "community": 25,
@@ -3075,10 +2991,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L284"
+      "source_location": "L299"
     },
     {
-      "id": "changelog_fixed_287",
+      "id": "changelog_fixed_302",
       "label": "Fixed",
       "_origin": "ast",
       "community": 25,
@@ -3087,7 +3003,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L287"
+      "source_location": "L302"
     },
     {
       "id": "src_components_ui_modern_loader",
@@ -3110,10 +3026,10 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L292"
+      "source_location": "L307"
     },
     {
-      "id": "changelog_added_294",
+      "id": "changelog_added_309",
       "label": "Added",
       "_origin": "ast",
       "community": 27,
@@ -3122,10 +3038,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L294"
+      "source_location": "L309"
     },
     {
-      "id": "changelog_changed_304",
+      "id": "changelog_changed_319",
       "label": "Changed",
       "_origin": "ast",
       "community": 27,
@@ -3134,7 +3050,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L304"
+      "source_location": "L319"
     },
     {
       "id": "changelog_2_5_4_2026_10_19",
@@ -3146,10 +3062,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.4] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L124"
+      "source_location": "L139"
     },
     {
-      "id": "changelog_added_126",
+      "id": "changelog_added_141",
       "label": "Added",
       "_origin": "ast",
       "community": 28,
@@ -3158,7 +3074,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L126"
+      "source_location": "L141"
     },
     {
       "id": "changelog_removed",
@@ -3170,7 +3086,7 @@
       "node_kind": "heading",
       "norm_label": "removed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L132"
+      "source_location": "L147"
     },
     {
       "id": "changelog_2_5_5_2026_10_22",
@@ -3182,10 +3098,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.5] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L110"
+      "source_location": "L125"
     },
     {
-      "id": "changelog_added_119",
+      "id": "changelog_added_134",
       "label": "Added",
       "_origin": "ast",
       "community": 29,
@@ -3194,10 +3110,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L119"
+      "source_location": "L134"
     },
     {
-      "id": "changelog_changed_112",
+      "id": "changelog_changed_127",
       "label": "Changed",
       "_origin": "ast",
       "community": 29,
@@ -3206,7 +3122,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L112"
+      "source_location": "L127"
     },
     {
       "id": "src_components_marqueebanner",
@@ -3394,10 +3310,10 @@
       "node_kind": "heading",
       "norm_label": "[2.6.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L94"
+      "source_location": "L109"
     },
     {
-      "id": "changelog_added_96",
+      "id": "changelog_added_111",
       "label": "Added",
       "_origin": "ast",
       "community": 30,
@@ -3406,10 +3322,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L96"
+      "source_location": "L111"
     },
     {
-      "id": "changelog_changed_104",
+      "id": "changelog_changed_119",
       "label": "Changed",
       "_origin": "ast",
       "community": 30,
@@ -3418,7 +3334,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L104"
+      "source_location": "L119"
     },
     {
       "id": "changelog_2_8_0_2026_10_22",
@@ -3430,10 +3346,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L58"
+      "source_location": "L73"
     },
     {
-      "id": "changelog_added_60",
+      "id": "changelog_added_75",
       "label": "Added",
       "_origin": "ast",
       "community": 31,
@@ -3442,10 +3358,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L60"
+      "source_location": "L75"
     },
     {
-      "id": "changelog_changed_71",
+      "id": "changelog_changed_86",
       "label": "Changed",
       "_origin": "ast",
       "community": 31,
@@ -3454,7 +3370,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L71"
+      "source_location": "L86"
     },
     {
       "id": "src_components_ui_flickering_text",
@@ -3499,10 +3415,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L267"
+      "source_location": "L282"
     },
     {
-      "id": "changelog_fixed_269",
+      "id": "changelog_fixed_284",
       "label": "Fixed",
       "_origin": "ast",
       "community": 33,
@@ -3511,7 +3427,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L269"
+      "source_location": "L284"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3523,10 +3439,10 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L249"
+      "source_location": "L264"
     },
     {
-      "id": "changelog_added_251",
+      "id": "changelog_added_266",
       "label": "Added",
       "_origin": "ast",
       "community": 34,
@@ -3535,196 +3451,194 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L251"
+      "source_location": "L266"
     },
     {
-      "id": "src_components_projectssection",
-      "label": "ProjectsSection.vue",
+      "id": "src_components_apploadingscreen",
+      "label": "AppLoadingScreen.vue",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "projectssection.vue",
-      "source_file": "src/components/ProjectsSection.vue",
+      "norm_label": "apploadingscreen.vue",
+      "source_file": "src/components/AppLoadingScreen.vue",
       "source_location": "L1"
     },
     {
-      "id": "src_components_projectssection_featuredproject",
-      "label": "featuredProject",
+      "id": "src_components_apploadingscreen_critical_image_urls",
+      "label": "CRITICAL_IMAGE_URLS",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "featuredproject",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L185"
+      "norm_label": "critical_image_urls",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L80"
     },
     {
-      "id": "src_components_projectssection_filteredsecondaryprojects",
-      "label": "filteredSecondaryProjects",
+      "id": "src_components_apploadingscreen_isexiting",
+      "label": "isExiting",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "filteredsecondaryprojects",
-      "source_file": "src/components/ProjectsSection.vue",
-      "source_location": "L190"
+      "norm_label": "isexiting",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L44"
     },
     {
-      "id": "src_data_projects",
-      "label": "projects.ts",
+      "id": "src_components_apploadingscreen_isfontready",
+      "label": "isFontReady",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "projects.ts",
-      "source_file": "src/data/projects.ts",
+      "norm_label": "isfontready",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L47"
+    },
+    {
+      "id": "src_components_apploadingscreen_isvisible",
+      "label": "isVisible",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "isvisible",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L43"
+    },
+    {
+      "id": "src_components_ui_liquidloader",
+      "label": "LiquidLoader.vue",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "liquidloader.vue",
+      "source_file": "src/components/ui/LiquidLoader.vue",
       "source_location": "L1"
     },
     {
-      "id": "src_data_projects_projectsdata",
-      "label": "projectsData",
+      "id": "src_components_ui_liquidloader_brandpalettes",
+      "label": "brandPalettes",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "projectsdata",
-      "source_file": "src/data/projects.ts",
-      "source_location": "L3"
+      "norm_label": "brandpalettes",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L85"
     },
     {
-      "id": "src_types_project",
-      "label": "project.ts",
+      "id": "src_components_ui_liquidloader_columns",
+      "label": "columns",
       "_origin": "ast",
       "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community_name": "AppLoadingScreen.vue",
       "file_type": "code",
-      "norm_label": "project.ts",
-      "source_file": "src/types/project.ts",
+      "norm_label": "columns",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L107"
+    },
+    {
+      "id": "src_components_ui_liquidloader_props",
+      "label": "props",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L62"
+    },
+    {
+      "id": "src_components_ui_liquidloader_rainbowpalettes",
+      "label": "rainbowPalettes",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "rainbowpalettes",
+      "source_file": "src/components/ui/LiquidLoader.vue",
+      "source_location": "L95"
+    },
+    {
+      "id": "tests_loader_spec",
+      "label": "loader.spec.ts",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AppLoadingScreen.vue",
+      "file_type": "code",
+      "norm_label": "loader.spec.ts",
+      "source_file": "tests/loader.spec.ts",
       "source_location": "L1"
     },
     {
-      "id": "src_views_projectdetailview",
-      "label": "ProjectDetailView.vue",
+      "id": "src_components_lazysection",
+      "label": "LazySection.vue",
       "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community": 36,
+      "community_name": "LazySection.vue",
       "file_type": "code",
-      "norm_label": "projectdetailview.vue",
-      "source_file": "src/views/ProjectDetailView.vue",
+      "norm_label": "lazysection.vue",
+      "source_file": "src/components/LazySection.vue",
       "source_location": "L1"
     },
     {
-      "id": "src_views_projectdetailview_categorylabel",
-      "label": "categoryLabel",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "categorylabel",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L178"
-    },
-    {
-      "id": "src_views_projectdetailview_currentindex",
-      "label": "currentIndex",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "currentindex",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L159"
-    },
-    {
-      "id": "src_views_projectdetailview_formattedparagraphs",
-      "label": "formattedParagraphs",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "formattedparagraphs",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L188"
-    },
-    {
-      "id": "src_views_projectdetailview_nextproject",
-      "label": "nextProject",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "nextproject",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L171"
-    },
-    {
-      "id": "src_views_projectdetailview_prevproject",
-      "label": "prevProject",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "prevproject",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L164"
-    },
-    {
-      "id": "src_views_projectdetailview_project",
-      "label": "project",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
-      "file_type": "code",
-      "norm_label": "project",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L154"
-    },
-    {
-      "id": "src_views_projectdetailview_route",
+      "id": "src_components_lazysection_route",
       "label": "route",
       "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community": 36,
+      "community_name": "LazySection.vue",
       "file_type": "code",
       "norm_label": "route",
-      "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L152"
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L36"
     },
     {
-      "id": "tests_project_detail_spec",
-      "label": "project-detail.spec.ts",
+      "id": "src_components_lazysection_shouldrender",
+      "label": "shouldRender",
       "_origin": "ast",
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community": 36,
+      "community_name": "LazySection.vue",
       "file_type": "code",
-      "norm_label": "project-detail.spec.ts",
-      "source_file": "tests/project-detail.spec.ts",
+      "norm_label": "shouldrender",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L39"
+    },
+    {
+      "id": "src_components_lazysection_wrapperref",
+      "label": "wrapperRef",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "LazySection.vue",
+      "file_type": "code",
+      "norm_label": "wrapperref",
+      "source_file": "src/components/LazySection.vue",
+      "source_location": "L38"
+    },
+    {
+      "id": "src_components_skeletons_sectionskeleton",
+      "label": "SectionSkeleton.vue",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "LazySection.vue",
+      "file_type": "code",
+      "norm_label": "sectionskeleton.vue",
+      "source_file": "src/components/skeletons/SectionSkeleton.vue",
       "source_location": "L1"
     },
     {
-      "id": "changelog_2_3_1_2026_10_18",
-      "label": "[2.3.1] - 2026-10-18",
+      "id": "tests_reveal_lazy_spec",
+      "label": "reveal-lazy.spec.ts",
       "_origin": "ast",
       "community": 36,
-      "community_name": "[2.3.1] - 2026-10-18",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.3.1] - 2026-10-18",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L225"
-    },
-    {
-      "id": "changelog_fixed_227",
-      "label": "Fixed",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "[2.3.1] - 2026-10-18",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "fixed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L227"
+      "community_name": "LazySection.vue",
+      "file_type": "code",
+      "norm_label": "reveal-lazy.spec.ts",
+      "source_file": "tests/reveal-lazy.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "changelog_2_4_1_2026_10_18",
@@ -3736,10 +3650,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L186"
+      "source_location": "L201"
     },
     {
-      "id": "changelog_fixed_188",
+      "id": "changelog_fixed_203",
       "label": "Fixed",
       "_origin": "ast",
       "community": 37,
@@ -3748,7 +3662,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L188"
+      "source_location": "L203"
     },
     {
       "id": "changelog_2_3_2_2026_10_18",
@@ -3760,10 +3674,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L216"
+      "source_location": "L231"
     },
     {
-      "id": "changelog_fixed_218",
+      "id": "changelog_fixed_233",
       "label": "Fixed",
       "_origin": "ast",
       "community": 38,
@@ -3772,7 +3686,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L218"
+      "source_location": "L233"
     },
     {
       "id": "changelog_2_4_0_2026_10_18",
@@ -3784,10 +3698,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L196"
+      "source_location": "L211"
     },
     {
-      "id": "changelog_added_198",
+      "id": "changelog_added_213",
       "label": "Added",
       "_origin": "ast",
       "community": 39,
@@ -3796,7 +3710,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L198"
+      "source_location": "L213"
     },
     {
       "id": "tsconfig",
@@ -4105,10 +4019,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L205"
+      "source_location": "L220"
     },
     {
-      "id": "changelog_changed_207",
+      "id": "changelog_changed_222",
       "label": "Changed",
       "_origin": "ast",
       "community": 40,
@@ -4117,7 +4031,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L207"
+      "source_location": "L222"
     },
     {
       "id": "changelog_2_5_3_2026_10_19",
@@ -4129,10 +4043,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L137"
+      "source_location": "L152"
     },
     {
-      "id": "changelog_fixed",
+      "id": "changelog_fixed_154",
       "label": "Fixed",
       "_origin": "ast",
       "community": 41,
@@ -4141,7 +4055,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L139"
+      "source_location": "L154"
     },
     {
       "id": "changelog_2_5_1_2026_10_19",
@@ -4153,10 +4067,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L157"
+      "source_location": "L172"
     },
     {
-      "id": "changelog_changed_159",
+      "id": "changelog_changed_174",
       "label": "Changed",
       "_origin": "ast",
       "community": 42,
@@ -4165,7 +4079,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L159"
+      "source_location": "L174"
     },
     {
       "id": "changelog_2_7_0_2026_10_22",
@@ -4177,10 +4091,10 @@
       "node_kind": "heading",
       "norm_label": "[2.7.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L77"
+      "source_location": "L92"
     },
     {
-      "id": "changelog_added_79",
+      "id": "changelog_added_94",
       "label": "Added",
       "_origin": "ast",
       "community": 43,
@@ -4189,7 +4103,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L79"
+      "source_location": "L94"
     },
     {
       "id": "changelog_2_8_1_2026_10_22",
@@ -4201,10 +4115,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.1] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L45"
+      "source_location": "L60"
     },
     {
-      "id": "changelog_added_47",
+      "id": "changelog_added_62",
       "label": "Added",
       "_origin": "ast",
       "community": 44,
@@ -4213,7 +4127,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L47"
+      "source_location": "L62"
     },
     {
       "id": "changelog_2_4_2_2026_10_18",
@@ -4225,10 +4139,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L177"
+      "source_location": "L192"
     },
     {
-      "id": "changelog_changed_179",
+      "id": "changelog_changed_194",
       "label": "Changed",
       "_origin": "ast",
       "community": 45,
@@ -4237,7 +4151,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L179"
+      "source_location": "L194"
     },
     {
       "id": "changelog_2_5_0_2026_10_18",
@@ -4249,10 +4163,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L165"
+      "source_location": "L180"
     },
     {
-      "id": "changelog_added_167",
+      "id": "changelog_added_182",
       "label": "Added",
       "_origin": "ast",
       "community": 46,
@@ -4261,31 +4175,31 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L167"
+      "source_location": "L182"
     },
     {
-      "id": "changelog_2_8_3_2026_10_22",
-      "label": "[2.8.3] - 2026-10-22",
+      "id": "changelog_2_3_0_2026_10_17",
+      "label": "[2.3.0] - 2026-10-17",
       "_origin": "ast",
       "community": 47,
-      "community_name": "[2.8.3] - 2026-10-22",
+      "community_name": "[2.3.0] - 2026-10-17",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.8.3] - 2026-10-22",
+      "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L26"
+      "source_location": "L252"
     },
     {
-      "id": "changelog_changed_28",
-      "label": "Changed",
+      "id": "changelog_added_254",
+      "label": "Added",
       "_origin": "ast",
       "community": 47,
-      "community_name": "[2.8.3] - 2026-10-22",
+      "community_name": "[2.3.0] - 2026-10-17",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "changed",
+      "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L28"
+      "source_location": "L254"
     },
     {
       "id": "changelog_2_8_4_2026_10_22",
@@ -4297,7 +4211,7 @@
       "node_kind": "heading",
       "norm_label": "[2.8.4] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L10"
+      "source_location": "L25"
     },
     {
       "id": "changelog_changed",
@@ -4309,7 +4223,31 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12"
+      "source_location": "L27"
+    },
+    {
+      "id": "changelog_2_5_2_2026_10_19",
+      "label": "[2.5.2] - 2026-10-19",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "[2.5.2] - 2026-10-19",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.5.2] - 2026-10-19",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L164"
+    },
+    {
+      "id": "changelog_changed_166",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "[2.5.2] - 2026-10-19",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L166"
     },
     {
       "id": "package",
@@ -4642,6 +4580,30 @@
       "source_location": "L23"
     },
     {
+      "id": "changelog_2_8_2_2026_10_22",
+      "label": "[2.8.2] - 2026-10-22",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "[2.8.2] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.8.2] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "changelog_added",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "[2.8.2] - 2026-10-22",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L54"
+    },
+    {
       "id": "src_components_ui_flickeringtext",
       "label": "FlickeringText.vue",
       "_origin": "ast",
@@ -4729,46 +4691,46 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L310"
+      "source_location": "L325"
     },
     {
-      "id": "changelog_2_3_0_2026_10_17",
-      "label": "[2.3.0] - 2026-10-17",
+      "id": "changelog_2_3_1_2026_10_18",
+      "label": "[2.3.1] - 2026-10-18",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.3.0] - 2026-10-17",
+      "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L237"
+      "source_location": "L240"
     },
     {
-      "id": "changelog_2_5_2_2026_10_19",
-      "label": "[2.5.2] - 2026-10-19",
+      "id": "changelog_2_8_3_2026_10_22",
+      "label": "[2.8.3] - 2026-10-22",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.2] - 2026-10-19",
+      "norm_label": "[2.8.3] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L149"
+      "source_location": "L41"
     },
     {
-      "id": "changelog_2_8_2_2026_10_22",
-      "label": "[2.8.2] - 2026-10-22",
+      "id": "changelog_2_8_5_2026_10_23",
+      "label": "[2.8.5] - 2026-10-23",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.8.2] - 2026-10-22",
+      "norm_label": "[2.8.5] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L37"
+      "source_location": "L10"
     },
     {
-      "id": "changelog_added",
+      "id": "changelog_added_327",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -4777,34 +4739,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L39"
+      "source_location": "L327"
     },
     {
-      "id": "changelog_added_239",
-      "label": "Added",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "added",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L239"
-    },
-    {
-      "id": "changelog_added_312",
-      "label": "Added",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "added",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L312"
-    },
-    {
-      "id": "changelog_changed_151",
+      "id": "changelog_changed_43",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -4813,7 +4751,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L151"
+      "source_location": "L43"
     },
     {
       "id": "changelog_changelog",
@@ -4826,6 +4764,30 @@
       "norm_label": "changelog",
       "source_file": "CHANGELOG.md",
       "source_location": "L1"
+    },
+    {
+      "id": "changelog_fixed",
+      "label": "Fixed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12"
+    },
+    {
+      "id": "changelog_fixed_242",
+      "label": "Fixed",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L242"
     },
     {
       "id": "tsconfig_node",
@@ -4960,6 +4922,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_appbuttonarrow",
+      "label": "AppButtonArrow.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "appbuttonarrow.vue",
+      "source_file": "src/components/AppButtonArrow.vue",
+      "source_location": "L1"
+    },
+    {
       "id": "src_components_herosection",
       "label": "HeroSection.vue",
       "_origin": "ast",
@@ -4982,50 +4955,6 @@
       "source_location": "L184"
     },
     {
-      "id": "src_components_lazysection",
-      "label": "LazySection.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "lazysection.vue",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_lazysection_route",
-      "label": "route",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "route",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L36"
-    },
-    {
-      "id": "src_components_lazysection_shouldrender",
-      "label": "shouldRender",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "shouldrender",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L39"
-    },
-    {
-      "id": "src_components_lazysection_wrapperref",
-      "label": "wrapperRef",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "wrapperref",
-      "source_file": "src/components/LazySection.vue",
-      "source_location": "L38"
-    },
-    {
       "id": "src_components_processsection",
       "label": "ProcessSection.vue",
       "_origin": "ast",
@@ -5037,6 +4966,39 @@
       "source_location": "L1"
     },
     {
+      "id": "src_components_projectssection",
+      "label": "ProjectsSection.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectssection.vue",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_projectssection_featuredproject",
+      "label": "featuredProject",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "featuredproject",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L185"
+    },
+    {
+      "id": "src_components_projectssection_filteredsecondaryprojects",
+      "label": "filteredSecondaryProjects",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "filteredsecondaryprojects",
+      "source_file": "src/components/ProjectsSection.vue",
+      "source_location": "L190"
+    },
+    {
       "id": "src_components_servicessection",
       "label": "ServicesSection.vue",
       "_origin": "ast",
@@ -5045,17 +5007,6 @@
       "file_type": "code",
       "norm_label": "servicessection.vue",
       "source_file": "src/components/ServicesSection.vue",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_skeletons_sectionskeleton",
-      "label": "SectionSkeleton.vue",
-      "_origin": "ast",
-      "community": 9,
-      "community_name": "ui/TextReveal.vue",
-      "file_type": "code",
-      "norm_label": "sectionskeleton.vue",
-      "source_file": "src/components/skeletons/SectionSkeleton.vue",
       "source_location": "L1"
     },
     {
@@ -5147,6 +5098,39 @@
       "source_location": "L1"
     },
     {
+      "id": "src_data_projects",
+      "label": "projects.ts",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projects.ts",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_data_projects_projectsdata",
+      "label": "projectsData",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectsdata",
+      "source_file": "src/data/projects.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_types_project",
+      "label": "project.ts",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "project.ts",
+      "source_file": "src/types/project.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "src_views_homeview",
       "label": "HomeView.vue",
       "_origin": "ast",
@@ -5156,6 +5140,105 @@
       "norm_label": "homeview.vue",
       "source_file": "src/views/HomeView.vue",
       "source_location": "L1"
+    },
+    {
+      "id": "src_views_projectdetailview",
+      "label": "ProjectDetailView.vue",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "projectdetailview.vue",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_views_projectdetailview_categorylabel",
+      "label": "categoryLabel",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "categorylabel",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L183"
+    },
+    {
+      "id": "src_views_projectdetailview_currentindex",
+      "label": "currentIndex",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "currentindex",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L164"
+    },
+    {
+      "id": "src_views_projectdetailview_formattedblocks",
+      "label": "formattedBlocks",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "formattedblocks",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L198"
+    },
+    {
+      "id": "src_views_projectdetailview_formattedparagraphs",
+      "label": "formattedParagraphs",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "formattedparagraphs",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L221"
+    },
+    {
+      "id": "src_views_projectdetailview_nextproject",
+      "label": "nextProject",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "nextproject",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L176"
+    },
+    {
+      "id": "src_views_projectdetailview_prevproject",
+      "label": "prevProject",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "prevproject",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L169"
+    },
+    {
+      "id": "src_views_projectdetailview_project",
+      "label": "project",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "project",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L159"
+    },
+    {
+      "id": "src_views_projectdetailview_route",
+      "label": "route",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
+      "file_type": "code",
+      "norm_label": "route",
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L157"
     },
     {
       "id": "tests_homepage_spec",
@@ -5180,14 +5263,14 @@
       "source_location": "L6"
     },
     {
-      "id": "tests_reveal_lazy_spec",
-      "label": "reveal-lazy.spec.ts",
+      "id": "tests_project_detail_spec",
+      "label": "project-detail.spec.ts",
       "_origin": "ast",
       "community": 9,
       "community_name": "ui/TextReveal.vue",
       "file_type": "code",
-      "norm_label": "reveal-lazy.spec.ts",
-      "source_file": "tests/reveal-lazy.spec.ts",
+      "norm_label": "project-detail.spec.ts",
+      "source_file": "tests/project-detail.spec.ts",
       "source_location": "L1"
     },
     {
@@ -5361,8 +5444,8 @@
       "_origin": "semantic",
       "author": "Besporman",
       "captured_at": null,
-      "community": 35,
-      "community_name": "ProjectDetailView.vue",
+      "community": 9,
+      "community_name": "ui/TextReveal.vue",
       "contributor": null,
       "file_type": "document",
       "norm_label": "besporman portfolio & services overview",
@@ -5396,19 +5479,43 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L120",
+      "source_location": "L184",
       "weight": 1.0
     },
     {
       "source": "src_components_apploadingscreen_waitforreadiness",
-      "target": "src_components_apploadingscreen_aretopelementsloaded",
+      "target": "src_components_apploadingscreen_preloadallcriticalimages",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L127",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen_waitforreadiness",
+      "target": "src_components_apploadingscreen_waitforwindowload",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L186",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen_waitforreadiness",
+      "target": "src_components_apploadingscreen_waitfordomimages",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L187",
       "weight": 1.0
     },
     {
@@ -6226,7 +6333,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -6238,7 +6345,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L150",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -6250,7 +6357,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L150",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -6886,7 +6993,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L148",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -6898,7 +7005,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L149",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -6910,7 +7017,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L150",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -7126,17 +7233,39 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_312",
+      "target": "changelog_added_327",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L312",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_added_309",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L309",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_0_0_2026_10_17",
+      "target": "changelog_changed_319",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L319",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_1_0_2026_10_17",
       "target": "changelog_added_294",
       "relation": "contains",
       "_origin": "ast",
@@ -7147,30 +7276,30 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_304",
+      "source": "changelog_2_1_0_2026_10_17",
+      "target": "changelog_changed_299",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L304",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_279",
+      "target": "changelog_fixed_302",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L279",
+      "source_location": "L302",
       "weight": 1.0
     },
     {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_284",
+      "source": "changelog_2_1_1_2026_10_17",
+      "target": "changelog_fixed_284",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7180,168 +7309,146 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_287",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L287",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_269",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L269",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_2_0_2026_10_17",
-      "target": "changelog_added_251",
+      "target": "changelog_added_266",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L251",
+      "source_location": "L266",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_239",
+      "target": "changelog_added_254",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L239",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_227",
+      "target": "changelog_fixed_242",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L227",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_218",
+      "target": "changelog_fixed_233",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L218",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_207",
+      "target": "changelog_changed_222",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L207",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_198",
+      "target": "changelog_added_213",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L198",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed_188",
+      "target": "changelog_fixed_203",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L188",
+      "source_location": "L203",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_179",
+      "target": "changelog_changed_194",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L179",
+      "source_location": "L194",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_0_2026_10_18",
-      "target": "changelog_added_167",
+      "target": "changelog_added_182",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L167",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_1_2026_10_19",
-      "target": "changelog_changed_159",
+      "target": "changelog_changed_174",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L159",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_2_2026_10_19",
-      "target": "changelog_changed_151",
+      "target": "changelog_changed_166",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L151",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_3_2026_10_19",
-      "target": "changelog_fixed",
+      "target": "changelog_fixed_154",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L139",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_4_2026_10_19",
-      "target": "changelog_added_126",
+      "target": "changelog_added_141",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L126",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -7352,23 +7459,45 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L132",
+      "source_location": "L147",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_changed_112",
+      "target": "changelog_changed_127",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L112",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_added_119",
+      "target": "changelog_added_134",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L134",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_added_111",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_6_0_2026_10_22",
+      "target": "changelog_changed_119",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7378,69 +7507,47 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_changed_104",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L104",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_added_96",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L96",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_7_0_2026_10_22",
-      "target": "changelog_added_79",
+      "target": "changelog_added_94",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L79",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_added_60",
+      "target": "changelog_added_75",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L60",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_changed_71",
+      "target": "changelog_changed_86",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L71",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_1_2026_10_22",
-      "target": "changelog_added_47",
+      "target": "changelog_added_62",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L47",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -7451,18 +7558,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L39",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_3_2026_10_22",
-      "target": "changelog_changed_28",
+      "target": "changelog_changed_43",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L28",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -7473,12 +7580,23 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_8_5_2026_10_23",
+      "target": "changelog_fixed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
       "source_location": "L12",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_8_4_2026_10_22",
+      "target": "changelog_2_8_5_2026_10_23",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7489,13 +7607,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_6_0_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_5_5_2026_10_22",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L110",
+      "source_location": "L125",
       "weight": 1.0
     },
     {
@@ -7506,7 +7635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L124",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -7517,7 +7646,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L137",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -7528,7 +7657,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L149",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -7539,7 +7668,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L157",
+      "source_location": "L172",
       "weight": 1.0
     },
     {
@@ -7550,7 +7679,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L165",
+      "source_location": "L180",
       "weight": 1.0
     },
     {
@@ -7561,7 +7690,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L177",
+      "source_location": "L192",
       "weight": 1.0
     },
     {
@@ -7572,7 +7701,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L186",
+      "source_location": "L201",
       "weight": 1.0
     },
     {
@@ -7583,7 +7712,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L196",
+      "source_location": "L211",
       "weight": 1.0
     },
     {
@@ -7594,7 +7723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L205",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -7605,7 +7734,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L216",
+      "source_location": "L231",
       "weight": 1.0
     },
     {
@@ -7616,7 +7745,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L225",
+      "source_location": "L240",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_4_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -7627,7 +7767,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L237",
+      "source_location": "L252",
       "weight": 1.0
     },
     {
@@ -7638,18 +7778,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L249",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_8_3_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L26",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -7660,7 +7789,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L267",
+      "source_location": "L282",
       "weight": 1.0
     },
     {
@@ -7671,7 +7800,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L277",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
@@ -7682,7 +7811,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L292",
+      "source_location": "L307",
       "weight": 1.0
     },
     {
@@ -7693,7 +7822,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L310",
+      "source_location": "L325",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_8_3_2026_10_22",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -7704,7 +7844,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L37",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -7715,7 +7855,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L45",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -7726,7 +7866,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L58",
+      "source_location": "L73",
       "weight": 1.0
     },
     {
@@ -7737,18 +7877,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L77",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_6_0_2026_10_22",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L94",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -8050,13 +8179,46 @@
     },
     {
       "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_preloadallcriticalimages",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_waitfordomimages",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
+      "target": "src_components_apploadingscreen_waitforwindowload",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/AppLoadingScreen.vue",
+      "source_location": "L161",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_apploadingscreen",
       "target": "src_components_apploadingscreen_waitforreadiness",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L111",
+      "source_location": "L174",
       "weight": 1.0
     },
     {
@@ -8067,7 +8229,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L147",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -8116,24 +8278,24 @@
     },
     {
       "source": "src_components_apploadingscreen",
-      "target": "src_components_apploadingscreen_isimageloaded",
+      "target": "src_components_apploadingscreen_critical_image_urls",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L84",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
       "source": "src_components_apploadingscreen",
-      "target": "src_components_apploadingscreen_aretopelementsloaded",
+      "target": "src_components_apploadingscreen_preloadimage",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L89",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -10707,7 +10869,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L152",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -10718,7 +10880,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L154",
+      "source_location": "L159",
       "weight": 1.0
     },
     {
@@ -10729,7 +10891,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L159",
+      "source_location": "L164",
       "weight": 1.0
     },
     {
@@ -10740,7 +10902,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L164",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -10751,7 +10913,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L171",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -10762,7 +10924,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L178",
+      "source_location": "L183",
+      "weight": 1.0
+    },
+    {
+      "source": "src_views_projectdetailview",
+      "target": "src_views_projectdetailview_contentblock",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "src_views_projectdetailview",
+      "target": "src_views_projectdetailview_formattedblocks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/views/ProjectDetailView.vue",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
@@ -10773,7 +10957,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/views/ProjectDetailView.vue",
-      "source_location": "L188",
+      "source_location": "L221",
       "weight": 1.0
     },
     {
@@ -11158,15 +11342,15 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_apploadingscreen_aretopelementsloaded",
-      "target": "src_components_apploadingscreen_isimageloaded",
+      "source": "src_components_apploadingscreen_preloadallcriticalimages",
+      "target": "src_components_apploadingscreen_preloadimage",
       "relation": "indirect_call",
       "_origin": "ast",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/AppLoadingScreen.vue",
-      "source_location": "L104",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -11504,5 +11688,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "530b35fb6fd92e7c0844096266ccec3372c0c11c"
+  "built_at_commit": "ac0c92cbcb98937ab1a4d75b61effacac93b4c18"
 }

@@ -52,12 +52,15 @@
         </div>
 
         <div class="about-side-panel">
-          <div class="quote-card comic-pop delay-2">
-            <span class="quote-mark" aria-hidden="true">«</span>
-            <p class="quote-text">
-              خیالت از بخش فنی پروژه‌ات راحت باشد. ما پشت سیستم نشسته‌ایم و کار را درست تحویل می‌دهیم.
-            </p>
-            <span class="quote-author">— استودیو بسپر من</span>
+          <div class="about-frame comic-pop delay-2">
+            <img
+              :src="introductionImg"
+              alt="معرفی و ارزش‌های تیم بسپر من"
+              class="about-illustration"
+              width="768"
+              height="1376"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
@@ -69,6 +72,7 @@
 <script setup lang="ts">
 import TextReveal from '@/components/ui/TextReveal.vue'
 import { useScrollReveal } from '@/composables/useScrollReveal'
+import introductionImg from '../../pic/webp/besporman_introduction.webp'
 
 useScrollReveal()
 </script>
@@ -177,42 +181,42 @@ useScrollReveal()
   align-items: center;
   justify-content: center;
   background-color: var(--primitive-sage-100);
-  border-inline-start: var(--border-width-bold) solid var(--color-border-bold);
-  padding: var(--space-8);
+  border-top: var(--border-width-bold) solid var(--color-border-bold);
+  padding: var(--space-6);
+  overflow: hidden;
 }
 
-.quote-card {
-  position: relative;
+@media (min-width: 960px) {
+  .about-side-panel {
+    border-top: none;
+    border-inline-start: var(--border-width-bold) solid var(--color-border-bold);
+    padding: var(--space-8);
+  }
+}
+
+.about-frame {
+  width: 100%;
+  max-width: 380px;
   background-color: var(--color-canvas);
   border: var(--border-width-bold) solid var(--color-border-bold);
   border-radius: var(--border-radius-md);
   box-shadow: 4px 4px 0 var(--color-border-bold);
-  padding: var(--space-8);
-  max-width: 360px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform var(--transition-bounce), box-shadow var(--transition-bounce);
 }
 
-.quote-mark {
-  font-family: var(--font-display);
-  font-size: 54px;
-  line-height: 1;
-  color: var(--color-accent);
+.about-frame:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-border-bold);
+}
+
+.about-illustration {
+  width: 100%;
+  height: auto;
   display: block;
-  margin-bottom: var(--space-2);
-}
-
-.quote-text {
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  font-weight: 500;
-  line-height: var(--leading-normal);
-  color: var(--color-ink-primary);
-  margin-bottom: var(--space-4);
-}
-
-.quote-author {
-  display: block;
-  font-size: var(--text-sm);
-  font-weight: 700;
-  color: var(--color-accent-text);
+  object-fit: cover;
 }
 </style>

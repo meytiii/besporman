@@ -12,8 +12,27 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
 
     // Should show validation errors
     expect(wrapper.text()).toContain('لطفاً نام خود را به صورت معتبر وارد کنید')
-    expect(wrapper.text()).toContain('لطفاً شماره موبایل یا آیدی تلگرام خود را وارد کنید')
-    expect(wrapper.text()).toContain('لطفاً توضیحات بیشتری درباره نیازمندی‌های پروژه بنویسید')
+    expect(wrapper.text()).toContain('لطفاً آیدی تلگرام یا شماره در دسترس خود را وارد کنید')
+    expect(wrapper.text()).toContain('لطفاً شرح ایده را با حداقل ۳۰ کاراکتر تکمیل کنید')
+  })
+
+  it('updates circular progress completion as fields are filled', async () => {
+    const wrapper = mount(ContactSection)
+
+    // Initially with default projectStage ('new-idea'): 15%
+    expect(wrapper.text()).toContain('۱۵٪')
+
+    // Fill name (>= 2 chars: +15% -> 30%)
+    await wrapper.find('#client-name').setValue('مهدی رضایی')
+    expect(wrapper.text()).toContain('۳۰٪')
+
+    // Fill contact info (>= 4 chars: +20% -> 50%)
+    await wrapper.find('#contact-info').setValue('@mehdi_dev')
+    expect(wrapper.text()).toContain('۵۰٪')
+
+    // Fill description >= 30 characters (+20% -> 70%)
+    await wrapper.find('#project-message').setValue('این یک پروژه اختصاصی فروشگاهی مدرن با رابط کاربری نئوبروتالیسم است.')
+    expect(wrapper.text()).toContain('۷۰٪')
   })
 
   it('submits valid form and returns honest not_configured feedback rather than fake success', async () => {
@@ -22,7 +41,7 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
     // Fill valid data
     await wrapper.find('#client-name').setValue('مهدی رضایی')
     await wrapper.find('#contact-info').setValue('09121112233')
-    await wrapper.find('#project-message').setValue('نیازمند یک وب‌سایت مدرن با پورتفولیو و فرم سفارشات اختصاصی هستیم.')
+    await wrapper.find('#project-message').setValue('نیازمند یک وب‌سایت مدرن با پورتفولیو و فرم سفارشات اختصاصی هستیم که تمامی بخش‌ها را پوشش دهد.')
 
     const form = wrapper.find('form')
     await form.trigger('submit.prevent')

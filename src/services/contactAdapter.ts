@@ -1,9 +1,16 @@
 // src/services/contactAdapter.ts
 
+export type ProjectStage = 'new-idea' | 'upgrade-existing' | 'consultation';
+export type ContactMethod = 'telegram' | 'phone';
+
 export interface ContactMessagePayload {
+  projectStage: ProjectStage;
   name: string;
-  contactInfo: string; // phone or telegram handle
-  category: 'web' | 'telegram-bot' | 'windows-app';
+  contactMethod: ContactMethod;
+  contactInfo: string;
+  budgetRange: string;
+  timeline: string;
+  referenceLink?: string;
   message: string;
 }
 
@@ -25,18 +32,34 @@ export interface ContactSubmissionAdapter {
 export class DevelopmentContactAdapter implements ContactSubmissionAdapter {
   async submit(payload: ContactMessagePayload): Promise<SubmissionResult> {
     // Basic client-side sanity check
+    if (!payload.projectStage) {
+      return {
+        success: false,
+        code: 'VALIDATION_ERROR',
+        messageFa: 'لطفاً مرحله پروژه خود را انتخاب کنید.'
+      };
+    }
     if (!payload.name || payload.name.trim().length < 2) {
       return {
         success: false,
         code: 'VALIDATION_ERROR',
-        messageFa: 'لطفاً نام یا نام‌خانوادگی معتبر وارد کنید.'
+        messageFa: 'لطفاً نام یا نام‌خانوادگی معتبر وارد کنید (حداقل ۲ حرف).'
       };
     }
-    if (!payload.message || payload.message.trim().length < 10) {
+    if (!payload.contactInfo || payload.contactInfo.trim().length < 4) {
       return {
         success: false,
         code: 'VALIDATION_ERROR',
-        messageFa: 'توضیحات پیام باید حداقل ۱۰ کاراکتر باشد.'
+        messageFa: payload.contactMethod === 'telegram'
+          ? 'لطفاً آیدی تلگرام خود را وارد کنید.'
+          : 'لطفاً شماره تماس معتبر وارد کنید.'
+      };
+    }
+    if (!payload.message || payload.message.trim().length < 30) {
+      return {
+        success: false,
+        code: 'VALIDATION_ERROR',
+        messageFa: 'توضیحات پروژه باید حداقل ۳۰ کاراکتر باشد تا بتوانیم برآورد دقیقی ارائه دهیم.'
       };
     }
 
