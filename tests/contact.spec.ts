@@ -60,7 +60,7 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
     const wrapper = mount(ContactSection)
     const tgLink = wrapper.find('a.telegram-btn')
     expect(tgLink.exists()).toBe(true)
-    expect(tgLink.attributes('href')).toContain('https://t.me/')
+    expect(tgLink.attributes('href')).toBe('https://t.me/besporman_bot')
     expect(tgLink.attributes('target')).toBe('_blank')
     expect(tgLink.attributes('rel')).toContain('noopener')
   })

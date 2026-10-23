@@ -36,6 +36,7 @@ export const projectsData: ProjectItem[] = [
     status: 'verified',
     completedYearFa: '۱۴۰۲',
     technologies: ['Python', 'Telegram Bot API', 'SQLite', 'AsyncIO'],
+    telegramUrl: 'https://t.me/besporman_bot',
     keyHighlightsFa: [
       'پردازش آنی سفارش‌ها بدون نیاز به مداخله انسانی',
       'تولید فاکتور استاندارد و ذخیره‌سازی سابقه خرید',

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.2] - 2026-10-23
+
+### Changed
+- **Unified Telegram Deep Link (`ContactSection.vue`, `projects.ts`, `tests/contact.spec.ts`):**
+  - Updated all direct Telegram action links across the project to point to the official project bot: `https://t.me/besporman_bot`.
+  - Added dedicated `telegramUrl: 'https://t.me/besporman_bot'` to the Telegram Bot project item (`prj-02`) enabling direct bot launch from project details.
+
+---
+
 ## [2.9.1] - 2026-10-23
 
 ### Changed

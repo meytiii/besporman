@@ -40,7 +40,7 @@
               برای هماهنگی فوری، مشاوره اولیه و طرح مستقیم سوالات خود می‌توانید همین حالا به اکانت تلگرام تیم پیام دهید:
             </p>
             <a
-              href="https://t.me/besporman"
+              href="https://t.me/besporman_bot"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary telegram-btn"
