@@ -2,7 +2,12 @@
   <section class="contact-section" aria-labelledby="contact-title">
     <div class="container">
       
-      <!-- Section Header -->
+      <!-- Mobile Toast Notification Alert -->
+      <AppToast
+        v-model:show="toastState.show"
+        :message="toastState.message"
+        :type="toastState.type"
+      />
       <div class="section-header">
         <span class="section-badge reveal-badge comic-pop">ارتباط با استودیو</span>
         <h2 id="contact-title" class="section-title">
@@ -175,10 +180,10 @@
               </span>
             </div>
 
-            <!-- 2. Name Field -->
+            <!-- 2. Name Field (Requires First and Last Name, Persian auto-transposition on Desktop, Toast on Mobile) -->
             <div class="form-group">
               <label for="client-name" class="form-label">
-                نام یا نام‌خانوادگی: <span class="required-star">*</span>
+                نام و نام خانوادگی : <span class="required-star">*</span>
               </label>
               <input
                 id="client-name"
@@ -189,6 +194,9 @@
                 placeholder="مثال: مهدی رضایی"
                 :aria-invalid="Boolean(errors.name)"
                 :aria-describedby="errors.name ? 'name-error' : undefined"
+                @keydown="handleNameKeydown"
+                @input="handleNameInput"
+                @paste="handleNamePaste"
                 required
               />
               <span v-if="errors.name" id="name-error" class="error-msg" role="alert">
@@ -209,7 +217,7 @@
                     type="button"
                     class="method-btn"
                     :class="{ 'is-active': form.contactMethod === 'telegram' }"
-                    @click="form.contactMethod = 'telegram'"
+                    @click="selectContactMethod('telegram')"
                   >
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                       <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.926z"/>
@@ -221,7 +229,7 @@
                     type="button"
                     class="method-btn"
                     :class="{ 'is-active': form.contactMethod === 'phone' }"
-                    @click="form.contactMethod = 'phone'"
+                    @click="selectContactMethod('phone')"
                   >
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -242,6 +250,9 @@
                   :placeholder="form.contactMethod === 'telegram' ? 'مثال: @telegram' : 'مثال: 09123456789'"
                   :aria-invalid="Boolean(errors.contactInfo)"
                   :aria-describedby="errors.contactInfo ? 'contact-error' : undefined"
+                  @keydown="handleContactKeydown"
+                  @input="handleContactInput"
+                  @paste="handleContactPaste"
                   dir="ltr"
                   required
                 />
@@ -274,7 +285,7 @@
               </div>
             </div>
 
-            <!-- 5. Reference Links or Documentation (Optional Input) -->
+            <!-- 5. Reference Links or Documentation (Optional Input, English Required) -->
             <div class="form-group">
               <label for="reference-link" class="form-label">
                 لینک نمونه، داکیومنت یا فیگما (اختیاری):
@@ -285,6 +296,9 @@
                 v-model="form.referenceLink"
                 class="form-input"
                 placeholder="https://figma.com/... یا github.com/..."
+                @keydown="handleLinkKeydown"
+                @input="handleLinkInput"
+                @paste="handleLinkPaste"
                 dir="ltr"
               />
             </div>
@@ -378,6 +392,19 @@ import TypingEffect from '@/components/ui/TypingEffect.vue'
 import AppButtonArrow from '@/components/AppButtonArrow.vue'
 import AnimatedCircularProgressBar from '@/components/ui/AnimatedCircularProgressBar.vue'
 import SmoothDropdown, { type DropdownOption } from '@/components/ui/SmoothDropdown.vue'
+import AppToast from '@/components/ui/AppToast.vue'
+import {
+  EN_TO_FA_KEYBOARD,
+  FA_TO_EN_KEYBOARD,
+  PERSIAN_TO_ENGLISH_DIGITS,
+  toEnglishDigits,
+  transposeEnToFa,
+  transposeFaToEn,
+  isMobileDevice,
+  normalizeAndValidateIranianPhone,
+  validatePersianFullName,
+  validateTelegramUsername,
+} from '@/utils/keyboardLayout'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 useScrollReveal()
@@ -409,6 +436,285 @@ const errors = reactive<FormErrors>({})
 const isLoading = ref(false)
 const submissionFeedback = ref<FeedbackState | null>(null)
 
+// Toast Alert State for Mobile and Language Alerts
+const toastState = reactive({
+  show: false,
+  message: '',
+  type: 'warning' as 'warning' | 'info' | 'error',
+})
+
+let toastDebounceTimer: ReturnType<typeof setTimeout> | null = null
+
+const triggerToast = (message: string, type: 'warning' | 'info' | 'error' = 'warning') => {
+  toastState.message = message
+  toastState.type = type
+  toastState.show = true
+
+  if (toastDebounceTimer) clearTimeout(toastDebounceTimer)
+  toastDebounceTimer = setTimeout(() => {
+    toastState.show = false
+  }, 3500)
+}
+
+// Method Switcher with state cleanup
+const selectContactMethod = (method: ContactMethod) => {
+  form.contactMethod = method
+  errors.contactInfo = undefined
+  // Clear if mismatched
+  if (method === 'phone' && form.contactInfo && !/^\d+$/.test(form.contactInfo)) {
+    form.contactInfo = ''
+  } else if (method === 'telegram' && form.contactInfo && /^\d+$/.test(form.contactInfo)) {
+    form.contactInfo = ''
+  }
+}
+
+// 1. Name Field Handlers (Persian Auto-Transposition on Desktop, Toast Alert on Mobile)
+const handleNameKeydown = (event: KeyboardEvent) => {
+  if (event.ctrlKey || event.metaKey || event.altKey) return
+  if (isMobileDevice()) return
+
+  const mapped = EN_TO_FA_KEYBOARD[event.key]
+  if (mapped) {
+    event.preventDefault()
+    const input = event.target as HTMLInputElement
+    const start = input.selectionStart ?? input.value.length
+    const end = input.selectionEnd ?? input.value.length
+    const currentVal = input.value
+    const newVal = currentVal.slice(0, start) + mapped + currentVal.slice(end)
+    form.name = newVal
+    requestAnimationFrame(() => {
+      input.setSelectionRange(start + mapped.length, start + mapped.length)
+    })
+    if (errors.name) validateNameField()
+  }
+}
+
+const handleNameInput = (event: Event) => {
+  const input = event.target as HTMLInputElement
+  const rawValue = input.value
+
+  const hasEnglish = /[a-zA-Z]/.test(rawValue)
+  if (hasEnglish) {
+    if (isMobileDevice()) {
+      triggerToast('لطفاً زبان کیبورد خود را به فارسی تغییر دهید.', 'warning')
+    }
+    const transposed = transposeEnToFa(rawValue)
+    form.name = transposed
+    input.value = transposed
+  } else {
+    form.name = rawValue
+  }
+
+  if (errors.name) validateNameField()
+}
+
+const handleNamePaste = (event: ClipboardEvent) => {
+  const pastedText = event.clipboardData?.getData('text') || ''
+  if (/[a-zA-Z]/.test(pastedText)) {
+    event.preventDefault()
+    const input = event.target as HTMLInputElement
+    const start = input.selectionStart ?? input.value.length
+    const end = input.selectionEnd ?? input.value.length
+    const currentVal = input.value
+    const converted = transposeEnToFa(pastedText)
+    const newVal = currentVal.slice(0, start) + converted + currentVal.slice(end)
+    form.name = newVal
+    requestAnimationFrame(() => {
+      input.setSelectionRange(start + converted.length, start + converted.length)
+    })
+    if (isMobileDevice()) {
+      triggerToast('لطفاً زبان کیبورد خود را به فارسی تغییر دهید.', 'warning')
+    }
+    if (errors.name) validateNameField()
+  }
+}
+
+// 2. Contact Info Handlers (Telegram / Phone)
+const handleContactKeydown = (event: KeyboardEvent) => {
+  if (event.ctrlKey || event.metaKey || event.altKey) return
+
+  if (form.contactMethod === 'phone') {
+    if (['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter'].includes(event.key)) {
+      return
+    }
+    // Convert Persian digits to English digits immediately
+    const digitMapped = PERSIAN_TO_ENGLISH_DIGITS[event.key]
+    if (digitMapped) {
+      event.preventDefault()
+      const input = event.target as HTMLInputElement
+      const start = input.selectionStart ?? input.value.length
+      const end = input.selectionEnd ?? input.value.length
+      const currentVal = input.value
+      if (currentVal.replace(/\D/g, '').length >= 11 && start === end) return
+      const newVal = currentVal.slice(0, start) + digitMapped + currentVal.slice(end)
+      form.contactInfo = newVal
+      requestAnimationFrame(() => {
+        input.setSelectionRange(start + 1, start + 1)
+      })
+      if (errors.contactInfo) validateContactInfoField()
+      return
+    }
+
+    if (!/^\d$/.test(event.key)) {
+      event.preventDefault()
+    }
+  } else {
+    // Telegram mode: Persian to English transposition on Desktop
+    if (isMobileDevice()) return
+
+    const mapped = FA_TO_EN_KEYBOARD[event.key]
+    const digitMapped = PERSIAN_TO_ENGLISH_DIGITS[event.key]
+    const replacement = mapped ?? digitMapped
+
+    if (replacement) {
+      event.preventDefault()
+      const input = event.target as HTMLInputElement
+      const start = input.selectionStart ?? input.value.length
+      const end = input.selectionEnd ?? input.value.length
+      const currentVal = input.value
+      const newVal = currentVal.slice(0, start) + replacement + currentVal.slice(end)
+      form.contactInfo = newVal
+      requestAnimationFrame(() => {
+        input.setSelectionRange(start + replacement.length, start + replacement.length)
+      })
+      if (errors.contactInfo) validateContactInfoField()
+    }
+  }
+}
+
+const handleContactInput = (event: Event) => {
+  const input = event.target as HTMLInputElement
+  let rawValue = input.value
+
+  if (form.contactMethod === 'phone') {
+    let digits = toEnglishDigits(rawValue).replace(/\D/g, '')
+    if (digits.startsWith('00989')) {
+      digits = '0' + digits.slice(4)
+    } else if (digits.startsWith('989')) {
+      digits = '0' + digits.slice(2)
+    }
+    if (digits.length > 11) {
+      digits = digits.slice(0, 11)
+    }
+    form.contactInfo = digits
+    input.value = digits
+  } else {
+    const hasPersian = /[\u0600-\u06FF]/.test(rawValue)
+    if (hasPersian) {
+      if (isMobileDevice()) {
+        triggerToast('آیدی تلگرام باید با حروف انگلیسی وارد شود.', 'warning')
+      }
+      rawValue = transposeFaToEn(rawValue)
+    }
+    let cleaned = rawValue.replace(/[^a-zA-Z0-9_@]/g, '')
+    if (cleaned.startsWith('@@')) {
+      cleaned = '@' + cleaned.replace(/@+/g, '')
+    }
+    form.contactInfo = cleaned
+    input.value = cleaned
+  }
+
+  if (errors.contactInfo) validateContactInfoField()
+}
+
+const handleContactPaste = (event: ClipboardEvent) => {
+  const pastedText = event.clipboardData?.getData('text') || ''
+  if (form.contactMethod === 'phone') {
+    event.preventDefault()
+    const input = event.target as HTMLInputElement
+    let digits = toEnglishDigits(pastedText).replace(/\D/g, '')
+    if (digits.startsWith('00989')) {
+      digits = '0' + digits.slice(4)
+    } else if (digits.startsWith('989')) {
+      digits = '0' + digits.slice(2)
+    } else if (digits.startsWith('9') && digits.length === 10) {
+      digits = '0' + digits
+    }
+    const currentDigits = form.contactInfo.replace(/\D/g, '')
+    const combined = (currentDigits + digits).slice(0, 11)
+    form.contactInfo = combined
+    input.value = combined
+    if (errors.contactInfo) validateContactInfoField()
+  } else {
+    if (/[\u0600-\u06FF]/.test(pastedText)) {
+      event.preventDefault()
+      const input = event.target as HTMLInputElement
+      const start = input.selectionStart ?? input.value.length
+      const end = input.selectionEnd ?? input.value.length
+      const currentVal = input.value
+      const converted = transposeFaToEn(pastedText).replace(/[^a-zA-Z0-9_@]/g, '')
+      const newVal = currentVal.slice(0, start) + converted + currentVal.slice(end)
+      form.contactInfo = newVal
+      requestAnimationFrame(() => {
+        input.setSelectionRange(start + converted.length, start + converted.length)
+      })
+      if (isMobileDevice()) {
+        triggerToast('آیدی تلگرام باید با حروف انگلیسی وارد شود.', 'warning')
+      }
+      if (errors.contactInfo) validateContactInfoField()
+    }
+  }
+}
+
+// 3. Link Handlers (English Required)
+const handleLinkKeydown = (event: KeyboardEvent) => {
+  if (event.ctrlKey || event.metaKey || event.altKey) return
+  if (isMobileDevice()) return
+
+  const mapped = FA_TO_EN_KEYBOARD[event.key]
+  const digitMapped = PERSIAN_TO_ENGLISH_DIGITS[event.key]
+  const replacement = mapped ?? digitMapped
+
+  if (replacement) {
+    event.preventDefault()
+    const input = event.target as HTMLInputElement
+    const start = input.selectionStart ?? input.value.length
+    const end = input.selectionEnd ?? input.value.length
+    const currentVal = input.value
+    const newVal = currentVal.slice(0, start) + replacement + currentVal.slice(end)
+    form.referenceLink = newVal
+    requestAnimationFrame(() => {
+      input.setSelectionRange(start + replacement.length, start + replacement.length)
+    })
+  }
+}
+
+const handleLinkInput = (event: Event) => {
+  const input = event.target as HTMLInputElement
+  let rawValue = input.value
+
+  const hasPersian = /[\u0600-\u06FF]/.test(rawValue)
+  if (hasPersian) {
+    if (isMobileDevice()) {
+      triggerToast('لینک یا داکیومنت باید با حروف انگلیسی وارد شود.', 'warning')
+    }
+    rawValue = transposeFaToEn(rawValue)
+  }
+
+  form.referenceLink = rawValue
+  input.value = rawValue
+}
+
+const handleLinkPaste = (event: ClipboardEvent) => {
+  const pastedText = event.clipboardData?.getData('text') || ''
+  if (/[\u0600-\u06FF]/.test(pastedText)) {
+    event.preventDefault()
+    const input = event.target as HTMLInputElement
+    const start = input.selectionStart ?? input.value.length
+    const end = input.selectionEnd ?? input.value.length
+    const currentVal = input.value
+    const converted = transposeFaToEn(pastedText)
+    const newVal = currentVal.slice(0, start) + converted + currentVal.slice(end)
+    form.referenceLink = newVal
+    requestAnimationFrame(() => {
+      input.setSelectionRange(start + converted.length, start + converted.length)
+    })
+    if (isMobileDevice()) {
+      triggerToast('لینک یا داکیومنت باید با حروف انگلیسی وارد شود.', 'warning')
+    }
+  }
+}
+
 // Budget Options for Dropdown
 const budgetOptions: DropdownOption[] = [
   { id: 'minimal', label: 'کمتر از ۱۰ میلیون تومان (مینیمال)' },
@@ -434,18 +740,27 @@ const completionProgress = computed(() => {
     score += 15
   }
 
-  // 2. Name: 15%
-  if (form.name.trim().length >= 2) {
+  // 2. Name: 15% (Requires both first and last name)
+  const nameParts = form.name.trim().split(/\s+/).filter(Boolean)
+  if (nameParts.length >= 2 && nameParts.every((p) => p.length >= 2)) {
     score += 15
-  } else if (form.name.trim().length > 0) {
+  } else if (nameParts.length === 1 && nameParts[0].length >= 2) {
     score += 8
   }
 
   // 3. Contact Info: 20%
-  if (form.contactInfo.trim().length >= 4) {
-    score += 20
-  } else if (form.contactInfo.trim().length > 0) {
-    score += 10
+  if (form.contactMethod === 'phone') {
+    if (normalizeAndValidateIranianPhone(form.contactInfo).isValid) {
+      score += 20
+    } else if (form.contactInfo.trim().length > 0) {
+      score += 10
+    }
+  } else {
+    if (validateTelegramUsername(form.contactInfo).isValid) {
+      score += 20
+    } else if (form.contactInfo.trim().length > 0) {
+      score += 10
+    }
   }
 
   // 4. Budget Range: 15%
@@ -458,7 +773,7 @@ const completionProgress = computed(() => {
     score += 15
   }
 
-  // 6. Message: 20% (proportional up to 30 chars)
+  // 6. Message: 20% (proportional up to 30 chars, unrestricted language)
   const msgLen = form.message.trim().length
   if (msgLen >= 30) {
     score += 20
@@ -474,6 +789,39 @@ const formatPersianDigits = (num: number): string => {
   return num.toString().replace(/\d/g, (d) => digits[parseInt(d, 10)])
 }
 
+// Field Validators
+const validateNameField = (): boolean => {
+  const validation = validatePersianFullName(form.name)
+  if (!validation.isValid) {
+    errors.name = validation.errorMessage
+    return false
+  }
+  errors.name = undefined
+  return true
+}
+
+const validateContactInfoField = (): boolean => {
+  if (form.contactMethod === 'phone') {
+    const phoneVal = normalizeAndValidateIranianPhone(form.contactInfo)
+    if (!phoneVal.isValid) {
+      errors.contactInfo = phoneVal.errorMessage
+      return false
+    }
+    form.contactInfo = phoneVal.normalized
+    errors.contactInfo = undefined
+    return true
+  } else {
+    const tgVal = validateTelegramUsername(form.contactInfo)
+    if (!tgVal.isValid) {
+      errors.contactInfo = tgVal.errorMessage
+      return false
+    }
+    form.contactInfo = tgVal.normalized
+    errors.contactInfo = undefined
+    return true
+  }
+}
+
 const validateForm = (): boolean => {
   errors.projectStage = undefined
   errors.name = undefined
@@ -487,15 +835,11 @@ const validateForm = (): boolean => {
     isValid = false
   }
 
-  if (!form.name.trim() || form.name.trim().length < 2) {
-    errors.name = 'لطفاً نام خود را به صورت معتبر وارد کنید (حداقل ۲ حرف).'
+  if (!validateNameField()) {
     isValid = false
   }
 
-  if (!form.contactInfo.trim() || form.contactInfo.trim().length < 4) {
-    errors.contactInfo = form.contactMethod === 'telegram'
-      ? 'لطفاً آیدی تلگرام خود را وارد کنید (مثال: @telegram).'
-      : 'لطفاً شماره تماس معتبر خود را وارد کنید.'
+  if (!validateContactInfoField()) {
     isValid = false
   }
 

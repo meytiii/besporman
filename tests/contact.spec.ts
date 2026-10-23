@@ -11,9 +11,42 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
     await form.trigger('submit.prevent')
 
     // Should show validation errors
-    expect(wrapper.text()).toContain('لطفاً نام خود را به صورت معتبر وارد کنید')
+    expect(wrapper.text()).toContain('لطفاً نام و نام خانوادگی خود را وارد کنید')
     expect(wrapper.text()).toContain('لطفاً آیدی تلگرام خود را وارد کنید')
     expect(wrapper.text()).toContain('لطفاً شرح ایده را با حداقل ۳۰ کاراکتر تکمیل کنید')
+  })
+
+  it('requires both first and last name for full name validation', async () => {
+    const wrapper = mount(ContactSection)
+    const nameInput = wrapper.find('#client-name')
+
+    // Only first name entered
+    await nameInput.setValue('مهدی')
+    const form = wrapper.find('form')
+    await form.trigger('submit.prevent')
+
+    expect(wrapper.text()).toContain('لطفاً نام و نام خانوادگی را کامل وارد کنید (شامل هر دو بخش نام و نام خانوادگی)')
+  })
+
+  it('validates Iranian mobile phone numbers (11 digits starting with 09)', async () => {
+    const wrapper = mount(ContactSection)
+    
+    // Switch to phone method
+    const phoneBtn = wrapper.findAll('.method-btn')[1]
+    await phoneBtn.trigger('click')
+
+    // Enter invalid phone
+    const contactInput = wrapper.find('#contact-info')
+    await contactInput.setValue('0211234567') // Landline or 10 digits
+    const form = wrapper.find('form')
+    await form.trigger('submit.prevent')
+
+    expect(wrapper.text()).toContain('شماره همراه باید ۱۱ رقم بوده و با ۰۹ شروع شود')
+
+    // Enter valid 11-digit mobile starting with 09
+    await contactInput.setValue('09121112233')
+    await form.trigger('submit.prevent')
+    expect(wrapper.text()).not.toContain('شماره همراه باید ۱۱ رقم بوده و با ۰۹ شروع شود')
   })
 
   it('updates circular progress completion as fields are filled', async () => {
@@ -22,11 +55,11 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
     // Initially with default projectStage ('new-idea'): 15%
     expect(wrapper.text()).toContain('۱۵٪')
 
-    // Fill name (>= 2 chars: +15% -> 30%)
+    // Fill name (both first and last name: +15% -> 30%)
     await wrapper.find('#client-name').setValue('مهدی رضایی')
     expect(wrapper.text()).toContain('۳۰٪')
 
-    // Fill contact info (>= 4 chars: +20% -> 50%)
+    // Fill contact info (valid telegram: +20% -> 50%)
     await wrapper.find('#contact-info').setValue('@mehdi_dev')
     expect(wrapper.text()).toContain('۵۰٪')
 
@@ -40,7 +73,7 @@ describe('Contact Section & Decoupled Telegram Boundary', () => {
 
     // Fill valid data
     await wrapper.find('#client-name').setValue('مهدی رضایی')
-    await wrapper.find('#contact-info').setValue('09121112233')
+    await wrapper.find('#contact-info').setValue('@mehdi_dev')
     await wrapper.find('#project-message').setValue('نیازمند یک وب‌سایت مدرن با پورتفولیو و فرم سفارشات اختصاصی هستیم که تمامی بخش‌ها را پوشش دهد.')
 
     const form = wrapper.find('form')

@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.5] - 2026-10-23
+
+### Added
+- **Keyboard Layout Auto-Transposition & Mobile Language Alerts (`keyboardLayout.ts`, `AppToast.vue`, `ContactSection.vue`):**
+  - Implemented desktop automatic QWERTY-to-Persian layout transposition for the Full Name field (e.g. typing `d` on an English keyboard layout instantly outputs `ی` with seamless caret preservation).
+  - Added reverse Persian-to-English transposition for the Telegram ID and Link / Documentation inputs (e.g. typing `ی` on a Persian layout instantly outputs `d`).
+  - Created neo-brutalist tactile toast notification system (`AppToast.vue`) that alerts mobile users with warning toasts when their virtual keyboard language mismatches expected field language.
+  - Added comprehensive unit test suite (`tests/keyboard-layout.spec.ts`) validating transposition and normalization across 18 edge cases.
+
+### Changed
+- **Full Name Requirement (`ContactSection.vue`, `tests/contact.spec.ts`):**
+  - Updated field label from `نام یا نام‌خانوادگی:` to `نام و نام خانوادگی :`.
+  - Enforced strict validation requiring both first and last name in Persian script before form submission is permitted.
+- **Iranian Mobile Phone Number Validation (`ContactSection.vue`, `keyboardLayout.ts`):**
+  - Added phone normalization and validation enforcing 11-digit Iranian numbers starting with `09` (e.g. `09123456789`).
+  - Added support for Persian/Arabic numeral auto-conversion and international prefix stripping (`+989...` / `00989...` -> `09...`).
+- **Unrestricted Description Input:**
+  - Preserved complete multilingual flexibility for the project description (`#project-message`) allowing unrestricted Persian, English, code snippets, and symbols with the existing 30-character threshold.
+
+---
+
 ## [2.9.4] - 2026-10-23
 
 ### Added
