@@ -52,17 +52,15 @@
         میخوای خیلی آروم به صفحه اصلی برگردیم؟
       </p>
 
-      <!-- Return Home Button with tactile arrow -->
+      <!-- Return Home Button -->
       <router-link to="/" class="btn-return-home" aria-label="برگرد به خونه">
         <span class="btn-text">برگرد به خونه</span>
-        <AppButtonArrow direction="left" />
       </router-link>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import AppButtonArrow from '@/components/AppButtonArrow.vue'
 </script>
 
 <style scoped>

@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.8] - 2026-10-23
+
+### Changed
+- **Minimalist 404 Return Home Button (`Error404Page.vue`):**
+  - Removed arrow icon from the `برگرد به خونه` button on the 404 page for a cleaner, centered typography look.
+
+---
+
 ## [2.9.7] - 2026-10-23
 
 ### Changed
