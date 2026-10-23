@@ -6707,7 +6707,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L72",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -7127,7 +7127,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L70",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -7139,7 +7139,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L71",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -7151,7 +7151,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/ProcessSection.vue",
-      "source_location": "L72",
+      "source_location": "L91",
       "weight": 1.0
     },
     {
@@ -12535,5 +12535,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "1fc40ebed98a2ca96a34c2f467e59b55a4b5f1f6"
+  "built_at_commit": "0e364d585a866e828437a66730c57eaf20234e24"
 }

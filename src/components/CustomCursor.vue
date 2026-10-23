@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
-import cursorImg from '../../pic/cursor.png'
+import cursorImg from '../../pic/webp/cursor.webp'
 
 interface ComicBurst {
   id: number

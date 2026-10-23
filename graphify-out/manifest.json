@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1792752441.8722236,
-    "seen": 1792752494.5984597,
-    "ast_hash": "24abefaf197ed02309751144c63126d5",
+    "mtime": 1792771051.1490166,
+    "seen": 1792771280.1859515,
+    "ast_hash": "724dbf106d98d64cd06fc75da368d65e",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -18,9 +18,9 @@
     "semantic_hash": ""
   },
   "src/components/ContactSection.vue": {
-    "mtime": 1792752370.90653,
-    "seen": 1792752494.5984719,
-    "ast_hash": "35728624b0d5ef72df3847e083436115",
+    "mtime": 1792771011.591282,
+    "seen": 1792771280.1859653,
+    "ast_hash": "675edd4a88acf673427c78ad5dc9e75f",
     "semantic_hash": ""
   },
   "src/components/HeroSection.vue": {
@@ -36,9 +36,9 @@
     "semantic_hash": ""
   },
   "src/components/ProcessSection.vue": {
-    "mtime": 1792668337.473329,
-    "seen": 1792749967.729764,
-    "ast_hash": "b908b30024a5b1ca9ec9757b97d00f3d",
+    "mtime": 1792771247.0722358,
+    "seen": 1792771280.1859717,
+    "ast_hash": "8cb1a2f667b6c85780bc08464d827c98",
     "semantic_hash": ""
   },
   "src/components/ProjectsSection.vue": {
@@ -72,9 +72,9 @@
     "semantic_hash": ""
   },
   "src/data/projects.ts": {
-    "mtime": 1792749589.897543,
-    "seen": 1792749967.7297914,
-    "ast_hash": "7bf965a3720fa3d93ed9d399e727ce2b",
+    "mtime": 1792770579.040655,
+    "seen": 1792771280.1860018,
+    "ast_hash": "241e9650945a554b7dcb728ad4d6a39b",
     "semantic_hash": ""
   },
   "src/main.ts": {
@@ -126,9 +126,9 @@
     "semantic_hash": "8cbfd5476645cbcda423992b553a2b0c"
   },
   "tests/contact.spec.ts": {
-    "mtime": 1792751889.356263,
-    "seen": 1792752494.5985131,
-    "ast_hash": "e4c8ecceaf572b7a9074ae7ef2860f1b",
+    "mtime": 1792770595.7259889,
+    "seen": 1792771280.1860101,
+    "ast_hash": "fac31ffd1c7e5fa0c6a1fb477372c928",
     "semantic_hash": ""
   },
   "tests/homepage.spec.ts": {
@@ -227,60 +227,6 @@
     "ast_hash": "fd19a97ebdffa690260505e5efd03260",
     "semantic_hash": ""
   },
-  "pic/besporman1.png": {
-    "mtime": 1792240069.2858932,
-    "seen": 1792249326.3188548,
-    "ast_hash": "3152d93ef2efcc7dac4a18e3d7ce3211",
-    "semantic_hash": ""
-  },
-  "pic/besporman2.png": {
-    "mtime": 1792240080.7856984,
-    "seen": 1792249326.3188558,
-    "ast_hash": "67d6f963cad4498c5948b3c18d6ef095",
-    "semantic_hash": ""
-  },
-  "pic/chat_bubble.png": {
-    "mtime": 1792245975.4526565,
-    "seen": 1792249326.3188567,
-    "ast_hash": "84c9fdb89e668735dda06a3935046d9c",
-    "semantic_hash": ""
-  },
-  "pic/chat_bubble_app.png": {
-    "mtime": 1792246226.9903119,
-    "seen": 1792249326.3188574,
-    "ast_hash": "93e45462e617b63a888dac3eb973d261",
-    "semantic_hash": ""
-  },
-  "pic/chat_bubble_bot.png": {
-    "mtime": 1792246226.914296,
-    "seen": 1792249326.3188584,
-    "ast_hash": "8bd6267793185cdd59e140e63d1a6ab0",
-    "semantic_hash": ""
-  },
-  "pic/chat_bubble_web.png": {
-    "mtime": 1792246226.837269,
-    "seen": 1792249326.3188596,
-    "ast_hash": "ee023a225a4112d5c8f24460e4803540",
-    "semantic_hash": ""
-  },
-  "pic/home.png": {
-    "mtime": 1792248341.749909,
-    "seen": 1792249326.3188603,
-    "ast_hash": "cb3661d760a23a54f9a0af38f3cf855b",
-    "semantic_hash": ""
-  },
-  "pic/neon_sign_off.png": {
-    "mtime": 1792246637.3692987,
-    "seen": 1792249326.318861,
-    "ast_hash": "ae1a05b7d5d8fc77f5e5c3f8b83e5dbd",
-    "semantic_hash": ""
-  },
-  "pic/neon_sign_on.png": {
-    "mtime": 1792246633.3600304,
-    "seen": 1792249326.3188617,
-    "ast_hash": "501ea87e1960ae48d72224a0ada5b722",
-    "semantic_hash": ""
-  },
   "pic/webp/besporman1.webp": {
     "mtime": 1792247021.9527335,
     "seen": 1792249326.3188667,
@@ -347,24 +293,6 @@
     "ast_hash": "f6704b1c105102c7485fb38598966036",
     "semantic_hash": ""
   },
-  "pic/header_1.jpg": {
-    "mtime": 1792250175.2441492,
-    "seen": 1792251910.5803301,
-    "ast_hash": "af619e2b716f697197427fe3a82098e6",
-    "semantic_hash": ""
-  },
-  "pic/header_2.jpg": {
-    "mtime": 1792250668.4911191,
-    "seen": 1792251910.5803313,
-    "ast_hash": "67b80465613112602f7e5bc017aa0806",
-    "semantic_hash": ""
-  },
-  "pic/header_3.jpg": {
-    "mtime": 1792250670.5020206,
-    "seen": 1792251910.580332,
-    "ast_hash": "0b1f1a42434f668aae58e9143589ce7a",
-    "semantic_hash": ""
-  },
   "pic/webp/header_1.webp": {
     "mtime": 1792251109.5483599,
     "seen": 1792251910.5803475,
@@ -389,28 +317,16 @@
     "ast_hash": "7fc1da8ecad4d900b2dad00f1fd78f10",
     "semantic_hash": ""
   },
-  "pic/besporman_like.png": {
-    "mtime": 1792255838.6939273,
-    "seen": 1792264033.5148015,
-    "ast_hash": "c9371ef059b3c5c745c567d79fcd14c8",
-    "semantic_hash": ""
-  },
   "src/components/CustomCursor.vue": {
     "mtime": 1792255838.7149324,
     "seen": 1792264033.5147574,
     "ast_hash": "91da058686bdf564bc5a63c91dbb7fef",
     "semantic_hash": ""
   },
-  "pic/cursor.png": {
-    "mtime": 1792255838.6999307,
-    "seen": 1792264033.5148065,
-    "ast_hash": "320417131ed6afa660a5c4454595a7ca",
-    "semantic_hash": ""
-  },
   "CHANGELOG.md": {
-    "mtime": 1792752464.7495947,
-    "seen": 1792752494.5985289,
-    "ast_hash": "4ec9c4e7fb4bdf7aadc8fc120f9f6edf",
+    "mtime": 1792771061.8549883,
+    "seen": 1792771280.1860268,
+    "ast_hash": "25f85727dad26310bdf8375a37b86886",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
@@ -497,28 +413,10 @@
     "ast_hash": "a106a4b84677b1cdab6f5711e34e642b",
     "semantic_hash": ""
   },
-  "pic/besporman_reading.png": {
-    "mtime": 1792272881.3854384,
-    "seen": 1792425657.2386606,
-    "ast_hash": "b6dba5051d12617c16c98f472077955f",
-    "semantic_hash": ""
-  },
   "pic/webp/besporman_like.webp": {
     "mtime": 1792272881.3904402,
     "seen": 1792425657.2386775,
     "ast_hash": "c912319e72f54eaa00cc464bf64ef2e5",
-    "semantic_hash": ""
-  },
-  "pic/website_showcase.png": {
-    "mtime": 1792664643.1347184,
-    "seen": 1792664692.951623,
-    "ast_hash": "35d9ba20a66197fe115827e7d02d3c5c",
-    "semantic_hash": ""
-  },
-  "pic/specialties.png": {
-    "mtime": 1792428102.3924677,
-    "seen": 1792661098.3744128,
-    "ast_hash": "b3f6e1df5a725e310b7022ff9f3e869b",
     "semantic_hash": ""
   },
   "pic/webp/specialties.webp": {
@@ -695,16 +593,16 @@
     "ast_hash": "08a765b3a26103a4b4f75f9558f545cf",
     "semantic_hash": ""
   },
-  "pic/besporman_introduction.png": {
-    "mtime": 1792751137.7497458,
-    "seen": 1792752494.5985372,
-    "ast_hash": "cfe9f3a27ee9c1b7c5bdd64741b2e552",
-    "semantic_hash": ""
-  },
   "pic/webp/besporman_introduction.webp": {
     "mtime": 1792751380.4930766,
     "seen": 1792752494.5985634,
     "ast_hash": "7bcff6da4e65077c9e978e7548010965",
+    "semantic_hash": ""
+  },
+  "pic/webp/request_steps.webp": {
+    "mtime": 1792771157.158104,
+    "seen": 1792771280.1860614,
+    "ast_hash": "48b6bc09c954385d4f38baa2c32817d9",
     "semantic_hash": ""
   }
 }

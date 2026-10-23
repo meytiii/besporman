@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.9.4] - 2026-10-23
+
+### Added
+- **Banner Illustration in Process Section (`ProcessSection.vue`, `pic/webp/request_steps.webp`):**
+  - Integrated `pic/webp/request_steps.webp` inside a brutalist bordered side frame within `.process-main-card`, mirroring the exact double-panel card architecture of the About section (`AboutSection.vue`).
+  - Positioned the 4 process steps on the right column (`.process-content`) and the banner illustration on the left column (`.process-side-panel`) with responsive stacked behavior on mobile screens.
+  - Converted `request_steps.png` to optimized WebP (`25.9 KB`) adhering strictly to project WebP-only asset policy.
+- **WebP Migration for Cursor Asset (`CustomCursor.vue`, `AppLoadingScreen.vue`, `pic/webp/cursor.webp`):**
+  - Converted custom pointer cursor to WebP format (`cursor.webp`), updating component imports and preloading arrays to enforce strict WebP compliance across the entire codebase.
+
+### Changed
+- **Process Section Layout & DOM Architecture (`ProcessSection.vue`):**
+  - Restructured the 4 process steps into a balanced 2x2 grid inside `.process-main-card`.
+  - Removed duplicate `id="process"` on the `<section>` element to ensure clean single-target DOM anchor navigation via `LazySection`.
+
+---
+
 ## [2.9.3] - 2026-10-23
 
 ### Changed

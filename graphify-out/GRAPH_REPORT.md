@@ -1,7 +1,7 @@
 # Graph Report - besporman  (2026-10-23)
 
 ## Corpus Check
-- 66 files · ~891,630 words
+- 66 files · ~318,889 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1fc40ebe`
+- Built from commit: `0e364d58`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -71,22 +71,22 @@
 2. `compilerOptions` - 15 edges
 3. `updateMascotPosition()` - 8 edges
 4. `useScrollReveal()` - 8 edges
-5. `compilerOptions` - 7 edges
-6. `Besporman — Agent Rules (GEMINI.md)` - 7 edges
-7. `scripts` - 5 edges
+5. `Besporman — Agent Rules (GEMINI.md)` - 7 edges
+6. `compilerOptions` - 7 edges
+7. `ContactSubmissionAdapter` - 5 edges
 8. `waitForReadiness()` - 5 edges
 9. `router` - 5 edges
-10. `ContactSubmissionAdapter` - 5 edges
+10. `include` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Telegram Bot Contact Form Webhook Architecture` --references--> `ContactSubmissionAdapter`  [EXTRACTED]
   backend_tasks_2026-10-17.md → src/services/contactAdapter.ts
+- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `ContactSubmissionAdapter`  [EXTRACTED]
+  AGENTS.md → src/services/contactAdapter.ts
+- `Frontend/Backend ContactSubmissionAdapter Boundary` --implements--> `DevelopmentContactAdapter`  [EXTRACTED]
+  AGENTS.md → src/services/contactAdapter.ts
 - `Frontend/Backend ContactSubmissionAdapter Boundary` --references--> `handleSubmit()`  [EXTRACTED]
   AGENTS.md → src/components/ContactSection.vue
-- `Mascot & Brand Visual Asset Preservation` --references--> `currentPose`  [EXTRACTED]
-  AGENTS.md → src/components/HeroSection.vue
-- `Besporman Portfolio & Services Overview` --references--> `projectsData`  [EXTRACTED]
-  README.md → src/data/projects.ts
 - `Vue 3 Composition API & Strict TypeScript Standards` --references--> `router`  [EXTRACTED]
   AGENTS.md → src/router/index.ts
 
@@ -212,7 +212,7 @@ Cohesion: 0.67
 Nodes (3): [2.9.0] - 2026-10-23, Added, Changed
 
 ## Knowledge Gaps
-- **261 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+256 more)
+- **261 isolated node(s):** `EyeOffset`, `Props`, `FeedbackState`, `FormErrors`, `Props` (+256 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **22 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -225,7 +225,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Why does `Changelog` connect `Changelog` to `[2.1.0] - 2026-10-17`, `[2.0.0] - 2026-10-17`, `[2.5.4] - 2026-10-19`, `[2.5.5] - 2026-10-22`, `[2.6.0] - 2026-10-22`, `[2.8.0] - 2026-10-22`, `[2.1.1] - 2026-10-17`, `[2.2.0] - 2026-10-17`, `[2.4.1] - 2026-10-18`, `[2.3.2] - 2026-10-18`, `[2.4.0] - 2026-10-18`, `[2.3.3] - 2026-10-18`, `[2.5.1] - 2026-10-19`, `[2.7.0] - 2026-10-22`, `[2.8.1] - 2026-10-22`, `[2.4.2] - 2026-10-18`, `[2.5.0] - 2026-10-18`, `[2.9.0] - 2026-10-23`, `[2.8.3] - 2026-10-22`, `[2.8.2] - 2026-10-22`, `[2.8.4] - 2026-10-22`, `[2.8.5] - 2026-10-23`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **What connects `name`, `private`, `version` to the rest of the system?**
+- **What connects `EyeOffset`, `Props`, `FeedbackState` to the rest of the system?**
   _261 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `EyeTracking.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._

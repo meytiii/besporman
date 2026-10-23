@@ -86,7 +86,7 @@ const CRITICAL_IMAGE_URLS = [
   '/pic/webp/neon_sign_off.webp',
   '/pic/webp/neon_sign_on.webp',
   '/favicon.png',
-  '/pic/cursor.png',
+  '/pic/webp/cursor.webp',
 ]
 
 const preloadImage = (src: string): Promise<void> => {
