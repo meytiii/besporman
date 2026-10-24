@@ -8,6 +8,7 @@
       'is-interactive': isInteractive,
       'is-pressed': isPressed,
       'is-text': isText,
+      'is-dropdown': isDropdown,
     }"
     aria-hidden="true"
     dir="ltr"
@@ -48,6 +49,7 @@ const isVisible = ref(false)
 const isInteractive = ref(false)
 const isPressed = ref(false)
 const isText = ref(false)
+const isDropdown = ref(false)
 const bursts = ref<ComicBurst[]>([])
 
 let mouseX = -200
@@ -67,10 +69,21 @@ const checkTargetState = (target: EventTarget | null) => {
   if (!target || !(target instanceof Element)) {
     isInteractive.value = false
     isText.value = false
+    isDropdown.value = false
     return
   }
 
-  // 1. Text input or editable area: let native I-beam take over
+  // 1. Dropdown options & flyout: let dedicated dropdown pointing cursor take over seamlessly
+  const dropdownFlyout = target.closest('.dropdown-menu-card, .dropdown-option-item')
+  if (dropdownFlyout) {
+    isDropdown.value = true
+    isInteractive.value = false
+    isText.value = false
+    return
+  }
+  isDropdown.value = false
+
+  // 2. Text input or editable area: let native I-beam take over
   const textElement = target.closest(
     'input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]), textarea, [contenteditable="true"]'
   )
@@ -81,7 +94,7 @@ const checkTargetState = (target: EventTarget | null) => {
   }
   isText.value = false
 
-  // 2. Interactive target: links, buttons, custom clickable widgets
+  // 3. Interactive target: links, buttons, custom clickable widgets
   const clickable = target.closest(
     'a, button, [role="button"], .btn, input[type="submit"], input[type="button"], select, summary, [tabindex]:not([tabindex="-1"]), .interactive'
   )
@@ -90,7 +103,7 @@ const checkTargetState = (target: EventTarget | null) => {
     return
   }
 
-  // 3. Fallback: Computed CSS pointer cursor
+  // 4. Fallback: Computed CSS pointer cursor
   try {
     const computed = window.getComputedStyle(target).cursor
     isInteractive.value = computed === 'pointer'
@@ -234,6 +247,20 @@ onUnmounted(() => {
   opacity: 0 !important;
 }
 
+/* Smooth handoff transition when mouse enters dropdown options */
+.custom-cursor-root.is-dropdown {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+.custom-cursor-root.is-dropdown .cursor-hand-wrapper {
+  transform: scale(0.65) rotate(-22deg) translateY(-8px);
+  opacity: 0;
+  transition:
+    transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.16s ease;
+}
+
 /* 
   Hand wrapper alignment:
   The finger tip in pic/cursor.png is at 33.333% from the left (x = 118px / 354px)
@@ -314,6 +341,10 @@ onUnmounted(() => {
   }
   .cursor-comic-burst {
     display: none !important;
+  }
+  .custom-cursor-root.is-dropdown .cursor-hand-wrapper {
+    transition: none !important;
+    transform: none !important;
   }
 }
 </style>

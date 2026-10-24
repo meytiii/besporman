@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.10.0] - 2026-10-25
+
+### Added
+- **Pointing Hand Dropdown Cursor Module (`SmoothDropdown.vue`, `CustomCursor.vue`):**
+  - Converted and integrated authentic vintage manicule engraving asset (`pic/webp/cursor_dropdown.webp`) pointing left towards options.
+  - Positioned cursor on the right edge (`inset-inline-start`) of hovered dropdown options in submit request forms.
+  - Smooth spring gliding transitions (`cubic-bezier(0.16, 1, 0.3, 1)`) moving the indicator vertically between hovered options without layout shifts.
+  - Choreographed handoff coordination with `CustomCursor.vue`: default upright cursor smoothly scales down and fades out when mouse enters the dropdown flyout, seamlessly handing off focus to the dropdown manicule.
+  - Dedicated right-side gutter (`padding-inline-start: 56px`) with micro-kinetic text nudge (`translateX(-3px)`) and tactile mousedown click punch (`translateX(-4px)`).
+  - Keyboard navigation (ArrowDown, ArrowUp, Enter/Space) automatically synchronizing indicator position.
+  - Full `prefers-reduced-motion` safety fallbacks.
+
+---
+
 ## [2.9.9] - 2026-10-23
 
 ### Changed

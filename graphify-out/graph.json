@@ -90,6 +90,19 @@
       "source_location": "L414"
     },
     {
+      "id": "src_components_ui_animatedcircularprogressbar_props",
+      "label": "Props",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ContactSection.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
+      "source_location": "L56"
+    },
+    {
       "id": "src_services_contactadapter_contactmessagepayload",
       "label": "ContactMessagePayload",
       "_callable": true,
@@ -178,7 +191,7 @@
       "file_type": "code",
       "norm_label": "comicburst",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L41"
+      "source_location": "L42"
     },
     {
       "id": "src_components_ui_text_reveal_textrevealper",
@@ -230,7 +243,7 @@
       "file_type": "code",
       "norm_label": "dropdownoption",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L105"
+      "source_location": "L127"
     },
     {
       "id": "src_components_ui_smoothdropdown_props",
@@ -243,7 +256,7 @@
       "file_type": "code",
       "norm_label": "props",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L111"
+      "source_location": "L133"
     },
     {
       "id": "src_components_theheader_navitem",
@@ -465,19 +478,6 @@
       "norm_label": "segment",
       "source_file": "src/components/ui/ModernLoader.vue",
       "source_location": "L139"
-    },
-    {
-      "id": "src_components_ui_animatedcircularprogressbar_props",
-      "label": "Props",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "AnimatedCircularProgressBar.vue",
-      "file_type": "code",
-      "norm_label": "props",
-      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
-      "source_location": "L56"
     },
     {
       "id": "src_components_ui_apptoast_props",
@@ -962,6 +962,18 @@
       "source_location": "L795"
     },
     {
+      "id": "src_components_ui_animatedcircularprogressbar_formatpersianpercent",
+      "label": "formatPersianPercent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ContactSection.vue",
+      "file_type": "code",
+      "norm_label": "formatpersianpercent()",
+      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
+      "source_location": "L93"
+    },
+    {
       "id": "src_services_contactadapter_contactsubmissionadapter_submit",
       "label": ".submit()",
       "_callable": true,
@@ -1103,7 +1115,7 @@
       "file_type": "code",
       "norm_label": "checktargetstate()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L66"
+      "source_location": "L68"
     },
     {
       "id": "src_components_customcursor_handlemouseenter",
@@ -1115,7 +1127,7 @@
       "file_type": "code",
       "norm_label": "handlemouseenter()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L154"
+      "source_location": "L167"
     },
     {
       "id": "src_components_customcursor_handlemouseleave",
@@ -1127,7 +1139,7 @@
       "file_type": "code",
       "norm_label": "handlemouseleave()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L141"
+      "source_location": "L154"
     },
     {
       "id": "src_components_customcursor_handlepointerdown",
@@ -1139,7 +1151,7 @@
       "file_type": "code",
       "norm_label": "handlepointerdown()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L121"
+      "source_location": "L134"
     },
     {
       "id": "src_components_customcursor_handlepointermove",
@@ -1151,7 +1163,7 @@
       "file_type": "code",
       "norm_label": "handlepointermove()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L102"
+      "source_location": "L115"
     },
     {
       "id": "src_components_customcursor_handlepointerup",
@@ -1163,7 +1175,7 @@
       "file_type": "code",
       "norm_label": "handlepointerup()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L137"
+      "source_location": "L150"
     },
     {
       "id": "src_components_customcursor_handlewindowblur",
@@ -1175,7 +1187,7 @@
       "file_type": "code",
       "norm_label": "handlewindowblur()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L158"
+      "source_location": "L171"
     },
     {
       "id": "src_components_customcursor_rendercursor",
@@ -1187,7 +1199,7 @@
       "file_type": "code",
       "norm_label": "rendercursor()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L59"
+      "source_location": "L61"
     },
     {
       "id": "src_components_customcursor_updatesupport",
@@ -1199,7 +1211,7 @@
       "file_type": "code",
       "norm_label": "updatesupport()",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L163"
+      "source_location": "L176"
     },
     {
       "id": "src_components_thefooter_handlefooternav",
@@ -1295,7 +1307,67 @@
       "file_type": "code",
       "norm_label": "closedropdown()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L142"
+      "source_location": "L212"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_handlecontainerkeydown",
+      "label": "handleContainerKeydown()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "handlecontainerkeydown()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L262"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_handlemenumouseleave",
+      "label": "handleMenuMouseLeave()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "handlemenumouseleave()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L194"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_handleoptionmousedown",
+      "label": "handleOptionMouseDown()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "handleoptionmousedown()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L200"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_handleoptionmouseenter",
+      "label": "handleOptionMouseEnter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "handleoptionmouseenter()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L189"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_handleoptionmouseup",
+      "label": "handleOptionMouseUp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "handleoptionmouseup()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L204"
     },
     {
       "id": "src_components_ui_smoothdropdown_handleoutsideclick",
@@ -1307,31 +1379,31 @@
       "file_type": "code",
       "norm_label": "handleoutsideclick()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L161"
+      "source_location": "L297"
     },
     {
-      "id": "src_components_ui_smoothdropdown_openandfocusfirst",
-      "label": "openAndFocusFirst()",
+      "id": "src_components_ui_smoothdropdown_openandfocusnext",
+      "label": "openAndFocusNext()",
       "_callable": true,
       "_origin": "ast",
       "community": 19,
       "community_name": "SmoothDropdown.vue",
       "file_type": "code",
-      "norm_label": "openandfocusfirst()",
+      "norm_label": "openandfocusnext()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L147"
+      "source_location": "L225"
     },
     {
-      "id": "src_components_ui_smoothdropdown_openandfocuslast",
-      "label": "openAndFocusLast()",
+      "id": "src_components_ui_smoothdropdown_openandfocusprev",
+      "label": "openAndFocusPrev()",
       "_callable": true,
       "_origin": "ast",
       "community": 19,
       "community_name": "SmoothDropdown.vue",
       "file_type": "code",
-      "norm_label": "openandfocuslast()",
+      "norm_label": "openandfocusprev()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L151"
+      "source_location": "L243"
     },
     {
       "id": "src_components_ui_smoothdropdown_selectoption",
@@ -1343,7 +1415,19 @@
       "file_type": "code",
       "norm_label": "selectoption()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L155"
+      "source_location": "L219"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_setoptionref",
+      "label": "setOptionRef()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "setoptionref()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L158"
     },
     {
       "id": "src_components_ui_smoothdropdown_toggledropdown",
@@ -1355,7 +1439,19 @@
       "file_type": "code",
       "norm_label": "toggledropdown()",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L138"
+      "source_location": "L208"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_updateindicatorforoption",
+      "label": "updateIndicatorForOption()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "updateindicatorforoption()",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L180"
     },
     {
       "id": "src_components_theheader_closemobilemenu",
@@ -2054,18 +2150,6 @@
       "source_location": "L222"
     },
     {
-      "id": "src_components_ui_animatedcircularprogressbar_formatpersianpercent",
-      "label": "formatPersianPercent()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "AnimatedCircularProgressBar.vue",
-      "file_type": "code",
-      "norm_label": "formatpersianpercent()",
-      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
-      "source_location": "L93"
-    },
-    {
       "id": "src_components_ui_apptoast_close",
       "label": "close()",
       "_callable": true,
@@ -2419,6 +2503,39 @@
       "source_location": "L442"
     },
     {
+      "id": "src_components_ui_animatedcircularprogressbar",
+      "label": "AnimatedCircularProgressBar.vue",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ContactSection.vue",
+      "file_type": "code",
+      "norm_label": "animatedcircularprogressbar.vue",
+      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_animatedcircularprogressbar_currentpercent",
+      "label": "currentPercent",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ContactSection.vue",
+      "file_type": "code",
+      "norm_label": "currentpercent",
+      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
+      "source_location": "L82"
+    },
+    {
+      "id": "src_components_ui_animatedcircularprogressbar_indicatorstrokelength",
+      "label": "indicatorStrokeLength",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "ContactSection.vue",
+      "file_type": "code",
+      "norm_label": "indicatorstrokelength",
+      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
+      "source_location": "L89"
+    },
+    {
       "id": "src_services_contactadapter",
       "label": "contactAdapter.ts",
       "_origin": "ast",
@@ -2737,7 +2854,7 @@
       "file_type": "code",
       "norm_label": "bursts",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L51"
+      "source_location": "L53"
     },
     {
       "id": "src_components_customcursor_cursorcontainerref",
@@ -2748,7 +2865,18 @@
       "file_type": "code",
       "norm_label": "cursorcontainerref",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L45"
+      "source_location": "L46"
+    },
+    {
+      "id": "src_components_customcursor_isdropdown",
+      "label": "isDropdown",
+      "_origin": "ast",
+      "community": 16,
+      "community_name": "CustomCursor.vue",
+      "file_type": "code",
+      "norm_label": "isdropdown",
+      "source_file": "src/components/CustomCursor.vue",
+      "source_location": "L52"
     },
     {
       "id": "src_components_customcursor_isinteractive",
@@ -2759,7 +2887,7 @@
       "file_type": "code",
       "norm_label": "isinteractive",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "src_components_customcursor_ispressed",
@@ -2770,7 +2898,7 @@
       "file_type": "code",
       "norm_label": "ispressed",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L49"
+      "source_location": "L50"
     },
     {
       "id": "src_components_customcursor_issupported",
@@ -2781,7 +2909,7 @@
       "file_type": "code",
       "norm_label": "issupported",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L46"
+      "source_location": "L47"
     },
     {
       "id": "src_components_customcursor_istext",
@@ -2792,7 +2920,7 @@
       "file_type": "code",
       "norm_label": "istext",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L50"
+      "source_location": "L51"
     },
     {
       "id": "src_components_customcursor_isvisible",
@@ -2803,7 +2931,7 @@
       "file_type": "code",
       "norm_label": "isvisible",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L47"
+      "source_location": "L48"
     },
     {
       "id": "src_app",
@@ -3034,7 +3162,7 @@
       "file_type": "code",
       "norm_label": "containerref",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L132"
+      "source_location": "L154"
     },
     {
       "id": "src_components_ui_smoothdropdown_emit",
@@ -3045,7 +3173,7 @@
       "file_type": "code",
       "norm_label": "emit",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L125"
+      "source_location": "L147"
     },
     {
       "id": "src_components_ui_smoothdropdown_hoveredid",
@@ -3056,7 +3184,40 @@
       "file_type": "code",
       "norm_label": "hoveredid",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L131"
+      "source_location": "L153"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_indicatorstyle",
+      "label": "indicatorStyle",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "indicatorstyle",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L174"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_indicatortop",
+      "label": "indicatorTop",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "indicatortop",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L166"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_isindicatorvisible",
+      "label": "isIndicatorVisible",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "isindicatorvisible",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L167"
     },
     {
       "id": "src_components_ui_smoothdropdown_isopen",
@@ -3067,7 +3228,40 @@
       "file_type": "code",
       "norm_label": "isopen",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L130"
+      "source_location": "L152"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_isoptionpressed",
+      "label": "isOptionPressed",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "isoptionpressed",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L168"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_listref",
+      "label": "listRef",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "listref",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L155"
+    },
+    {
+      "id": "src_components_ui_smoothdropdown_optionelements",
+      "label": "optionElements",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "SmoothDropdown.vue",
+      "file_type": "code",
+      "norm_label": "optionelements",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L157"
     },
     {
       "id": "src_components_ui_smoothdropdown_selectedoption",
@@ -3078,7 +3272,7 @@
       "file_type": "code",
       "norm_label": "selectedoption",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L134"
+      "source_location": "L170"
     },
     {
       "id": "src_components_theheader",
@@ -3497,10 +3691,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L443"
+      "source_location": "L457"
     },
     {
-      "id": "changelog_added_445",
+      "id": "changelog_added_459",
       "label": "Added",
       "_origin": "ast",
       "community": 25,
@@ -3509,10 +3703,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L445"
+      "source_location": "L459"
     },
     {
-      "id": "changelog_changed_450",
+      "id": "changelog_changed_464",
       "label": "Changed",
       "_origin": "ast",
       "community": 25,
@@ -3521,10 +3715,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L450"
+      "source_location": "L464"
     },
     {
-      "id": "changelog_fixed_453",
+      "id": "changelog_fixed_467",
       "label": "Fixed",
       "_origin": "ast",
       "community": 25,
@@ -3533,7 +3727,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L453"
+      "source_location": "L467"
     },
     {
       "id": "src_components_ui_modern_loader",
@@ -3556,10 +3750,10 @@
       "node_kind": "heading",
       "norm_label": "[2.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L458"
+      "source_location": "L472"
     },
     {
-      "id": "changelog_added_460",
+      "id": "changelog_added_474",
       "label": "Added",
       "_origin": "ast",
       "community": 27,
@@ -3568,10 +3762,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L460"
+      "source_location": "L474"
     },
     {
-      "id": "changelog_changed_470",
+      "id": "changelog_changed_484",
       "label": "Changed",
       "_origin": "ast",
       "community": 27,
@@ -3580,7 +3774,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L470"
+      "source_location": "L484"
     },
     {
       "id": "changelog_2_5_4_2026_10_19",
@@ -3592,10 +3786,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.4] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L290"
+      "source_location": "L304"
     },
     {
-      "id": "changelog_added_292",
+      "id": "changelog_added_306",
       "label": "Added",
       "_origin": "ast",
       "community": 28,
@@ -3604,7 +3798,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L292"
+      "source_location": "L306"
     },
     {
       "id": "changelog_removed",
@@ -3616,7 +3810,7 @@
       "node_kind": "heading",
       "norm_label": "removed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L298"
+      "source_location": "L312"
     },
     {
       "id": "changelog_2_5_5_2026_10_22",
@@ -3628,10 +3822,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.5] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L276"
+      "source_location": "L290"
     },
     {
-      "id": "changelog_added_285",
+      "id": "changelog_added_299",
       "label": "Added",
       "_origin": "ast",
       "community": 29,
@@ -3640,10 +3834,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L285"
+      "source_location": "L299"
     },
     {
-      "id": "changelog_changed_278",
+      "id": "changelog_changed_292",
       "label": "Changed",
       "_origin": "ast",
       "community": 29,
@@ -3652,7 +3846,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L278"
+      "source_location": "L292"
     },
     {
       "id": "src_components_marqueebanner",
@@ -3840,10 +4034,10 @@
       "node_kind": "heading",
       "norm_label": "[2.6.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L260"
+      "source_location": "L274"
     },
     {
-      "id": "changelog_added_262",
+      "id": "changelog_added_276",
       "label": "Added",
       "_origin": "ast",
       "community": 30,
@@ -3852,10 +4046,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L262"
+      "source_location": "L276"
     },
     {
-      "id": "changelog_changed_270",
+      "id": "changelog_changed_284",
       "label": "Changed",
       "_origin": "ast",
       "community": 30,
@@ -3864,7 +4058,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L270"
+      "source_location": "L284"
     },
     {
       "id": "changelog_2_8_0_2026_10_22",
@@ -3876,10 +4070,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L224"
+      "source_location": "L238"
     },
     {
-      "id": "changelog_added_226",
+      "id": "changelog_added_240",
       "label": "Added",
       "_origin": "ast",
       "community": 31,
@@ -3888,10 +4082,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L226"
+      "source_location": "L240"
     },
     {
-      "id": "changelog_changed_237",
+      "id": "changelog_changed_251",
       "label": "Changed",
       "_origin": "ast",
       "community": 31,
@@ -3900,7 +4094,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L237"
+      "source_location": "L251"
     },
     {
       "id": "src_components_ui_flickering_text",
@@ -3945,10 +4139,10 @@
       "node_kind": "heading",
       "norm_label": "[2.1.1] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L433"
+      "source_location": "L447"
     },
     {
-      "id": "changelog_fixed_435",
+      "id": "changelog_fixed_449",
       "label": "Fixed",
       "_origin": "ast",
       "community": 33,
@@ -3957,7 +4151,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L435"
+      "source_location": "L449"
     },
     {
       "id": "changelog_2_2_0_2026_10_17",
@@ -3969,10 +4163,10 @@
       "node_kind": "heading",
       "norm_label": "[2.2.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L415"
+      "source_location": "L429"
     },
     {
-      "id": "changelog_added_417",
+      "id": "changelog_added_431",
       "label": "Added",
       "_origin": "ast",
       "community": 34,
@@ -3981,7 +4175,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L417"
+      "source_location": "L431"
     },
     {
       "id": "src_components_apploadingscreen",
@@ -4248,37 +4442,28 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_ui_animatedcircularprogressbar",
-      "label": "AnimatedCircularProgressBar.vue",
+      "id": "changelog_2_3_2_2026_10_18",
+      "label": "[2.3.2] - 2026-10-18",
       "_origin": "ast",
       "community": 36,
-      "community_name": "AnimatedCircularProgressBar.vue",
-      "file_type": "code",
-      "norm_label": "animatedcircularprogressbar.vue",
-      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
-      "source_location": "L1"
+      "community_name": "[2.3.2] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.3.2] - 2026-10-18",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L396"
     },
     {
-      "id": "src_components_ui_animatedcircularprogressbar_currentpercent",
-      "label": "currentPercent",
+      "id": "changelog_fixed_398",
+      "label": "Fixed",
       "_origin": "ast",
       "community": 36,
-      "community_name": "AnimatedCircularProgressBar.vue",
-      "file_type": "code",
-      "norm_label": "currentpercent",
-      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
-      "source_location": "L82"
-    },
-    {
-      "id": "src_components_ui_animatedcircularprogressbar_indicatorstrokelength",
-      "label": "indicatorStrokeLength",
-      "_origin": "ast",
-      "community": 36,
-      "community_name": "AnimatedCircularProgressBar.vue",
-      "file_type": "code",
-      "norm_label": "indicatorstrokelength",
-      "source_file": "src/components/ui/AnimatedCircularProgressBar.vue",
-      "source_location": "L89"
+      "community_name": "[2.3.2] - 2026-10-18",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "fixed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L398"
     },
     {
       "id": "changelog_2_4_1_2026_10_18",
@@ -4290,10 +4475,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L352"
+      "source_location": "L366"
     },
     {
-      "id": "changelog_fixed_354",
+      "id": "changelog_fixed_368",
       "label": "Fixed",
       "_origin": "ast",
       "community": 37,
@@ -4302,7 +4487,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L354"
+      "source_location": "L368"
     },
     {
       "id": "src_components_ui_apptoast",
@@ -4347,10 +4532,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L362"
+      "source_location": "L376"
     },
     {
-      "id": "changelog_added_364",
+      "id": "changelog_added_378",
       "label": "Added",
       "_origin": "ast",
       "community": 39,
@@ -4359,7 +4544,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L364"
+      "source_location": "L378"
     },
     {
       "id": "tsconfig",
@@ -4668,10 +4853,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.4] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L78"
+      "source_location": "L92"
     },
     {
-      "id": "changelog_added_80",
+      "id": "changelog_added_94",
       "label": "Added",
       "_origin": "ast",
       "community": 40,
@@ -4680,10 +4865,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L80"
+      "source_location": "L94"
     },
     {
-      "id": "changelog_changed_88",
+      "id": "changelog_changed_102",
       "label": "Changed",
       "_origin": "ast",
       "community": 40,
@@ -4692,7 +4877,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L88"
+      "source_location": "L102"
     },
     {
       "id": "src_components_ui_smooth_dropdown",
@@ -4737,10 +4922,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.5] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L57"
+      "source_location": "L71"
     },
     {
-      "id": "changelog_added_59",
+      "id": "changelog_added_73",
       "label": "Added",
       "_origin": "ast",
       "community": 42,
@@ -4749,10 +4934,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L59"
+      "source_location": "L73"
     },
     {
-      "id": "changelog_changed_66",
+      "id": "changelog_changed_80",
       "label": "Changed",
       "_origin": "ast",
       "community": 42,
@@ -4761,7 +4946,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L66"
+      "source_location": "L80"
     },
     {
       "id": "changelog_2_7_0_2026_10_22",
@@ -4773,10 +4958,10 @@
       "node_kind": "heading",
       "norm_label": "[2.7.0] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L243"
+      "source_location": "L257"
     },
     {
-      "id": "changelog_added_245",
+      "id": "changelog_added_259",
       "label": "Added",
       "_origin": "ast",
       "community": 43,
@@ -4785,7 +4970,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L245"
+      "source_location": "L259"
     },
     {
       "id": "changelog_2_8_1_2026_10_22",
@@ -4797,10 +4982,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.1] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L211"
+      "source_location": "L225"
     },
     {
-      "id": "changelog_added_213",
+      "id": "changelog_added_227",
       "label": "Added",
       "_origin": "ast",
       "community": 44,
@@ -4809,7 +4994,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L213"
+      "source_location": "L227"
     },
     {
       "id": "changelog_2_4_2_2026_10_18",
@@ -4821,10 +5006,10 @@
       "node_kind": "heading",
       "norm_label": "[2.4.2] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L343"
+      "source_location": "L357"
     },
     {
-      "id": "changelog_changed_345",
+      "id": "changelog_changed_359",
       "label": "Changed",
       "_origin": "ast",
       "community": 45,
@@ -4833,7 +5018,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L345"
+      "source_location": "L359"
     },
     {
       "id": "changelog_2_5_0_2026_10_18",
@@ -4845,10 +5030,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.0] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L331"
+      "source_location": "L345"
     },
     {
-      "id": "changelog_added_333",
+      "id": "changelog_added_347",
       "label": "Added",
       "_origin": "ast",
       "community": 46,
@@ -4857,7 +5042,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L333"
+      "source_location": "L347"
     },
     {
       "id": "src_components_ui_animated_circular_progress_bar",
@@ -4880,10 +5065,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.0] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L126"
+      "source_location": "L140"
     },
     {
-      "id": "changelog_added_128",
+      "id": "changelog_added_142",
       "label": "Added",
       "_origin": "ast",
       "community": 48,
@@ -4892,10 +5077,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L128"
+      "source_location": "L142"
     },
     {
-      "id": "changelog_changed_146",
+      "id": "changelog_changed_160",
       "label": "Changed",
       "_origin": "ast",
       "community": 48,
@@ -4904,7 +5089,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L146"
+      "source_location": "L160"
     },
     {
       "id": "changelog_2_8_3_2026_10_22",
@@ -4916,10 +5101,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.3] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L192"
+      "source_location": "L206"
     },
     {
-      "id": "changelog_changed_194",
+      "id": "changelog_changed_208",
       "label": "Changed",
       "_origin": "ast",
       "community": 49,
@@ -4928,7 +5113,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L194"
+      "source_location": "L208"
     },
     {
       "id": "package",
@@ -5270,10 +5455,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.2] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L203"
+      "source_location": "L217"
     },
     {
-      "id": "changelog_added_205",
+      "id": "changelog_added_219",
       "label": "Added",
       "_origin": "ast",
       "community": 50,
@@ -5282,7 +5467,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L205"
+      "source_location": "L219"
     },
     {
       "id": "changelog_2_8_4_2026_10_22",
@@ -5294,10 +5479,10 @@
       "node_kind": "heading",
       "norm_label": "[2.8.4] - 2026-10-22",
       "source_file": "CHANGELOG.md",
-      "source_location": "L176"
+      "source_location": "L190"
     },
     {
-      "id": "changelog_changed_178",
+      "id": "changelog_changed_192",
       "label": "Changed",
       "_origin": "ast",
       "community": 51,
@@ -5306,31 +5491,31 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L178"
+      "source_location": "L192"
     },
     {
-      "id": "changelog_2_8_5_2026_10_23",
-      "label": "[2.8.5] - 2026-10-23",
+      "id": "changelog_2_3_3_2026_10_18",
+      "label": "[2.3.3] - 2026-10-18",
       "_origin": "ast",
       "community": 52,
-      "community_name": "[2.8.5] - 2026-10-23",
+      "community_name": "[2.3.3] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.8.5] - 2026-10-23",
+      "norm_label": "[2.3.3] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L161"
+      "source_location": "L385"
     },
     {
-      "id": "changelog_fixed",
-      "label": "Fixed",
+      "id": "changelog_changed_387",
+      "label": "Changed",
       "_origin": "ast",
       "community": 52,
-      "community_name": "[2.8.5] - 2026-10-23",
+      "community_name": "[2.3.3] - 2026-10-18",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "fixed",
+      "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L163"
+      "source_location": "L387"
     },
     {
       "id": "changelog_2_3_0_2026_10_17",
@@ -5342,10 +5527,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L403"
+      "source_location": "L417"
     },
     {
-      "id": "changelog_added_405",
+      "id": "changelog_added_419",
       "label": "Added",
       "_origin": "ast",
       "community": 53,
@@ -5354,7 +5539,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L405"
+      "source_location": "L419"
     },
     {
       "id": "changelog_2_3_1_2026_10_18",
@@ -5366,10 +5551,10 @@
       "node_kind": "heading",
       "norm_label": "[2.3.1] - 2026-10-18",
       "source_file": "CHANGELOG.md",
-      "source_location": "L391"
+      "source_location": "L405"
     },
     {
-      "id": "changelog_fixed_393",
+      "id": "changelog_fixed_407",
       "label": "Fixed",
       "_origin": "ast",
       "community": 54,
@@ -5378,7 +5563,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L393"
+      "source_location": "L407"
     },
     {
       "id": "changelog_2_5_2_2026_10_19",
@@ -5390,10 +5575,10 @@
       "node_kind": "heading",
       "norm_label": "[2.5.2] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L315"
+      "source_location": "L329"
     },
     {
-      "id": "changelog_changed_317",
+      "id": "changelog_changed_331",
       "label": "Changed",
       "_origin": "ast",
       "community": 55,
@@ -5402,7 +5587,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L317"
+      "source_location": "L331"
     },
     {
       "id": "changelog_2_9_1_2026_10_23",
@@ -5414,10 +5599,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.1] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L115"
+      "source_location": "L129"
     },
     {
-      "id": "changelog_changed_117",
+      "id": "changelog_changed_131",
       "label": "Changed",
       "_origin": "ast",
       "community": 56,
@@ -5426,31 +5611,31 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L117"
+      "source_location": "L131"
     },
     {
-      "id": "changelog_2_9_2_2026_10_23",
-      "label": "[2.9.2] - 2026-10-23",
+      "id": "changelog_2_5_1_2026_10_19",
+      "label": "[2.5.1] - 2026-10-19",
       "_origin": "ast",
       "community": 57,
-      "community_name": "[2.9.2] - 2026-10-23",
+      "community_name": "[2.5.1] - 2026-10-19",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.9.2] - 2026-10-23",
+      "norm_label": "[2.5.1] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L106"
+      "source_location": "L337"
     },
     {
-      "id": "changelog_changed_108",
+      "id": "changelog_changed_339",
       "label": "Changed",
       "_origin": "ast",
       "community": 57,
-      "community_name": "[2.9.2] - 2026-10-23",
+      "community_name": "[2.5.1] - 2026-10-19",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L108"
+      "source_location": "L339"
     },
     {
       "id": "changelog_2_9_3_2026_10_23",
@@ -5462,10 +5647,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.3] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L95"
+      "source_location": "L109"
     },
     {
-      "id": "changelog_changed_97",
+      "id": "changelog_changed_111",
       "label": "Changed",
       "_origin": "ast",
       "community": 58,
@@ -5474,7 +5659,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L97"
+      "source_location": "L111"
     },
     {
       "id": "changelog_2_9_6_2026_10_23",
@@ -5486,10 +5671,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.6] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L42"
+      "source_location": "L56"
     },
     {
-      "id": "changelog_added",
+      "id": "changelog_added_58",
       "label": "Added",
       "_origin": "ast",
       "community": 59,
@@ -5498,7 +5683,7 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L44"
+      "source_location": "L58"
     },
     {
       "id": "src_components_ui_flickeringtext",
@@ -5567,28 +5752,28 @@
       "source_location": "L81"
     },
     {
-      "id": "changelog_2_9_7_2026_10_23",
-      "label": "[2.9.7] - 2026-10-23",
+      "id": "changelog_2_5_3_2026_10_19",
+      "label": "[2.5.3] - 2026-10-19",
       "_origin": "ast",
       "community": 60,
-      "community_name": "[2.9.7] - 2026-10-23",
+      "community_name": "[2.5.3] - 2026-10-19",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.9.7] - 2026-10-23",
+      "norm_label": "[2.5.3] - 2026-10-19",
       "source_file": "CHANGELOG.md",
-      "source_location": "L31"
+      "source_location": "L317"
     },
     {
-      "id": "changelog_changed_33",
-      "label": "Changed",
+      "id": "changelog_fixed_319",
+      "label": "Fixed",
       "_origin": "ast",
       "community": 60,
-      "community_name": "[2.9.7] - 2026-10-23",
+      "community_name": "[2.5.3] - 2026-10-19",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "changed",
+      "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L33"
+      "source_location": "L319"
     },
     {
       "id": "changelog_2_9_9_2026_10_23",
@@ -5600,7 +5785,7 @@
       "node_kind": "heading",
       "norm_label": "[2.9.9] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L10"
+      "source_location": "L24"
     },
     {
       "id": "changelog_changed",
@@ -5612,7 +5797,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L12"
+      "source_location": "L26"
     },
     {
       "id": "changelog",
@@ -5636,55 +5821,55 @@
       "node_kind": "heading",
       "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L476"
+      "source_location": "L490"
     },
     {
-      "id": "changelog_2_3_2_2026_10_18",
-      "label": "[2.3.2] - 2026-10-18",
+      "id": "changelog_2_10_0_2026_10_25",
+      "label": "[2.10.0] - 2026-10-25",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.3.2] - 2026-10-18",
+      "norm_label": "[2.10.0] - 2026-10-25",
       "source_file": "CHANGELOG.md",
-      "source_location": "L382"
+      "source_location": "L10"
     },
     {
-      "id": "changelog_2_3_3_2026_10_18",
-      "label": "[2.3.3] - 2026-10-18",
+      "id": "changelog_2_8_5_2026_10_23",
+      "label": "[2.8.5] - 2026-10-23",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.3.3] - 2026-10-18",
+      "norm_label": "[2.8.5] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L371"
+      "source_location": "L175"
     },
     {
-      "id": "changelog_2_5_1_2026_10_19",
-      "label": "[2.5.1] - 2026-10-19",
+      "id": "changelog_2_9_2_2026_10_23",
+      "label": "[2.9.2] - 2026-10-23",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.1] - 2026-10-19",
+      "norm_label": "[2.9.2] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L323"
+      "source_location": "L120"
     },
     {
-      "id": "changelog_2_5_3_2026_10_19",
-      "label": "[2.5.3] - 2026-10-19",
+      "id": "changelog_2_9_7_2026_10_23",
+      "label": "[2.9.7] - 2026-10-23",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.5.3] - 2026-10-19",
+      "norm_label": "[2.9.7] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L303"
+      "source_location": "L45"
     },
     {
       "id": "changelog_2_9_8_2026_10_23",
@@ -5696,10 +5881,10 @@
       "node_kind": "heading",
       "norm_label": "[2.9.8] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L23"
+      "source_location": "L37"
     },
     {
-      "id": "changelog_added_478",
+      "id": "changelog_added",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -5708,10 +5893,22 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L478"
+      "source_location": "L12"
     },
     {
-      "id": "changelog_changed_25",
+      "id": "changelog_added_492",
+      "label": "Added",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "added",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L492"
+    },
+    {
+      "id": "changelog_changed_122",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -5720,10 +5917,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L25"
+      "source_location": "L122"
     },
     {
-      "id": "changelog_changed_325",
+      "id": "changelog_changed_39",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -5732,10 +5929,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L325"
+      "source_location": "L39"
     },
     {
-      "id": "changelog_changed_373",
+      "id": "changelog_changed_47",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -5744,7 +5941,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L373"
+      "source_location": "L47"
     },
     {
       "id": "changelog_changelog",
@@ -5759,7 +5956,7 @@
       "source_location": "L1"
     },
     {
-      "id": "changelog_fixed_305",
+      "id": "changelog_fixed",
       "label": "Fixed",
       "_origin": "ast",
       "community": 7,
@@ -5768,19 +5965,7 @@
       "node_kind": "heading",
       "norm_label": "fixed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L305"
-    },
-    {
-      "id": "changelog_fixed_384",
-      "label": "Fixed",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "fixed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L384"
+      "source_location": "L177"
     },
     {
       "id": "tsconfig_node",
@@ -7030,7 +7215,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L114",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -7358,6 +7543,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_smoothdropdown_handlecontainerkeydown",
+      "target": "src_components_ui_smoothdropdown_selectoption",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L269",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown_handleoptionmouseenter",
+      "target": "src_components_ui_smoothdropdown_updateindicatorforoption",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L191",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_smoothdropdown_handleoutsideclick",
       "target": "src_components_ui_smoothdropdown_closedropdown",
       "relation": "calls",
@@ -7366,7 +7575,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L163",
+      "source_location": "L299",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown_openandfocusnext",
+      "target": "src_components_ui_smoothdropdown_updateindicatorforoption",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown_openandfocusprev",
+      "target": "src_components_ui_smoothdropdown_updateindicatorforoption",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -7378,7 +7611,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L156",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -7390,7 +7623,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L158",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -9132,222 +9365,233 @@
     },
     {
       "source": "changelog_1_0_0_2026_10_17",
-      "target": "changelog_added_478",
+      "target": "changelog_added_492",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L478",
+      "source_location": "L492",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_added_460",
+      "target": "changelog_added_474",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L460",
+      "source_location": "L474",
       "weight": 1.0
     },
     {
       "source": "changelog_2_0_0_2026_10_17",
-      "target": "changelog_changed_470",
+      "target": "changelog_changed_484",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L470",
+      "source_location": "L484",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_10_0_2026_10_25",
+      "target": "changelog_added",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_added_445",
+      "target": "changelog_added_459",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L445",
+      "source_location": "L459",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_changed_450",
+      "target": "changelog_changed_464",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L450",
+      "source_location": "L464",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_0_2026_10_17",
-      "target": "changelog_fixed_453",
+      "target": "changelog_fixed_467",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L453",
+      "source_location": "L467",
       "weight": 1.0
     },
     {
       "source": "changelog_2_1_1_2026_10_17",
-      "target": "changelog_fixed_435",
+      "target": "changelog_fixed_449",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L435",
+      "source_location": "L449",
       "weight": 1.0
     },
     {
       "source": "changelog_2_2_0_2026_10_17",
-      "target": "changelog_added_417",
+      "target": "changelog_added_431",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L417",
+      "source_location": "L431",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_0_2026_10_17",
-      "target": "changelog_added_405",
+      "target": "changelog_added_419",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L405",
+      "source_location": "L419",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_1_2026_10_18",
-      "target": "changelog_fixed_393",
+      "target": "changelog_fixed_407",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L393",
+      "source_location": "L407",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_2_2026_10_18",
-      "target": "changelog_fixed_384",
+      "target": "changelog_fixed_398",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L384",
+      "source_location": "L398",
       "weight": 1.0
     },
     {
       "source": "changelog_2_3_3_2026_10_18",
-      "target": "changelog_changed_373",
+      "target": "changelog_changed_387",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L373",
+      "source_location": "L387",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_0_2026_10_18",
-      "target": "changelog_added_364",
+      "target": "changelog_added_378",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L364",
+      "source_location": "L378",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_1_2026_10_18",
-      "target": "changelog_fixed_354",
+      "target": "changelog_fixed_368",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L354",
+      "source_location": "L368",
       "weight": 1.0
     },
     {
       "source": "changelog_2_4_2_2026_10_18",
-      "target": "changelog_changed_345",
+      "target": "changelog_changed_359",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L345",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_0_2026_10_18",
-      "target": "changelog_added_333",
+      "target": "changelog_added_347",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L333",
+      "source_location": "L347",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_1_2026_10_19",
-      "target": "changelog_changed_325",
+      "target": "changelog_changed_339",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L325",
+      "source_location": "L339",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_2_2026_10_19",
-      "target": "changelog_changed_317",
+      "target": "changelog_changed_331",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L317",
+      "source_location": "L331",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_3_2026_10_19",
-      "target": "changelog_fixed_305",
+      "target": "changelog_fixed_319",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L305",
+      "source_location": "L319",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_4_2026_10_19",
-      "target": "changelog_added_292",
+      "target": "changelog_added_306",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L292",
+      "source_location": "L306",
       "weight": 1.0
     },
     {
@@ -9358,128 +9602,128 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L298",
+      "source_location": "L312",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_changed_278",
+      "target": "changelog_changed_292",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L278",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
       "source": "changelog_2_5_5_2026_10_22",
-      "target": "changelog_added_285",
+      "target": "changelog_added_299",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L285",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
       "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_added_262",
+      "target": "changelog_added_276",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L262",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
       "source": "changelog_2_6_0_2026_10_22",
-      "target": "changelog_changed_270",
+      "target": "changelog_changed_284",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L270",
+      "source_location": "L284",
       "weight": 1.0
     },
     {
       "source": "changelog_2_7_0_2026_10_22",
-      "target": "changelog_added_245",
+      "target": "changelog_added_259",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L245",
+      "source_location": "L259",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_added_226",
+      "target": "changelog_added_240",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L226",
+      "source_location": "L240",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_0_2026_10_22",
-      "target": "changelog_changed_237",
+      "target": "changelog_changed_251",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L237",
+      "source_location": "L251",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_1_2026_10_22",
-      "target": "changelog_added_213",
+      "target": "changelog_added_227",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L213",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_2_2026_10_22",
-      "target": "changelog_added_205",
+      "target": "changelog_added_219",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L205",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_3_2026_10_22",
-      "target": "changelog_changed_194",
+      "target": "changelog_changed_208",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L194",
+      "source_location": "L208",
       "weight": 1.0
     },
     {
       "source": "changelog_2_8_4_2026_10_22",
-      "target": "changelog_changed_178",
+      "target": "changelog_changed_192",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L178",
+      "source_location": "L192",
       "weight": 1.0
     },
     {
@@ -9490,67 +9734,100 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L163",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_0_2026_10_23",
-      "target": "changelog_added_128",
+      "target": "changelog_added_142",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L128",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_0_2026_10_23",
-      "target": "changelog_changed_146",
+      "target": "changelog_changed_160",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L146",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_1_2026_10_23",
-      "target": "changelog_changed_117",
+      "target": "changelog_changed_131",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L117",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_2_2026_10_23",
-      "target": "changelog_changed_108",
+      "target": "changelog_changed_122",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L108",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_3_2026_10_23",
-      "target": "changelog_changed_97",
+      "target": "changelog_changed_111",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L97",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_4_2026_10_23",
-      "target": "changelog_added_80",
+      "target": "changelog_changed_102",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_9_4_2026_10_23",
+      "target": "changelog_added_94",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L94",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_9_5_2026_10_23",
+      "target": "changelog_added_73",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_2_9_5_2026_10_23",
+      "target": "changelog_changed_80",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9560,69 +9837,36 @@
       "weight": 1.0
     },
     {
-      "source": "changelog_2_9_4_2026_10_23",
-      "target": "changelog_changed_88",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L88",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_9_5_2026_10_23",
-      "target": "changelog_added_59",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L59",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_2_9_5_2026_10_23",
-      "target": "changelog_changed_66",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L66",
-      "weight": 1.0
-    },
-    {
       "source": "changelog_2_9_6_2026_10_23",
-      "target": "changelog_added",
+      "target": "changelog_added_58",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L44",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_7_2026_10_23",
-      "target": "changelog_changed_33",
+      "target": "changelog_changed_47",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L33",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
       "source": "changelog_2_9_8_2026_10_23",
-      "target": "changelog_changed_25",
+      "target": "changelog_changed_39",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L25",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -9633,12 +9877,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L12",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_9_9_2026_10_23",
+      "target": "changelog_2_10_0_2026_10_25",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9649,13 +9893,24 @@
     },
     {
       "source": "changelog_changelog",
+      "target": "changelog_2_9_3_2026_10_23",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L109",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
       "target": "changelog_2_9_2_2026_10_23",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L106",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -9666,7 +9921,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L115",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -9677,7 +9932,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L126",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -9688,7 +9943,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L161",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -9699,7 +9954,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L176",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -9710,7 +9965,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L192",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -9721,7 +9976,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L203",
+      "source_location": "L217",
       "weight": 1.0
     },
     {
@@ -9732,7 +9987,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L211",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -9743,18 +9998,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L224",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
       "source": "changelog_changelog",
-      "target": "changelog_2_9_8_2026_10_23",
+      "target": "changelog_2_9_9_2026_10_23",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -9765,7 +10020,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L243",
+      "source_location": "L257",
       "weight": 1.0
     },
     {
@@ -9776,7 +10031,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L260",
+      "source_location": "L274",
       "weight": 1.0
     },
     {
@@ -9787,7 +10042,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L276",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -9798,7 +10053,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L290",
+      "source_location": "L304",
       "weight": 1.0
     },
     {
@@ -9809,18 +10064,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L303",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_9_7_2026_10_23",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L31",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -9831,7 +10075,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L315",
+      "source_location": "L329",
       "weight": 1.0
     },
     {
@@ -9842,7 +10086,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L323",
+      "source_location": "L337",
       "weight": 1.0
     },
     {
@@ -9853,7 +10097,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L331",
+      "source_location": "L345",
       "weight": 1.0
     },
     {
@@ -9864,7 +10108,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L343",
+      "source_location": "L357",
       "weight": 1.0
     },
     {
@@ -9875,7 +10119,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L352",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_9_8_2026_10_23",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -9886,7 +10141,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L362",
+      "source_location": "L376",
       "weight": 1.0
     },
     {
@@ -9897,7 +10152,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L371",
+      "source_location": "L385",
       "weight": 1.0
     },
     {
@@ -9908,7 +10163,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L382",
+      "source_location": "L396",
       "weight": 1.0
     },
     {
@@ -9919,7 +10174,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L391",
+      "source_location": "L405",
       "weight": 1.0
     },
     {
@@ -9930,7 +10185,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L403",
+      "source_location": "L417",
       "weight": 1.0
     },
     {
@@ -9941,18 +10196,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L415",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_9_6_2026_10_23",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L42",
+      "source_location": "L429",
       "weight": 1.0
     },
     {
@@ -9963,7 +10207,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L433",
+      "source_location": "L447",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_9_7_2026_10_23",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L45",
       "weight": 1.0
     },
     {
@@ -9974,7 +10229,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L443",
+      "source_location": "L457",
       "weight": 1.0
     },
     {
@@ -9985,7 +10240,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L458",
+      "source_location": "L472",
       "weight": 1.0
     },
     {
@@ -9996,7 +10251,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L476",
+      "source_location": "L490",
+      "weight": 1.0
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_2_9_6_2026_10_23",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CHANGELOG.md",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -10007,7 +10273,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L57",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -10018,18 +10284,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CHANGELOG.md",
-      "source_location": "L78",
-      "weight": 1.0
-    },
-    {
-      "source": "changelog_changelog",
-      "target": "changelog_2_9_3_2026_10_23",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CHANGELOG.md",
-      "source_location": "L95",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -10744,7 +10999,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L102",
+      "source_location": "L115",
       "weight": 1.0
     },
     {
@@ -10755,7 +11010,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L121",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -10766,7 +11021,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L137",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -10777,7 +11032,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L141",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -10788,7 +11043,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L154",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -10799,7 +11054,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L158",
+      "source_location": "L171",
       "weight": 1.0
     },
     {
@@ -10810,7 +11065,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L163",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -10821,7 +11076,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -10832,7 +11087,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -10843,7 +11098,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -10854,7 +11109,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -10865,7 +11120,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L48",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -10876,7 +11131,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -10887,7 +11142,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L50",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_customcursor",
+      "target": "src_components_customcursor_isdropdown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/CustomCursor.vue",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -10898,7 +11164,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L51",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -10909,7 +11175,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L59",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -10920,7 +11186,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L66",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -12768,7 +13034,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L105",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -12779,7 +13045,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L119",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -12790,7 +13056,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L125",
+      "source_location": "L147",
       "weight": 1.0
     },
     {
@@ -12801,7 +13067,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L130",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -12812,7 +13078,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L131",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -12823,67 +13089,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L132",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
       "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_selectedoption",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L134",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_toggledropdown",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L138",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_closedropdown",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L142",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_openandfocusfirst",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L147",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_openandfocuslast",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L151",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_ui_smoothdropdown",
-      "target": "src_components_ui_smoothdropdown_selectoption",
+      "target": "src_components_ui_smoothdropdown_listref",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12894,13 +13105,211 @@
     },
     {
       "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_optionelements",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L157",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_setoptionref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L158",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_indicatortop",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L166",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_isindicatorvisible",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_isoptionpressed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L168",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_selectedoption",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_indicatorstyle",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_updateindicatorforoption",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_handleoptionmouseenter",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L189",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_handlemenumouseleave",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_handleoptionmousedown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L200",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_handleoptionmouseup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L204",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_toggledropdown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L208",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_closedropdown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L212",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_selectoption",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L219",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_openandfocusnext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L225",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_openandfocusprev",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
+      "target": "src_components_ui_smoothdropdown_handlecontainerkeydown",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/SmoothDropdown.vue",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_smoothdropdown",
       "target": "src_components_ui_smoothdropdown_handleoutsideclick",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/ui/SmoothDropdown.vue",
-      "source_location": "L161",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -14152,7 +14561,7 @@
       "confidence_score": 0.85,
       "context": "argument",
       "source_file": "src/components/CustomCursor.vue",
-      "source_location": "L117",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -14478,5 +14887,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "ed96e9b26ba7a308a340a98a7e7261ba4169c957"
+  "built_at_commit": "f3eede51b758e2f78d0311fe26c93578c1432564"
 }
