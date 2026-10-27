@@ -506,6 +506,123 @@
       "source_location": "L3"
     },
     {
+      "id": "src_components_ui_backgroundpixelstars_backgroundpixelstarsprops",
+      "label": "BackgroundPixelStarsProps",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "backgroundpixelstarsprops",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L27"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_backgroundstar",
+      "label": "BackgroundStar",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "backgroundstar",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L61"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_shootingstar",
+      "label": "ShootingStar",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "shootingstar",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L79"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_startpoint",
+      "label": "StartPoint",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "startpoint",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L89"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_trailpoint",
+      "label": "TrailPoint",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "trailpoint",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L73"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_backgroundstar",
+      "label": "BackgroundStar",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "backgroundstar",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L30"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_shootingstar",
+      "label": "ShootingStar",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "shootingstar",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_startpoint",
+      "label": "StartPoint",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "startpoint",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L59"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_trailpoint",
+      "label": "TrailPoint",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "trailpoint",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L42"
+    },
+    {
       "id": "src_components_ui_flickeringtext_flickeringtextprops",
       "label": "FlickeringTextProps",
       "_callable": true,
@@ -2184,6 +2301,126 @@
       "norm_label": "animatedcircularprogressbar()",
       "source_file": "src/components/ui/animated-circular-progress-bar.tsx",
       "source_location": "L12"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_animatecanvas",
+      "label": "animateCanvas()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "animatecanvas()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L220"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_createnewshootingstar",
+      "label": "createNewShootingStar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "createnewshootingstar()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L123"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_drawstaticframe",
+      "label": "drawStaticFrame()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "drawstaticframe()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L203"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_getrandomstartpoint",
+      "label": "getRandomStartPoint()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "getrandomstartpoint()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L114"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_handleresize",
+      "label": "handleResize()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "handleresize()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L379"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_initbackgroundstars",
+      "label": "initBackgroundStars()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "initbackgroundstars()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L137"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_prefersreducedmotion",
+      "label": "prefersReducedMotion()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "prefersreducedmotion()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L108"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_regeneratebackgroundstars",
+      "label": "regenerateBackgroundStars()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "regeneratebackgroundstars()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L170"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_scheduleshootingstar",
+      "label": "scheduleShootingStar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "scheduleshootingstar()",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L368"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_demo_default",
+      "label": "Default()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "default()",
+      "source_file": "src/components/ui/background-pixel-stars-demo.tsx",
+      "source_location": "L5"
     },
     {
       "id": "src_components_ui_flickeringtext_generateglowshadow",
@@ -5092,28 +5329,81 @@
       "source_location": "L160"
     },
     {
-      "id": "changelog_2_8_3_2026_10_22",
-      "label": "[2.8.3] - 2026-10-22",
+      "id": "src_components_ui_backgroundpixelstars",
+      "label": "BackgroundPixelStars.vue",
       "_origin": "ast",
       "community": 49,
-      "community_name": "[2.8.3] - 2026-10-22",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.8.3] - 2026-10-22",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L206"
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "backgroundpixelstars.vue",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L1"
     },
     {
-      "id": "changelog_changed_208",
-      "label": "Changed",
+      "id": "src_components_ui_backgroundpixelstars_backgroundstars",
+      "label": "backgroundStars",
       "_origin": "ast",
       "community": 49,
-      "community_name": "[2.8.3] - 2026-10-22",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "changed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L208"
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "backgroundstars",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L101"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_canvasref",
+      "label": "canvasRef",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "canvasref",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L95"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_default_brand_colors",
+      "label": "DEFAULT_BRAND_COLORS",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "default_brand_colors",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_props",
+      "label": "props",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "props",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_components_ui_backgroundpixelstars_shootingstars",
+      "label": "shootingStars",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "shootingstars",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L102"
+    },
+    {
+      "id": "tests_background_pixel_stars_spec",
+      "label": "background-pixel-stars.spec.ts",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "BackgroundPixelStars.vue",
+      "file_type": "code",
+      "norm_label": "background-pixel-stars.spec.ts",
+      "source_file": "tests/background-pixel-stars.spec.ts",
+      "source_location": "L1"
     },
     {
       "id": "package",
@@ -5470,28 +5760,48 @@
       "source_location": "L219"
     },
     {
-      "id": "changelog_2_8_4_2026_10_22",
-      "label": "[2.8.4] - 2026-10-22",
+      "id": "src_components_ui_background_pixel_stars",
+      "label": "background-pixel-stars.tsx",
       "_origin": "ast",
       "community": 51,
-      "community_name": "[2.8.4] - 2026-10-22",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.8.4] - 2026-10-22",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L190"
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "background-pixel-stars.tsx",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L1"
     },
     {
-      "id": "changelog_changed_192",
-      "label": "Changed",
+      "id": "src_components_ui_background_pixel_stars_backgroundpixelstars",
+      "label": "BackgroundPixelStars",
       "_origin": "ast",
       "community": 51,
-      "community_name": "[2.8.4] - 2026-10-22",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "changed",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L192"
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "backgroundpixelstars",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L65"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_demo",
+      "label": "background-pixel-stars-demo.tsx",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "background-pixel-stars-demo.tsx",
+      "source_file": "src/components/ui/background-pixel-stars-demo.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_ui_background_pixel_stars_star_colors",
+      "label": "STAR_COLORS",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "background-pixel-stars.tsx",
+      "file_type": "code",
+      "norm_label": "star_colors",
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L6"
     },
     {
       "id": "changelog_2_3_3_2026_10_18",
@@ -5662,28 +5972,28 @@
       "source_location": "L111"
     },
     {
-      "id": "changelog_2_9_6_2026_10_23",
-      "label": "[2.9.6] - 2026-10-23",
+      "id": "changelog_1_0_0_2026_10_17",
+      "label": "[1.0.0] - 2026-10-17",
       "_origin": "ast",
       "community": 59,
-      "community_name": "[2.9.6] - 2026-10-23",
+      "community_name": "[1.0.0] - 2026-10-17",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.9.6] - 2026-10-23",
+      "norm_label": "[1.0.0] - 2026-10-17",
       "source_file": "CHANGELOG.md",
-      "source_location": "L56"
+      "source_location": "L490"
     },
     {
-      "id": "changelog_added_58",
+      "id": "changelog_added_492",
       "label": "Added",
       "_origin": "ast",
       "community": 59,
-      "community_name": "[2.9.6] - 2026-10-23",
+      "community_name": "[1.0.0] - 2026-10-17",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L58"
+      "source_location": "L492"
     },
     {
       "id": "src_components_ui_flickeringtext",
@@ -5800,6 +6110,54 @@
       "source_location": "L26"
     },
     {
+      "id": "changelog_2_9_2_2026_10_23",
+      "label": "[2.9.2] - 2026-10-23",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "[2.9.2] - 2026-10-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.9.2] - 2026-10-23",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L120"
+    },
+    {
+      "id": "changelog_changed_122",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "[2.9.2] - 2026-10-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L122"
+    },
+    {
+      "id": "changelog_2_9_8_2026_10_23",
+      "label": "[2.9.8] - 2026-10-23",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "[2.9.8] - 2026-10-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.9.8] - 2026-10-23",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L37"
+    },
+    {
+      "id": "changelog_changed_39",
+      "label": "Changed",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "[2.9.8] - 2026-10-23",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changed",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L39"
+    },
+    {
       "id": "changelog",
       "label": "CHANGELOG.md",
       "_origin": "ast",
@@ -5810,18 +6168,6 @@
       "norm_label": "changelog.md",
       "source_file": "CHANGELOG.md",
       "source_location": "L1"
-    },
-    {
-      "id": "changelog_1_0_0_2026_10_17",
-      "label": "[1.0.0] - 2026-10-17",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[1.0.0] - 2026-10-17",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L490"
     },
     {
       "id": "changelog_2_10_0_2026_10_25",
@@ -5836,6 +6182,30 @@
       "source_location": "L10"
     },
     {
+      "id": "changelog_2_8_3_2026_10_22",
+      "label": "[2.8.3] - 2026-10-22",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.8.3] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L206"
+    },
+    {
+      "id": "changelog_2_8_4_2026_10_22",
+      "label": "[2.8.4] - 2026-10-22",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "[2.8.4] - 2026-10-22",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L190"
+    },
+    {
       "id": "changelog_2_8_5_2026_10_23",
       "label": "[2.8.5] - 2026-10-23",
       "_origin": "ast",
@@ -5848,16 +6218,16 @@
       "source_location": "L175"
     },
     {
-      "id": "changelog_2_9_2_2026_10_23",
-      "label": "[2.9.2] - 2026-10-23",
+      "id": "changelog_2_9_6_2026_10_23",
+      "label": "[2.9.6] - 2026-10-23",
       "_origin": "ast",
       "community": 7,
       "community_name": "Changelog",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "[2.9.2] - 2026-10-23",
+      "norm_label": "[2.9.6] - 2026-10-23",
       "source_file": "CHANGELOG.md",
-      "source_location": "L120"
+      "source_location": "L56"
     },
     {
       "id": "changelog_2_9_7_2026_10_23",
@@ -5872,18 +6242,6 @@
       "source_location": "L45"
     },
     {
-      "id": "changelog_2_9_8_2026_10_23",
-      "label": "[2.9.8] - 2026-10-23",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "Changelog",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "[2.9.8] - 2026-10-23",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L37"
-    },
-    {
       "id": "changelog_added",
       "label": "Added",
       "_origin": "ast",
@@ -5896,7 +6254,7 @@
       "source_location": "L12"
     },
     {
-      "id": "changelog_added_492",
+      "id": "changelog_added_58",
       "label": "Added",
       "_origin": "ast",
       "community": 7,
@@ -5905,10 +6263,10 @@
       "node_kind": "heading",
       "norm_label": "added",
       "source_file": "CHANGELOG.md",
-      "source_location": "L492"
+      "source_location": "L58"
     },
     {
-      "id": "changelog_changed_122",
+      "id": "changelog_changed_192",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -5917,10 +6275,10 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L122"
+      "source_location": "L192"
     },
     {
-      "id": "changelog_changed_39",
+      "id": "changelog_changed_208",
       "label": "Changed",
       "_origin": "ast",
       "community": 7,
@@ -5929,7 +6287,7 @@
       "node_kind": "heading",
       "norm_label": "changed",
       "source_file": "CHANGELOG.md",
-      "source_location": "L39"
+      "source_location": "L208"
     },
     {
       "id": "changelog_changed_47",
@@ -7447,6 +7805,78 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_backgroundpixelstars_createnewshootingstar",
+      "target": "src_components_ui_backgroundpixelstars_getrandomstartpoint",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars_handleresize",
+      "target": "src_components_ui_backgroundpixelstars_initbackgroundstars",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L386",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars_handleresize",
+      "target": "src_components_ui_backgroundpixelstars_prefersreducedmotion",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L387",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars_handleresize",
+      "target": "src_components_ui_backgroundpixelstars_drawstaticframe",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L388",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars_scheduleshootingstar",
+      "target": "src_components_ui_backgroundpixelstars_prefersreducedmotion",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L369",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars_scheduleshootingstar",
+      "target": "src_components_ui_backgroundpixelstars_createnewshootingstar",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L373",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_eyetracking_startblinkingroutine",
       "target": "src_components_ui_eyetracking_triggerblink",
       "relation": "calls",
@@ -8241,6 +8671,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_background_pixel_stars_demo",
+      "target": "src_components_ui_background_pixel_stars_backgroundpixelstars",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/background-pixel-stars-demo.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_demo",
       "target": "src_components_ui_text_reveal_textreveal",
       "relation": "imports",
@@ -8322,6 +8764,18 @@
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
       "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_background_pixel_stars_spec",
+      "target": "src_components_ui_backgroundpixelstars_default_brand_colors",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/background-pixel-stars.spec.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -8417,7 +8871,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L26",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -8429,7 +8883,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L27",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -8441,7 +8895,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L28",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -8453,7 +8907,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/App.vue",
-      "source_location": "L29",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app",
+      "target": "src_components_ui_backgroundpixelstars",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/App.vue",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -8901,6 +9367,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_background_pixel_stars_demo",
+      "target": "src_components_ui_background_pixel_stars",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/ui/background-pixel-stars-demo.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_demo",
       "target": "src_components_ui_text_reveal",
       "relation": "imports_from",
@@ -9114,6 +9592,18 @@
       "context": "import",
       "source_file": "src/views/ProjectDetailView.vue",
       "source_location": "L155",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_background_pixel_stars_spec",
+      "target": "src_components_ui_backgroundpixelstars",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/background-pixel-stars.spec.ts",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -12169,6 +12659,292 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_backgroundstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_trailpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_shootingstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_startpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_star_colors",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars",
+      "target": "src_components_ui_background_pixel_stars_backgroundpixelstars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars.tsx",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_background_pixel_stars_demo",
+      "target": "src_components_ui_background_pixel_stars_demo_default",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/background-pixel-stars-demo.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_backgroundstars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_shootingstars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_prefersreducedmotion",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L108",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_getrandomstartpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L114",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_createnewshootingstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L123",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_initbackgroundstars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_default_brand_colors",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_regeneratebackgroundstars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_drawstaticframe",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_animatecanvas",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L220",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_backgroundpixelstarsprops",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_scheduleshootingstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L368",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_handleresize",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L379",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_props",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_backgroundstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_trailpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_shootingstar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_startpoint",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_ui_backgroundpixelstars",
+      "target": "src_components_ui_backgroundpixelstars_canvasref",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/ui/BackgroundPixelStars.vue",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_ui_demo",
       "target": "src_components_ui_demo_textrevealhero",
       "relation": "contains",
@@ -14887,5 +15663,5 @@
       "source_file": "DESIGN_SYSTEM.md"
     }
   ],
-  "built_at_commit": "f3eede51b758e2f78d0311fe26c93578c1432564"
+  "built_at_commit": "ed37bc6845a8a43a67d108cd20c2233b4082a475"
 }

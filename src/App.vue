@@ -11,6 +11,9 @@
       رفتن به محتوای اصلی
     </a>
 
+    <!-- Living Tactile Halftone Pixel Stars Background Canvas -->
+    <BackgroundPixelStars />
+
     <!-- Persistent Header Navigation -->
     <TheHeader />
 
@@ -27,6 +30,7 @@ import AppLoadingScreen from '@/components/AppLoadingScreen.vue'
 import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
 import CustomCursor from '@/components/CustomCursor.vue'
+import BackgroundPixelStars from '@/components/ui/BackgroundPixelStars.vue'
 </script>
 
 <style scoped>
@@ -34,6 +38,8 @@ import CustomCursor from '@/components/CustomCursor.vue'
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  position: relative;
+  overflow-x: clip;
 }
 
 /* Skip Link */

@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.11.0] - 2026-10-27
+
+### Added
+- **Tactile Halftone Pixel Stars Canvas (`BackgroundPixelStars.vue`, `App.vue`):**
+  - Implemented 16-bit retro canvas stardust background engine integrated at the root application level (`App.vue`), floating behind headers and routed content with `pointer-events: none` and `z-index: 0`.
+  - Calibrated stardust color palette to Besporman's tactile design tokens: Charcoal Ink (`#0E0F12`), Graphite (`#27272A`), Comic Accent Red (`#D93829`), Vintage Sage (`#7B8E78`), Warm Tan/Amber (`#D4A373`), and Warm Slate (`#78716C`) on parchment paper (`#FAF7F0`).
+  - Added periodic stardust regeneration cycle and random angle trajectory shooting stars with comic red warmth and step-wise trailing fade.
+  - Implemented strict accessibility compliance with `prefers-reduced-motion: reduce`: static stardust rendering without animation loop or interval timers.
+  - Preserved raw React reference and demo files (`background-pixel-stars.tsx`, `background-pixel-stars-demo.tsx`) in `src/components/ui/` to maintain codebase component documentation standards.
+  - Added comprehensive unit test suite (`tests/background-pixel-stars.spec.ts`) validating canvas rendering, accessibility attributes, dimensions, cleanup on unmount, and motion preference handling.
+
+---
+
 ## [2.10.0] - 2026-10-25
 
 ### Added

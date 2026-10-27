@@ -1,14 +1,14 @@
 {
   "package.json": {
-    "mtime": 1792879657.0267842,
-    "seen": 1792879706.5908198,
+    "mtime": 1793083695.0295112,
+    "seen": 1793085204.5636644,
     "ast_hash": "46b801cd135f5b0d15c938907c6d7f2b",
     "semantic_hash": ""
   },
   "src/App.vue": {
-    "mtime": 1792268653.7319975,
-    "seen": 1792268907.947827,
-    "ast_hash": "7247762443090f839a10530c5ac9fb07",
+    "mtime": 1793084517.7532508,
+    "seen": 1793085204.5636683,
+    "ast_hash": "f7485c2ab40933738974a476cdeea299",
     "semantic_hash": ""
   },
   "src/components/AboutSection.vue": {
@@ -318,14 +318,14 @@
     "semantic_hash": ""
   },
   "src/components/CustomCursor.vue": {
-    "mtime": 1792878886.1249657,
-    "seen": 1792879706.5908346,
+    "mtime": 1793083695.0310621,
+    "seen": 1793085204.5636778,
     "ast_hash": "2790487cf9379a13a5c67a2eeb4726ce",
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1792879667.847254,
-    "seen": 1792879706.5908966,
+    "mtime": 1793083695.0204906,
+    "seen": 1793085204.5637393,
     "ast_hash": "b6e2d864e706293ca6960f73f32afba0",
     "semantic_hash": ""
   },
@@ -576,8 +576,8 @@
     "semantic_hash": ""
   },
   "src/components/ui/SmoothDropdown.vue": {
-    "mtime": 1792879597.571905,
-    "seen": 1792879706.5908558,
+    "mtime": 1793083695.0310621,
+    "seen": 1793085204.5636985,
     "ast_hash": "525bbfe105223d37ce547b362fcb32f8",
     "semantic_hash": ""
   },
@@ -642,9 +642,33 @@
     "semantic_hash": ""
   },
   "pic/webp/cursor_dropdown.webp": {
-    "mtime": 1792878548.1196344,
-    "seen": 1792879706.590926,
+    "mtime": 1793083695.0305116,
+    "seen": 1793085204.5637674,
     "ast_hash": "1ace4ad4b2b6020ec4150c73f2c0d0e1",
+    "semantic_hash": ""
+  },
+  "src/components/ui/BackgroundPixelStars.vue": {
+    "mtime": 1793084586.675634,
+    "seen": 1793085204.563692,
+    "ast_hash": "4c78805f7522c5fe6df78f0ef811c849",
+    "semantic_hash": ""
+  },
+  "src/components/ui/background-pixel-stars-demo.tsx": {
+    "mtime": 1793084436.1109998,
+    "seen": 1793085204.563702,
+    "ast_hash": "106573ec9026c3ca89d7de054bc29aa7",
+    "semantic_hash": ""
+  },
+  "src/components/ui/background-pixel-stars.tsx": {
+    "mtime": 1793084417.7935145,
+    "seen": 1793085204.5637026,
+    "ast_hash": "e2ae7668c88bd81da18949c9f9fbddaf",
+    "semantic_hash": ""
+  },
+  "tests/background-pixel-stars.spec.ts": {
+    "mtime": 1793084634.5467973,
+    "seen": 1793085204.5637226,
+    "ast_hash": "ef36b4e4e010a22bc6e798bf96a34db7",
     "semantic_hash": ""
   }
 }
