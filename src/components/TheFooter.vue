@@ -63,7 +63,7 @@ import AppButtonArrow from '@/components/AppButtonArrow.vue'
 const router = useRouter()
 const route = useRoute()
 
-const currentYearFa = '۱۴۰۳'
+const currentYearFa = '۱۴۰۵'
 
 const footerNavItems = [
   { id: 'services', name: 'خدمات' },

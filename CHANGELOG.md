@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.11.1] - 2026-11-04
+
+### Changed
+- **Footer Copyright Notice Year (`TheFooter.vue`):**
+  - Updated copyright year from `۱۴۰۳` to `۱۴۰۵` (`const currentYearFa = '۱۴۰۵'`) to match the current Persian calendar year and studio project timeline.
+  - Added unit test suite (`tests/footer.spec.ts`) asserting footer copyright display and Persian numeral formatting.
+
+---
+
 ## [2.11.0] - 2026-10-27
 
 ### Added
