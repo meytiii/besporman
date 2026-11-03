@@ -4,7 +4,7 @@
 > **Applicability:** All AI Coding Agents, Pair Programmers, and Contributors  
 > **Enforcement:** Mandatory for all tasks in `meytiii/besporman`
 
-The following 10 skills are installed locally in `.agents/skills/` and are officially activated as non-negotiable project rules:
+The following 11 skills are installed locally in `.agents/skills/` and are officially activated as non-negotiable project rules:
 
 ---
 
@@ -116,7 +116,16 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
 
 ---
 
-## 11. Version Management & SemVer Protocol
+## 11. Antislop (`/antislop`) — Core Filter & Anti-AI-Slop Suite
+- **Rule:** Apply the core antislop filter alongside specialized human/a11y, mobile layout, UI, copywriting, and code comment hygiene rules.
+- **Enforcement:**
+  - Mandatory anti-slop rules for visual, layout, text, and interaction patterns.
+  - Core filter always on (`.agents/skills/antislop/SKILL.md`).
+  - Specialized modules: `antislop-ui`, `antislop-copywriting`, `antislop-human`, `antislop-layoutmobile`, `antislop-code`.
+
+---
+
+## 12. Version Management & SemVer Protocol
 - **Rule:** Maintain synchronized Semantic Versioning (`MAJOR.MINOR.PATCH`) in `package.json` and `CHANGELOG.md`.
 - **Enforcement:**
   - Whenever major architectural revisions, new core subsystem additions, or milestone features are added, bump the application version in `package.json` / `package-lock.json` (e.g. `npm version <newversion> --no-git-tag-version`).
@@ -124,7 +133,7 @@ The following 10 skills are installed locally in `.agents/skills/` and are offic
 
 ---
 
-## 12. Git Push Governance & Branch Restriction
+## 13. Git Push Governance & Branch Restriction
 - **Rule:** Strict protection of the `deploy` branch.
 - **Enforcement:**
   - 🛑 **NEVER push to `deploy`:** AI Agents and pair programmers are strictly prohibited from pushing directly to the `deploy` branch. Pushing to `deploy` is reserved solely for the human owner.

@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.11.2] - 2026-11-04
+
+### Added
+- **Anti-Slop AI Skill Suite (`.agents/skills/`):**
+  - Integrated official `antislop-ai` (v3.2.25) skill ecosystem directly into `.agents/skills/`.
+  - Installed core anti-slop filter (`antislop`) and 5 specialized domain modules:
+    - `antislop-ui` (UI and visual design rules, web performance mechanisms).
+    - `antislop-copywriting` (prose and copywriting rules, anti-AI-writing patterns).
+    - `antislop-human` (accessibility, WCAG 2.2 affordances, contrast checker tools).
+    - `antislop-layoutmobile` (responsive layout rules, mobile viewport floor).
+    - `antislop-code` (code comment hygiene, removing generic AI clutter).
+  - Integrated canonical antislop pointer blocks and active skill governance into `AGENTS.md`, `GEMINI.md`, and `.agents/rules/mandatory-skills.md`.
+
+---
+
 ## [2.11.1] - 2026-11-04
 
 ### Changed

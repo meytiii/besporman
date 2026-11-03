@@ -1,16 +1,16 @@
 # Graph Report - besporman  (2026-11-04)
 
 ## Corpus Check
-- 76 files · ~344,026 words
+- 76 files · ~344,674 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 607 nodes · 762 edges · 66 communities (36 shown, 30 thin omitted)
+- 610 nodes · 765 edges · 67 communities (36 shown, 31 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4b8f11fb`
+- Built from commit: `b0aa3cd4`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -46,7 +46,7 @@
 - [2.8.0] - 2026-10-22
 - flickering-text.tsx
 - [2.1.1] - 2026-10-17
-- [2.2.0] - 2026-10-17
+- [2.4.0] - 2026-10-18
 - ModernLoader.vue
 - [2.3.2] - 2026-10-18
 - [2.4.1] - 2026-10-18
@@ -55,7 +55,7 @@
 - [2.9.4] - 2026-10-23
 - smooth-dropdown.tsx
 - [2.9.5] - 2026-10-23
-- [2.7.0] - 2026-10-22
+- [2.5.2] - 2026-10-19
 - [2.8.1] - 2026-10-22
 - [2.4.2] - 2026-10-18
 - [2.5.0] - 2026-10-18
@@ -64,10 +64,10 @@
 - BackgroundPixelStars.vue
 - [2.10.0] - 2026-10-25
 - background-pixel-stars.tsx
-- [2.3.3] - 2026-10-18
+- [2.8.2] - 2026-10-22
 - [2.3.0] - 2026-10-17
 - [2.3.1] - 2026-10-18
-- [2.11.0] - 2026-10-27
+- [2.11.2] - 2026-11-04
 - [2.9.1] - 2026-10-23
 - [2.5.1] - 2026-10-19
 - [2.8.4] - 2026-10-22
@@ -75,21 +75,22 @@
 - [2.5.3] - 2026-10-19
 - [2.11.1] - 2026-11-04
 - [2.9.2] - 2026-10-23
-- [2.9.8] - 2026-10-23
+- [2.8.3] - 2026-10-22
 - [2.8.5] - 2026-10-23
 - [2.9.9] - 2026-10-23
+- [2.9.7] - 2026-10-23
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog` - 40 edges
+1. `Changelog` - 41 edges
 2. `compilerOptions` - 15 edges
 3. `isMobileDevice()` - 11 edges
 4. `updateMascotPosition()` - 8 edges
 5. `useScrollReveal()` - 8 edges
 6. `toEnglishDigits()` - 8 edges
 7. `transposeFaToEn()` - 8 edges
-8. `triggerToast()` - 7 edges
-9. `validateContactInfoField()` - 7 edges
-10. `compilerOptions` - 7 edges
+8. `Besporman — Agent Rules (GEMINI.md)` - 8 edges
+9. `triggerToast()` - 7 edges
+10. `validateContactInfoField()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Telegram Bot Contact Form Webhook Architecture` --references--> `ContactSubmissionAdapter`  [EXTRACTED]
@@ -110,7 +111,7 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (66 total, 30 thin omitted)
+## Communities (67 total, 31 thin omitted)
 
 ### Community 0 - "EyeTracking.vue"
 Cohesion: 0.10
@@ -142,7 +143,7 @@ Nodes (11): charElements, FlickeringTextProps, generateGlowShadow(), GLOW_LAYERS
 
 ### Community 7 - "Changelog"
 Cohesion: 0.12
-Nodes (15): [2.4.0] - 2026-10-18, [2.5.2] - 2026-10-19, [2.8.2] - 2026-10-22, [2.8.3] - 2026-10-22, [2.9.3] - 2026-10-23, [2.9.6] - 2026-10-23, [2.9.7] - 2026-10-23, Added (+7 more)
+Nodes (15): [2.11.0] - 2026-10-27, [2.2.0] - 2026-10-17, [2.3.3] - 2026-10-18, [2.7.0] - 2026-10-22, [2.9.3] - 2026-10-23, [2.9.6] - 2026-10-23, [2.9.8] - 2026-10-23, Added (+7 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
@@ -153,8 +154,8 @@ Cohesion: 0.05
 Nodes (36): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, Besporman Portfolio & Services Overview, currentPose, Props, route, shouldRender, wrapperRef (+28 more)
 
 ### Community 14 - "Besporman — Agent Rules (GEMINI.md)"
-Cohesion: 0.25
-Nodes (7): Active Skills & Rules Mandate, Besporman — Agent Rules (GEMINI.md), Engineering Standards, Git Push & Branch Governance, graphify, Knowledge Graph & Token Conservation (`/graphify`), Version Management Protocol (SemVer)
+Cohesion: 0.22
+Nodes (8): Active Skills & Rules Mandate, antislop, Besporman — Agent Rules (GEMINI.md), Engineering Standards, Git Push & Branch Governance, graphify, Knowledge Graph & Token Conservation (`/graphify`), Version Management Protocol (SemVer)
 
 ### Community 15 - "Besporman — Agent Instructions (Agent.md)"
 Cohesion: 0.40
@@ -245,9 +246,9 @@ Cohesion: 0.25
 Nodes (6): BackgroundPixelStars, BackgroundStar, ShootingStar, STAR_COLORS, StartPoint, TrailPoint
 
 ## Knowledge Gaps
-- **299 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+294 more)
+- **301 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+296 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -256,10 +257,10 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `8-State Interactive Element Matrix` connect `TheHeader.vue` to `ContactSection.vue`?**
   _High betweenness centrality (0.031) - this node is a cross-community bridge._
-- **Why does `Changelog` connect `Changelog` to `[2.1.0] - 2026-10-17`, `[2.0.0] - 2026-10-17`, `[2.5.4] - 2026-10-19`, `[2.5.5] - 2026-10-22`, `[2.6.0] - 2026-10-22`, `[2.8.0] - 2026-10-22`, `[2.1.1] - 2026-10-17`, `[2.2.0] - 2026-10-17`, `[2.3.2] - 2026-10-18`, `[2.4.1] - 2026-10-18`, `[2.9.4] - 2026-10-23`, `[2.9.5] - 2026-10-23`, `[2.7.0] - 2026-10-22`, `[2.8.1] - 2026-10-22`, `[2.4.2] - 2026-10-18`, `[2.5.0] - 2026-10-18`, `[2.9.0] - 2026-10-23`, `[2.10.0] - 2026-10-25`, `[2.3.3] - 2026-10-18`, `[2.3.0] - 2026-10-17`, `[2.3.1] - 2026-10-18`, `[2.11.0] - 2026-10-27`, `[2.9.1] - 2026-10-23`, `[2.5.1] - 2026-10-19`, `[2.8.4] - 2026-10-22`, `[1.0.0] - 2026-10-17`, `[2.5.3] - 2026-10-19`, `[2.11.1] - 2026-11-04`, `[2.9.2] - 2026-10-23`, `[2.9.8] - 2026-10-23`, `[2.8.5] - 2026-10-23`, `[2.9.9] - 2026-10-23`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
+- **Why does `Changelog` connect `Changelog` to `[2.1.0] - 2026-10-17`, `[2.0.0] - 2026-10-17`, `[2.5.4] - 2026-10-19`, `[2.5.5] - 2026-10-22`, `[2.6.0] - 2026-10-22`, `[2.8.0] - 2026-10-22`, `[2.1.1] - 2026-10-17`, `[2.4.0] - 2026-10-18`, `[2.3.2] - 2026-10-18`, `[2.4.1] - 2026-10-18`, `[2.9.4] - 2026-10-23`, `[2.9.5] - 2026-10-23`, `[2.5.2] - 2026-10-19`, `[2.8.1] - 2026-10-22`, `[2.4.2] - 2026-10-18`, `[2.5.0] - 2026-10-18`, `[2.9.0] - 2026-10-23`, `[2.10.0] - 2026-10-25`, `[2.8.2] - 2026-10-22`, `[2.3.0] - 2026-10-17`, `[2.3.1] - 2026-10-18`, `[2.11.2] - 2026-11-04`, `[2.9.1] - 2026-10-23`, `[2.5.1] - 2026-10-19`, `[2.8.4] - 2026-10-22`, `[1.0.0] - 2026-10-17`, `[2.5.3] - 2026-10-19`, `[2.11.1] - 2026-11-04`, `[2.9.2] - 2026-10-23`, `[2.8.3] - 2026-10-22`, `[2.8.5] - 2026-10-23`, `[2.9.9] - 2026-10-23`, `[2.9.7] - 2026-10-23`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _299 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _301 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `EyeTracking.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**

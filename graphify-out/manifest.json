@@ -1,8 +1,8 @@
 {
   "package.json": {
-    "mtime": 1793737979.861332,
-    "seen": 1793738157.7423575,
-    "ast_hash": "e6614a4595c5311da6be365491f1981e",
+    "mtime": 1793738457.1139412,
+    "seen": 1793738511.8516583,
+    "ast_hash": "94fac61b086b0354e828785daa53b061",
     "semantic_hash": ""
   },
   "src/App.vue": {
@@ -174,15 +174,15 @@
     "semantic_hash": "55183ec4f39364cfd788a57c2fb7ab31"
   },
   ".agents/rules/mandatory-skills.md": {
-    "mtime": 1792270707.3466997,
-    "seen": 1792271549.819668,
-    "ast_hash": "b1b7fc7b90cd14c582592c5d8bf93ed5",
+    "mtime": 1793738439.333229,
+    "seen": 1793738511.8517427,
+    "ast_hash": "819b08a568f32afabf1e0c11d89867e6",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1792668337.3886778,
-    "seen": 1792749967.7298155,
-    "ast_hash": "9ceec139ca25406d7a4f263556afb2dd",
+    "mtime": 1793738420.256308,
+    "seen": 1793738511.8517451,
+    "ast_hash": "44ee322549f7f6e33d89350d923fbfc1",
     "semantic_hash": ""
   },
   "DESIGN_SYSTEM.md": {
@@ -216,9 +216,9 @@
     "semantic_hash": ""
   },
   "GEMINI.md": {
-    "mtime": 1792668337.399543,
-    "seen": 1792749967.729819,
-    "ast_hash": "7ea7789b56bf509426a3a246615f2b63",
+    "mtime": 1793738420.2595608,
+    "seen": 1793738511.8517487,
+    "ast_hash": "635e6ad30ae2f34c7896bd97632036db",
     "semantic_hash": ""
   },
   "favicon.png": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1793738121.9715948,
-    "seen": 1793738157.7424414,
-    "ast_hash": "d543d6aeca0fa4f0e0a0ed7c852f998d",
+    "mtime": 1793738470.1451416,
+    "seen": 1793738511.8517468,
+    "ast_hash": "1765250d321586dec480d5c986ffc045",
     "semantic_hash": ""
   },
   "tests/navigation.spec.ts": {
