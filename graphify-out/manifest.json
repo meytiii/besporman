@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/components/TheFooter.vue": {
-    "mtime": 1793737921.3139615,
-    "seen": 1793738157.7423837,
+    "mtime": 1793738662.5282614,
+    "seen": 1793740427.8035243,
     "ast_hash": "1e77f41e58a67147b5d5424a1739ea2f",
     "semantic_hash": ""
   },
@@ -672,9 +672,9 @@
     "semantic_hash": ""
   },
   "tests/footer.spec.ts": {
-    "mtime": 1793737957.4865308,
-    "seen": 1793738157.7424233,
-    "ast_hash": "9cc7417164b5981d9f59c544f8e7f151",
+    "mtime": 1793738565.130018,
+    "seen": 1793740427.8035672,
+    "ast_hash": "1880e56d5933c35936c674fd0fcc9e52",
     "semantic_hash": ""
   }
 }
