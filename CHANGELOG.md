@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.12.0] - 2026-11-05
+
+### Added
+- **MAVi Posh Boutique Store Showcase (`src/data/projects.ts`, `maviposh-store`):**
+  - Integrated authentic luxury women's clothing e-commerce platform into the portfolio showcases.
+  - Converted screenshots (`mavi_3.png`, `mavi_1.png`, `mavi_2.png`) to high-performance WebP assets (`pic/webp/mavi_3.webp`, `pic/webp/mavi_1.webp`, `pic/webp/mavi_2.webp`) adhering strictly to project WebP-only asset policy.
+  - Configured `mavi_3.webp` as the primary featured showcase image, and `mavi_1.webp` + `mavi_2.webp` as supplementary gallery items.
+  - Added full architectural case study detailing Next.js 16 (App Router), React 19, Django REST Framework, Celery + Redis asynchronous queues, PostgreSQL, Docker, and live Shaparak/Zarinpal payment gateway integration.
+  - Added dedicated route `/projects/maviposh-store` with breadcrumbs, key deliverables, technical case study, and live store launch action (`https://www.maviposh.com`).
+  - Added supplementary gallery grid component (`.gallery-section`) to `ProjectDetailView.vue` for viewing extra project screenshots.
+  - Added visual thumbnail preview frame (`.project-card-thumb-frame`) to secondary project cards in `ProjectsSection.vue` and dynamic direct store button.
+  - Added automated test assertion in `tests/project-detail.spec.ts` verifying routing, title, tech stack chips, external store link, and gallery images.
+
+---
+
 ## [2.11.2] - 2026-11-04
 
 ### Added

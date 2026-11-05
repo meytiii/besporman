@@ -1,4 +1,8 @@
 import type { ProjectItem } from '@/types/project'
+import bespormanShowcase from '../../pic/webp/besporman_website_showcase.webp'
+import mavi3Img from '../../pic/webp/mavi_3.webp'
+import mavi1Img from '../../pic/webp/mavi_1.webp'
+import mavi2Img from '../../pic/webp/mavi_2.webp'
 
 export const projectsData: ProjectItem[] = [
   {
@@ -11,7 +15,7 @@ export const projectsData: ProjectItem[] = [
     completedYearFa: '۱۴۰۵',
     technologies: ['Vue 3', 'Vite', 'TypeScript', 'CSS Custom Properties'],
     externalUrl: 'https://github.com/meytiii/besporman',
-    featuredImage: '/pic/webp/besporman_website_showcase.webp',
+    featuredImage: bespormanShowcase,
     keyHighlightsFa: [
       'پیاده‌سازی سیستم تایپوگرافی سلف‌هاست وزیرمتن و لاله‌زار',
       'انیمیشن روان و نامحدود مارکی بدون افت فریم',
@@ -74,6 +78,36 @@ export const projectsData: ProjectItem[] = [
 - پردازش موازی ردیف‌های اکسل
 - خروجی گزارش با فرمت PDF و اکسل اصلاح‌شده
 - رابط کاربری بومی و سازگار با انواع نسخه‌های ویندوز
+    `
+  },
+  {
+    id: 'prj-04',
+    slug: 'maviposh-store',
+    titleFa: 'فروشگاه اینترنتی پوشاک زنانه ماوی‌پوش',
+    category: 'web',
+    summaryFa: 'طراحی و پیاده‌سازی پلتفرم فروشگاهی اختصاصی پوشاک بانوان با معماری نوین فول‌استک، رابط کاربری لوکس مدیترانه‌ای، احراز هویت پیامکی و صف‌های پردازش ناهمگام.',
+    status: 'verified',
+    completedYearFa: '۱۴۰۵',
+    clientNameFa: 'بوتیک آنلاین ماوی‌پوش',
+    technologies: ['Next.js 16', 'React 19', 'Django REST', 'PostgreSQL', 'Celery & Redis', 'Tailwind CSS', 'Docker'],
+    externalUrl: 'https://www.maviposh.com',
+    featuredImage: mavi3Img,
+    galleryImages: [mavi1Img, mavi2Img],
+    keyHighlightsFa: [
+      'طراحی تجربه کاربری اختصاصی با هویت بصری لوکس مدیترانه‌ای و رعایت کامل اصول RTL فارسی',
+      'سیستم احراز هویت پیامکی دو مرحله‌ای امن (OTP) متصل به سرویس SMS.ir',
+      'پردازش ناهمگام رویدادها، تغییرات موجودی و نوتیفیکیشن‌ها با بهره‌گیری از Celery و Redis',
+      'معماری ماژولار و مقیاس‌پذیر بر پایه کانتینرهای Docker و پایگاه داده PostgreSQL',
+      'درگاه پرداخت رسمی شاپرک (زرین‌پال) با مکانیزم اعتبارسنجی تراکنش و امنیت در سطح لایه سرور'
+    ],
+    caseStudyMarkdownFa: `
+### درباره پروژه و صورت مسئله
+فروشگاه ماوی‌پوش به عنوان یک برند معتبر در حوزه مد و پوشاک بانوان، نیازمند یک پلتفرم فروشگاهی اختصاصی، چابک و باهویت بود که فراتر از قالب‌های آماده و مرسوم ایکامرس عمل کند. هدف اصلی، ارائه تجربه‌ای روان در مرور محصولات، مشاهده جزئیات سایزبندی و رنگ‌بندی، و نهایی‌سازی سفارش در کوتاه‌ترین زمان ممکن بود.
+
+### معماری و چالش‌های فنی
+1. تفکیک معماری فرانت‌اند و بک‌اند: رابط کاربری با Next.js 16 و React 19 پیاده‌سازی شده تا سرعت بارگذاری صفحات و سئوی محصولات در بالاترین سطح ممکن باشد. بک‌اند سیستم با Django REST Framework توسعه یافته که پایداری و امنیت بالای منطق تجاری را تضمین می‌کند.
+2. صف‌های پردازش ناهمگام: برای جلوگیری از کندی سرور در زمان ارسال پیامک‌های OTP، استعلام وضعیت سفارش و به‌روزرسانی موجودی انبار، از Celery Worker و Redis به عنوان Message Broker استفاده شده است.
+3. هویت بصری مدیترانه‌ای و تجربه خرید: پالت رنگی ویژه لاجوردی و سفید کریستالی در کنار تایپوگرافی چشم‌نواز وزیرمتن، فضایی لوکس و مدرن را بدون شلوغی‌های بصری زائد خلق کرده است.
     `
   }
 ]

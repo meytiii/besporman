@@ -52,7 +52,7 @@
               rel="noopener noreferrer"
               class="btn btn-primary"
             >
-              <span class="btn-text">مشاهده سورس‌کد / ریپازیتوری</span>
+              <span class="btn-text">{{ isGithubUrl(project.externalUrl) ? 'مشاهده سورس‌کد / ریپازیتوری' : 'مشاهده وب‌سایت زنده' }}</span>
               <AppButtonArrow direction="external" />
             </a>
 
@@ -104,6 +104,26 @@
                 {{ block.text }}
               </p>
             </template>
+          </div>
+        </section>
+
+        <!-- Extra Showcase Gallery if available -->
+        <section v-if="project.galleryImages?.length" class="gallery-section">
+          <h2 class="section-subheading">تصاویر و نماهای تکمیلی پروژه</h2>
+          <div class="gallery-grid">
+            <div
+              v-for="(img, gIdx) in project.galleryImages"
+              :key="gIdx"
+              class="gallery-item-frame"
+            >
+              <img
+                :src="img"
+                :alt="`${project.titleFa} - نمای ${gIdx + 1}`"
+                class="gallery-image"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
         </section>
 
@@ -179,6 +199,11 @@ const nextProject = computed<ProjectItem | null>(() => {
   }
   return null
 })
+
+const isGithubUrl = (url?: string): boolean => {
+  if (!url) return false
+  return url.includes('github.com')
+}
 
 const categoryLabel = computed(() => {
   if (!project.value) return ''
@@ -444,6 +469,51 @@ const formattedParagraphs = computed(() => {
   color: var(--color-ink-primary);
   margin-top: var(--space-6);
   margin-bottom: var(--space-2);
+}
+
+/* Supplementary Gallery Section */
+.gallery-section {
+  margin-bottom: var(--space-10);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery-item-frame {
+  background-color: var(--primitive-amber-100);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  border-radius: var(--border-radius-md);
+  box-shadow: 4px 4px 0 var(--color-border-bold);
+  overflow: hidden;
+  padding: var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item-frame:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-border-bold);
+}
+
+.gallery-image {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--color-border-bold);
+  border-radius: var(--border-radius-sm);
+  display: block;
 }
 
 /* Detail Navigation Footer */

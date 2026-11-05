@@ -31,5 +31,7 @@ graphify-out/cache/
 
 # Local test screenshots
 hero_*.png
+homepage-*.png
+project-detail-*.png
 
 sample_project/*

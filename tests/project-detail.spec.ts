@@ -39,6 +39,25 @@ describe('Project Detail Page Routing & Graceful Degradation', () => {
     expect(caseStudyText).not.toContain('*')
   })
 
+  it('loads MAVi store project with external store link, featured image, and gallery', async () => {
+    const router = createTestRouter('/projects/maviposh-store')
+    await router.isReady()
+
+    const wrapper = mount(ProjectDetailView, {
+      global: {
+        plugins: [router],
+      },
+    })
+
+    expect(wrapper.find('.detail-title').text()).toContain('فروشگاه اینترنتی پوشاک زنانه ماوی‌پوش')
+    expect(wrapper.text()).toContain('Next.js 16')
+    expect(wrapper.text()).toContain('Django REST')
+    expect(wrapper.find('.detail-showcase-frame').exists()).toBe(true)
+    expect(wrapper.find('.gallery-section').exists()).toBe(true)
+    expect(wrapper.findAll('.gallery-item-frame').length).toBe(2)
+    expect(wrapper.find('.detail-actions').text()).toContain('مشاهده وب‌سایت زنده')
+  })
+
   it('renders friendly not-found banner for non-existent project slug', async () => {
     const router = createTestRouter('/projects/non-existent-slug')
     await router.isReady()

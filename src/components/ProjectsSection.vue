@@ -117,6 +117,19 @@
           class="project-card comic-pop"
           :style="{ '--pop-delay': `${(idx + 1) * 0.08}s` }"
         >
+          <!-- Card Thumbnail if available -->
+          <div v-if="project.featuredImage" class="project-card-thumb-frame">
+            <img
+              :src="project.featuredImage"
+              :alt="project.titleFa"
+              class="project-card-thumb"
+              loading="lazy"
+              decoding="async"
+              width="600"
+              height="360"
+            />
+          </div>
+
           <div class="project-card-header">
             <span class="badge-category">{{ getCategoryLabel(project.category) }}</span>
             <span v-if="project.completedYearFa" class="badge-year">{{ project.completedYearFa }}</span>
@@ -148,6 +161,30 @@
               <span class="btn-text">مشاهده بررسی تخصصی پروژه</span>
               <AppButtonArrow direction="left" />
             </router-link>
+
+            <a
+              v-if="project.externalUrl"
+              :href="project.externalUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm"
+              :aria-label="`مشاهده وب‌سایت ${project.titleFa} (باز شدن در تب جدید)`"
+            >
+              <span class="btn-text">مشاهده وب‌سایت</span>
+              <AppButtonArrow direction="external" />
+            </a>
+
+            <a
+              v-if="project.telegramUrl"
+              :href="project.telegramUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm"
+              :aria-label="`مشاهده بات تلگرام ${project.titleFa} (باز شدن در تب جدید)`"
+            >
+              <span class="btn-text">مشاهده در تلگرام</span>
+              <AppButtonArrow direction="external" />
+            </a>
           </div>
         </article>
       </div>
@@ -403,6 +440,12 @@ const filteredSecondaryProjects = computed(() => {
   }
 }
 
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .project-card {
   background-color: var(--primitive-cream-100);
   border: var(--border-width-bold) solid var(--color-border-bold);
@@ -440,11 +483,40 @@ const filteredSecondaryProjects = computed(() => {
   flex-grow: 1;
 }
 
+.project-card-thumb-frame {
+  width: 100%;
+  height: 180px;
+  background-color: var(--primitive-amber-100);
+  border: var(--border-width-bold) solid var(--color-border-bold);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 2px 2px 0 var(--color-border-bold);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .project-card-thumb {
+  transform: scale(1.03);
+}
+
 .project-card-footer {
   margin-top: auto;
   padding-top: var(--space-4);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
   align-items: center;
 }
 </style>

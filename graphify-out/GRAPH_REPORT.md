@@ -1,16 +1,16 @@
-# Graph Report - besporman  (2026-11-04)
+# Graph Report - besporman  (2026-11-05)
 
 ## Corpus Check
-- 76 files · ~344,674 words
+- 76 files · ~355,781 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 610 nodes · 765 edges · 67 communities (36 shown, 31 thin omitted)
+- 613 nodes · 768 edges · 67 communities (35 shown, 32 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b0aa3cd4`
+- Built from commit: `ffd6f41d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,7 +24,7 @@
 - FlickeringText.vue
 - Changelog
 - compilerOptions
-- ui/TextReveal.vue
+- ProjectDetailView.vue
 - vite-env.d.ts
 - Anti-AI-Slop & Authentic Paper Brand Identity
 - Besporman — Agent Rules (GEMINI.md)
@@ -49,9 +49,9 @@
 - [2.4.0] - 2026-10-18
 - ModernLoader.vue
 - [2.3.2] - 2026-10-18
-- [2.4.1] - 2026-10-18
+- [2.2.0] - 2026-10-17
 - AppToast.vue
-- AnimatedCircularProgressBar.vue
+- [2.3.3] - 2026-10-18
 - [2.9.4] - 2026-10-23
 - smooth-dropdown.tsx
 - [2.9.5] - 2026-10-23
@@ -69,19 +69,19 @@
 - [2.3.1] - 2026-10-18
 - [2.11.2] - 2026-11-04
 - [2.9.1] - 2026-10-23
-- [2.5.1] - 2026-10-19
+- [2.7.0] - 2026-10-22
 - [2.8.4] - 2026-10-22
-- [1.0.0] - 2026-10-17
+- [2.9.6] - 2026-10-23
 - [2.5.3] - 2026-10-19
 - [2.11.1] - 2026-11-04
 - [2.9.2] - 2026-10-23
 - [2.8.3] - 2026-10-22
-- [2.8.5] - 2026-10-23
+- [2.9.8] - 2026-10-23
 - [2.9.9] - 2026-10-23
 - [2.9.7] - 2026-10-23
 
 ## God Nodes (most connected - your core abstractions)
-1. `Changelog` - 41 edges
+1. `Changelog` - 42 edges
 2. `compilerOptions` - 15 edges
 3. `isMobileDevice()` - 11 edges
 4. `updateMascotPosition()` - 8 edges
@@ -111,15 +111,15 @@
 - **Decoupled Contact Form Submission Flow** — src_components_contactsection_handlesubmit, src_services_contactadapter_contactsubmissionadapter, src_services_contactadapter_developmentcontactadapter, agents_md_contact_adapter_boundary, backend_tasks_md_telegram_bot_spec [EXTRACTED 1.00]
 - **Parchment & Paper Brand Identity Pipeline** — design_system_md_tokens_palette, design_system_md_vazirmatn_typography, design_system_md_double_bezel_cards, design_system_md_eight_interactive_states, design_system_md_anti_slop_gates, src_app [EXTRACTED 1.00]
 
-## Communities (67 total, 31 thin omitted)
+## Communities (67 total, 32 thin omitted)
 
 ### Community 0 - "EyeTracking.vue"
 Cohesion: 0.10
 Nodes (13): blinkTimers, eyeElements, EyeOffset, eyeOffsets, eyeStyle, irisSize, isBlinking, maxOffset (+5 more)
 
 ### Community 1 - "ContactSection.vue"
-Cohesion: 0.08
-Nodes (45): Frontend/Backend ContactSubmissionAdapter Boundary, Telegram Bot Contact Form Webhook Architecture, budgetOptions, completionProgress, errors, FeedbackState, form, FormErrors (+37 more)
+Cohesion: 0.07
+Nodes (48): Frontend/Backend ContactSubmissionAdapter Boundary, Telegram Bot Contact Form Webhook Architecture, budgetOptions, completionProgress, errors, FeedbackState, form, FormErrors (+40 more)
 
 ### Community 2 - "TheHeader.vue"
 Cohesion: 0.08
@@ -143,13 +143,13 @@ Nodes (11): charElements, FlickeringTextProps, generateGlowShadow(), GLOW_LAYERS
 
 ### Community 7 - "Changelog"
 Cohesion: 0.12
-Nodes (15): [2.11.0] - 2026-10-27, [2.2.0] - 2026-10-17, [2.3.3] - 2026-10-18, [2.7.0] - 2026-10-22, [2.9.3] - 2026-10-23, [2.9.6] - 2026-10-23, [2.9.8] - 2026-10-23, Added (+7 more)
+Nodes (15): [1.0.0] - 2026-10-17, [2.11.0] - 2026-10-27, [2.12.0] - 2026-11-05, [2.4.1] - 2026-10-18, [2.5.1] - 2026-10-19, [2.8.5] - 2026-10-23, [2.9.3] - 2026-10-23, Added (+7 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.18
 Nodes (10): vite.config.ts, vitest.config.ts, compilerOptions, allowSyntheticDefaultImports, composite, module, moduleResolution, skipLibCheck (+2 more)
 
-### Community 9 - "ui/TextReveal.vue"
+### Community 9 - "ProjectDetailView.vue"
 Cohesion: 0.05
 Nodes (36): Mascot & Brand Visual Asset Preservation, Double-Bezel Machined Card Architecture, Besporman Portfolio & Services Overview, currentPose, Props, route, shouldRender, wrapperRef (+28 more)
 
@@ -221,10 +221,6 @@ Nodes (33): CRITICAL_IMAGE_URLS, ensureFontsLoaded(), isExiting, isFontReady, is
 Cohesion: 0.50
 Nodes (4): close(), emit, Props, visible
 
-### Community 39 - "AnimatedCircularProgressBar.vue"
-Cohesion: 0.40
-Nodes (3): currentPercent, indicatorStrokeLength, Props
-
 ### Community 40 - "[2.9.4] - 2026-10-23"
 Cohesion: 0.67
 Nodes (3): [2.9.4] - 2026-10-23, Added, Changed
@@ -246,24 +242,24 @@ Cohesion: 0.25
 Nodes (6): BackgroundPixelStars, BackgroundStar, ShootingStar, STAR_COLORS, StartPoint, TrailPoint
 
 ## Knowledge Gaps
-- **301 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+296 more)
+- **302 isolated node(s):** `name`, `private`, `version`, `type`, `dev` (+297 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **31 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **32 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Parchment & Iron Charcoal Design Palette` connect `App.vue` to `ui/TextReveal.vue`?**
-  _High betweenness centrality (0.034) - this node is a cross-community bridge._
+- **Why does `Parchment & Iron Charcoal Design Palette` connect `App.vue` to `ProjectDetailView.vue`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
 - **Why does `8-State Interactive Element Matrix` connect `TheHeader.vue` to `ContactSection.vue`?**
   _High betweenness centrality (0.031) - this node is a cross-community bridge._
-- **Why does `Changelog` connect `Changelog` to `[2.1.0] - 2026-10-17`, `[2.0.0] - 2026-10-17`, `[2.5.4] - 2026-10-19`, `[2.5.5] - 2026-10-22`, `[2.6.0] - 2026-10-22`, `[2.8.0] - 2026-10-22`, `[2.1.1] - 2026-10-17`, `[2.4.0] - 2026-10-18`, `[2.3.2] - 2026-10-18`, `[2.4.1] - 2026-10-18`, `[2.9.4] - 2026-10-23`, `[2.9.5] - 2026-10-23`, `[2.5.2] - 2026-10-19`, `[2.8.1] - 2026-10-22`, `[2.4.2] - 2026-10-18`, `[2.5.0] - 2026-10-18`, `[2.9.0] - 2026-10-23`, `[2.10.0] - 2026-10-25`, `[2.8.2] - 2026-10-22`, `[2.3.0] - 2026-10-17`, `[2.3.1] - 2026-10-18`, `[2.11.2] - 2026-11-04`, `[2.9.1] - 2026-10-23`, `[2.5.1] - 2026-10-19`, `[2.8.4] - 2026-10-22`, `[1.0.0] - 2026-10-17`, `[2.5.3] - 2026-10-19`, `[2.11.1] - 2026-11-04`, `[2.9.2] - 2026-10-23`, `[2.8.3] - 2026-10-22`, `[2.8.5] - 2026-10-23`, `[2.9.9] - 2026-10-23`, `[2.9.7] - 2026-10-23`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `Changelog` connect `Changelog` to `[2.1.0] - 2026-10-17`, `[2.0.0] - 2026-10-17`, `[2.5.4] - 2026-10-19`, `[2.5.5] - 2026-10-22`, `[2.6.0] - 2026-10-22`, `[2.8.0] - 2026-10-22`, `[2.1.1] - 2026-10-17`, `[2.4.0] - 2026-10-18`, `[2.3.2] - 2026-10-18`, `[2.2.0] - 2026-10-17`, `[2.3.3] - 2026-10-18`, `[2.9.4] - 2026-10-23`, `[2.9.5] - 2026-10-23`, `[2.5.2] - 2026-10-19`, `[2.8.1] - 2026-10-22`, `[2.4.2] - 2026-10-18`, `[2.5.0] - 2026-10-18`, `[2.9.0] - 2026-10-23`, `[2.10.0] - 2026-10-25`, `[2.8.2] - 2026-10-22`, `[2.3.0] - 2026-10-17`, `[2.3.1] - 2026-10-18`, `[2.11.2] - 2026-11-04`, `[2.9.1] - 2026-10-23`, `[2.7.0] - 2026-10-22`, `[2.8.4] - 2026-10-22`, `[2.9.6] - 2026-10-23`, `[2.5.3] - 2026-10-19`, `[2.11.1] - 2026-11-04`, `[2.9.2] - 2026-10-23`, `[2.8.3] - 2026-10-22`, `[2.9.8] - 2026-10-23`, `[2.9.9] - 2026-10-23`, `[2.9.7] - 2026-10-23`?**
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
 - **What connects `name`, `private`, `version` to the rest of the system?**
-  _301 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _302 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `EyeTracking.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
 - **Should `ContactSection.vue` be split into smaller, more focused modules?**
-  _Cohesion score 0.08245981830887492 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07188778492109878 - nodes in this community are weakly interconnected._
 - **Should `TheHeader.vue` be split into smaller, more focused modules?**
   _Cohesion score 0.0784313725490196 - nodes in this community are weakly interconnected._
